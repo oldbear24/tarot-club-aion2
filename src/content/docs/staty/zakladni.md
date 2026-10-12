@@ -11,6 +11,9 @@ sources:
   - title: Wikily — základní bojové staty
     url: https://wikily.gg/aion-2/stats/basic
     scope: unspecified
+  - title: Aion 2 Maps — tooltipy Combat Speed, Cooldown a MP Cost
+    url: https://aion2maps.com/guides/stats-explained/
+    scope: global
 ---
 
 ## Šest atributů postavy
@@ -46,5 +49,11 @@ Ve skutečné postavě vstupují do výsledku další zdroje a zaokrouhlení. Sl
 | **Combat Speed** | Rychlost útoků a provedení kouzel. |
 | **HP / MP** | Životy a zdroj potřebný pro příslušné schopnosti. |
 | **Move Speed** | Rychlost pohybu. |
+
+## Combat Speed a cooldown nejsou stejný problém
+
+**Combat Speed** ovlivňuje provedení útoků a kouzel. **Cooldown Reduction** řeší dobu, než lze schopnost znovu použít; snížení **MP Cost** řeší cenu schopnosti. Při hledání slabého místa proto zapisuj, zda čekáš na animaci, cooldown, nebo obnovu MP. Tyto příčiny vyžadují odlišnou opravu.
+
+**Doporučení Tarot Clubu:** z jednoho procenta rychlosti neodvozuj automaticky stejné procento DPS. Porovnej skutečně použitý počet schopností, čas na cíli a další omezení. Pro build s bonusovými úrovněmi čti také [Schopnosti a Specialty](../../pruvodce/schopnosti-stigma/).
 
 Další krok: [Útok a poškození](../utok/) nebo [Limity statů](../limity/).

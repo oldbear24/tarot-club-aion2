@@ -2,13 +2,14 @@
 
 Česká statická wiki pro globální launch AION 2. Obsah žije v Markdownu, vzhled a navigaci poskytuje Astro + Starlight. Výsledkem jsou statické soubory určené pro GitHub Pages.
 
-## Stav prvního vydání
+## Aktuální obsah
 
-- 19 českých obsahových stránek: úvod, šest průvodců staty, osm praktických průvodců a čtyři stránky o wiki.
+- 26 českých obsahových stránek: úvod, šest průvodců staty, patnáct praktických průvodců a čtyři stránky o wiki.
 - Vlastní tarotový motiv, české UI, mobilní navigace, světlý/tmavý režim.
 - Fulltextové vyhledávání Pagefind bez backendu.
 - Každý článek má cílovou edici, datum rešerše, typ podkladů a zdroje.
 - GS a CP progrese, otevřený svět, Abyss, daily/weekly s prioritami, limity a odlišením Global od neotevřeného obsahu.
+- Runy/pás/amulet, Enhancement a Transfer, Arcana, Daevanion, Specialty/Stigma, dungeonové odměny a Nightmare; úvod odkazuje na všech 25 tematických článků.
 - Workflow pro ověření pull requestů a nasazení na GitHub Pages.
 
 Repozitář: [oldbear24/tarot-club-aion2](https://github.com/oldbear24/tarot-club-aion2). Živý web je dostupný až po zapnutí GitHub Pages a úspěšném nasazení.

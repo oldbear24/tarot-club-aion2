@@ -11,6 +11,9 @@ sources:
   - title: Aion 2 Maps — rozdíly Global oproti KR/TW
     url: https://aion2maps.com/guides/global-differences/
     scope: global
+  - title: Aion 2 Maps — Pantheon slots a zdroje, aktualizace 10. října
+    url: https://aion2maps.com/guides/pantheon-stats/
+    scope: global
 ---
 
 ## Jak tabulku číst
@@ -35,6 +38,16 @@ Níže je výklad dvojic efektů z dat Wikily; přesný převod není vlastní m
 V této datové sadě má každý uvedený efekt převod **0,1 % za bod**; u cooldownu a ceny MP jde o snížení. Light [Ariel] a Darkness [Azphel] zde nemají uvedené sekundární převody.
 
 ## Dva efekty, dvě různé potřeby
+
+### Kde body získávat
+
+Global podklady popisují Pantheon s **jedním Colossus slotem, čtyřmi Statues a dvanácti Artworks**. Příběh poskytuje základní colossus a sochy; další kusy pocházejí z achievementů, bossů, dungeonů a obchodů. Konkrétní kus může mít podmínku nákupu — například dokončení požadovaného Nightmare bosse.
+
+Božské staty získáváš také z [Arcana](../../pruvodce/arcana/). Nezaměňuj tedy menu Pantheon s jediným zdrojem těchto atributů. Podobně pojmenované [Daevanion desky](../../pruvodce/daevanion/) jsou další samostatný systém.
+
+**Doporučení Tarot Clubu:** nejdřív zkontroluj obsazení odemčených slotů a již získané příběhové kusy. Potom porovnávej celou dvojici statů náhrady. Cena další sochy má smysl až ve vztahu k tomu, co nahradí.
+
+### Jak dvojici vyhodnotit
 
 Doporučení Tarot Clubu: při výběru si u každé dvojice napiš, který efekt skutečně využiješ. Dva bonusy na papíře nemusí znamenat dvojnásobný přínos pro tvůj způsob hraní.
 

@@ -82,3 +82,13 @@ Pantheon je další zdroj statů; odemykání nestačí zaměnit za vhodné nast
 5. Rerolly a drahé výbavové upgrady dělej až s konkrétním cílem.
 
 Po každé větší změně srovnej výkon na podobném cíli. Více CP díky obrannému bonusu nemusí znamenat více DPS. [Proč nedělám damage?](../lepsi-damage/) pomůže odlišit růst čísla od růstu výkonu.
+
+## Který detailní průvodce otevřít
+
+| Co ti chybí | Další krok |
+| --- | --- |
+| Nerozumím perkům nebo mám neobsazené Stigma sloty. | [Schopnosti, Specialty a Stigma](../schopnosti-stigma/). |
+| Nevím, kudy vést body na deskách. | [Daevanion a plánování uzlů](../daevanion/). |
+| Mám karty, ale nevím, které nasadit či spotřebovat. | [Arcana](../arcana/). |
+| Potřebuji fragmenty na rozvojové nákupy. | [Nightmare a jeho obchod](../nightmare/). |
+| Chci upravit řádky nebo nahradit vylepšený kus. | [Soul Binding a Transfer](../vylepsovani-vybavy/). |

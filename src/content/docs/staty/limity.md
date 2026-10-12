@@ -14,6 +14,15 @@ sources:
   - title: Wikily — Recovery, cena MP
     url: https://wikily.gg/aion-2/stats/recovery
     scope: unspecified
+  - title: Global Database — Clash Rune a neověřená failure penalty, 2.0.6.0
+    url: https://aion2.gaming.tools/items/310900001
+    scope: global
+  - title: Aion 2 Maps — varování pro speciální sloty Global
+    url: https://aion2maps.com/guides/special-slots/
+    scope: global
+  - title: Aion 2 Maps — research následků neúspěchu, KR disclosure
+    url: https://aion2maps.com/guides/research/gear/special-enhancement-odds/
+    scope: asian
 ---
 
 ## Tooltip není měření serveru
@@ -39,6 +48,10 @@ Asijská měření kritické šance se rozcházejí s globálním textem tooltip
 - Skrytá základní šance Multi-hit a poškození jeho dodatečných zásahů.
 - Pořadí serverových výpočtů a společná aktivace Critical, Perfect a Double.
 - Přesné váhy statů pro jednotlivé třídy a vybavení.
+
+## Následek neúspěšného upgradu runy
+
+Global průvodci varují před zničením runy od +2. Global Database přitom u failure penalty výslovně uvádí neověřené chování. Detailní research tabulka Maps vychází z KR disclosure. Nejde tedy o vlastní potvrzení serverového chování Global. Praktická rada zůstává **+1 pro první progresi a kontrola varování v klientu**; [runový průvodce](../../pruvodce/runy-specialni-sloty/) vysvětluje kontext.
 
 ## Jak dodat použitelný test
 

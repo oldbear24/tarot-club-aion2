@@ -34,6 +34,13 @@ Ke čtení statů použij [Základní atributy](../../staty/zakladni/), [Útok](
 4. Před potvrzením upgradu zkontroluj pravděpodobnost, možný výsledek a podmínky přímo ve hře.
 5. Po změně srovnej staty a několik podobných soubojů.
 
-## Co v první verzi chybí
+## Konkrétní systémy výbavy
 
-Přesné šance vylepšování, drop tabulky a nejlepší předměty pro jednotlivé třídy nejsou součástí tohoto průvodce. Konkrétní postup pro dosažení dalších vstupů najdeš v [GS progresi](../gs-progrese/); rozvoj mimo výbavu v [CP průvodci](../cp-postava/).
+| Potřebuji vyřešit | Průvodce |
+| --- | --- |
+| Prázdné runy, pás nebo amulet. | [Zdroje a rozvoj speciálních slotů](../runy-specialni-sloty/). |
+| + úrovně, přerolování řádku nebo nový kus. | [Enhancement, Soul Binding a Transfer](../vylepsovani-vybavy/). |
+| Arcana sloty a skill řádky. | [Výběr a levelování karet](../arcana/). |
+| Dungeon, který platí potřebný typ gearu. | [Dungeony a garantované odměny](../dungeony-odyle/). |
+
+Kompletní drop tabulky a nejlepší předměty pro jednotlivé třídy zde zatím nejsou. Konkrétní postup pro dosažení dalších vstupů najdeš v [GS progresi](../gs-progrese/); rozvoj mimo výbavu v [CP průvodci](../cp-postava/).

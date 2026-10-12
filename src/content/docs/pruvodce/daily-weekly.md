@@ -56,6 +56,10 @@ Základní banka vstupů není totéž co dodatečná zásoba z ticketů. U konk
 
 U **Conquest / Transcendence** je důležitý obsah reward cube: výbava, materiály a u Transcendence zejména **Arcana**. Běžný Conquest claim stojí 40 Odyle. Tvoje síla, dostupný tier a odměny konkrétního dungeonu rozhodují, kam energii utratit.
 
+**Odchod bez claimu má vlastní omezení:** podklady Global uvádějí 10 nevyzvednutých cubes týdně, společných pro postavy na serveru. Není to počet běžných odměněných vstupů. Při zablokování dungeonu zkontroluj i hotovou Guaranteed Reward — [detail pravidel Odyle a cubes](../dungeony-odyle/).
+
+U Nightmare se podle podkladů pokus spotřebuje při úspěšném dokončení; vstup přesto vyžaduje dostupný pokus. Ticket pro okamžité dokončení také čerpá tuto zásobu. [Nightmare průvodce](../nightmare/) rozlišuje first clear a opakované odměny.
+
 ## Týdenní obsah
 
 | Aktivita | Uváděná základní týdenní zásoba | Praktické použití |

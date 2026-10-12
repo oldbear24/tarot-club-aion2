@@ -36,6 +36,8 @@ Pro běžný výpočet platí **DPS = poškození / čas v sekundách**. Ilustra
 
 ## Záznam do komunitních poznámek
 
+Před nákupem dalšího kusu zkontroluj [Specialty milníky a používaná Stigmata](../schopnosti-stigma/), [skill uzly Daevanion](../daevanion/) a [řádky Arcana](../arcana/). Toto je doporučený audit buildu: zapisuj celkové úrovně hlavních skillů a dostupné perky před změnou i po ní.
+
 ```text
 Global / region / server / patch:
 Třída a úroveň:

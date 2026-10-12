@@ -45,6 +45,23 @@ hero:
 <div class="wiki-grid">
 <a href="./pruvodce/vybava/"><span>VÝBAVA / INVESTICE</span><strong>Výbava a rozumné upgrady</strong><small>Porovnávej celé předměty a plánuj, kam se vyplatí investovat materiály.</small></a>
 <a href="./pruvodce/lepsi-damage/"><span>VÝKON / DAMAGE</span><strong>Proč nedělám damage?</strong><small>Jak hledat slabé místo v boji a porovnat výkon po změně výbavy.</small></a>
+<a href="./pruvodce/runy-specialni-sloty/"><span>RUNY / PÁS / AMULET</span><strong>Speciální sloty</strong><small>Obě questové runy, náhradní chesty z Nightmare a scrolly pro pás a amulet.</small></a>
+<a href="./pruvodce/vylepsovani-vybavy/"><span>UPGRADE / TRANSFER</span><strong>Vylepšování a přenos</strong><small>Enhancement, Amp, Potential a Soul Binding. Co se na nový kus přenese?</small></a>
+</div>
+
+## Rozvoj schopností a karet
+
+<div class="wiki-grid">
+<a href="./pruvodce/schopnosti-stigma/"><span>SKILLS / SPECIALTY / STIGMA</span><strong>Schopnosti a perky</strong><small>Milníky 8, 12, 16 a 20, bonusové úrovně a plánování Stigmat.</small></a>
+<a href="./pruvodce/daevanion/"><span>DAEVANION / UZLY</span><strong>Naplánuj si desky</strong><small>Barvy uzlů, společný rozpočet krystalů a cesty k hlavním schopnostem.</small></a>
+<a href="./pruvodce/arcana/"><span>ARCANA / PĚT KARET</span><strong>Karty pro GS i build</strong><small>Které karty rozvíjejí aktivní a pasivní schopnosti a kdy řešit Transmute.</small></a>
+</div>
+
+## Dungeony a sólo obsah
+
+<div class="wiki-grid">
+<a href="./pruvodce/dungeony-odyle/"><span>DUNGEONY / ODYLE / LOOT</span><strong>Odměny bez zmatků</strong><small>Exploration, Conquest, garantované odměny a limity nevyzvednutých cubes.</small></a>
+<a href="./pruvodce/nightmare/"><span>NIGHTMARE / SÓLO / OBCHOD</span><strong>Postup přes sólo bossy</strong><small>Odemykání bossů, zásoba pokusů a nákupy za Phantasmal Fragments.</small></a>
 </div>
 
 ## Zdroje a komunitní wiki
@@ -62,6 +79,6 @@ hero:
 
 Wiki míří na **globální launch**. U mechanik rozlišujeme oficiální oznámení, komunitní přepis tooltipů a vlastní doporučení. Čísla, která nelze spolehlivě převést z KR/TW na Global, najdeš na stránce [Limity a sporné hodnoty](./staty/limity/).
 
-Wiki obsahuje slovník nejdůležitějších statů, GS a CP progresi a průvodce mapovými i pravidelnými aktivitami. Přesné rotace tříd a návody jednotlivých bossů budeme přidávat po ověření pro Global.
+Wiki obsahuje slovník nejdůležitějších statů, GS a CP progresi, rozvoj schopností a výbavy i průvodce mapovými a pravidelnými aktivitami. Přesné rotace tříd a návody jednotlivých bossů budeme přidávat po ověření pro Global.
 
 Našel jsi odlišný tooltip nebo lepší postup? Přilož screenshot, region a verzi hry. [Jak přispívat](./wiki/prispivani/) popisuje úpravy Markdownu i pravidla pro zdroje.
