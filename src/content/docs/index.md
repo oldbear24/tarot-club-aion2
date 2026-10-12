@@ -17,26 +17,43 @@ hero:
       variant: secondary
 ---
 
-## Vyber si svou kartu
+## Postup a každodenní hra
 
 <div class="wiki-grid">
-<a href="./staty/zakladni/"><span>01 / POSTAVA</span><strong>Základní atributy</strong><small>Might, Precision, Intelligence… Co skutečně zlepšují a jak číst čísla.</small></a>
-<a href="./staty/utok/"><span>02 / POŠKOZENÍ</span><strong>Útok bez hádání</strong><small>Attack, Damage Boost a podmíněné bonusy. Každý řádek má jiný význam.</small></a>
-<a href="./staty/procy/"><span>03 / ZÁSAHY</span><strong>Critical, Perfect, Double</strong><small>Podobně znějící efekty, odlišná funkce. Včetně Multi-hit a resistů.</small></a>
-<a href="./staty/obrana/"><span>04 / PŘEŽITÍ</span><strong>Obrana a léčení</strong><small>HP nejsou celá obrana. Poznej Block, Endurance i regeneraci.</small></a>
-<a href="./pruvodce/lepsi-damage/"><span>05 / PRAXE</span><strong>Proč nedělám damage?</strong><small>Praktický postup pro srovnání výbavy a hledání slabého místa v boji.</small></a>
-<a href="./wiki/global/"><span>06 / GLOBAL</span><strong>Správná verze hry</strong><small>Co bereme ze zdrojů pro Global a co zatím vyžaduje ověření.</small></a>
+<a href="./pruvodce/zacatek/"><span>START / GLOBAL</span><strong>Začínáme na Global</strong><small>První kroky, ovládání a co zkontrolovat, když se postup zastaví.</small></a>
+<a href="./pruvodce/gs-progrese/"><span>PROGRESE / GS</span><strong>Jak zvyšovat GS</strong><small>Cesta k dalším dungeonům. Runy, výbava, Daevanion a Arcana.</small></a>
+<a href="./pruvodce/cp-postava/"><span>POSTAVA / CP</span><strong>Jak zvyšovat CP</strong><small>Stigma, pets, Genus, tituly a Pantheon. Rozvoj celé postavy.</small></a>
+<a href="./pruvodce/otevreny-svet/"><span>PRŮZKUM / MAPA</span><strong>Otevřený svět</strong><small>K čemu jsou peříčka, Monolith, Strongholds, truhly a další mapové aktivity.</small></a>
+<a href="./pruvodce/abyss/"><span>ABYSS / ODMĚNY</span><strong>Abyss a jeho aktivity</strong><small>Abyss Points, Commands, artefakty, Corridor a plánování návštěv.</small></a>
+<a href="./pruvodce/daily-weekly/"><span>RUTINA / RESETY</span><strong>Daily a weekly</strong><small>Co dělat každý den a týden. Limity, české časy resetů a priority.</small></a>
 </div>
 
-## Další krok po levelu 45
+## Staty bez tajemství
 
-| Co právě potřebuješ | Kam pokračovat |
-| --- | --- |
-| Dosáhnout dalšího vstupního požadavku | [Jak efektivně zvyšovat GS](./pruvodce/gs-progrese/) |
-| Posílit celou postavu | [Jak efektivně zvyšovat CP](./pruvodce/cp-postava/) |
-| Pochopit peříčka, truhly a mapové aktivity | [K čemu slouží otevřený svět](./pruvodce/otevreny-svet/) |
-| Využít Abyss Points a týdenní čas | [Abyss — co dělat a proč](./pruvodce/abyss/) |
-| Sestavit rozumnou denní rutinu | [Daily a weekly](./pruvodce/daily-weekly/) |
+<div class="wiki-grid">
+<a href="./staty/zakladni/"><span>ATRIBUTY / ZÁKLAD</span><strong>Základní atributy</strong><small>Might, Precision, Intelligence… Co skutečně zlepšují a jak číst čísla.</small></a>
+<a href="./staty/utok/"><span>ÚTOK / POŠKOZENÍ</span><strong>Útok bez hádání</strong><small>Attack, Damage Boost a podmíněné bonusy. Každý řádek má jiný význam.</small></a>
+<a href="./staty/procy/"><span>ZÁSAHY / PROC EFEKTY</span><strong>Critical, Perfect, Double</strong><small>Odlišné zásahové efekty, Multi-hit a odpory protivníka.</small></a>
+<a href="./staty/obrana/"><span>OBRANA / PŘEŽITÍ</span><strong>Obrana a léčení</strong><small>HP nejsou celá obrana. Poznej Block, Endurance i regeneraci.</small></a>
+<a href="./staty/pantheon/"><span>PANTHEON / BOŽSKÉ STATY</span><strong>Pantheon a božské staty</strong><small>Justice, Wisdom, Time a další atributy. Přehled jejich efektů.</small></a>
+<a href="./staty/limity/"><span>LIMITY / OVĚŘOVÁNÍ</span><strong>Limity a sporné hodnoty</strong><small>Co říkají tooltipy Global a které capy nebo vzorce ještě vyžadují ověření.</small></a>
+</div>
+
+## Výbava a výkon v boji
+
+<div class="wiki-grid">
+<a href="./pruvodce/vybava/"><span>VÝBAVA / INVESTICE</span><strong>Výbava a rozumné upgrady</strong><small>Porovnávej celé předměty a plánuj, kam se vyplatí investovat materiály.</small></a>
+<a href="./pruvodce/lepsi-damage/"><span>VÝKON / DAMAGE</span><strong>Proč nedělám damage?</strong><small>Jak hledat slabé místo v boji a porovnat výkon po změně výbavy.</small></a>
+</div>
+
+## Zdroje a komunitní wiki
+
+<div class="wiki-grid">
+<a href="./wiki/global/"><span>VERZE / GLOBAL</span><strong>Global a ověřování</strong><small>Jak rozlišujeme Global, KR/TW, tooltipy, měření a vlastní doporučení.</small></a>
+<a href="./wiki/zdroje/"><span>ZDROJE / DALŠÍ ČTENÍ</span><strong>Zdroje a užitečné odkazy</strong><small>Oficiální informace, databáze a komunitní výzkum na jednom místě.</small></a>
+<a href="./wiki/prispivani/"><span>KOMUNITA / PŘISPÍVÁNÍ</span><strong>Pomoz rozšířit wiki</strong><small>Jak upravit článek, přidat nové téma nebo doložit opravu ze hry.</small></a>
+<a href="./wiki/technologie/"><span>WEB / TECHNOLOGIE</span><strong>Jak wiki funguje</strong><small>Markdown, Astro a GitHub Pages. Technologie, vyhledávání a publikování.</small></a>
+</div>
 
 ## Jak tu informace číst
 
@@ -45,7 +62,5 @@ hero:
 Wiki míří na **globální launch**. U mechanik rozlišujeme oficiální oznámení, komunitní přepis tooltipů a vlastní doporučení. Čísla, která nelze spolehlivě převést z KR/TW na Global, najdeš na stránce [Limity a sporné hodnoty](./staty/limity/).
 
 Wiki obsahuje slovník nejdůležitějších statů, GS a CP progresi a průvodce mapovými i pravidelnými aktivitami. Přesné rotace tříd a návody jednotlivých bossů budeme přidávat po ověření pro Global.
-
-## Pomoz rozdat další karty
 
 Našel jsi odlišný tooltip nebo lepší postup? Přilož screenshot, region a verzi hry. [Jak přispívat](./wiki/prispivani/) popisuje úpravy Markdownu i pravidla pro zdroje.
