@@ -42,7 +42,7 @@ Azphel používá vlastní krystaly z Abyss rozvoje. Nepoužívej plán na budou
 | Modrý | +1 aktivní schopnosti. | 3 |
 | Oranžový / core | Výrazný specializovaný bonus. | 4 |
 
-Náklad cesty zahrnuje i spojovací uzly. Čtyři modré uzly stejné schopnosti na čtyřech deskách znamenají +4 její úrovně; pomáhají dosáhnout [Specialty milníků](../schopnosti-stigma/).
+<mark class="focus">Náklad cesty zahrnuje i spojovací uzly.</mark> Čtyři modré uzly stejné schopnosti na čtyřech deskách znamenají +4 její úrovně; pomáhají dosáhnout [Specialty milníků](../schopnosti-stigma/).
 
 ## Jak volit cestu
 
@@ -59,4 +59,7 @@ Není nutné okamžitě vyplnit jednu desku celou. Podklady uvádějí vracení 
 
 Zdroji jsou levelování, regionální úkoly a **Sealed Dungeons ve vlastní oblasti**, následně vybrané nákupy v Nightmare a Festival Shopu. Nepřátelský region nepovažuj za druhou identickou zásobu stejných krystalů. [Otevřený svět](../otevreny-svet/) vysvětluje rozdíl odměn.
 
+:::tip[Tip: krystaly proměň ve skutečný postup]
 **Kontrola Tarot Clubu:** vyzvednutá odměna → použitý krystal → nakoupená cesta → ověřená změna statů a skillu. Tak odhalíš krok, který mezi farmou a výkonem ještě chybí.
+
+:::

@@ -32,7 +32,9 @@ Podklady Global uvádějí **level 45 a 1 000 GS**. Launch otevírá **Chaotic L
 
 Portál hledej u **Garden of the Illusion God ve Verteronu** nebo **Black Claw Village v Altgardu**. První návštěvu spoj s dokončením příběhového úkolu u **Koro** ve frakční základně; jde také o postup k příběhovému Spiritforged Guard.
 
+:::caution[Pozor: týdenní čas se nehromadí]
 **Čas není neomezený:** základní příděl je **7 hodin týdně**. Středeční reset obnovuje základní zásobu na sedm hodin, nikoli „přičte dalších sedm“. Před návštěvou sleduj skutečné počítadlo v klientu.
+:::
 
 ## K čemu slouží jednotlivé věci
 
@@ -60,7 +62,9 @@ U artefaktů jde o boj o cíle eventu, včetně Dimensional Core; ne o běžný 
 
 Obchod používá limity a u některých nákupů rostoucí cenové stupně. Stigma Shards jsou ve zdroji uvedeny v postupných cenách **10 000 / 15 000 / 20 000 / 25 000 AP** za kus. To neznamená, že každý další shard bude navždy stát nejnižší cenu.
 
+:::tip[Priorita: AP pro používaný build]
 **Priorita Tarot Clubu pro PvE:** doplnit a rozvíjet používaná Stigmata, potom porovnat zbylé nákupy s konkrétní potřebou postavy. Azphel body nejsou automaticky nejlepší způsob, jak zvýšit PvE damage.
+:::
 
 ## Monolith a peříčka v Abyssu
 

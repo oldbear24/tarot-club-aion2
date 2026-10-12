@@ -28,7 +28,9 @@ sources:
 
 **Zbraň:** Orb. **Role:** Ranged damage přes spirits a elementální návaznost.
 
+:::note[Základ buildu: elementy a Fusion okna]
 Spirit schopnosti vytvářejí elementy; Four Elements otevírá Elemental Fusion. Ancient Spirit přidává další elementální okna. Jeden běžný elementální spirit zůstává aktivní podle posledního summonu; vlastní spirit buff není automaticky party buff.
+:::
 
 ## Důležité schopnosti
 

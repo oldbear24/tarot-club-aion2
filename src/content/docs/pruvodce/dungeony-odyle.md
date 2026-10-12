@@ -51,7 +51,9 @@ Reward cube zahrnuje podíl zabitých bossů. Přeskočený mid-boss může znam
 
 ### Nevyzvednutá cube může zablokovat další vstup
 
+:::caution[Pozor: nevyzvednuté odměny mohou blokovat vstup]
 Globální data uvádějí **10 nevyzvednutých cubes týdně**, sdílených postavami na serveru. Odejít bez claimu není neomezený bezplatný farm. Také hotová nevyzvednutá **Guaranteed Reward** může blokovat další start/join příslušného dungeonu.
+:::
 
 Při zablokování zkontroluj tyto položky vedle GS a Odyle. Po odpojení nejdřív ověř návrat do instance; přesnou reconnect lhůtu pro Global zde neslibujeme, protože zdroj ji dokládá asijskou verzí.
 

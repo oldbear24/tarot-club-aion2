@@ -12,7 +12,9 @@ evidence: editorial
 
 Toto jsou doporučení Tarot Clubu. Nejde o ověřenou rotaci konkrétní třídy ani o žebříček statů.
 
+:::note[Důležité: samotné celkové poškození nestačí]
 Celkové poškození z jednoho bosse bez délky boje a podmínek nelze rozumně porovnat. Zapiš si dobu aktivního boje, úmrtí, čas mimo dosah a fáze, ve kterých se na cíl nedá útočit.
+:::
 
 Pro běžný výpočet platí **DPS = poškození / čas v sekundách**. Ilustrační příklad: 2 400 000 poškození za 240 sekund znamená 10 000 DPS, za 120 sekund 20 000 DPS. Je to matematický příklad, nikoli cílový výkon pro AION 2.
 
@@ -28,7 +30,7 @@ Pro běžný výpočet platí **DPS = poškození / čas v sekundách**. Ilustra
 
 ## Pořadí praktických oprav
 
-1. **Přežij a zůstaň v boji.** Sleduj důvod každého přerušení vlastní aktivity.
+1. <mark class="focus">Přežij a zůstaň v boji.</mark> Sleduj důvod každého přerušení vlastní aktivity.
 2. **Používej schopnosti záměrně.** Poznej jejich návaznost a podmínky.
 3. **Domluv se na oknech poškození.** Synchronizuj důležité buffy s partou.
 4. **Ověř využití statů.** Přečti [Útok a poškození](../../staty/utok/) a [Proc efekty](../../staty/procy/).

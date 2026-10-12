@@ -27,7 +27,9 @@ Skill Points rozvíjejí aktivní i pasivní schopnosti do **levelu 10**. Wisdom
 | **16** | Pátá možnost; počet slotů zůstává dva. |
 | **20** | Třetí slot. |
 
+:::note[Důležité: možnosti perků a sloty se liší]
 **Level 16 tedy není třetí slot.** Bonusové úrovně se do těchto milníků počítají. Pasivní schopnosti nemají Specialty perky.
+:::
 
 **Doporučení Tarot Clubu:** po každém milníku otevři nastavení skillu a ověř vybrané perky. Při výměně gearu zkontroluj, zda pokles bonusových úrovní nezměnil dostupnost používané kombinace. Zisk úrovně bez vhodného nastavení nemusí vyřešit slabý výkon.
 

@@ -35,7 +35,7 @@ Podle uvedených dat Intelligence podporuje aplikaci stavových efektů. Pro kou
 
 ## Body nejsou procentní šance
 
-**Precision navyšuje hodnoty Accuracy a Critical Hit, nikoli přímo procentní šanci na kritický zásah.** Ilustrační výpočet: pokud by Accuracy byla 1 000 a jediný použitý bonus představovalo +10 % Accuracy increase, výsledkem by bylo 1 100 bodů Accuracy. To neznamená 10 procentních bodů kritické šance.
+**Precision navyšuje hodnoty Accuracy a Critical Hit, <mark class="focus">nikoli přímo procentní šanci na kritický zásah</mark>.** Ilustrační výpočet: pokud by Accuracy byla 1 000 a jediný použitý bonus představovalo +10 % Accuracy increase, výsledkem by bylo 1 100 bodů Accuracy. To neznamená 10 procentních bodů kritické šance.
 
 Ve skutečné postavě vstupují do výsledku další zdroje a zaokrouhlení. Sleduj proto také panel odvozených statů, ne pouze atributové kolečko.
 

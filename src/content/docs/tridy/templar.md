@@ -27,7 +27,9 @@ sources:
 
 **Zbraň:** Longsword / guard. **Role:** Tank s Taunt a party utility.
 
+:::note[Základ buildu: návaznost útoků, aggro a podpora]
 Judgment otevírají Shield Smite, Warding Strike, Shield Rush nebo Doom Shield. Vicious Strike vrací MP. Fury podporuje skupinu při blocku; Taunt a Shrink pomáhají držet a oslabovat cíl.
+:::
 
 ## Důležité schopnosti
 

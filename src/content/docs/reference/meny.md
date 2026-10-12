@@ -65,7 +65,9 @@ lookupAliases:
 
 ## Sezóna a hranice dostupnosti
 
+:::caution[Pozor: sezónní měny nejsou trvalá rezerva]
 Podklady Season 1 uvádějí konec **16. prosince 2026**, ale přesný countdown zkontroluj v Season panelu. Oath Coin a Pass Shop Coin neplánuj jako trvalou rezervu. AP, Centuryroot Tokens a Phantasmal Fragments mají jiný životní cyklus.
+:::
 
 Položka **Oath Coin: Season 2** v databázi není důkaz otevřené Season 2. Název, season ID a aktuální prodejní období musí odpovídat klientu Global.
 

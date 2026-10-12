@@ -45,7 +45,9 @@ Global podklady popisují Pantheon s **jedním Colossus slotem, čtyřmi Statues
 
 Božské staty získáváš také z [Arcana](../../pruvodce/arcana/). Nezaměňuj tedy menu Pantheon s jediným zdrojem těchto atributů. Podobně pojmenované [Daevanion desky](../../pruvodce/daevanion/) jsou další samostatný systém.
 
+:::tip[Priorita: obsazené sloty před dalšími nákupy]
 **Doporučení Tarot Clubu:** nejdřív zkontroluj obsazení odemčených slotů a již získané příběhové kusy. Potom porovnávej celou dvojici statů náhrady. Cena další sochy má smysl až ve vztahu k tomu, co nahradí.
+:::
 
 ### Jak dvojici vyhodnotit
 

@@ -47,7 +47,9 @@ Mechanické podklady kombinují starší asijské návody s porovnáním Global 
 
 ## Příčiny neúspěchu
 
+:::caution[Pozor: časté příčiny wipe]
 Melee zůstane v překryvu linií, hráči přebíhají přes wall blok a osobní plochy zakryjí cestu.
+:::
 
 ## Příprava Tarot Clubu
 

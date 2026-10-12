@@ -41,7 +41,9 @@ Přesnou serverovou damage formuli Global zde zatím neuvádíme. Význam řádk
 | **Front / Back Attack** | Dodatečné poškození podle směru zásahu. |
 | **Power Shard Damage Bonus** | Bonus při používání Power Shard. |
 
+:::note[Důležité: šance na kritický zásah a jeho síla se liší]
 **Critical Hit** a **Critical Damage Boost** jsou různé věci: první pomáhá kritický zásah získat, druhý jej posiluje.
+:::
 
 ## PvE a bossové
 
@@ -54,7 +56,7 @@ Přesnou serverovou damage formuli Global zde zatím neuvádíme. Význam řádk
 | **Boss Damage Boost** | Bonus poškození proti bossovi. |
 | **PvE / Boss Damage Tolerance** | Snížení příslušného příchozího poškození. |
 
-Názvy **Attack** a **Boost** představují odlišné typy hodnot. Neporovnávej jejich čísla přímo jako stejné jednotky.
+Názvy **Attack** a **Boost** představují odlišné typy hodnot. <mark class="focus">Neporovnávej jejich čísla přímo jako stejné jednotky.</mark>
 
 ## Jak podle toho vybírat výbavu
 

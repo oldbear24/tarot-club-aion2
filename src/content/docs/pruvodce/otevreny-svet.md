@@ -50,11 +50,13 @@ Tabulka spojuje doložené funkce s **doporučeným plánováním Tarot Clubu**;
 
 Na Global je vlastní startovní oblast **Verteron pro Elyos** a **Altgard pro Asmodiany**. Zdejší regionální obsah má jiný význam než výlet do oblasti opačné frakce.
 
-Podklady Global uvádějí pro vlastní region **61 Sealed Dungeons**, s odměnou **2 Daevanion Crystals a 2 Wisdom Stones** za každý, a **15 Strongholds**, dohromady **30 scrollů pro pás**. Jde o jednorázové odměny. Příběh také postupně odemyká další regionální úkoly.
+Podklady Global uvádějí pro vlastní region **61 Sealed Dungeons**, s odměnou **2 Daevanion Crystals a 2 Wisdom Stones** za každý, a **15 Strongholds**, dohromady **30 scrollů pro pás**. <mark class="focus">Jde o jednorázové odměny.</mark> Příběh také postupně odemyká další regionální úkoly.
 
 Získané krystaly a Wisdom Stones použij a rozvoj nakup v příslušném menu. Hromada odměn v inventáři ještě nezlepší aktivní postavu.
 
+:::caution[Pozor: nepřátelský region má jiné odměny]
 **Proč nepospíchat do nepřátelského regionu kvůli stejným odměnám:** tamní Sealed Dungeons a Strongholds podle Global podkladů platí Kina, Abyss Points a Enhance Stones, nikoli vlastní regionální Daevanion/Wisdom odměny ani belt scrolly.
+:::
 
 ## Peříčka a Monolith
 

@@ -13,6 +13,10 @@
   --sl-font: 'Segoe UI', ui-sans-serif, system-ui, sans-serif;
   --sl-content-width: 52rem;
   --club-gold: #d8ba80;
+  --wiki-note: #9bc4f5;
+  --wiki-tip: #88d6bd;
+  --wiki-caution: #ebc186;
+  --wiki-danger: #f5aaaf;
 }
 :root[data-theme='light'] {
   --sl-color-accent-low: #dbf5ed;
@@ -27,6 +31,10 @@
   --sl-color-gray-6: #edf2f6;
   --sl-color-black: #f8fafb;
   --club-gold: #866320;
+  --wiki-note: #245b91;
+  --wiki-tip: #16694f;
+  --wiki-caution: #86500c;
+  --wiki-danger: #a3293b;
 }
 html { scroll-behavior: smooth; }
 body { background-image: radial-gradient(ellipse at 85% 8%, color-mix(in srgb, var(--sl-color-accent) 6%, transparent), transparent 48%); }
@@ -36,6 +44,42 @@ header.header { backdrop-filter: blur(16px); background: color-mix(in srgb, var(
 .sidebar-content a[aria-current='page'] { border-radius: .35rem; }
 .content-panel h1 { letter-spacing: -.04em; }
 .sl-markdown-content h2 { letter-spacing: -.025em; }
+/* Reserve colour for authored takeaways, not every bold term or heading. */
+.starlight-aside--note { --wiki-aside-color: var(--wiki-note); }
+.starlight-aside--tip { --wiki-aside-color: var(--wiki-tip); }
+.starlight-aside--caution { --wiki-aside-color: var(--wiki-caution); }
+.starlight-aside--danger { --wiki-aside-color: var(--wiki-danger); }
+.sl-markdown-content .starlight-aside {
+  --sl-color-asides-text-accent: var(--wiki-aside-color);
+  --sl-color-asides-border: color-mix(in srgb, var(--wiki-aside-color) 65%, var(--sl-color-gray-5));
+  background: color-mix(in srgb, var(--wiki-aside-color) 6%, var(--sl-color-black));
+  border: 1px solid color-mix(in srgb, var(--wiki-aside-color) 20%, var(--sl-color-gray-5));
+  border-inline-start: .2rem solid var(--sl-color-asides-border);
+  border-radius: .4rem;
+  padding: 1rem 1.2rem;
+  overflow-wrap: anywhere;
+}
+.sl-markdown-content .starlight-aside__title { font-size: .95rem; }
+.sl-markdown-content mark.focus {
+  color: var(--sl-color-white);
+  background: color-mix(in srgb, var(--club-gold) 16%, var(--sl-color-black));
+  border-bottom: 1px solid color-mix(in srgb, var(--club-gold) 55%, transparent);
+  border-radius: .15em;
+  padding: .08em .18em;
+  font-weight: 600;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.reading-key { display: flex; flex-wrap: wrap; gap: .4rem 1rem; font-size: .8rem; }
+.reading-key span { border-inline-start: .2rem solid currentColor; padding-inline-start: .5rem; }
+.reading-key__tip { color: var(--wiki-tip); }
+.reading-key__note { color: var(--wiki-note); }
+.reading-key__caution { color: var(--wiki-caution); }
+.reading-key__danger { color: var(--wiki-danger); }
+@media (forced-colors: active) {
+  .sl-markdown-content .starlight-aside { border-color: CanvasText; }
+  .sl-markdown-content mark.focus { border-bottom-color: CanvasText; }
+}
 .sl-markdown-content table { width: 100%; font-size: .93rem; border: 1px solid var(--sl-color-gray-5); }
 .sl-markdown-content th { background: var(--sl-color-gray-6); white-space: normal; }
 .sl-markdown-content tr:nth-child(even) { background: color-mix(in srgb, var(--sl-color-gray-6) 45%, transparent); }

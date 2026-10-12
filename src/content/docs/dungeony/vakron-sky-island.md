@@ -47,7 +47,9 @@ Mechanické podklady kombinují starší asijské návody s porovnáním Global 
 
 ## Příčiny neúspěchu
 
+:::caution[Pozor: časté příčiny wipe]
 Hráči zkoušejí všechny kameny, označený uvězní i spoluhráče a finální blast trefí postavu na zemi.
+:::
 
 ## Příprava Tarot Clubu
 

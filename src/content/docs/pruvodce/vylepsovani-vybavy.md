@@ -61,7 +61,7 @@ Cena závisí na Item Level předmětu a cílovém stupni. **Celkové GS postavy
 | **Reset** | Nové rozložení všech řádků pomocí Soul Codex: Reset. |
 | **Soul Fuse** | Dodatečný řádek po dosažení 100% Soul Binding Rate u způsobilého Unique kusu. |
 
-Soul Fuse řádek se **nepřenáší**. Při nahrazování předmětu tedy neposuzuj jen počet barevných řádků; poznamenej, která vlastnost je právě na tomto dodatečném řádku.
+Soul Fuse řádek se <mark class="focus">nepřenáší</mark>. Při nahrazování předmětu tedy neposuzuj jen počet barevných řádků; poznamenej, která vlastnost je právě na tomto dodatečném řádku.
 
 ## Co se přenese na nový kus
 
@@ -76,6 +76,8 @@ Podklady Global popisují Transfer mezi způsobilými **Unique** předměty. Nes
 
 Operace používá **Transfer Stone (Unique)**; zdroj uvádí 1 nebo 2 kameny podle cílového tieru. Nepotřebný dungeonový Unique drop může přes **Substance Morph** sloužit jako zdroj transfer/sync materiálů. Před extrakcí jej proto zkontroluj.
 
+:::caution[Pozor: před Transferem zkontroluj ztracené bonusy]
 **Kontrola Tarot Clubu před potvrzením:** screenshot obou kusů → náhled přenosu → ztracené bonusy → materiály na jejich obnovu → teprve potvrdit. Obecné „všechno se přenese“ je špatný plán investic.
+:::
 
 Navazuje [Výběr výbavy](../vybava/) a [GS progrese](../gs-progrese/).

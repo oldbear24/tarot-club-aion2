@@ -66,6 +66,8 @@ sources:
 
 ## Per Character, Per Server, Weekly
 
+:::note[Důležité: limit postavy a serveru se liší]
 **Per Character** patří jedné postavě, **Per Server** se může dělit s altem. Týdenní nebo měsíční údaj je další nezávislá podmínka. Konečná nabídka může vyžadovat dokončení předchozí cenové skupiny.
+:::
 
 **Doporučení Tarot Clubu:** před drahým nákupem porovnej zbývající zásobu, aktivní build a příští reset. Eventové NPC z klientských tabulek sem nepřebíráme jako potvrzení otevřeného eventu. [Měny](../meny/) a [materiály](../materialy/) vysvětlují účel položek.

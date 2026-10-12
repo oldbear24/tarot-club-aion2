@@ -24,7 +24,9 @@ sources:
 
 ## Dostupnost k 12. říjnu 2026
 
+:::caution[Pozor: historický návod nepotvrzuje dostupnost]
 Komunitní Global přehled uvádí, že **Ludra je od launch 5. října dočasně stažená** a návrat má přinést upravené mechaniky. Před plánováním raidu ověř oficiální oznámení a dostupnost v klientu. Historický GS 2 800 není potvrzení otevřeného vstupu.
+:::
 
 ## Historická orientace
 

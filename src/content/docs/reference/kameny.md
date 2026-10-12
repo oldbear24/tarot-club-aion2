@@ -47,7 +47,9 @@ Barva řádku ovlivňuje GS: **šedá +1, zelená +2, modrá +3, žlutá +4** po
 
 ## Přenos a riziko spotřeby
 
+:::caution[Pozor: při Transferu se kameny nezachovají]
 Manastones, Soulstones a Theostone se podle Global podkladů **nezachovávají při Transferu**. Před úpravou si prohlédni náhled, zda mění jeden řádek nebo celou sadu; pojem reroll sám nepopisuje všechny operace.
+:::
 
 Theostone může změnit glow zbraně. Barva záře sama o sobě není spolehlivé měření Enhancementu nebo výkonu. Zdroje uvádějí také kombinování nižších Theostones s šancí na vyšší grade; potvrzuj přesný recept.
 

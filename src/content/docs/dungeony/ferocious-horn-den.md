@@ -47,7 +47,9 @@ Mechanické podklady kombinují starší asijské návody s porovnáním Global 
 
 ## Příčiny neúspěchu
 
+:::caution[Pozor: časté příčiny wipe]
 Stejný hráč blokuje opakovaně, skupina zamění typ kruhu a označený nezarovná vrh do orbu.
+:::
 
 ## Příprava Tarot Clubu
 

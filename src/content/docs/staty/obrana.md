@@ -34,7 +34,9 @@ Endurance a Regeneration jsou aktivované efekty, nikoli jistota u každého zá
 
 ## Léčení
 
+:::note[Důležité: poskytované a přijaté léčení se liší]
 **Heal Boost** posiluje poskytované léčení, **Incoming Heal** léčení přijaté. Nelze je zaměnit za stejný bonus. Konkrétní přínos pro schopnost ověřuj s jejím tooltipem a aktuální výbavou.
+:::
 
 ## Obnova a pohyb
 

@@ -50,7 +50,9 @@ To je další možnost, když ti po questech runa chybí. Doporučení Tarot Clu
 
 ## Kdy přestat vylepšovat
 
+:::danger[Riziko: průvodci varují před zničením runy od +2]
 Global Database uvádí **+1 jako zaručený pokus**, ale následek dalších neúspěchů označuje za **neověřený**. Global průvodci Raid Relay a Aion 2 Maps varují před **zničením od +2**; podrobná tabulka zničení v research knihovně Maps je označená KR. Pro Global tedy riziko nepodceňuj, ale nepovažuj jej zde za námi změřené chování serveru. Před potvrzením čti varování v klientu.
+:::
 
 **Doporučení Tarot Clubu:** během první progrese ponech nasazené runy na +1. Vyšší pokusy plánuj až s náhradním kusem a rozpočtem, který neblokuje další postup. Přesné šance z KR tabulek zde nevydáváme za vlastní měření Global.
 

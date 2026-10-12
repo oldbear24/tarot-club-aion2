@@ -6,6 +6,7 @@
 
 - 62 českých obsahových stránek: úvod, šest průvodců staty, patnáct praktických průvodců, osmnáct referenčních stránek, devět stránek tříd, devět dungeonových stránek a čtyři stránky o wiki.
 - Vlastní tarotový motiv, české UI, mobilní navigace, světlý/tmavý režim.
+- Jemné barevné boxy pro tipy, vysvětlení, upozornění a rizika; vybrané krátké fráze zvýrazněné v textu.
 - Fulltextové vyhledávání Pagefind bez backendu.
 - Každý článek má cílovou edici, datum rešerše, typ podkladů a zdroje.
 - GS a CP progrese, otevřený svět, Abyss, daily/weekly s prioritami, limity a odlišením Global od neotevřeného obsahu.

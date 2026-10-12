@@ -51,7 +51,9 @@ Přesnou hodnotu čti v tooltipu aktuálního skillu a Specialty. Charge, vybran
 
 ## Co domluvit před pullem
 
+:::tip[Priorita: domluv stagger ještě před pullem]
 **Doporučení Tarot Clubu:** kdo sleduje otevření gauge, které schopnosti se rezervují a kdo nahradí člena v nedostupné pozici. Po úspěšném breaku využij okno poškození; před ním nespal všechny reakční Stigmata bez cíle.
+:::
 
 ## Buffy a aggro
 

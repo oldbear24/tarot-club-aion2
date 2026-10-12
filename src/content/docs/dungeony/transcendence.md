@@ -52,6 +52,8 @@ Komunitní data uvádějí **Chalice v obou dungeonech**, **Bell/Compass v Deus*
 
 ## Doporučení Tarot Clubu
 
+:::tip[Priorita: domluv reakce na chain a barvy]
 Před Atielem domluv reakci dvojice a místo soaku. Před Talisrou domluv barvy a způsob hlášení záblesku. Nepřekládej mechaniku „stack“ univerzálně na každé barevné místo: konkrétní shield musí zůstat oddělený podle fáze.
+:::
 
 Při wipe se vrať k jediné podmínce: přetržený chain, bezpečný okraj, správná barva nebo zasažené kopí. DPS ladění řeš až při opakovaně zvládnuté reakci. [Arcana](../../pruvodce/arcana/) vysvětluje použití odměn.

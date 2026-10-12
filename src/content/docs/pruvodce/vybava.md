@@ -10,7 +10,9 @@ evidence: editorial
 
 ## Porovnávej celé předměty
 
+:::tip[Tip: před výměnou porovnej i ztracené bonusy]
 Doporučení Tarot Clubu: před výměnou si ulož panel statů a tooltip obou předmětů. Posuzuj nejen největší číslo, ale také to, co výměnou ztratíš.
+:::
 
 | Otázka | Proč ji položit |
 | --- | --- |

@@ -39,7 +39,9 @@ Stejný název mechaniky ještě nezaručuje stejnou hodnotu.
 | **Doporučení Tarot Clubu** | Praktický postup či redakční rada; nejde o deklaraci herního vzorce. |
 | **Oficiální i komunitní podklady** | Článek kombinuje oba typy a v textu rozlišuje jejich tvrzení. |
 
+:::note[Důležité: rešerše není vlastní měření]
 **Datum rešerše potvrzuje kontrolu zdrojů, nikoli vlastní hraní nebo test v klientu.** Také označení zdroje „Global“ znamená zaměření zdroje, nikoli automatické potvrzení každého tvrzení.
+:::
 
 ## První verze a její omezení
 

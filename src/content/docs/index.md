@@ -131,6 +131,10 @@ hero:
 
 ## Jak tu informace číst
 
+<p class="reading-key"><span class="reading-key__tip">Tip / priorita</span><span class="reading-key__note">Vysvětlení</span><span class="reading-key__caution">Upozornění</span><span class="reading-key__danger">Riziko ztráty</span></p>
+
+Barevné boxy vybírají podstatné kroky a časté chyby. Jemné podbarvení přímo ve větě označuje krátké sdělení, na které se zaměřit.
+
 **Český výklad, anglické názvy ze hry.** Stat najdeš podle názvu na svém předmětu i přes vyhledávání. Překlad vysvětluje význam, nemění herní terminologii.
 
 Wiki míří na **globální launch**. U mechanik rozlišujeme oficiální oznámení, komunitní přepis tooltipů a vlastní doporučení. Čísla, která nelze spolehlivě převést z KR/TW na Global, najdeš na stránce [Limity a sporné hodnoty](./staty/limity/).

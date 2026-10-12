@@ -27,7 +27,9 @@ sources:
 
 **Zbraň:** Spellbook. **Role:** Ranged caster s charge burstem.
 
+:::note[Základ buildu: Hellfire, Firestorm a obnova MP]
 Hellfire je hlavní charge útok. Firestorm s příslušným level-12 perkem zkracuje jeho cooldown. Flame Arrow obnovuje MP. Element Enhancement a Delayed Explosion připravují vlastní burst; Fire Wall/Cold Storm vyžadují využití zóny.
+:::
 
 ## Důležité schopnosti
 

@@ -27,7 +27,9 @@ sources:
 
 **Zbraň:** Greatsword. **Role:** Melee damage a tankování podle sestavy.
 
+:::note[Základ buildu: aktivační okna a obnova MP]
 Overhead Slam má podmíněné okno aktivace; Rage Burst jej otevírá. Keen Strike pomáhá obnovovat MP. Focused Block a Experienced Counterstrike poskytují party utility podle Global podkladů.
+:::
 
 ## Důležité schopnosti
 

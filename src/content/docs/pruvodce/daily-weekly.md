@@ -24,13 +24,15 @@ sources:
     scope: global
 ---
 
-**Každý den nemusíš vyčerpat úplně vše.** Priorita je neztrácet nebankované denní odměny, nenechat zastavit obnovu na plné zásobě a včas spotřebovat týdenní vstupy.
+<mark class="focus">Každý den nemusíš vyčerpat úplně vše.</mark> Priorita je neztrácet nebankované denní odměny, nenechat zastavit obnovu na plné zásobě a včas spotřebovat týdenní vstupy.
 
 Limity jsou výklad podkladů Global k 12. říjnu 2026, ne seznam všeho, co existuje v klientských tabulkách. Neotevřené vrstvy Abyssu nebo další Sanctuary raidy nejsou součást této launch rutiny.
 
 ## Reset v českém čase
 
+:::note[Důležité: český čas resetu se během roku mění]
 Uváděný společný reset Global je **07:00 UTC denně**, týdenní ve **středu 07:00 UTC**. V Česku jde o **09:00 při letním čase** a **08:00 při zimním čase**. Není správné celý rok držet „v devět“.
+:::
 
 Tohle jsou **resety počítadel**. Hodiny Shugo eventu, riftu nebo siege jsou jiné časovače. Před resetem můžeš použít countdown v Journalu; eventy kontroluj v regionálním kalendáři.
 
@@ -56,7 +58,9 @@ Základní banka vstupů není totéž co dodatečná zásoba z ticketů. U konk
 
 U **Conquest / Transcendence** je důležitý obsah reward cube: výbava, materiály a u Transcendence zejména **Arcana**. Běžný Conquest claim stojí 40 Odyle. Tvoje síla, dostupný tier a odměny konkrétního dungeonu rozhodují, kam energii utratit.
 
+:::caution[Pozor: clear a vyzvednutí odměny nejsou totéž]
 **Odchod bez claimu má vlastní omezení:** podklady Global uvádějí 10 nevyzvednutých cubes týdně, společných pro postavy na serveru. Není to počet běžných odměněných vstupů. Při zablokování dungeonu zkontroluj i hotovou Guaranteed Reward — [detail pravidel Odyle a cubes](../dungeony-odyle/).
+:::
 
 U Nightmare se podle podkladů pokus spotřebuje při úspěšném dokončení; vstup přesto vyžaduje dostupný pokus. Ticket pro okamžité dokončení také čerpá tuto zásobu. [Nightmare průvodce](../nightmare/) rozlišuje first clear a opakované odměny.
 

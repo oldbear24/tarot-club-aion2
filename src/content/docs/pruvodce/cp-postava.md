@@ -24,7 +24,9 @@ sources:
     scope: global
 ---
 
-**Po otevření dalšího GS tieru zkontroluj systémy, které zlepšují postavu bez nového dropu.** CP, tedy Combat Power, je souhrnný ukazatel statů. Pomáhá hledat zanedbaný rozvoj, ale není měřič DPS ani záruka zvládnuté mechaniky.
+:::tip[Priorita: rozvíjej celou postavu]
+**Po otevření dalšího GS tieru zkontroluj systémy, které zlepšují postavu bez nového dropu.** CP, tedy Combat Power, je souhrnný ukazatel statů. Pomáhá hledat zanedbaný rozvoj, ale <mark class="focus">není měřič DPS</mark> ani záruka zvládnuté mechaniky.
+:::
 
 Podobné GS může skrývat velmi odlišně rozvinuté postavy. Nepřeváděj GS na CP jedním povinným poměrem; požadavky skupin jsou hráčské požadavky, ne automatická vstupní pravidla hry.
 

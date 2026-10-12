@@ -47,7 +47,9 @@ Mechanické podklady kombinují starší asijské návody s porovnáním Global 
 
 ## Příčiny neúspěchu
 
+:::caution[Pozor: časté příčiny wipe]
 Pozdní ochrana za kamenem, utracené stagger Stigma a kite přes healera.
+:::
 
 ## Příprava Tarot Clubu
 

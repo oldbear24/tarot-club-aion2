@@ -63,6 +63,8 @@ U server transferu zkontroluj aktuální pravidla: Server Storage, Market listin
 
 ## Doporučení Tarot Clubu
 
+:::caution[Pozor: důležité kusy chraň před spotřebováním]
 Před extrakcí nebo prodejem zamkni důležité gear kusy a karty. Používej náhled zpracování, nevysypávej automaticky všechny Unique dropy. Obnova přes Recover Item může mít podmínky a časový limit; není garantované vrácení libovolné crafting chyby.
+:::
 
 Navazuje [Market](../market/) a [Legions](../legie/).

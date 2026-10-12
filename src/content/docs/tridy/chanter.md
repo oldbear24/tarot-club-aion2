@@ -27,7 +27,9 @@ sources:
 
 **Zbraň:** Staff. **Role:** Melee support, mantry, doplňkové léčení a damage.
 
+:::note[Základ buildu: návaznost útoků a podpora party]
 Dark Crush otevírají Spinning Strike, Impactful Crush a Marchutan's Wrath. Onslaught chain s perkem podporuje Spinning Strike cooldown. Mantry a Power of the Storm buffují okolní party; Recuperation léčí a odstraňuje způsobilý debuff.
+:::
 
 ## Důležité schopnosti
 

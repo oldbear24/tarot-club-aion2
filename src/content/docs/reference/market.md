@@ -42,7 +42,9 @@ sources:
 
 ## Kolik zbude z prodeje
 
+:::caution[Pozor: do ceny započítej poplatky]
 Komunitní Global podklady uvádějí **2% listing fee** a **10% sale tax**, tedy při úspěšném prodeji za stejnou cenu přibližně 12 % nákladů. Listing poplatek se podle zdroje nevrací při zrušení a nové vystavení jej účtuje znovu. Přesný dialog klientu má přednost.
+:::
 
 **Ilustrační výpočet:** prodejní cena 1 000 000 Kina → 20 000 listing + 100 000 tax → čistý rozdíl 880 000 před dalšími náklady. Jde o matematický příklad s uvedenými sazbami, nikoli příslib výnosu.
 

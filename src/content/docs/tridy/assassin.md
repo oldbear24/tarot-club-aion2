@@ -27,7 +27,9 @@ sources:
 
 **Zbraň:** Dagger. **Role:** Melee damage s důrazem na zadní pozici.
 
+:::note[Základ buildu: pozice a návaznost na Insignia]
 Heart Gore navazuje na Critical Hit. Insignia Explosion využívá Insignia na cíli; Savage Roar a další zdroje je připravují. Shadowstrike zajišťuje přesun za cíl. Illusive Clone podporuje burst okno.
+:::
 
 ## Důležité schopnosti
 

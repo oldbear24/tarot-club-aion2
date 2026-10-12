@@ -47,7 +47,9 @@ Mechanické podklady kombinují starší asijské návody s porovnáním Global 
 
 ## Příčiny neúspěchu
 
+:::caution[Pozor: časté příčiny wipe]
 Skupina dorazí ke stagger oknu pozdě, ranged zůstane mimo přístup a útoky do reflectu zabíjejí hráče.
+:::
 
 ## Příprava Tarot Clubu
 

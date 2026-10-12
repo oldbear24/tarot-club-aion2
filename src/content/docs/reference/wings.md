@@ -44,7 +44,9 @@ sources:
 
 ## Jak zpracovat sealed drop
 
+:::caution[Pozor: morph recepty mají různé výsledky]
 Global podklady uvádějí **sealed wing + 10 Radiant Odyle** přes Substance Morph. Sealed kus může být obchodovatelný, hotový wing je vázaný. Alternativní morph na Enhance Stones je jiný výsledek: před potvrzením zkontroluj přesný recept.
+:::
 
 ## Další zdroje
 

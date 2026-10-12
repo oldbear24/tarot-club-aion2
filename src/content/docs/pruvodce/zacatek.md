@@ -30,7 +30,9 @@ Následující postup je doporučení Tarot Clubu, nikoli závazný seznam hern�
 
 ## Když se postup zastaví
 
+:::tip[Priorita: pojmenuj překážku postupu]
 Nejdřív zjisti přesný požadavek z herního menu. Zapiš jeho název i hodnotu; Combat Power, úroveň postavy a požadavek výbavy nepovažuj automaticky za stejné měřítko.
+:::
 
 Potom porovnej všechny sloty a zdroje růstu, které už máš dostupné. Při hledání rady sdílej screenshot celého panelu, ne pouze jediný zvýrazněný kus výbavy.
 

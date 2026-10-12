@@ -30,6 +30,27 @@ Použij skutečné datum a konkrétní zdroj. `reviewedAt` je datum kontroly zdr
 
 Nevkládej cizí plné návody, assety bez oprávnění ani soukromé údaje hráčů. Použij vlastní výklad a krátkou citaci pouze tam, kde je potřebná.
 
+## Střídmé zvýrazňování
+
+Používej nanejvýš jeden až dva boxy na běžný článek. Vyber nejdůležitější krok nebo snadno přehlédnutelnou chybu; dlouhé tabulky a celé seznamy nech v běžném textu. Barva není hodnocení ověřenosti zdroje.
+
+| Markdown | Barva | Kdy jej použít |
+| --- | --- | --- |
+| `:::tip[Priorita: …]` | Zelená | Doporučený první krok nebo praktický tip. |
+| `:::note[Důležité: …]` | Modrá | Vysvětlení podstatného rozdílu. |
+| `:::caution[Pozor: …]` | Oranžová | Častá chyba, limit nebo zbytečná investice. |
+| `:::danger[Riziko: …]` | Červená | Možná ztráta nebo zničení předmětu. |
+
+Box uzavři samostatným `:::`:
+
+```md
+:::tip[Priorita: doplň prázdné sloty]
+Než utratíš materiály, zkontroluj dostupné odměny a neobsazené sloty.
+:::
+```
+
+Krátkou klíčovou frázi lze výjimečně označit `<mark class="focus">důležitý krok</mark>`. Použij ji nejvýše jednou či dvakrát v článku a neopakuj stejné sdělení i v boxu. Běžné `**tučné názvy**` zůstávají neutrální. Box musí mít srozumitelný český titul, aby jeho význam nezávisel jen na barvě.
+
 ## Pull request
 
 - Popiš změněné tvrzení, zdroj a cílový patch.

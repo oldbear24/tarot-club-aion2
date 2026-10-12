@@ -43,9 +43,11 @@ Tiery Transcendence začínají na **1 600 / 1 900 / 2 200 / 2 500 GS**. Vyšš�
 
 ## Level karty není level schopnosti
 
-Karty rozvíjíš spotřebováním jiných karet nebo **Training Arcana**. Podklady rozlišují strop podle grade: Common +2, Rare +3, Epic +4 a Unique +5. Při použití staré karty jako potravy popisují zachování vložených EXP; prohlédni náhled před potvrzením. Rozložení přírůstků mezi skill řádky je náhodné; detailní limity řádků zdroj částečně odvozuje z asijské verze.
+Karty rozvíjíš spotřebováním jiných karet nebo **Training Arcana**. Podklady rozlišují strop podle grade: Common +2, Rare +3, Epic +4 a Unique +5. Při použití staré karty jako potravy popisují zachování vložených EXP; prohlédni náhled před potvrzením. <mark class="focus">Rozložení přírůstků mezi skill řádky je náhodné</mark>; detailní limity řádků zdroj částečně odvozuje z asijské verze.
 
+:::caution[Pozor: použitelná karta není automaticky materiál]
 **Postup Tarot Clubu:** porovnej náhled EXP, cílovou kartu a řádky ještě před spotřebováním. Kartu se vzácnou použitelnou kombinací si označ nebo zamkni, pokud to klient umožňuje. Nevybírej automaticky všechny nenasazené karty jako materiál.
+:::
 
 **Upřesnění při rozšíření reference 12. října:** původní obecný strop +5 se vztahuje na Unique, nikoli každou kvalitu. Podkladem je Global tabulka v [Transcendence průvodci](https://aion2maps.com/guides/transcendence/).
 

@@ -27,7 +27,9 @@ sources:
     scope: global
 ---
 
+:::tip[Priorita: nejdřív dostupné GS]
 **Nejdřív zaplň prázdné sloty a dokonči levný rozvoj, potom utrácej za další dungeonovou výbavu.** GS je hráčský název pro celkový **Item Level**. Hodnota konkrétního předmětu je jen jedna část tohoto součtu; není to průměr výbavy.
+:::
 
 Průvodce vychází z podkladů Global kontrolovaných 1.–10. října 2026. Po patchi mají přednost vstupní požadavky a potvrzovací dialogy v klientu.
 
@@ -62,7 +64,7 @@ To jsou **podmínky vstupu, nikoli záruka snadného průchodu**. GS 2 800 pro L
 
 Zkontroluj oba rune sloty i šperky. Questové **Clash Runes** mají po 40 GS. Pro Asmodiany uvádí průvodce úkol **The Future Within the Past** a řetězec **Hugo Mercenaries: Past and Present → Deep Shadow → An Old Promise**; pro Elyos **Cursed Blue Mineral** a **Zumion's Call: Part Two**. Před cestou zkontroluj navazující úkoly v Journalu.
 
-Příběh poskytuje **Spiritforged** zbraň a následně guard. Oba sloty využij; na vedlejších úkolech doplň chybějící příslušenství. **Runy zatím drž na +1**: Global průvodci od +2 varují před zničením, databáze označuje failure behavior za neověřený. [Runy, pás a amulet](../runy-specialni-sloty/) rozlišují podklady a ukazují také další rune chesty z Nightmare obchodu.
+Příběh poskytuje **Spiritforged** zbraň a následně guard. Oba sloty využij; na vedlejších úkolech doplň chybějící příslušenství. <mark class="focus">Runy zatím drž na +1</mark>: Global průvodci od +2 varují před zničením, databáze označuje failure behavior za neověřený. [Runy, pás a amulet](../runy-specialni-sloty/) rozlišují podklady a ukazují také další rune chesty z Nightmare obchodu.
 
 ## 1 000–1 400: dokonči trvalé zdroje
 
@@ -89,6 +91,8 @@ U dočasných kusů preferuj levné první enhancement úrovně. Drahé další 
 
 ## Když chybí posledních pár GS
 
+:::tip[Tip: kontrola před drahým nákupem]
 **Kontrola Tarot Clubu:** prázdný slot → nenasazená odměna → neutracené Daevanion body → prázdné stone řádky → nízké úrovně levných kusů → nedokončené regionální odměny → Arcana sloty. Teprve pak kupuj drahé náhradní vybavení.
+:::
 
 Pro konkrétní postup použij [Daevanion desky](../daevanion/), [Arcana](../arcana/) a [Enhancement a Transfer](../vylepsovani-vybavy/). Pokud dungeon odmítá vstup i při splněném GS, zkontroluj také [nevyzvednuté cubes a Guaranteed Reward](../dungeony-odyle/#nevyzvednutá-cube-může-zablokovat-další-vstup).

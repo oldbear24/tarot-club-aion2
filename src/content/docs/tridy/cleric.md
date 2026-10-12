@@ -27,7 +27,9 @@ sources:
 
 **Zbraň:** Mace. **Role:** Léčení, party buffy, debuffy a damage mezi reakcemi.
 
+:::note[Základ buildu: damage okna a reakční podpora]
 Chain of Torment připravuje Condemnation. Earth Punishment a příslušný kritický/reset perk vytvářejí opakované damage okno. Light of Protection podporuje party; heal, debuff a resurrection mají vlastní úlohu.
+:::
 
 ## Důležité schopnosti
 

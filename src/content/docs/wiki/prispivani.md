@@ -49,6 +49,18 @@ Nahraď příklad konkrétní URL oznámení. Pro zdroje jsou povoleny regiony `
 - U vlastní rady řekni, že jde o doporučení.
 - Při opravě rozporu zachovej poznámku, proč byl původní údaj změněn.
 
+## Jak zvýraznit důležitý krok
+
+V běžném článku stačí jeden až dva barevné boxy: **zelený tip / priorita**, **modré vysvětlení**, **oranžové upozornění**. **Červené riziko** ponech pro možnou ztrátu nebo zničení předmětu. Barva vyjadřuje účel poznámky, nikoli ověřenost zdroje.
+
+```md
+:::tip[Priorita: doplň prázdné sloty]
+Než utratíš materiály, zkontroluj dostupné odměny a neobsazené sloty.
+:::
+```
+
+Místo `tip` můžeš použít `note`, `caution` nebo `danger`. Vždy napiš jasný český titul. Krátkou frázi výjimečně zvýrazni pomocí `<mark class="focus">důležitý krok</mark>`. Neoznačuj celé odstavce ani každý herní název; běžné tučné písmo zůstává hlavní pomůckou pro skenování textu.
+
 ## Odkazy a sestavení
 
 Mezi články používej relativní odkazy s koncovým lomítkem. Ze stránky `staty/utok/` například `../procy/` nebo `../../pruvodce/lepsi-damage/`. Zachováš tak funkčnost i v podadresáři GitHub Pages.

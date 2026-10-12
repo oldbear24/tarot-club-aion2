@@ -47,7 +47,9 @@ Mechanické podklady kombinují starší asijské návody s porovnáním Global 
 
 ## Příčiny neúspěchu
 
+:::caution[Pozor: časté příčiny wipe]
 Označený hráč uteče ze soaku, skupina zůstává v contamination a opakované chycení ztrácí DPS čas.
+:::
 
 ## Příprava Tarot Clubu
 

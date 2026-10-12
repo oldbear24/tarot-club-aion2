@@ -27,7 +27,9 @@ sources:
 
 **Zbraň:** Bow. **Role:** Ranged damage s charge hlavním útokem.
 
+:::note[Základ buildu: charge útok a zkracování cooldownu]
 Deadshot se nabíjí; Snipe chain s příslušným perkem zkracuje jeho cooldown. Marking Shot poskytuje vlastní Precision. Buffy v launch podkladech převážně podporují Rangera samotného.
+:::
 
 ## Důležité schopnosti
 

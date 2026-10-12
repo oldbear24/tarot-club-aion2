@@ -113,6 +113,8 @@ Název, grade a Bound varianta jsou součást identity položky. Tabulka je kata
 
 ## Použít, uložit nebo zpracovat?
 
+:::tip[Tip: před zpracováním porovnej jiné použití]
 **Doporučení Tarot Clubu:** před extrakcí Unique kusu prověř Transfer/Sync recept; před spotřebováním Arcana porovnej skill řádky. U klíče zkontroluj konkrétní typ truhly. U materiálu, jehož zdroj tabulka popisuje obecně, otevři Source/recept v klientu — obecný seznam není slib dropu z každého monstra.
+:::
 
 Nákupní ceny a limity udržujeme v [Obchodech](../obchody/). Postup pro kameny je v [Manastones a Theostones](../kameny/), zpracování surovin v [Craftingu](../crafting/).

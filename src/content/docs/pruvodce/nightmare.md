@@ -35,7 +35,9 @@ Na každém bossovi postupuješ stupni po jednom. První dokončení dává jin�
 
 Podklady uvádějí **+2 denně**, zásobu až **14** a spotřebu při **úspěšném dokončení**. Ke vstupu přesto potřebuješ dostupný pokus. **Instant Clear Ticket** opakuje již dokončený obsah a také spotřebovává pokus.
 
+:::tip[Tip: nenech propadnout obnovu pokusů]
 **Doporučení Tarot Clubu:** pro učení vybírej problémový stupeň cíleně. Jestli se blížíš plné bance, porovnej nový first clear se spolehlivým dokončením. Ticket používej až po kontrole vybraného bosse, stupně a počítadla.
+:::
 
 ## Co kupovat za fragmenty
 
