@@ -5,6 +5,7 @@ sidebar:
   order: 1
 edition: global-launch
 reviewedAt: '2026-10-12'
+referenceCategory: wiki
 evidence: mixed
 sources:
   - title: NC America — globální Early Access a launch
@@ -26,7 +27,7 @@ Komunitní porovnání klientů Global a KR/TW upozorňuje na rozdíly v rozvoji
 - čísla pro postup a požadavky dungeonů;
 - váhy statů založené na asijské endgame výbavě;
 - převody božských atributů;
-- nabídku obchodu, dropy, reset časy ani dostupnost raidů.
+- nabídku obchodu, dropy, časy resetů ani dostupnost raidů.
 
 Stejný název mechaniky ještě nezaručuje stejnou hodnotu.
 

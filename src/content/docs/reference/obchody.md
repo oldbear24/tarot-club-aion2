@@ -16,6 +16,12 @@ aliases:
 - Rune Chest
 - Wind Breeze
 sources:
+- title: Aion 2 Maps — Nightmare, odměny a obchod
+  url: https://aion2maps.com/guides/nightmare/
+  scope: global
+- title: Corpus — Abyss Points, Commands, obchod a artefakty
+  url: https://corpus.gg/blog/aion-2/abyss-guide
+  scope: global
 - title: Aion 2 Maps — skills-and-stigma
   url: https://aion2maps.com/guides/skills-and-stigma/
   scope: global
@@ -36,18 +42,18 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Přehled obchodů
 
 | Obchod | Měna / použití | Co si před nákupem přečíst |
 | --- | --- | --- |
-| <span id="ref-abyss-ap-trade-shop">**Abyss / AP Trade Shop**</span> | AP; Stigma, Azphel, Potential, scrolly a další růst. | Cenový stupeň, požadovaný rank, per-character/per-server limit. |
+| <span id="ref-abyss-ap-trade-shop">**Abyss / AP Trade Shop**</span> | AP; Stigma, Azphel, Potential, scrolly a další růst. | Cenový stupeň, požadovaný rank, limit na postavu nebo server. |
 | <span id="ref-nightmare-trade-shop">**Nightmare Trade Shop**</span> | Phantasmal Fragments; rozvoj, Pantheon, runy. | Podmínku dokončení bosse a dostupný nákupní limit. |
 | <span id="ref-festival-shop">**Festival Shop**</span> | Centuryroot Tokens; krystaly, shards a kolekce. | Zvyšující se cenu některých krystalů; měsíční limit každé položky. |
 | <span id="ref-season-shop">**Season Shop**</span> | Oath Coin; sezónní položky. | Season ID, konec prodeje a limit; budoucí řádek v datech není živá nabídka. |
 | <span id="ref-daeva-pass-shop">**Daeva Pass Shop**</span> | Pass Shop Coin. | Platnou sezónu a postavu, na které byla měna získána. |
-| <span id="ref-wind-breeze-merchants">**Wind Breeze Merchants**</span> | Způsobilé nákupy za Kina a membership přístup. | Aktivaci členství a sdílení zásoby konkrétního předmětu. |
+| <span id="ref-wind-breeze-merchants">**Wind Breeze Merchants**</span> | Způsobilé nákupy za Kina a přístup podmíněný členstvím. | Aktivaci členství a sdílení zásoby konkrétního předmětu. |
 | <span id="ref-black-cloud-merchants">**Black Cloud Merchants**</span> | Proměnlivá nabídka včetně pet předmětů. | Aktuální obsah nabídky; není seznam všech trvale prodávaných položek. |
 
 ## Užitečné položky a kontrolované ceny
@@ -59,10 +65,10 @@ sources:
 | <span id="ref-stigma-shard-festival">**Stigma Shard — Festival**</span> | 300 Centuryroot Tokens. | Uváděno až 35 na postavu; není stejný limit jako AP nabídka. |
 | <span id="ref-daevanion-crystal-nightmare">**Daevanion Crystal — Nightmare**</span> | 300 Phantasmal Fragments. | Uváděno až 50 na postavu. |
 | <span id="ref-daevanion-crystal-festival">**Daevanion Crystal — Festival**</span> | 50 / 100 / 200 / 400 tokenů. | Skupiny 10 / 10 / 15 / 15; celkem 10 500 tokenů za všech 50. |
-| <span id="ref-clash-rune-chest-nightmare">**Clash Rune Chest — Nightmare**</span> | 500 Phantasmal Fragments. | Databáze uvádí runu a 9 scrollů; další omezení čti v klientu. |
+| <span id="ref-clash-rune-chest-nightmare">**Clash Rune Chest — Nightmare**</span> | 500 Phantasmal Fragments. | Obsah truhly viz [Runy](../../pruvodce/runy-specialni-sloty/#náhradní-runy-z-nightmare); další omezení čti v klientu. |
 | <span id="ref-soul-crystal-festival">**Soul Crystal — Festival**</span> | 50 tokenů za 100 kusů. | Databáze: 30 nákupů měsíčně na postavu. |
 | <span id="ref-soul-crystal-special-shop">**Soul Crystal — Special shop**</span> | 500 Kina za kus. | Databáze: 1 000 týdně na server; storefront označen jako dostupný 12. října. |
-| <span id="ref-key-hidden-cube-season-shop">**Key: Hidden Cube — Season Shop**</span> | 3 000 Oath Coin. | Databáze: 10 na server; aktuální sezonní nabídku ověř. |
+| <span id="ref-key-hidden-cube-season-shop">**Key: Hidden Cube — Season Shop**</span> | 3 000 Oath Coin. | Databáze: 10 na server; aktuální sezónní nabídku ověř. |
 
 ## Per Character, Per Server, Weekly
 

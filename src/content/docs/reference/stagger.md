@@ -30,11 +30,11 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Přerušení není automaticky stagger
 
-Boss má stagger gauge pod HP. Vybrané schopnosti jej snižují; otevřený stagger check vyžaduje vyprázdnění před koncem castu. Šedý ukazatel označuje nedostupné okno. Nezaměňuj běžný stun, silence a damage za stejné množství staggeru.
+Boss má pod HP ukazatel staggeru (gauge). Vybrané schopnosti jej snižují; při otevřeném stagger checku jej musí skupina vyprázdnit před koncem sesílání. Šedý ukazatel označuje nedostupné okno. Nezaměňuj běžný stun, silence a damage za stejné množství staggeru.
 
 | Třída | Stigma pro silný stagger podle podkladů |
 | --- | --- |
@@ -52,11 +52,11 @@ Přesnou hodnotu čti v tooltipu aktuálního skillu a Specialty. Charge, vybran
 ## Co domluvit před pullem
 
 :::tip[Priorita: domluv stagger ještě před pullem]
-**Doporučení Tarot Clubu:** kdo sleduje otevření gauge, které schopnosti se rezervují a kdo nahradí člena v nedostupné pozici. Po úspěšném breaku využij okno poškození; před ním nespal všechny reakční Stigmata bez cíle.
+**Doporučení Tarot Clubu:** domluv, kdo sleduje otevření ukazatele, které schopnosti si skupina nechá připravené a kdo zastoupí hráče mimo dosah. Po úspěšném breaku využij okno poškození; před ním nevyčerpej všechna reakční Stigmata bez cíle.
 :::
 
 ## Buffy a aggro
 
-Komunitní Global class podklady uvádějí party utility zejména u Templara, Gladiatora, Clerica a Chantera. U dalších tříd může jít o vlastní buffy, poškození nebo stagger. Tabulky stackování z asijské endgame nejsou potvrzení libovolné kombinace Global.
+Komunitní Global class podklady uvádějí podporu skupiny zejména u Templara, Gladiatora, Clerica a Chantera. U dalších tříd může jít o vlastní buffy, poškození nebo stagger. Tabulky stackování z asijské endgame nejsou potvrzení libovolné kombinace Global.
 
-**Doporučení Tarot Clubu:** buffuj v dosahu správných příjemců a pojmenuj jeho trvání. Tank drží čelo a aggro tak, aby skupinu neotáčel do frontálních útoků. Konkrétní vazby najdeš v [příručkách tříd](../../tridy/prehled/).
+**Doporučení Tarot Clubu:** buffuj v dosahu správných příjemců a zohledni trvání buffu. Tank drží čelo a aggro tak, aby skupinu neotáčel do frontálních útoků. Konkrétní vazby najdeš v [příručkách tříd](../../tridy/prehled/).

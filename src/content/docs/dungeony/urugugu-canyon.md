@@ -1,6 +1,6 @@
 ---
 title: Urugugu Canyon — bossové a mechaniky
-description: 'Přístup, loot, Divine Auldor a mid-bossové: signál, reakce, chyby.'
+description: 'Přístup, odměny, Divine Auldor a vedlejší bossové: signály, reakce a časté chyby.'
 sidebar:
   order: 2
 edition: global-launch
@@ -21,15 +21,26 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Přístup a rozsah mechanik
 
-**Conquest GS:** 1 400. **Výbavový cíl:** Zbraň a příslušenství. **Final boss:** Divine Auldor.
+**Conquest GS:** 1 400. **Výbavový cíl:** Zbraň a příslušenství. **Závěrečný boss:** Divine Auldor.
 
-Mechanické podklady kombinují starší asijské návody s porovnáním Global klientu. Níže je praktický přehled, nikoli naše vlastní ověření každé serverové varianty. HP prahy a pořadí reakcí posuzuj podle živého castu; Exploration může být mírnější.
+Podklady k mechanikám kombinují starší asijské návody s porovnáním globálního klientu. Každou variantu jsme sami na serveru neověřili. HP prahy a pořadí reakcí proto porovnej s právě sesílanou schopností; Exploration může být mírnější.
 
-## Final boss — rychlé reakce
+## Tahák před prvním pokusem
+
+Výběr ze stávajících mechanik a příčin neúspěchu; platí stejné omezení podkladů jako pro detail níže.
+
+| Signál / mechanika | Co udělat | Riziko při chybě |
+| --- | --- | --- |
+| Označený hráč a kruh se šipkami | Sejdi se na označeném a sdílej zásah; obejdi tornáda. | Útěk označeného znemožní společné sdílení zásahu. |
+| Tornádo a zachycení | Uhni; při chycení použij dostupné uvolnění z CC. | Opakované chycení zkracuje čas na poškození. |
+
+<span id="final-boss--rychlé-reakce" class="legacy-anchor"></span>
+
+## Závěrečný boss — rychlé reakce
 
 | Mechanika | Signál | Reakce |
 | --- | --- | --- |
@@ -38,7 +49,9 @@ Mechanické podklady kombinují starší asijské návody s porovnáním Global 
 | <span id="ref-charge-trail">**Charge trail**</span> | Pás směrem k cíli a zůstávající plocha. | Tank mění pozici mimo škodlivou stopu. |
 | <span id="ref-pozdni-outer-ring">**Pozdní outer ring**</span> | Nebezpečný vnější okraj kolem nízkého HP. | Hraj uprostřed a stále dodrž soak. |
 
-## Mid-bossové
+<span id="mid-bossové" class="legacy-anchor"></span>
+
+## Vedlejší bossové
 
 | Boss | Na co dát pozor |
 | --- | --- |
@@ -47,14 +60,14 @@ Mechanické podklady kombinují starší asijské návody s porovnáním Global 
 
 ## Příčiny neúspěchu
 
-:::caution[Pozor: časté příčiny wipe]
+:::caution[Pozor: časté příčiny neúspěchu]
 Označený hráč uteče ze soaku, skupina zůstává v contamination a opakované chycení ztrácí DPS čas.
 :::
 
 ## Příprava Tarot Clubu
 
-Domluvte, kde se sejde soak; damage posuzujte po odečtení času ztraceného chycením.
+Domluv se se skupinou, kde se sejde soak; poškození posuzuj po odečtení času ztraceného chycením.
 
-Před dalšími pokusy kontrolujte jednu příčinu wipe a jednu změnu sestavy. Přeskočení mid-bosse může změnit odměnu; cíl runu ujasněte předem. Po clearu zkontrolujte claim a Guaranteed Reward.
+Před dalším pokusem vyber se skupinou jednu příčinu neúspěchu a jednu změnu sestavy. Cíl průchodu si domluv předem: přeskočení vedlejšího bosse může změnit odměnu. Po dokončení zkontroluj vyzvednutí odměny a Guaranteed Reward.
 
 [Vstupy a odměny](../../pruvodce/dungeony-odyle/), [Aktivity](../../reference/aktivity/) a [Stagger](../../reference/stagger/) doplňují tento přehled.

@@ -22,11 +22,21 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Co zde porovnat
 
-Podklady uvádějí čtyři launch tiery. GS a reward pravidla najdeš v [Aktivitách](../../reference/aktivity/). Mechanické zdroje kombinují asijské návody a Global klient; vyšší tier a patch mohou měnit pattern.
+Podklady uvádějí čtyři launch tiery. Vstupní GS najdeš v [GS milnících](../../pruvodce/gs-progrese/#milníky-global) a pravidla odměn v [Odyle průvodci](../../pruvodce/dungeony-odyle/). Mechanické zdroje kombinují asijské návody a Global klient; vyšší stupeň a patch mohou měnit průběh mechaniky.
+
+## Tahák před prvním pokusem
+
+Výběr ze stávajících reakcí a kontrol po neúspěchu; přesný následek každé chyby není v podkladech této stránky doložený.
+
+| Signál / mechanika | Co udělat | Riziko při chybě |
+| --- | --- | --- |
+| Vazba mezi dvěma hráči u Atiela | Přetrhni vazbu pohybem od spoluhráče a potom přijď sdílet zásah. | Nesplnění podmínky přetržení vazby nebo sdílení zásahu. |
+| Rozpad okraje platformy | Přesuň se dovnitř a sleduj nucený odsun. | Ztráta bezpečné pozice u okraje. |
+| Barevné štíty a záblesk zbraně u Talisry | Domluv barvu, zachovej oddělené štíty a reaguj na záblesk. | Záměna barvy nebo narušení oddělených štítů. |
 
 ## Deus Research Base — Atiel
 
@@ -42,13 +52,13 @@ Podklady uvádějí čtyři launch tiery. GS a reward pravidla najdeš v [Aktivi
 | Mechanika | Signál a reakce |
 | --- | --- |
 | <span id="ref-orbs-colour-shields">**Orbs / colour shields**</span> | Domluv barvy, sbírej svou; oddělené štíty zachovej a vstupuj podle barvy záblesku zbraně. |
-| <span id="ref-odd-spear">**Odd spear**</span> | Ze čtyř kopí rozbijte odlišné světlé; důležitý je počet zásahů. |
-| <span id="ref-refracting-spear">**Refracting Spear**</span> | Vyšší-tier podklad: zarovnej svou dráhu do krystalu spoluhráče, potom uhni. |
+| <span id="ref-odd-spear">**Odd spear**</span> | Ze čtyř kopí rozbij se skupinou odlišné světlé; důležitý je počet zásahů. |
+| <span id="ref-refracting-spear">**Refracting Spear**</span> | Podklad pro vyšší stupeň: zarovnej svou dráhu do krystalu spoluhráče, potom uhni. |
 | <span id="ref-jump-rings">**Jump rings**</span> | Přeskakuj přicházející kruhy a současně sleduj osobní plochy. |
 
 ## Odměny a výběr trasy
 
-Komunitní data uvádějí **Chalice v obou dungeonech**, **Bell/Compass v Deus** a **Mirror/Parchment v Arkanis**. Před farmou ověř reward preview požadovaného tieru.
+Komunitní data uvádějí **Chalice v obou dungeonech**, **Bell/Compass v Deus** a **Mirror/Parchment v Arkanis**. Před farmou ověř náhled odměn požadovaného stupně.
 
 ## Doporučení Tarot Clubu
 
@@ -56,4 +66,4 @@ Komunitní data uvádějí **Chalice v obou dungeonech**, **Bell/Compass v Deus*
 Před Atielem domluv reakci dvojice a místo soaku. Před Talisrou domluv barvy a způsob hlášení záblesku. Nepřekládej mechaniku „stack“ univerzálně na každé barevné místo: konkrétní shield musí zůstat oddělený podle fáze.
 :::
 
-Při wipe se vrať k jediné podmínce: přetržený chain, bezpečný okraj, správná barva nebo zasažené kopí. DPS ladění řeš až při opakovaně zvládnuté reakci. [Arcana](../../pruvodce/arcana/) vysvětluje použití odměn.
+Po neúspěchu se vrať k jediné podmínce: přetržený chain, bezpečný okraj, správná barva nebo zasažené kopí. DPS ladění řeš až při opakovaně zvládnuté reakci. [Arcana](../../pruvodce/arcana/) vysvětluje použití odměn.

@@ -29,7 +29,7 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Tři rodiny kamenů
 
@@ -43,15 +43,17 @@ sources:
 
 Global podklady uvádějí Lesser Manastones z Lower Reshanty, vyšší způsobilé varianty z Alchemy a Bound kameny z vybraných questů, passů a PvE odměn. Abyssal varianta má vlastní určení: kompatibilitu čti v tooltipu, ne podle stejné ikony.
 
-Barva řádku ovlivňuje GS: **šedá +1, zelená +2, modrá +3, žlutá +4** podle přepisů Global profilů. Nezaměňuj tuto barvu s grade spotřebovaného kamene. Reálný výkon určuje také druh statu a jeho podmínka.
+Barva řádku ovlivňuje GS; jednotlivé příspěvky uvádí [GS průvodce](../../pruvodce/gs-progrese/#co-přidává-gs-a-co-především-cp). Nezaměňuj tuto barvu s kvalitou spotřebovaného kamene. Reálný výkon určuje také druh statu a jeho podmínka.
 
 ## Přenos a riziko spotřeby
 
-:::caution[Pozor: při Transferu se kameny nezachovají]
-Manastones, Soulstones a Theostone se podle Global podkladů **nezachovávají při Transferu**. Před úpravou si prohlédni náhled, zda mění jeden řádek nebo celou sadu; pojem reroll sám nepopisuje všechny operace.
+Před úpravou si prohlédni náhled: může měnit jeden řádek nebo celou sadu. Samotné slovo „reroll“ nerozlišuje všechny operace.
+
+:::caution[Pozor: před přenosem porovnej zachované bonusy]
+Pravidla přenosu kamenů a ostatních bonusů najdeš v [tabulce Transferu](../../pruvodce/vylepsovani-vybavy/#co-se-přenese-na-nový-kus). Před potvrzením počítej i s náklady na obnovu toho, co se nepřenese.
 :::
 
-Theostone může změnit glow zbraně. Barva záře sama o sobě není spolehlivé měření Enhancementu nebo výkonu. Zdroje uvádějí také kombinování nižších Theostones s šancí na vyšší grade; potvrzuj přesný recept.
+Theostone může změnit záři zbraně. Barva záře sama o sobě není spolehlivým ukazatelem Enhancementu ani výkonu. Zdroje uvádějí také kombinování nižších Theostones s šancí na vyšší kvalitu; zkontroluj přesný recept.
 
 ## Doporučení Tarot Clubu
 

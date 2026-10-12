@@ -26,7 +26,7 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Co sbírat pro který recept
 
@@ -40,7 +40,7 @@ sources:
 
 ## Pravidla sběru
 
-Podklady Global popisují odemčení gathering na **levelu 10** a tři pokusy na node. Odyle Extraction probíhá při letu. Mastery a kvalita výsledku jsou jiné údaje než combat level postavy; celý proces zkontroluj v příslušném menu.
+Podklady Global popisují odemčení sběru na **úrovni 10** a tři pokusy na sběrném bodu (node). Odyle Extraction probíhá při letu. Mastery a kvalita výsledku jsou jiné údaje než bojová úroveň postavy; celý proces zkontroluj v příslušném menu.
 
 ## Asmodian achievement příklad
 
@@ -53,8 +53,8 @@ Global Database 2.0.6.0 uvádí **Skybound Treasure** za úspěšně získané O
 | <span id="ref-300-uspesnych-sberu">**300 úspěšných sběrů**</span> | 3 Artisan's Refining Stone (Bound), 13 000 Kina (Bound), Title: Extracting in My Sleep. |
 | <span id="ref-500-uspesnych-sberu">**500 úspěšných sběrů**</span> | 2 Artisan's Ultimate Refining Stone (Bound), 14 000 Kina (Bound). |
 
-Počet pokusů a počet úspěšných výsledků nejsou totéž. Achievement odměnu vyzvedni; hotový milestone v panelu sám nezaplatí další recept.
+Počet pokusů a počet úspěšných výsledků nejsou totéž. Achievement odměnu vyzvedni; dosažený milník v panelu sám nezaplatí další recept.
 
 ## Plánování Tarot Clubu
 
-Vyber recept a cílové množství, potom trasu. Kombinuj node s regionálním úkolem či pet farmou. Výdělek porovnávej podle skutečného prodeje po poplatcích a času na cestu; univerzální „nejlepší farm“ pro všechny servery zde nestanovujeme.
+Vyber recept a cílové množství, potom trasu. Propoj sběrné body s regionálním úkolem nebo farmou pet souls. Výdělek porovnávej podle skutečného prodeje po poplatcích a času na cestu; univerzální „nejlepší farma“ pro všechny servery zde nestanovujeme.

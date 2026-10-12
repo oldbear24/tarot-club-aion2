@@ -1,6 +1,6 @@
 ---
 title: Ferocious Horn Den — bossové a mechaniky
-description: 'Přístup, loot, Ferocious Horn Nuakum a mid-bossové: signál, reakce, chyby.'
+description: 'Přístup, odměny, Ferocious Horn Nuakum a vedlejší bossové: signály, reakce a časté chyby.'
 sidebar:
   order: 6
 edition: global-launch
@@ -21,24 +21,37 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Přístup a rozsah mechanik
 
-**Conquest GS:** 2 100. **Výbavový cíl:** Armor a guard. **Final boss:** Ferocious Horn Nuakum.
+**Conquest GS:** 2 100. **Výbavový cíl:** Zbroj a guard. **Závěrečný boss:** Ferocious Horn Nuakum.
 
-Mechanické podklady kombinují starší asijské návody s porovnáním Global klientu. Níže je praktický přehled, nikoli naše vlastní ověření každé serverové varianty. HP prahy a pořadí reakcí posuzuj podle živého castu; Exploration může být mírnější.
+Podklady k mechanikám kombinují starší asijské návody s porovnáním globálního klientu. Každou variantu jsme sami na serveru neověřili. HP prahy a pořadí reakcí proto porovnej s právě sesílanou schopností; Exploration může být mírnější.
 
-## Final boss — rychlé reakce
+## Tahák před prvním pokusem
+
+Výběr ze stávajících mechanik a příčin neúspěchu; platí stejné omezení podkladů jako pro detail níže.
+
+| Signál / mechanika | Co udělat | Riziko při chybě |
+| --- | --- | --- |
+| Root hráče a výpad klonu | Domluv střídání hráčů, kteří blokují výpad. | Opakované blokování stejným hráčem je častá chyba. |
+| Modrý orb a označení pro vrh | Jako cíl se zarovnej za orb ve směru od Nuakuma. | Nesprávné zarovnání zabrání zásahu orbu. |
+
+<span id="final-boss--rychlé-reakce" class="legacy-anchor"></span>
+
+## Závěrečný boss — rychlé reakce
 
 | Mechanika | Signál | Reakce |
 | --- | --- | --- |
 | <span id="ref-hunt-clone">**Hunt / clone**</span> | Root hráče a výpad klonu. | Neoznačený spoluhráč blokuje; další blok převezme jiný hráč. |
-| <span id="ref-small-large-circle">**Small / large circle**</span> | Malý kruh se šipkami nebo velký bez nich. | Malý sdílejte podle mechaniky; velký ponechte samotnému cíli. |
-| <span id="ref-blue-light-of-destruction">**Blue Light of Destruction**</span> | Orb a označení pro bossovy vrhy. | Cíl zarovná Nuakum → orb → sebe; dostaňte do orbu tři zásahy. |
-| <span id="ref-red-balls-bleed-pools">**Red balls / bleed pools**</span> | Navazující míče a bleed plochy. | Střídejte zachycení; plochy odnášejte ke kraji. |
+| <span id="ref-small-large-circle">**Small / large circle**</span> | Malý kruh se šipkami nebo velký bez nich. | Malý sdílej se skupinou podle mechaniky; velký ponech samotnému cíli. |
+| <span id="ref-blue-light-of-destruction">**Blue Light of Destruction**</span> | Orb a označení pro bossovy vrhy. | Cíl zarovná Nuakum → orb → sebe; zajisti se skupinou tři zásahy do orbu. |
+| <span id="ref-red-balls-bleed-pools">**Red balls / bleed pools**</span> | Navazující míče a bleed plochy. | Střídej se se skupinou v zachytávání; plochy odnášej ke kraji. |
 
-## Mid-bossové
+<span id="mid-bossové" class="legacy-anchor"></span>
+
+## Vedlejší bossové
 
 | Boss | Na co dát pozor |
 | --- | --- |
@@ -47,14 +60,14 @@ Mechanické podklady kombinují starší asijské návody s porovnáním Global 
 
 ## Příčiny neúspěchu
 
-:::caution[Pozor: časté příčiny wipe]
+:::caution[Pozor: časté příčiny neúspěchu]
 Stejný hráč blokuje opakovaně, skupina zamění typ kruhu a označený nezarovná vrh do orbu.
 :::
 
 ## Příprava Tarot Clubu
 
-Domluvte pořadí blockerů a krátké hlášení typu kruhu před zahájením fáze.
+Domluv se se skupinou pořadí blockerů a krátké hlášení typu kruhu před zahájením fáze.
 
-Před dalšími pokusy kontrolujte jednu příčinu wipe a jednu změnu sestavy. Přeskočení mid-bosse může změnit odměnu; cíl runu ujasněte předem. Po clearu zkontrolujte claim a Guaranteed Reward.
+Před dalším pokusem vyber se skupinou jednu příčinu neúspěchu a jednu změnu sestavy. Cíl průchodu si domluv předem: přeskočení vedlejšího bosse může změnit odměnu. Po dokončení zkontroluj vyzvednutí odměny a Guaranteed Reward.
 
 [Vstupy a odměny](../../pruvodce/dungeony-odyle/), [Aktivity](../../reference/aktivity/) a [Stagger](../../reference/stagger/) doplňují tento přehled.

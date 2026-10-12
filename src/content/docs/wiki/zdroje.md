@@ -5,6 +5,7 @@ sidebar:
   order: 2
 edition: global-launch
 reviewedAt: '2026-10-12'
+referenceCategory: wiki
 evidence: editorial
 ---
 
@@ -33,14 +34,14 @@ evidence: editorial
 | Zdroj | Co v něm hledat |
 | --- | --- |
 | [Global Database — rune quest](https://aion2.gaming.tools/quests/2202037) | Předpoklady a odměna The Future Within the Past, klient 2.0.6.0. |
-| [Global Database — rune chest](https://aion2.gaming.tools/items/533700064) | Obsah chestu a nabídka Nightmare Trade Shopu; eventové položky v datech nemusí být otevřené. |
-| [Global Database — Clash Rune](https://aion2.gaming.tools/items/310900001) | Šance a náklady; failure behavior stránka označuje jako neověřený. |
+| [Global Database — rune chest](https://aion2.gaming.tools/items/533700064) | Obsah truhly a nabídka Nightmare Trade Shopu; eventové položky v datech nemusí být otevřené. |
+| [Global Database — Clash Rune](https://aion2.gaming.tools/items/310900001) | Šance a náklady; následek neúspěchu stránka označuje jako neověřený. |
 | [Aion 2 Maps — Enhancement](https://aion2maps.com/guides/enhancement/) | Běžné + úrovně a rozlišení Global/asijských podkladů. |
 | [Aion 2 Maps — Transfer](https://aion2maps.com/guides/inheritance/) | Přenos statů a vlastnosti, které se nezachovají. |
 | [Aion 2 Maps — Arcana](https://aion2maps.com/guides/arcana/) | Launch karty, řádky, EXP a craft. |
 | [Aion 2 Maps — Daevanion](https://aion2maps.com/guides/daevanion-boards/) | Desky, krystaly a ceny uzlů. |
 | [Aion 2 Maps — Skills and Stigma](https://aion2maps.com/guides/skills-and-stigma/) | Skill úrovně a Specialty milníky. |
-| [Aion 2 Maps — Odyle](https://aion2maps.com/guides/expeditions-and-odyle/) | Reward cubes, energie a další omezení claimů. |
+| [Aion 2 Maps — Odyle](https://aion2maps.com/guides/expeditions-and-odyle/) | Odměnové truhly, energie a další omezení vyzvednutí odměn. |
 | [Aion 2 Maps — Nightmare](https://aion2maps.com/guides/nightmare/) | Season 1 postup, pokusy a obchod. |
 
 ### Jak podklady přebíráme

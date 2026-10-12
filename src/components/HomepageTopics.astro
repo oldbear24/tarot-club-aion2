@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content';
+import { sidebar } from '../lib/navigation.mjs';
+const docs = await getCollection('docs');
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const tasks = [
+  { title: 'Začínám hrát', slug: 'pruvodce/zacatek', text: 'První kroky a kontrola postavy.' },
+  { title: 'Zvedám GS a CP', slug: 'pruvodce/gs-progrese', text: 'Najdi další krok v rozvoji.' },
+  { title: 'Plánuji den a týden', slug: 'pruvodce/daily-weekly', text: 'Resety, zásoby a priority aktivit.' },
+  { title: 'Hledám stat či předmět', slug: 'reference/prehled', text: 'Hesla, aliasy a odkazy na podrobnosti.' },
+  { title: 'Připravuji se na bosse', slug: 'dungeony/prehled', text: 'Vyber dungeon a projdi reakce.' },
+];
+const topics = sidebar.filter(group => 'items' in group && group.label !== 'Hledání a slovník');
+const oldAnchors: Record<string, string[]> = {
+  'Začínáme a rozvoj': ['postup-a-každodenní-hra', 'rozvoj-schopností-a-karet'],
+  'Staty a boj': ['staty-bez-tajemství'],
+  'Třídy': ['třídy-a-jejich-schopnosti'],
+  'Výbava, předměty a výroba': ['výbava-a-výkon-v-boji'],
+  'Dungeony': ['dungeony-a-bossové', 'dungeony-a-sólo-obsah'],
+  'O wiki': ['zdroje-a-komunitní-wiki'],
+};
+---
+<section class="home-tasks" aria-labelledby="rychle-potrebuji">
+  <span id="referenční-příručka" class="legacy-anchor" aria-hidden="true"></span>
+  <h2 id="rychle-potrebuji">Rychle potřebuji</h2>
+  <div class="quick-links">{tasks.map(task => <a href={`${base}/${task.slug}/`}><strong>{task.title}</strong><small>{task.text}</small></a>)}</div>
+</section>
+<section class="home-topics" aria-labelledby="temata-wiki">
+  <h2 id="temata-wiki">Témata wiki</h2>
+  <p>Otevři téma a vyber článek. Podrobnosti mají vždy jednu hlavní stránku.</p>
+  <div class="topic-grid">{topics.map(group => <details>
+    {oldAnchors[group.label]?.map(id => <span id={id} class="legacy-anchor" aria-hidden="true"></span>)}
+    <summary>{group.label}</summary>
+    <ul>{group.items?.map(item => {
+      const doc = docs.find(doc => doc.id === item.slug);
+      return doc && <li><a href={`${base}/${doc.id}/`}>{doc.data.title}</a></li>;
+    })}</ul>
+  </details>)}</div>
+</section>

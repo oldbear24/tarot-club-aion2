@@ -1,6 +1,6 @@
 ---
 title: Sorcerer — příručka třídy
-description: Ranged caster s charge burstem. Schopnosti, Stigmata, perky a kontrola výkonu.
+description: Kouzelník na dálku s nabíjeným útokem pro krátké okno poškození. Schopnosti, Stigmata, perky a kontrola výkonu.
 sidebar:
   order: 6
 edition: global-launch
@@ -21,24 +21,24 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Role a základní návaznost
 
-**Zbraň:** Spellbook. **Role:** Ranged caster s charge burstem.
+**Zbraň:** Spellbook. **Role:** Kouzelník na dálku s nabíjeným útokem pro krátké okno poškození.
 
 :::note[Základ buildu: Hellfire, Firestorm a obnova MP]
-Hellfire je hlavní charge útok. Firestorm s příslušným level-12 perkem zkracuje jeho cooldown. Flame Arrow obnovuje MP. Element Enhancement a Delayed Explosion připravují vlastní burst; Fire Wall/Cold Storm vyžadují využití zóny.
+Hellfire je hlavní nabíjený útok. Firestorm s příslušným perkem na úrovni schopnosti 12 zkracuje jeho cooldown. Flame Arrow obnovuje MP. Element Enhancement a Delayed Explosion připravují vlastní burst; Fire Wall/Cold Storm vyžadují využití zóny.
 :::
 
 ## Důležité schopnosti
 
-| Schopnost | Použití v launch podkladech |
+| Schopnost | Použití podle podkladů pro Global launch |
 | --- | --- |
-| <span id="ref-hellfire">**Hellfire**</span> | Hlavní charge burst. |
-| <span id="ref-firestorm">**Firestorm**</span> | Navázání na Hellfire cooldown. |
-| <span id="ref-flame-arrow">**Flame Arrow**</span> | Základní attack a MP. |
-| <span id="ref-bittercold-wind-blaze">**Bittercold Wind / Blaze**</span> | Další damage a vybrané perky. |
+| <span id="ref-hellfire">**Hellfire**</span> | Hlavní nabíjený útok pro krátké okno soustředěného poškození. |
+| <span id="ref-firestorm">**Firestorm**</span> | Zkracování cooldownu Hellfire s příslušným perkem. |
+| <span id="ref-flame-arrow">**Flame Arrow**</span> | Základní útok a obnova MP. |
+| <span id="ref-bittercold-wind-blaze">**Bittercold Wind / Blaze**</span> | Další zdroj poškození; výběr perků porovnej s potřebami buildu. |
 | <span id="ref-wish-of-concentration">**Wish of Concentration**</span> | Vlastní útočné bonusy. |
 
 ## Stigma a pasivy
@@ -47,21 +47,21 @@ Hellfire je hlavní charge útok. Firestorm s příslušným level-12 perkem zkr
 
 **Pasivy k porovnání:** Robe of Flame, Fire Mark, Robe of Earth, Grace of Enhancement.
 
-Jde o komunitní výchozí sestavu, ne povinný build každé party. Stagger, sólo přežití a PvP mohou potřebovat jiné sloty.
+Sestava vychází z komunitního průvodce pro Global launch, zkontrolovaného k datu rešerše. Konkrétní číslo patche u sestavy není doložené; pro stagger, sólo hru nebo PvP můžeš potřebovat jiné schopnosti.
 
 ## Specialty a změna situace
 
 | Schopnost / situace | Co zkontrolovat |
 | --- | --- |
-| <span id="ref-firestorm-2">**Firestorm**</span> | Na 12 Hellfire návaznost; porovnej Skill Speed a MP volby. |
+| <span id="ref-firestorm-2">**Firestorm**</span> | Na úrovni schopnosti 12 návaznost na Hellfire; porovnej perky pro Skill Speed a MP. |
 | <span id="ref-hellfire-2">**Hellfire**</span> | Skill Speed a další útočný perk podle otevřeného slotu. |
 
 ## Kontrola Tarot Clubu před bojem
 
-1. Před charge zkontroluj nadcházející mechaniku a čas buffového okna.
+1. Než začneš nabíjet schopnost, zkontroluj nadcházející mechaniku a zbývající trvání buffu.
 2. Zóny používej podle skutečného pohybu bosse.
-3. Při nízkém výkonu nejdřív spočítej použití Hellfire a Firestorm, potom měň gear.
+3. Při nízkém výkonu nejdřív spočítej použití Hellfire a Firestorm, potom měň výbavu.
 
-Pro PvP si odděleně sepiš reakce na CC, dosah, obranné možnosti a spotřebu zdrojů. Bossový preset nepovažuj za univerzální PvP sestavu. Přesné cooldowny a hodnoty se mění s úrovní, perky a patchem; kontroluj vlastní tooltip.
+Pro PvP si připrav samostatnou sestavu: zkontroluj reakce na CC, dosah, obranu a spotřebu zdrojů. Sestava pro bosse nemusí vyhovovat boji s hráči. Cooldowny a hodnoty vždy porovnej s vlastními tooltipy; závisejí na úrovních, percích a patchi.
 
-[Skill milníky](../../pruvodce/schopnosti-stigma/), [Daevanion](../../pruvodce/daevanion/), [Arcana](../../pruvodce/arcana/), [Staty](../../reference/staty/) a [Stagger](../../reference/stagger/) poskytují související referenci.
+[Milníky schopností](../../pruvodce/schopnosti-stigma/), [Daevanion](../../pruvodce/daevanion/), [Arcana](../../pruvodce/arcana/), [Staty](../../reference/staty/) a [Stagger](../../reference/stagger/) vysvětlují související systémy.

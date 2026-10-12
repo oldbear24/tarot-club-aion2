@@ -1,8 +1,9 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import { sidebar } from './src/lib/navigation.mjs';
 
 // The GitHub workflow supplies these for project Pages; locally use /.
-const site = process.env.SITE_URL || 'https://oldbear24.github.io';
+const site = process.env.SITE_URL || 'https://aion2.tarot-club.cz';
 const base = process.env.BASE_PATH || '/';
 
 export default defineConfig({
@@ -20,24 +21,9 @@ export default defineConfig({
       Hero: './src/components/Hero.astro',
       PageTitle: './src/components/PageTitle.astro',
       Footer: './src/components/Footer.astro',
+      MarkdownContent: './src/components/MarkdownContent.astro',
     },
-    sidebar: [
-      { label: 'Úvod', slug: '' },
-      { label: 'Hledat v referenci', slug: 'reference/prehled' },
-      { label: 'Staty bez tajemství', items: [
-        { label: 'Základní atributy', slug: 'staty/zakladni' },
-        { label: 'Útok a poškození', slug: 'staty/utok' },
-        { label: 'Critical, Perfect a Double', slug: 'staty/procy' },
-        { label: 'Obrana a léčení', slug: 'staty/obrana' },
-        { label: 'Pantheon / božské staty', slug: 'staty/pantheon' },
-        { label: 'Limity a sporné hodnoty', slug: 'staty/limity' },
-      ] },
-      { label: 'Referenční příručka', collapsed: false, items: [{ autogenerate: { directory: 'reference' } }] },
-      { label: 'Třídy', collapsed: true, items: [{ autogenerate: { directory: 'tridy' } }] },
-      { label: 'Dungeony a bossové', collapsed: true, items: [{ autogenerate: { directory: 'dungeony' } }] },
-      { label: 'Praktické průvodce', items: [{ autogenerate: { directory: 'pruvodce' } }] },
-      { label: 'O wiki', items: [{ autogenerate: { directory: 'wiki' } }] },
-    ],
+    sidebar,
     tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 },
     pagination: true,
   })],

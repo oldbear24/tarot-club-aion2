@@ -3,6 +3,7 @@ title: Critical, Perfect, Double a Multi-hit
 description: Jak se liší kritické zásahy, Perfect, Double neboli Smite a více zásahů.
 edition: global-launch
 reviewedAt: '2026-10-12'
+referenceCategory: staty
 evidence: community
 sources:
   - title: Wikily — Chance and Resist, přepis tooltipů
@@ -43,8 +44,8 @@ Počet bodů, který funguje na jednom protivníkovi, nemusí dát stejný výsl
 
 ## Co pro Global zatím netvrdíme
 
-Globální tooltip uvádí maximální kritickou šanci **50 %**. Asijská komunitní měření popisují vyšší hodnoty. Z této odlišnosti nelze bez měření Global udělat závěr o skutečném serverovém limitu.
+Globální tooltip a asijská komunitní měření uvádějí odlišné limity; konkrétní hodnoty najdeš v [přehledu limitů](../limity/). Z této odlišnosti nelze bez měření Global udělat závěr o skutečném serverovém limitu.
 
-Stejně tak zde nestanovujeme přesný násobič Double v PvE/PvP, skrytou základní šanci Multi-hit ani společné procování všech efektů. Takové závěry potřebují podklady z globální verze.
+Stejně tak zde nestanovujeme přesný násobič Double v PvE/PvP, skrytou základní šanci Multi-hit ani společnou aktivaci všech efektů. Takové závěry potřebují podklady z globální verze.
 
 Podrobnosti: [Limity a sporné hodnoty](../limity/).

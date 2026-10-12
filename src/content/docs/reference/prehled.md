@@ -1,6 +1,6 @@
 ---
-title: Referenční příručka — vyhledávání
-description: Hledej jednotlivá hesla, předměty, staty, třídy a mechaniky podle názvu nebo významu.
+title: Katalog hesel a článků
+description: Hledej názvy, aliasy a krátké popisy napříč tématy a otevři konkrétní heslo.
 sidebar:
   order: -1
 edition: global-launch
@@ -23,9 +23,11 @@ sources: []
 
 ## Jak hledat
 
-Napiš anglický název, český význam nebo zkratku. Vyhledávání výše rozlišuje hesla a celé články a umožňuje vybrat téma. Diakritika ani velká písmena nejsou nutná. Kliknutí na heslo otevře příslušný řádek tabulky, kde najdeš kontext a zdroje.
+Napiš anglický název, český význam nebo zkratku. Katalog výše rozlišuje hesla a články ze všech témat wiki. Filtruje názvy, aliasy a krátké popisy, nikoli každý odstavec. Pro celý text otevři **Hledat ve všech článcích** nebo hledání v horní liště. Diakritika ani velká písmena nejsou nutná. Kliknutí na heslo otevře příslušný řádek tabulky, kde najdeš kontext a zdroje.
 
-## Oblasti příručky
+<span id="oblasti-příručky" class="legacy-anchor"></span>
+
+## Témata a související články
 
 | Potřebuji zjistit | Otevřít |
 | --- | --- |
@@ -49,8 +51,10 @@ Napiš anglický název, český význam nebo zkratku. Vyhledávání výše roz
 | <span id="ref-schopnosti-tridy">**Schopnosti třídy**</span> | [Třídy](../../tridy/prehled/) |
 | <span id="ref-mechanika-konkretniho-bosse">**Mechanika konkrétního bosse**</span> | [Dungeony](../../dungeony/prehled/) |
 
+Hledání můžeš sdílet zkopírováním adresy stránky; dotaz, téma i typ výsledku se po otevření obnoví.
+
 ## Jak ověřit údaj
 
-U herního čísla rozlišuj cenu, požadavek, náhodnou šanci a doporučení. Podklady mohou popisovat starší build, jinou frakci nebo neotevřený obsah. Datum rešerše znamená kontrolu zdroje; nepotvrzuje vlastní měření serveru.
+U herního čísla rozlišuj cenu, požadavek, náhodnou šanci a doporučení. Podklady mohou popisovat starší build, jinou frakci nebo neotevřený obsah. Datum rešerše znamená kontrolu zdroje; sami jsme údaje v globální verzi nemuseli ověřit.
 
-Neověřené chování a historické mechaniky jsou v článcích označené. Příručka má pokrytí všech uvedených témat, ale není úplný export každého předmětu, peta či schopnosti klientu. Konkrétní katalogový detail, který nemá dostatečný Global podklad, zůstává u odkazu na zdroj a nevymyšlené hodnoty.
+Neověřené chování a historické mechaniky jsou v článcích označené. Příručka má pokrytí všech uvedených témat, ale není úplný export každého předmětu, peta či schopnosti klientu. Pokud pro konkrétní údaj chybí dostatečný podklad pro Global, upozorníme na nejistotu a odkážeme na zdroj.

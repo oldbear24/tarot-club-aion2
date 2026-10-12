@@ -1,10 +1,11 @@
 ---
 title: Arcana — karty, GS a úrovně schopností
-description: Pět launch karet, rozdíl mezi levelem karty a skill řádkem a kdy plánovat Arcana Transmute.
+description: Pět karet pro Global launch, rozdíl mezi úrovní karty a řádkem schopnosti a kdy plánovat Arcana Transmute.
 sidebar:
   order: 11
 edition: global-launch
 reviewedAt: '2026-10-12'
+referenceCategory: rozvoj
 evidence: community
 sources:
   - title: Aion 2 Maps — Transcendence, grade caps Global launch
@@ -29,7 +30,7 @@ Global launch používá **Chalice, Parchment, Compass, Bell a Mirror**. Karty z
 | Epic | 60 | 3 | +4 |
 | Unique | 80 | 4 | +5 |
 
-Tiery Transcendence začínají na **1 600 / 1 900 / 2 200 / 2 500 GS**. Vyšší tier mění nabídku odměn; nezaručuje konkrétní vysněný řádek při každém claimu.
+Vstupní požadavky jednotlivých stupňů Transcendence najdeš v [GS milnících](../gs-progrese/#milníky-global). Vyšší tier mění nabídku odměn; nezaručuje konkrétní vysněný řádek při každém vyzvednutí odměny.
 
 ## Která karta podporuje kterou schopnost
 
@@ -43,7 +44,7 @@ Tiery Transcendence začínají na **1 600 / 1 900 / 2 200 / 2 500 GS**. Vyšš�
 
 ## Level karty není level schopnosti
 
-Karty rozvíjíš spotřebováním jiných karet nebo **Training Arcana**. Podklady rozlišují strop podle grade: Common +2, Rare +3, Epic +4 a Unique +5. Při použití staré karty jako potravy popisují zachování vložených EXP; prohlédni náhled před potvrzením. <mark class="focus">Rozložení přírůstků mezi skill řádky je náhodné</mark>; detailní limity řádků zdroj částečně odvozuje z asijské verze.
+Karty rozvíjíš spotřebováním jiných karet nebo **Training Arcana**. Strop podle kvality uvádí tabulka výše. Při použití staré karty jako materiálu popisují zachování vložených EXP; prohlédni náhled před potvrzením. <mark class="focus">Rozložení přírůstků mezi řádky schopností je náhodné</mark>; detailní limity řádků zdroj částečně odvozuje z asijské verze.
 
 :::caution[Pozor: použitelná karta není automaticky materiál]
 **Postup Tarot Clubu:** porovnej náhled EXP, cílovou kartu a řádky ještě před spotřebováním. Kartu se vzácnou použitelnou kombinací si označ nebo zamkni, pokud to klient umožňuje. Nevybírej automaticky všechny nenasazené karty jako materiál.

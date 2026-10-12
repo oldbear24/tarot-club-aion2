@@ -5,6 +5,7 @@ sidebar:
   order: 4
 edition: global-launch
 reviewedAt: '2026-10-12'
+referenceCategory: wiki
 evidence: editorial
 sources:
   - title: Astro Starlight — funkce a podporované formáty
@@ -60,6 +61,6 @@ Workflow je připravené v repozitáři `oldbear24/tarot-club-aion2`. Hosting mu
 
 ## Provoz a rozšíření
 
-Zdrojový obsah je verzovaný v Gitu. Přispívat lze přes pull requesty a Markdown lze číst i samostatně na GitHubu. Vlastní doména je pozdější volba; výchozí konfigurace míří na projektový podadresář Pages.
+Zdrojový obsah je verzovaný v Gitu. Přispívat lze přes pull requesty a Markdown lze číst i samostatně na GitHubu. Výchozí konfigurace používá vlastní doménu `https://aion2.tarot-club.cz/`. Proměnné `SITE_URL` a `BASE_PATH` umožňují ověřit i projektový podadresář GitHub Pages.
 
 Pokud přibude kalkulačka nebo filtr statů, může běžet jako klientská komponenta. Sdílené uživatelské účty a databáze představují další projektový požadavek; v této statické verzi nejsou potřeba.

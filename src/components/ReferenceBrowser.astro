@@ -1,37 +1,41 @@
 ---
 import { getCollection } from 'astro:content';
-import { buildReferenceIndex, categoryLabels } from '../lib/reference';
+import { buildReferenceIndex, categoryLabels, resultStatus } from '../lib/reference';
 const entries = buildReferenceIndex(await getCollection('docs'), import.meta.env.BASE_URL);
-const categories = [...new Set(entries.map(entry => entry.category))];
+const categories = [...new Set(entries.map(entry => entry.category))].sort((a, b) => categoryLabels[a].localeCompare(categoryLabels[b], 'cs'));
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
-<section class="reference-browser" aria-label="Vyhledávání v referenční příručce" data-pagefind-ignore>
+<section class="reference-browser" aria-label="Katalog hesel a článků" data-pagefind-ignore data-index-url={`${base}/reference-index.json`}>
+  <p>Katalog hledá v názvech, aliasech, tématech a krátkých popisech. Pro hledání v celém textu použij <button type="button" data-ref-fulltext>Hledat ve všech článcích</button>.</p>
   <div class="reference-controls">
     <label>Hledat název, zkratku nebo význam
-      <input type="search" data-ref-search placeholder="Např. Stigma, Kinah, kritický zásah…" autocomplete="off" />
+      <input type="search" data-ref-search placeholder="Např. Stigma, Kinah, kritický zásah…" autocomplete="off" disabled />
     </label>
     <label>Téma
-      <select data-ref-category>
+      <select data-ref-category disabled>
         <option value="">Všechna témata</option>
         {categories.map(category => <option value={category}>{categoryLabels[category]}</option>)}
       </select>
     </label>
-    <label>Výsledky
-      <select data-ref-kind><option value="">Hesla i články</option><option value="term">Jen hesla</option><option value="article">Jen články</option></select>
+    <label>Typ výsledku
+      <select data-ref-kind disabled><option value="">Hesla i články</option><option value="term">Jen hesla</option><option value="article">Jen články</option></select>
     </label>
-    <button type="button" data-ref-reset>Vymazat filtry</button>
+    <button type="button" data-ref-reset disabled>Vymazat filtry</button>
   </div>
-  <p class="reference-status" role="status" aria-live="polite" data-ref-status>{entries.length} hesel a článků.</p>
-  <p data-ref-empty hidden>Nic jsme nenašli. Zkus kratší název nebo jiné téma. Pro ostatní průvodce použij hlavní vyhledávání wiki.</p>
+  <p class="reference-status" role="status" aria-live="polite" data-ref-status>{resultStatus(Math.min(entries.length, 60), entries.length)}</p>
+  <p data-ref-empty hidden>Nic jsme nenašli. Zkus kratší název, jiné téma nebo vymaž filtry. Celý text článků prohledáš tlačítkem výše.</p>
+  <p data-ref-error hidden>Katalog se nepodařilo načíst. <button type="button" data-ref-retry>Zkusit znovu</button> nebo použij slovník a tematické odkazy níže.</p>
   <ul class="reference-results" data-ref-results>
-    {entries.map(entry => <li data-ref-entry data-search={entry.search} data-category={entry.category} data-kind={entry.kind}>
+    {entries.slice(0, 60).map(entry => <li>
       <a href={entry.href}><strong>{entry.name}</strong><span>{entry.kind === 'article' ? 'Článek' : 'Heslo'} · {categoryLabels[entry.category]}</span><small>{entry.summary}</small><em>{entry.page}</em></a>
     </li>)}
   </ul>
   <button type="button" data-ref-more hidden>Zobrazit dalších 60</button>
-  <noscript>Všechna hesla jsou dostupná níže. Pro hledání použij také Ctrl+F v prohlížeči.</noscript>
+  <noscript>Katalogové filtrování potřebuje JavaScript. Použij slovník a tematické odkazy níže; všechny články jsou dostupné i v menu.</noscript>
 </section>
 <script>
-  import { normalize } from '../lib/reference';
+  import { categoryLabels, filterEntries, highlightSegments, readFilters, referenceSearch, resultStatus, writeFilters } from '../lib/reference';
+  import type { ReferenceEntry } from '../lib/reference';
   function initReferences() {
     document.querySelectorAll<HTMLElement>('.reference-browser').forEach(root => {
       if (root.dataset.initialized) return;
@@ -39,34 +43,86 @@ const categories = [...new Set(entries.map(entry => entry.category))];
       const search = root.querySelector<HTMLInputElement>('[data-ref-search]')!;
       const category = root.querySelector<HTMLSelectElement>('[data-ref-category]')!;
       const kind = root.querySelector<HTMLSelectElement>('[data-ref-kind]')!;
-      const items = [...root.querySelectorAll<HTMLElement>('[data-ref-entry]')];
+      const results = root.querySelector<HTMLElement>('[data-ref-results]')!;
       const more = root.querySelector<HTMLButtonElement>('[data-ref-more]')!;
       const status = root.querySelector<HTMLElement>('[data-ref-status]')!;
       const empty = root.querySelector<HTMLElement>('[data-ref-empty]')!;
-      let limit = 60;
-      const render = () => {
-        const query = normalize(search.value).split(/\s+/).filter(Boolean);
-        let matches = 0;
-        for (const item of items) {
-          const match = (!category.value || item.dataset.category === category.value)
-            && (!kind.value || item.dataset.kind === kind.value)
-            && query.every(part => (item.dataset.search || '').includes(part));
-          if (match) matches++;
-          item.hidden = !match || matches > limit;
+      const error = root.querySelector<HTMLElement>('[data-ref-error]')!;
+      const reset = root.querySelector<HTMLButtonElement>('[data-ref-reset]')!;
+      let entries: ReferenceEntry[] = [], limit = 60, timer: ReturnType<typeof setTimeout>;
+      const filters = () => ({ q: search.value, category: category.value, kind: kind.value });
+      const highlighted = (tag: string, value: string) => {
+        const element = document.createElement(tag);
+        for (const segment of highlightSegments(value, search.value)) {
+          if (segment.match) { const mark = document.createElement('mark'); mark.textContent = segment.text; element.append(mark); }
+          else element.append(document.createTextNode(segment.text));
         }
-        status.textContent = `Zobrazeno ${Math.min(matches, limit)} z ${matches} výsledků.`;
-        empty.hidden = matches !== 0;
-        more.hidden = matches <= limit;
+        return element;
       };
-      const filter = () => { limit = 60; render(); };
-      search.addEventListener('input', filter);
-      category.addEventListener('change', filter);
-      kind.addEventListener('change', filter);
-      root.querySelector('[data-ref-reset]')!.addEventListener('click', () => {
-        search.value = ''; category.value = ''; kind.value = ''; filter(); search.focus();
-      });
+      const render = () => {
+        const matches = filterEntries(entries, filters());
+        const fragment = document.createDocumentFragment();
+        for (const entry of matches.slice(0, limit)) {
+          const item = document.createElement('li'), link = document.createElement('a');
+          link.href = entry.href;
+          link.append(highlighted('strong', entry.name), highlighted('span', `${entry.kind === 'article' ? 'Článek' : 'Heslo'} · ${categoryLabels[entry.category]}`), highlighted('small', entry.summary), highlighted('em', entry.page));
+          item.append(link); fragment.append(item);
+        }
+        results.replaceChildren(fragment);
+        status.textContent = resultStatus(Math.min(matches.length, limit), matches.length);
+        empty.hidden = matches.length !== 0;
+        more.hidden = matches.length <= limit;
+      };
+      const filter = () => {
+        limit = 60; render();
+        history.replaceState(history.state, '', writeFilters(new URL(location.href), filters()));
+      };
+      const restore = () => {
+        const state = readFilters(new URLSearchParams(location.search), [...category.options].map(option => option.value));
+        search.value = state.q; category.value = state.category; kind.value = state.kind;
+        limit = 60; render();
+      };
+      search.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(filter, 100); });
+      category.addEventListener('change', () => { clearTimeout(timer); filter(); });
+      kind.addEventListener('change', () => { clearTimeout(timer); filter(); });
+      reset.addEventListener('click', () => { clearTimeout(timer); search.value = ''; category.value = ''; kind.value = ''; filter(); search.focus(); });
       more.addEventListener('click', () => { limit += 60; render(); });
-      render();
+      root.querySelector('[data-ref-fulltext]')!.addEventListener('click', event => {
+        // Starlight closes its dialog on outside clicks, including this originating click.
+        event.stopPropagation();
+        const opener = document.querySelector<HTMLButtonElement>('site-search [data-open-modal]');
+        opener?.click();
+        const focusSearch = () => {
+          const input = document.querySelector<HTMLInputElement>('#starlight__search input');
+          if (!input) return false;
+          input.value = search.value; input.dispatchEvent(new Event('input', { bubbles: true })); input.focus();
+          return true;
+        };
+        if (!focusSearch()) {
+          const container = document.querySelector('#starlight__search');
+          if (container) {
+            const observer = new MutationObserver(() => { if (focusSearch()) observer.disconnect(); });
+            observer.observe(container, { childList: true, subtree: true });
+            setTimeout(() => observer.disconnect(), 5000);
+          }
+        }
+      });
+      window.addEventListener('popstate', restore);
+      const load = async () => {
+        error.hidden = true; status.textContent = 'Načítám katalog…';
+        try {
+          const response = await fetch(root.dataset.indexUrl!);
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const index: Omit<ReferenceEntry, 'search'>[] = await response.json();
+          entries = index.map(entry => ({ ...entry, search: referenceSearch(entry) }));
+          restore();
+          for (const control of [search, category, kind, reset]) control.disabled = false;
+        } catch {
+          error.hidden = false; status.textContent = 'Katalog není dostupný. Zkus načtení zopakovat.';
+        }
+      };
+      root.querySelector('[data-ref-retry]')!.addEventListener('click', load);
+      void load();
     });
   }
   initReferences();

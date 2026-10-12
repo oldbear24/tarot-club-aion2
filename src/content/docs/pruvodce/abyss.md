@@ -5,6 +5,7 @@ sidebar:
   order: 5
 edition: global-launch
 reviewedAt: '2026-10-12'
+referenceCategory: aktivity
 evidence: community
 sources:
   - title: Aion 2 Maps — Abyss, rozlišení Global a KR/TW
@@ -28,7 +29,7 @@ sources:
 
 ## Vstup a dostupná oblast
 
-Podklady Global uvádějí **level 45 a 1 000 GS**. Launch otevírá **Chaotic Lower Reshanta**. To, že databáze obsahuje Middle/Upper Reshanta, není potvrzení jejich dostupnosti.
+Podklady Global uvádějí **úroveň 45 a 1 000 GS**. Launch otevírá **Chaotic Lower Reshanta**. To, že databáze obsahuje Middle/Upper Reshanta, není potvrzení jejich dostupnosti.
 
 Portál hledej u **Garden of the Illusion God ve Verteronu** nebo **Black Claw Village v Altgardu**. První návštěvu spoj s dokončením příběhového úkolu u **Koro** ve frakční základně; jde také o postup k příběhovému Spiritforged Guard.
 
@@ -40,13 +41,13 @@ Portál hledej u **Garden of the Illusion God ve Verteronu** nebo **Black Claw V
 
 | Aktivita / objekt | Smysl | Doporučení Tarot Clubu |
 | --- | --- | --- |
-| **Abyss Commands** | Úkoly na zdejší cíle, zejména pro Abyss Points. | Spojit více cílů do jedné trasy. |
-| **Abyss Points — AP** | Nákup růstových předmětů v Abyss shopu. | Plánovat konkrétní nákup, ne jen hromadit měnu. |
-| **Empyrean Traces / Ereshkigal Monolith** | Regionální sbírka a Azphel rozvoj. | Sbírat s ohledem na riziko a čas. |
-| **Artifact Siege / Dimensional Core** | Frakční boj o držení artefaktů. | Přijít se skupinou a plnit cíl eventu. |
-| **Abyss Corridor** | Odměnová sólo aktivita navázaná na držený artefakt. | Po siege zkontrolovat dostupný vstup. |
+| **Abyss Commands** | Úkoly na zdejší cíle, zejména pro Abyss Points. | Spoj více cílů do jedné trasy. |
+| **Abyss Points — AP** | Nákup růstových předmětů v Abyss shopu. | Plánuj konkrétní nákup, nehromaď měnu bez cíle. |
+| **Empyrean Traces / Ereshkigal Monolith** | Regionální sbírka a Azphel rozvoj. | Sbírej s ohledem na riziko a čas. |
+| **Artifact Siege / Dimensional Core** | Frakční boj o držení artefaktů. | Přijď se skupinou a plň cíl události. |
+| **Abyss Corridor** | Odměnová sólo aktivita navázaná na držený artefakt. | Po siege zkontroluj dostupný vstup. |
 | **Abyss bosses** | Boss odměny a frakčně soupeřený obsah. | Podle času eventu a síly skupiny. |
-| **Rank / medals** | Sezónní postup a další obchodní odměny. | Řešit cíleně, pokud chceš PvP rozvoj. |
+| **Rank / medals** | Sezónní postup a další obchodní odměny. | Řeš je cíleně, pokud chceš rozvíjet PvP. |
 
 U artefaktů jde o boj o cíle eventu, včetně Dimensional Core; ne o běžný sběratelský marker. **Corridor je důsledek držení artefaktu**, nikoli libovolně dostupný další dungeon. Přesný počet vstupů a pravidla odměny vždy ověř v aktuálním event panelu.
 
@@ -60,7 +61,7 @@ U artefaktů jde o boj o cíle eventu, včetně Dimensional Core; ne o běžný 
 | **Abyssal Manastone / další kameny** | Výbavové staty podle konkrétního předmětu. |
 | **Silver Medal of Merit** | Další měna a navazující odměny. |
 
-Obchod používá limity a u některých nákupů rostoucí cenové stupně. Stigma Shards jsou ve zdroji uvedeny v postupných cenách **10 000 / 15 000 / 20 000 / 25 000 AP** za kus. To neznamená, že každý další shard bude navždy stát nejnižší cenu.
+Obchod používá limity a u některých nákupů rostoucí cenové stupně. Cenové stupně Stigma Shards najdeš v [přehledu obchodů](../../reference/obchody/#ref-stigma-shard-ap). Nejnižší cena neplatí automaticky pro každý další kus.
 
 :::tip[Priorita: AP pro používaný build]
 **Priorita Tarot Clubu pro PvE:** doplnit a rozvíjet používaná Stigmata, potom porovnat zbylé nákupy s konkrétní potřebou postavy. Azphel body nejsou automaticky nejlepší způsob, jak zvýšit PvE damage.

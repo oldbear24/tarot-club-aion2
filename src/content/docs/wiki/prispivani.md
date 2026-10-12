@@ -5,6 +5,7 @@ sidebar:
   order: 3
 edition: global-launch
 reviewedAt: '2026-10-12'
+referenceCategory: wiki
 evidence: editorial
 ---
 
@@ -27,7 +28,7 @@ sources: []
 ---
 ```
 
-Pod metadata napiš český text. Začni nadpisem `##`; hlavní nadpis stránky vytvoří web z `title`. Soubory v `pruvodce/` a `wiki/` se objeví v navigaci automaticky. Novou stránku v `staty/` přidej také do konfigurace sidebaru.
+Pod metadata napiš český text. Začni nadpisem `##`; hlavní nadpis stránky vytvoří web z `title`. Novou stránku přidej do tematické skupiny v `src/lib/navigation.mjs` a nastav `referenceCategory`. Název se do menu i úvodního přehledu převezme z metadat článku.
 
 ## Přidání zdroje
 
@@ -51,7 +52,7 @@ Nahraď příklad konkrétní URL oznámení. Pro zdroje jsou povoleny regiony `
 
 ## Jak zvýraznit důležitý krok
 
-V běžném článku stačí jeden až dva barevné boxy: **zelený tip / priorita**, **modré vysvětlení**, **oranžové upozornění**. **Červené riziko** ponech pro možnou ztrátu nebo zničení předmětu. Barva vyjadřuje účel poznámky, nikoli ověřenost zdroje.
+V běžném článku stačí jeden až dva barevné boxy: **zelený tip / priorita**, **modré vysvětlení**, **oranžové upozornění**. **Červené riziko** ponech pro doložené nevratné rozhodnutí nebo fatální mechaniku. Neověřené riziko označ oranžovým upozorněním. Barva vyjadřuje účel poznámky, nikoli ověřenost zdroje.
 
 ```md
 :::tip[Priorita: doplň prázdné sloty]

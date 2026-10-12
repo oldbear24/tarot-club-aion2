@@ -1,6 +1,6 @@
 ---
 title: Titles, Closet a další kolekce
-description: Owned versus Equipped bonusy titulů, skiny, sochy a achievement odměny.
+description: Owned versus Equipped bonusy titulů, skiny, sochy a odměny za achievementy.
 sidebar:
   order: 12
 edition: global-launch
@@ -31,7 +31,7 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Druhy kolekčního rozvoje
 
@@ -55,7 +55,7 @@ sources:
 
 ## Skins a synthesis
 
-Global podklady popisují kolekční body po prvním odemčení skinu. Výpočet bonusu a sdílení ze starších asijských formulí zde nepotvrzujeme jako vlastní Global měření. Synthesis spotřebovává vybrané duplicity a může dát jiný grade; přečti náhled a zámky před potvrzením.
+Global podklady popisují kolekční body po prvním odemčení skinu. Výpočet bonusu a sdílení ze starších asijských formulí zde nepotvrzujeme jako vlastní Global měření. Synthesis spotřebovává vybrané duplicity a může dát jinou kvalitu; přečti náhled a zámky před potvrzením.
 
 **Doporučení Tarot Clubu:** nejdřív aktivuj již získané odměny. U nového titulu nebo sochy napiš, který bonus opravdu přidá nebo nahradí. Nekupuj druhý vzhled stejného odemčeného kusu pouze kvůli domnělému opakovanému kolekčnímu bonusu.
 

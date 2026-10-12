@@ -3,6 +3,7 @@ title: Útok a poškození
 description: Rozdíl mezi Attack, Damage Boost, Weapon Damage Boost a bonusy na bossy.
 edition: global-launch
 reviewedAt: '2026-10-12'
+referenceCategory: staty
 evidence: community
 sources:
   - title: Aion 2 Maps — Stats explained, tooltipy a výzkum
@@ -26,7 +27,7 @@ sources:
 | **Attack increase** | Procentní zvýšení útočné hodnoty. |
 | **Penetration** | Překonává Defense cíle; nesnižuje ji pod nulu. |
 
-Přesnou serverovou damage formuli Global zde zatím neuvádíme. Význam řádku lze vysvětlit z tooltipu, ale jeho přesnou váhu pro konkrétní build je potřeba změřit.
+Přesnou serverový vzorec poškození Global zde zatím neuvádíme. Význam řádku lze vysvětlit z tooltipu, ale jeho přesnou váhu pro konkrétní build je potřeba změřit.
 
 ## Boost: jaké poškození posiluje
 

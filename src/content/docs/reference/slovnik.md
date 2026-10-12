@@ -42,14 +42,14 @@ sources:
 | <span id="ref-cp-combat-power">**CP / Combat Power**</span> | Souhrnný ukazatel statů; není měření skutečného DPS. |
 | <span id="ref-ap-abyss-points">**AP / Abyss Points**</span> | Měna Abyss rozvoje a příslušných obchodů. |
 | <span id="ref-kina-kinah">**Kina / Kinah**</span> | Herní peníze. Rozlišuj obchodovatelnou a Bound variantu. |
-| <span id="ref-dps">**DPS**</span> | Poškození za sekundu; roli damage dealera hráči také označují DPS. |
+| <span id="ref-dps">**DPS**</span> | Poškození za sekundu; hráči tak označují i roli zaměřenou na poškození. |
 | <span id="ref-burst">**Burst**</span> | Krátké okno soustředěného poškození. |
 | <span id="ref-sustain">**Sustain**</span> | Dlouhodobé udržení života, zdrojů nebo výkonu. |
 | <span id="ref-uptime">**Uptime**</span> | Doba aktivního působení bonusu nebo útočení na dostupný cíl. |
 | <span id="ref-proc">**Proc**</span> | Aktivace dodatečného efektu, často podmíněná nebo náhodná. |
 | <span id="ref-cc-crowd-control">**CC / Crowd Control**</span> | Omezení akcí či pohybu protivníka. |
 | <span id="ref-cleanse-dispel">**Cleanse / Dispel**</span> | Odstranění negativního / jiného efektu; přesný typ určuje schopnost. |
-| <span id="ref-cc-break-stun-break">**CC break / Stun break**</span> | Schopnost nebo akce pro uvolnění z ovladatelného omezení. |
+| <span id="ref-cc-break-stun-break">**CC break / Stun break**</span> | Schopnost nebo akce pro zrušení omezení, ze kterého se lze uvolnit. |
 | <span id="ref-dot-damage-over-time">**DoT / Damage over Time**</span> | Poškození rozložené v čase. |
 | <span id="ref-hot-heal-over-time">**HoT / Heal over Time**</span> | Léčení rozložené v čase. |
 | <span id="ref-aoe-area-of-effect">**AoE / Area of Effect**</span> | Plošný účinek místo zásahu jediného cíle. |
@@ -69,7 +69,7 @@ sources:
 | <span id="ref-stigma">**Stigma**</span> | Samostatně rozvíjená schopnost se svými sloty a body. |
 | <span id="ref-claim-reward-cube-infusion">**Claim / Reward Cube / Infusion**</span> | Vyzvednutí dungeonové odměny / její objekt / vložení Odyle pro odměnu. |
 | <span id="ref-pity-guaranteed-reward">**Pity / Guaranteed Reward**</span> | Garantovaný výběr po splnění počítadla konkrétní aktivity. |
-| <span id="ref-enhancement-amp">**Enhancement / Amp**</span> | Běžné + úrovně / další Amplified Enhance stupně způsobilého gearu. |
+| <span id="ref-enhancement-amp">**Enhancement / Amp**</span> | Běžné úrovně vylepšení (+) / další stupně Amplified Enhance u způsobilé výbavy. |
 | <span id="ref-soul-bind-sync-transfer">**Soul Bind / Sync / Transfer**</span> | Výbavové řádky / přerolování / přenos části investice. |
 | <span id="ref-bound">**Bound**</span> | Omezení manipulace uvedené na předmětu; neznamená samo o sobě všechna omezení skladu. |
 | <span id="ref-owned-equip-effect">**Owned / Equip Effect**</span> | Bonus vlastnictví / bonus aktuálně nasazeného kusu. |

@@ -5,6 +5,7 @@ sidebar:
   order: 7
 edition: global-launch
 reviewedAt: '2026-10-12'
+referenceCategory: boj
 evidence: editorial
 ---
 
@@ -38,7 +39,7 @@ Pro běžný výpočet platí **DPS = poškození / čas v sekundách**. Ilustra
 
 ## Záznam do komunitních poznámek
 
-Před nákupem dalšího kusu zkontroluj [Specialty milníky a používaná Stigmata](../schopnosti-stigma/), [skill uzly Daevanion](../daevanion/) a [řádky Arcana](../arcana/). Toto je doporučený audit buildu: zapisuj celkové úrovně hlavních skillů a dostupné perky před změnou i po ní.
+Před nákupem dalšího kusu zkontroluj [Specialty milníky a používaná Stigmata](../schopnosti-stigma/), [uzly schopností Daevanion](../daevanion/) a [řádky Arcana](../arcana/). Toto je doporučený audit buildu: zapisuj celkové úrovně hlavních schopností a dostupné perky před změnou i po ní.
 
 ```text
 Global / region / server / patch:

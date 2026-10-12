@@ -1,6 +1,6 @@
 ---
 title: Crafting — profese, recepty a gear tiery
-description: Pět profesí, Dragon Lord ladder, přenos investic a konkrétní příklad receptu Global.
+description: Pět profesí, stupně Dragon Lord výbavy, přenos investic a příklad receptu z globální databáze.
 sidebar:
   order: 8
 edition: global-launch
@@ -30,14 +30,14 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Co vyrábějí profese
 
 | Profese | Hlavní výrobky |
 | --- | --- |
 | <span id="ref-blacksmithing">**Blacksmithing**</span> | Swords, greatswords, daggers, maces, guards. |
-| <span id="ref-armorsmithing">**Armorsmithing**</span> | Sedm armor slotů včetně cape. |
+| <span id="ref-armorsmithing">**Armorsmithing**</span> | Sedm slotů zbroje včetně cape. |
 | <span id="ref-handicrafting">**Handicrafting**</span> | Bows, staffs a příslušenství. |
 | <span id="ref-alchemy">**Alchemy**</span> | Spellbooks, orbs, potions, scrolly, manastones. |
 | <span id="ref-cooking">**Cooking**</span> | Jídlo a jeho bonusy. |
@@ -46,14 +46,14 @@ sources:
 
 | Tier / Item Level | Postup |
 | --- | --- |
-| <span id="ref-true-dragon-lord-62">**True Dragon Lord — 62**</span> | Základní Unique craft. |
-| <span id="ref-splendent-true-dragon-lord-70">**Splendent True Dragon Lord — 70**</span> | Navazující upcraft. |
-| <span id="ref-white-dragon-lord-78">**White Dragon Lord — 78**</span> | Navazující upcraft. |
-| <span id="ref-splendent-white-dragon-lord-86">**Splendent White Dragon Lord — 86**</span> | Navazující upcraft. |
-| <span id="ref-wise-dragon-lord-94">**Wise Dragon Lord — 94**</span> | Navazující upcraft. |
-| <span id="ref-splendent-wise-dragon-lord-102">**Splendent Wise Dragon Lord — 102**</span> | Navazující upcraft. |
+| <span id="ref-true-dragon-lord-62">**True Dragon Lord — 62**</span> | Výroba základního kusu kvality Unique. |
+| <span id="ref-splendent-true-dragon-lord-70">**Splendent True Dragon Lord — 70**</span> | Navazující výroba vyššího stupně (upcraft). |
+| <span id="ref-white-dragon-lord-78">**White Dragon Lord — 78**</span> | Navazující výroba vyššího stupně (upcraft). |
+| <span id="ref-splendent-white-dragon-lord-86">**Splendent White Dragon Lord — 86**</span> | Navazující výroba vyššího stupně (upcraft). |
+| <span id="ref-wise-dragon-lord-94">**Wise Dragon Lord — 94**</span> | Navazující výroba vyššího stupně (upcraft). |
+| <span id="ref-splendent-wise-dragon-lord-102">**Splendent Wise Dragon Lord — 102**</span> | Navazující výroba vyššího stupně (upcraft). |
 
-Frakční názvy se mohou lišit; porovnávej tier a recept. Upcraft podle Global podkladů přenáší Enhancement, Amp a Soul Binding, ale ne Manastones. Výsledný upcrafted kus se váže na výrobce. Běžný craft může selhat; není to stejná operace jako upcraft.
+Frakční názvy se mohou lišit; porovnávej tier a recept. Upcraft podle Global podkladů přenáší Enhancement, Amp a Soul Binding, ale ne Manastones. Kus vzniklý pomocí upcraftu se váže na výrobce. Běžný craft může selhat; není to stejná operace jako upcraft.
 
 ## Konkrétní příklad: Elyos longsword
 
@@ -68,10 +68,10 @@ Databáze Global **2.0.6.0**, kontrolovaná 12. října: **True Dragon Lord Long
 | <span id="ref-radiant-orichalcum-ore">**Radiant Orichalcum Ore**</span> | 9 |
 | <span id="ref-radiant-odyle-2">**Radiant Odyle**</span> | 5 |
 
-Zdroj uvádí základní úspěch **67,51 %** při nulovém mastery gapu a samostatnou **25% combo šanci**. Neznamená to dvě garantované výstupní zbraně. Guard má v téže databázi Blacksmithing požadavek **60** — pravidlo pro jednu zbraň nelze přenést na všechny sloty.
+Zdroj uvádí základní úspěch **67,51 %** při nulovém rozdílu mastery vůči požadavku receptu a samostatnou **25% combo šanci**. Neznamená to dvě garantované výstupní zbraně. Guard má v téže databázi Blacksmithing požadavek **60** — pravidlo pro jednu zbraň nelze přenést na všechny sloty.
 
 ## Cena výsledku
 
-**Doporučení Tarot Clubu:** započti základní kus, řetězec jeho výroby, všechny suroviny, pravděpodobnost neúspěchu a to, zda výsledek budeš používat nebo prodávat. Před potvrzením čti Bound stav a náhled zachovaných řádků. Levný jeden pokus nemusí znamenat levný hotový předmět.
+**Doporučení Tarot Clubu:** započti základní kus, řetězec jeho výroby, všechny suroviny, pravděpodobnost neúspěchu a to, zda výsledek budeš používat nebo prodávat. Před potvrzením čti Bound stav a náhled zachovaných řádků. Jeden levný pokus nemusí znamenat levný hotový předmět.
 
 Suroviny: [Materiály](../materialy/) a [Gathering](../gathering/). Prodej: [Market](../market/).

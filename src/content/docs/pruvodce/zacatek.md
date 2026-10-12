@@ -5,6 +5,7 @@ sidebar:
   order: 1
 edition: global-launch
 reviewedAt: '2026-10-12'
+referenceCategory: rozvoj
 evidence: mixed
 sources:
   - title: NC America — zahájení Early Access a datum globálního launch
@@ -22,11 +23,11 @@ Při použití jiného návodu ověř, zda popisuje tuto verzi, Launch Scale Tes
 
 Následující postup je doporučení Tarot Clubu, nikoli závazný seznam herních úkolů:
 
-1. **Domluv se s přáteli na regionu, serveru a frakci.** Do komunitních poznámek zapisujte všechny tři údaje.
+1. **Domluv se s přáteli na regionu, serveru a frakci.** Do komunitních poznámek zapiš všechny tři údaje.
 2. **Nastav si ovládání ještě před náročným bojem.** Úhyb, obranné schopnosti a přerušení dej na dosažitelné klávesy.
 3. **Čti tooltipy používaných schopností.** Zapiš si podmínky aktivace, spotřebu zdrojů a návaznosti.
 4. **Projdi základní atributy.** Název Intelligence nebo Precision není dostatečný důvod pro výběr výbavy.
-5. **Udržuj jeden průběžný seznam překážek.** Například chybějící vstupní požadavek, slabé přežití, nebo nedostupná schopnost.
+5. **Udržuj jeden průběžný seznam překážek.** Například chybějící vstupní požadavek, slabé přežití nebo nedostupná schopnost.
 
 ## Když se postup zastaví
 

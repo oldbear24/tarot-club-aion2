@@ -37,17 +37,17 @@ lookupAliases:
   - inventář
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Který sklad použít
 
 | Místo | Komu patří | Použití |
 | --- | --- | --- |
-| <span id="ref-cube">**Cube**</span> | Aktuální postavě. | Nesený inventář; základní zásoba podle podkladů 40 slotů. |
+| <span id="ref-cube">**Cube**</span> | Aktuální postavě. | Inventář, který nosíš u sebe; základní kapacita podle podkladů 40 slotů. |
 | <span id="ref-character-storage">**Character Storage**</span> | Jedné postavě. | Materiály pro způsobilé operace; 25 základních slotů podle dat. |
 | <span id="ref-server-storage">**Server Storage**</span> | Postavám stejného serveru podle způsobilosti předmětu. | Přesuny povolených věcí; 25 základních slotů podle dat. |
 | <span id="ref-shop-storage-mail">**Shop Storage / Mail**</span> | Podle konkrétní odměny. | Přečti příjemce ještě před vyzvednutím. |
-| <span id="ref-legion-storage">**Legion Storage**</span> | Legii a nastaveným oprávněním. | Nezaměňovat za osobní či serverovou banku. |
+| <span id="ref-legion-storage">**Legion Storage**</span> | Legii a nastaveným oprávněním. | Nezaměňuj jej za osobní či serverový sklad. |
 
 ## Bound není jediná odpověď
 
@@ -64,7 +64,7 @@ U server transferu zkontroluj aktuální pravidla: Server Storage, Market listin
 ## Doporučení Tarot Clubu
 
 :::caution[Pozor: důležité kusy chraň před spotřebováním]
-Před extrakcí nebo prodejem zamkni důležité gear kusy a karty. Používej náhled zpracování, nevysypávej automaticky všechny Unique dropy. Obnova přes Recover Item může mít podmínky a časový limit; není garantované vrácení libovolné crafting chyby.
+Před extrakcí nebo prodejem zamkni důležité kusy výbavy a karty. Používej náhled zpracování, nevysypávej automaticky všechny Unique dropy. Obnova přes Recover Item může mít podmínky a časový limit; nezaručuje nápravu každé chyby při craftingu.
 :::
 
 Navazuje [Market](../market/) a [Legions](../legie/).

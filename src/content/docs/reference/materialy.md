@@ -1,6 +1,6 @@
 ---
 title: Materiály, klíče a spotřební předměty
-description: Růstové kameny, krystaly, scrolly, crafting materiály a spotřeba při hraní.
+description: Růstové kameny, krystaly, scrolly, materiály pro crafting a spotřeba při hraní.
 sidebar:
   order: 2
 edition: global-launch
@@ -68,13 +68,13 @@ lookupAliases:
   - Arcana Transmute
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Identifikuj správnou variantu
 
-Název, grade a Bound varianta jsou součást identity položky. Tabulka je katalog hlavních materiálů launch progrese; konkrétní drop a recept ověř v uvedeném systému.
+Název, kvalita a varianta Bound jsou součást identity položky. Tabulka je katalog hlavních materiálů launch progrese; konkrétní drop a recept ověř v uvedeném systému.
 
-| Předmět / rodina | Kde hledat | Na co slouží |
+| Předmět / rodina | Kde hledat | K čemu slouží |
 | --- | --- | --- |
 | <span id="ref-enhance-stone">**Enhance Stone**</span> | Daily Dungeon, dungeonové a další způsobilé odměny. | Běžný Enhancement a vybrané morph recepty. |
 | <span id="ref-amplify-stone-fragment">**Amplify Stone Fragment**</span> | Způsobilé růstové a regionální odměny. | Morph na odpovídající Amplify Stone podle receptu. |
@@ -87,7 +87,7 @@ Název, grade a Bound varianta jsou součást identity položky. Tabulka je kata
 | <span id="ref-soul-crystal">**Soul Crystal**</span> | Hidden Cubes, pet milníky a způsobilé obchody/drop. | Genus Analyze. |
 | <span id="ref-cogni-fera-natura-varian-soul-crystal">**Cogni / Fera / Natura / Varian Soul Crystal**</span> | Příslušné pet/Genus zdroje. | Odpovídající Genus deska; nezaměňuj za Soulstone. |
 | <span id="ref-soul-codex">**Soul Codex**</span> | Způsobilé odměny a nabídky. | Soul Binding hodnoty již existujících řádků. |
-| <span id="ref-soul-codex-reset">**Soul Codex: Reset**</span> | Konkrétní odměny a obchodní nabídka. | Reset rozložení gear řádků. |
+| <span id="ref-soul-codex-reset">**Soul Codex: Reset**</span> | Konkrétní odměny a obchodní nabídka. | Reset rozložení řádků výbavy. |
 | <span id="ref-sync-stone-unique">**Sync Stone (Unique)**</span> | Substance Morph způsobilých Unique dropů. | Soul Sync jednoho řádku. |
 | <span id="ref-transfer-stone-unique">**Transfer Stone (Unique)**</span> | Substance Morph způsobilých Unique dropů. | Přenos části investice na nový kus. |
 | <span id="ref-philosopher-s-stone-revelation">**Philosopher's Stone: Revelation**</span> | Způsobilé zdroje pro Soul Fuse. | Přidání dodatečného Soul Fuse řádku. |
@@ -99,7 +99,7 @@ Název, grade a Bound varianta jsou součást identity položky. Tabulka je kata
 | <span id="ref-training-arcana">**Training Arcana**</span> | Transcendence a způsobilé nabídky. | EXP pro Arcana karty. |
 | <span id="ref-mysterious-crystal">**Mysterious Crystal**</span> | Extrakce Arcana a způsobilé sezónní odměny. | Arcana Transmute. |
 | <span id="ref-radiant-odyle">**Radiant Odyle**</span> | Způsobilé obchody a růstové odměny. | Morph sealed wings; není dungeonová Odyle Energy. |
-| <span id="ref-refining-stone-expert-s-artisan-s">**Refining Stone / Expert's / Artisan's**</span> | World monstra a způsobilé dungeon/event odměny. | Crafting podle grade receptu. |
+| <span id="ref-refining-stone-expert-s-artisan-s">**Refining Stone / Expert's / Artisan's**</span> | Monstra v otevřeném světě a způsobilé dungeon/event odměny. | Crafting podle požadované kvality receptu. |
 | <span id="ref-balaur-s-essence">**Balaur's Essence**</span> | Způsobilá named monstra a Expedition odměny. | Zpracované Balaur části pro crafted gear. |
 | <span id="ref-wrathful-mind-will-ego">**Wrathful Mind / Will / Ego**</span> | Způsobilé PvE odměny a trh podle varianty. | Dragon Lord crafting recepty; kontroluj potřebný tier. |
 | <span id="ref-ore-gem-log-odyle">**Ore / Gem / Log / Odyle**</span> | Essence Extraction a zpracování. | Suroviny pro crafting; Odyle node a Energy jsou různé položky. |
@@ -114,7 +114,7 @@ Název, grade a Bound varianta jsou součást identity položky. Tabulka je kata
 ## Použít, uložit nebo zpracovat?
 
 :::tip[Tip: před zpracováním porovnej jiné použití]
-**Doporučení Tarot Clubu:** před extrakcí Unique kusu prověř Transfer/Sync recept; před spotřebováním Arcana porovnej skill řádky. U klíče zkontroluj konkrétní typ truhly. U materiálu, jehož zdroj tabulka popisuje obecně, otevři Source/recept v klientu — obecný seznam není slib dropu z každého monstra.
+**Doporučení Tarot Clubu:** před extrakcí Unique kusu prověř Transfer/Sync recept; před spotřebováním Arcana porovnej řádky schopností. U klíče zkontroluj konkrétní typ truhly. U materiálu, jehož zdroj tabulka popisuje obecně, otevři Source/recept v klientu — obecný seznam není slib dropu z každého monstra.
 :::
 
 Nákupní ceny a limity udržujeme v [Obchodech](../obchody/). Postup pro kameny je v [Manastones a Theostones](../kameny/), zpracování surovin v [Craftingu](../crafting/).

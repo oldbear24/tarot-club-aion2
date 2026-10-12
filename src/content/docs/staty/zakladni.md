@@ -3,6 +3,7 @@ title: Základní atributy
 description: Co dělají Might, Constitution, Dexterity, Intelligence, Precision a Willpower.
 edition: global-launch
 reviewedAt: '2026-10-12'
+referenceCategory: staty
 evidence: community
 sources:
   - title: Wikily — přepis základních atributů
