@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import { resolve } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { parse } from 'yaml';
-import { assemble, previewBase, previewListing, selectPreviewRuns } from './pages-previews.mjs';
+import { assemble, dispatch, previewBase, previewListing, selectPreviewRuns } from './pages-previews.mjs';
 
 const repository = 'oldbear24/tarot-club-aion2';
 const sha = 'a'.repeat(40);
@@ -71,13 +71,32 @@ test('PR builds lack write permissions and publisher checks out only trusted mai
   assert.equal(preview.permissions.contents, 'read');
   assert.ok(!Object.values(preview.permissions).includes('write'));
   assert.ok(preview.on.pull_request.types.includes('synchronize'));
-  assert.deepEqual(pages.on.pull_request_target.types, ['closed']);
+  assert.equal(pages.on.workflow_dispatch.inputs.closed_pr.type, 'number');
   for (const job of Object.values(pages.jobs)) {
     const checkout = job.steps.find(step => step.uses?.startsWith('actions/checkout'));
     assert.equal(checkout.with.ref, 'main');
     assert.equal(checkout.with['persist-credentials'], false);
   }
   assert.equal(pages.jobs.deploy.permissions.deployments, 'write');
+  assert.ok(!pages.on.workflow_run);
+  const publisher = parse(await readFile('.github/workflows/pr-preview-publish.yml', 'utf8'));
+  assert.deepEqual(publisher.on.pull_request_target.types, ['closed']);
+  assert.deepEqual(publisher.on.push.branches, ['main']);
+  assert.equal(publisher.jobs.request.steps[0].with.ref, 'main');
+  assert.equal(publisher.jobs.request.permissions.actions, 'write');
+  assert.equal(publisher.jobs.request.permissions.pages, undefined);
+});
+
+test('successful preview dispatches main and retires legacy publishers without cancelling main pushes', async () => {
+  const calls = [];
+  const api = { list: async () => [
+    { id: 1, event: 'workflow_run', status: 'waiting', path: '.github/workflows/pages.yml', head_repository: { full_name: repository } },
+    { id: 2, event: 'push', status: 'waiting', path: '.github/workflows/pages.yml', head_repository: { full_name: repository } },
+    { id: 3, event: 'workflow_run', status: 'in_progress', path: '.github/workflows/pages.yml', head_repository: { full_name: repository } },
+  ], request: async (path, body) => { calls.push({ path, body }); } };
+  await dispatch(api, { GITHUB_REPOSITORY: repository, GITHUB_RUN_ID: '9' });
+  assert.deepEqual(calls, [{ path: '/actions/runs/1/cancel', body: {} }, { path: '/actions/runs/3/cancel', body: {} },
+    { path: '/actions/workflows/pages.yml/dispatches', body: { ref: 'main' } }]);
 });
 
 test('publishing retains main and multiple open previews, and removes closed previews', async () => {

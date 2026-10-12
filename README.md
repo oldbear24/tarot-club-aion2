@@ -86,6 +86,6 @@ Kód PR se sestavuje pouze s oprávněními pro čtení a bez sdílené zapisova
 
 Artefakty se uchovávají 90 dní, případně kratší dobu podle pravidel repozitáře. Pokud starý PR zůstane bez nového buildu a artefakt vyprší nebo ho někdo smaže, po příštím nasazení nebude jeho náhled dostupný; znovu spusť workflow nebo odešli další commit do PR. Při neúspěšném novém buildu zůstává poslední úspěšný náhled, dokud jeho artefakt existuje; přehled uvádí jeho commit.
 
-Workflow pro publikování musí být v `main`, aby fungoval trigger `workflow_run`. Nové workflow se následně spustí při dalším commitu do již otevřeného PR. **Settings → Pages → Source** zůstává **GitHub Actions**; náhledy nevyžadují nový hosting, účet ani token uložený v secrets.
+Workflow pro publikování musí být v `main`, aby fungoval trigger `workflow_run`. Důvěryhodný workflow **Vyžádání nasazení wiki a náhledů** po úspěšném náhledovém buildu, commitu do `main` nebo zavření PR požádá přes `workflow_dispatch` o Pages nasazení z `main`; samotný deployment tak odpovídá pravidlům prostředí `github-pages`. Nové workflow se následně spustí při dalším commitu do již otevřeného PR. **Settings → Pages → Source** zůstává **GitHub Actions**; náhledy nevyžadují nový hosting, účet ani token uložený v secrets.
 
 Neoficiální fanouškovský projekt. AION 2 a související značky patří NCSOFT. Repozitář neobsahuje převzaté herní obrázky ani plné kopie cizích průvodců.

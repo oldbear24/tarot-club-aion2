@@ -32,8 +32,13 @@ function client(repository, token) {
   const headers = { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json', 'X-GitHub-Api-Version': '2022-11-28' };
   async function request(path, body) {
     const response = await fetch(root + path, { headers, method: body ? 'POST' : 'GET', ...(body ? { body: JSON.stringify(body) } : {}), signal: AbortSignal.timeout(30_000) });
-    if (!response.ok) throw new Error(`GitHub API: HTTP ${response.status} (${path.split('?')[0]}).`);
-    return response.json();
+    if (!response.ok) {
+      const error = new Error(`GitHub API: HTTP ${response.status} (${path.split('?')[0]}).`);
+      error.status = response.status;
+      throw error;
+    }
+    const content = await response.text();
+    return content ? JSON.parse(content) : undefined;
   }
   async function list(path, key, maxPages = 20) {
     const result = [];
@@ -102,14 +107,35 @@ async function deployments(api, env) {
     await api.request(`/deployments/${deployment.id}/statuses`, { state: 'success', environment_url: record.url,
       log_url: `https://github.com/${env.GITHUB_REPOSITORY}/actions/runs/${env.GITHUB_RUN_ID}`, auto_inactive: true });
   }
+  const closed = Number(env.CLOSED_PR || 0);
+  if (closed) {
+    previewBase(env.BASE_PATH || '/', closed);
+    const previous = await api.list(`/deployments?environment=pr-preview-${closed}`);
+    for (const deployment of previous) await api.request(`/deployments/${deployment.id}/statuses`, { state: 'inactive' });
+  }
+}
+
+export async function dispatch(api, env) {
+  // Retire legacy workflow_run publishers, including ones queued behind the blocked job.
+  // A fresh dispatch still respects the existing github-pages environment rules.
+  const legacy = await api.list('/actions/workflows/pages.yml/runs?event=workflow_run', 'workflow_runs');
+  for (const run of legacy) {
+    if (run.event === 'workflow_run' && ['waiting', 'pending', 'queued', 'in_progress'].includes(run.status) && run.path === '.github/workflows/pages.yml' &&
+        run.head_repository?.full_name === env.GITHUB_REPOSITORY && run.id !== Number(env.GITHUB_RUN_ID)) {
+      try { await api.request(`/actions/runs/${run.id}/cancel`, {}); }
+      catch (error) { if (error.status !== 409) throw error; } // Already finished between list and cancel.
+    }
+  }
+  const body = { ref: 'main' };
   if (env.GITHUB_EVENT_NAME === 'pull_request_target' && env.GITHUB_EVENT_PATH) {
     const event = JSON.parse(await readFile(env.GITHUB_EVENT_PATH, 'utf8'));
     if (event.action === 'closed') {
-      previewBase(env.BASE_PATH || '/', event.number);
-      const previous = await api.list(`/deployments?environment=pr-preview-${event.number}`);
-      for (const deployment of previous) await api.request(`/deployments/${deployment.id}/statuses`, { state: 'inactive' });
+      previewBase('/', event.number);
+      body.inputs = { closed_pr: String(event.number) };
     }
   }
+  await api.request('/actions/workflows/pages.yml/dispatches', body);
+  console.log('Vyžádáno nasazení produkce a náhledů z main.');
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
@@ -117,5 +143,6 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const command = process.argv[2];
   if (command === 'assemble') await assemble(api, process.env);
   else if (command === 'deployments') await deployments(api, process.env);
+  else if (command === 'dispatch') await dispatch(api, process.env);
   else throw new Error('Neznámý příkaz Pages.');
 }
