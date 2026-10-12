@@ -61,6 +61,10 @@ test('citations map only selected IDs and stream keeps identical application-own
   assert.equal(parseAnswer('{"sourceIds":[]}', passages, true).length, 0);
   assert.equal(parseAnswer('not JSON', passages, true).length, 0);
   assert.equal(parseAnswer(JSON.stringify({ sourceIds: [passages[0].id, passages[0].id] }), passages, true).length, 1);
+  const thinking = '<think>\n\n</think>\n\n' + text;
+  assert.deepEqual(parseAnswer(thinking, passages, true), blocks, 'WebLLM empty thinking prefix is not part of the answer');
+  assert.deepEqual(parseAnswer(thinking.slice(0, -1), passages, false), blocks);
+  assert.equal(parseAnswer('<think>\n\n</', passages, false).length, 0);
 });
 
 test('retrieval handles Czech, aliases, unknown subjects and context limits without remote calls', () => {
@@ -76,6 +80,8 @@ test('retrieval handles Czech, aliases, unknown subjects and context limits with
   assert.ok(found.length <= 6);
   assert.ok(found.reduce((n, passage) => n + passage.excerpt.length, 0) <= CONTEXT_CHAR_LIMIT);
   assert.equal(retrievePassages(index, 'Jak zvýšit GS?').length, 0, 'unrelated article-wide aliases are not evidence');
+  assert.ok(retrievePassages(index, 'Jak funguje Precision?').some(item => item.id === passages[0].id), 'filler verbs do not veto evidence');
+  assert.ok(retrievePassages(index, 'Co dělá Precision v sandwich?').length, 'rare wiki terms outweigh one unknown word');
 });
 
 test('index validation rejects duplicate IDs, foreign article links and invalid evidence', () => {

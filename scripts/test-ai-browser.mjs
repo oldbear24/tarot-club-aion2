@@ -46,7 +46,8 @@ async function pageWithMock(options = {}) {
         if(window.__testMode==='error') throw new Error('device lost');
         const source=sources.find(s=>s.title==='Základní atributy'&&s.heading==='Body nejsou procentní šance')||sources[0];
         const id=window.__testMode==='unknown'?'invented:999':source.id;
-        const text=JSON.stringify({sourceIds:[id]});
+        // WebLLM keeps its prefilled empty thinking block in the streamed content.
+        const text='<think>\n\n</think>\n\n'+JSON.stringify({sourceIds:[id]});
         onText(text.slice(0,-1)); await new Promise(r=>setTimeout(r,30)); onText(text); return text;
       }
       dispose() { window.__aiLifecycle.disposed++; }

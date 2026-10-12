@@ -28,7 +28,11 @@ function mapIds(ids: unknown[], sources: Passage[]): AnswerBlock[] {
   return blocks;
 }
 
-export function parseAnswer(text: string, sources: Passage[], complete: boolean): AnswerBlock[] {
+// With enable_thinking: false, WebLLM prefills an empty <think> block and keeps it in the returned content.
+const stripThinking = (text: string) => text.replace(/^\s*<think>[\s\S]*?<\/think>/, '');
+
+export function parseAnswer(raw: string, sources: Passage[], complete: boolean): AnswerBlock[] {
+  const text = stripThinking(raw);
   if (complete) {
     try {
       const value = JSON.parse(text);

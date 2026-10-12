@@ -4,13 +4,15 @@ import type { Passage, WikiIndex } from './types.ts';
 
 export const MAX_QUESTION_LENGTH = 800;
 export const CONTEXT_CHAR_LIMIT = 3500;
-const stopWords = new Set(('jak jaka jake jaky co k ke na se si v ve z ze pro a i o do to je jsou ma mam mi me muj moje kde kdy kolik cim cem cemu ktery ktere prosim rychle efektivne zvysit zvysim zvyseni znamena delaji dela slouzi what how does do is the can are aion 2').split(' '));
+const stopWords = new Set(('jak jaka jake jaky co k ke na se si v ve z ze pro a i o do to je jsou ma mam mi me muj moje kde kdy kolik cim cem cemu ktery ktere prosim rychle efektivne zvysit zvysim zvyseni znamena delaji dela slouzi funguje fungujou fungovat ziskat ziskam ziskavat vybrat vyberu dostat dostanu dostanes udelat delat muzu muzes muze potrebuji potrebuju chci mit nejaky nejaka nejake jaky jakou jakym nebo ale tak uz jeste ted lepsi nejlepsi what how does do is the can are aion 2').split(' '));
 const aliases: Record<string, string[]> = {
   gs: ['gear score', 'item level', 'vybava'], cp: ['combat power', 'bojova sila'],
   runy: ['rune', 'runes', 'run'], rune: ['runy', 'runes'], runes: ['runy', 'rune'],
   denni: ['daily', 'den'], daily: ['denni'], tydenni: ['weekly'], weekly: ['tydenni'],
   abyss: ['propast'], enhancement: ['vylepsovani', 'posilovani'],
   precision: ['presnost'], presnost: ['precision', 'accuracy'],
+  povolani: ['trida', 'class'], trida: ['class'], questy: ['quest', 'ukoly'], ukoly: ['quest', 'questy'],
+  vybava: ['gear', 'equipment'], vybavu: ['vybava', 'gear'],
 };
 const words = (value: string) => normalize(value).match(/[\p{L}\p{N}]+/gu) || [];
 function stem(word: string): string {
@@ -33,20 +35,32 @@ export function retrievePassages(index: WikiIndex, question: string): Passage[] 
   if (!terms.length || question.length > MAX_QUESTION_LENGTH + 401) return [];
   const definition = /^(?:co|k cemu)\b/.test(normalize(question));
   const howTo = /^jak\b/.test(normalize(question));
-  const ranked = index.passages.map(passage => {
+  const rows = index.passages.map(passage => {
     const body = words(passage.excerpt);
     const heading = words(passage.heading || '');
     const title = words(passage.title);
     const metadata = words(passage.aliases.join(' '));
-    let covered = 0, score = 0;
-    for (const term of terms) {
+    const hits = terms.map(term => {
       const alternatives = [term, ...(aliases[term] || []).flatMap(words)];
       const has = (haystack: string[]) => alternatives.some(alt => haystack.some(word => matches(alt, word)));
       const exact = body.filter(word => word === term || (aliases[term] || []).includes(word)).length;
+      return { exact, body: has(body), heading: has(heading), title: has(title), metadata: has(metadata) };
+    });
+    return { passage, hits };
+  });
+  // Rare wiki terms carry the question; filler words missing from the whole wiki must not veto every passage.
+  const weights = terms.map((_, i) => {
+    const frequency = rows.filter(row => row.hits[i].body || row.hits[i].heading).length;
+    return frequency ? 1 + Math.log(rows.length / frequency) : 1;
+  });
+  const totalWeight = weights.reduce((sum, weight) => sum + weight, 0);
+  const ranked = rows.map(({ passage, hits }) => {
+    let covered = 0, score = 0;
+    hits.forEach((hit, i) => {
       // A whole article's aliases cannot turn every unrelated row into evidence.
-      if (has(body) || has(heading)) covered++;
-      score += Math.min(exact, 3) * 5 + (has(body) ? 3 : 0) + (has(heading) ? 5 : 0) + (has(title) ? 6 : 0) + (has(metadata) ? 1 : 0);
-    }
+      if (hit.body || hit.heading) covered += weights[i];
+      score += Math.min(hit.exact, 3) * 5 + (hit.body ? 3 : 0) + (hit.heading ? 5 : 0) + (hit.title ? 6 : 0) + (hit.metadata ? 1 : 0);
+    });
     const prose = !passage.excerpt.includes(' · ');
     if (prose) score += 2;
     if (definition && prose && /\b(je|jsou|tedy|navysuje|znamena|slouzi)\b/.test(normalize(passage.excerpt))) score += 5;
@@ -54,7 +68,7 @@ export function retrievePassages(index: WikiIndex, question: string): Passage[] 
     if (/^(podklady|pruvodce vychazi|datum reserse)/.test(normalize(passage.excerpt))) score -= 10;
     if (howTo && prose && /nejdriv|kontrola|zkontroluj|dopln|zapln/.test(normalize(passage.excerpt))) score += 8;
     return { passage, score, covered };
-  }).filter(item => item.covered / terms.length >= 0.7 && item.score >= 5)
+  }).filter(item => item.covered / totalWeight >= 0.6 && item.score >= 5)
     .sort((a, b) => b.score - a.score || a.passage.id.localeCompare(b.passage.id));
   const selected: Passage[] = [];
   const perPage = new Map<string, number>();
