@@ -23,6 +23,7 @@ export default defineConfig({
     },
     sidebar: [
       { label: 'Úvod', slug: '' },
+      { label: 'Hledat v referenci', slug: 'reference/prehled' },
       { label: 'Staty bez tajemství', items: [
         { label: 'Základní atributy', slug: 'staty/zakladni' },
         { label: 'Útok a poškození', slug: 'staty/utok' },
@@ -31,6 +32,9 @@ export default defineConfig({
         { label: 'Pantheon / božské staty', slug: 'staty/pantheon' },
         { label: 'Limity a sporné hodnoty', slug: 'staty/limity' },
       ] },
+      { label: 'Referenční příručka', collapsed: false, items: [{ autogenerate: { directory: 'reference' } }] },
+      { label: 'Třídy', collapsed: true, items: [{ autogenerate: { directory: 'tridy' } }] },
+      { label: 'Dungeony a bossové', collapsed: true, items: [{ autogenerate: { directory: 'dungeony' } }] },
       { label: 'Praktické průvodce', items: [{ autogenerate: { directory: 'pruvodce' } }] },
       { label: 'O wiki', items: [{ autogenerate: { directory: 'wiki' } }] },
     ],

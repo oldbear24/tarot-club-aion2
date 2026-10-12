@@ -34,5 +34,11 @@ Nevkládej cizí plné návody, assety bez oprávnění ani soukromé údaje hr�
 
 - Popiš změněné tvrzení, zdroj a cílový patch.
 - Spusť `npm ci` a `npm run verify`.
-- Soubory v `pruvodce/` a `wiki/` mají automatickou navigaci. Nový statový článek přidej do `astro.config.mjs`.
+- Soubory v `pruvodce/`, `wiki/`, `reference/`, `tridy/` a `dungeony/` mají automatickou navigaci. Nový statový článek přidej do `astro.config.mjs`.
 - Po sloučení na `main` se spustí nasazení Pages, pokud je vzdálený hosting povolen.
+
+## Referenční hesla
+
+U referenčních článků nastav `referenceCategory` podle schématu v `src/content.config.ts`. `aliases` přidává alternativní názvy článku; `lookupAliases` váže synonymum ke konkrétnímu heslu (položky `term` a `aliases`).
+
+Hesla pro vyhledávací rozcestník zapisuj do tabulky. První buňka musí mít stabilní a v článku jedinečný identifikátor, například `<span id="ref-kina">**Kina**</span>`. Další buňky obsahují význam a praktický kontext. Identifikátory neměň při stylistických úpravách, protože na ně vedou přímé odkazy. Nový článek propojuj také z úvodní stránky a souvisejících průvodců.

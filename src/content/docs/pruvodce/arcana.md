@@ -7,6 +7,9 @@ edition: global-launch
 reviewedAt: '2026-10-12'
 evidence: community
 sources:
+  - title: Aion 2 Maps — Transcendence, grade caps Global launch
+    url: https://aion2maps.com/guides/transcendence/
+    scope: global
   - title: Aion 2 Maps — Arcana, Global launch pool a odlišení asijských hodnot
     url: https://aion2maps.com/guides/arcana/
     scope: global
@@ -19,12 +22,12 @@ sources:
 
 Global launch používá **Chalice, Parchment, Compass, Bell a Mirror**. Karty z **Transcendence** přidávají vlastní Item Level, božský stat a řádky schopností. Podklady jsou komunitní Global launch data kontrolovaná 12. října 2026.
 
-| Kvalita | Základní Item Level karty | Počet řádků |
-| --- | --- | --- |
-| Common | 20 | 1 |
-| Rare | 40 | 2 |
-| Epic | 60 | 3 |
-| Unique | 80 | 4 |
+| Kvalita | Základní Item Level karty | Počet řádků | Max. level podle Global dat |
+| --- | --- | --- | --- |
+| Common | 20 | 1 | +2 |
+| Rare | 40 | 2 | +3 |
+| Epic | 60 | 3 | +4 |
+| Unique | 80 | 4 | +5 |
 
 Tiery Transcendence začínají na **1 600 / 1 900 / 2 200 / 2 500 GS**. Vyšší tier mění nabídku odměn; nezaručuje konkrétní vysněný řádek při každém claimu.
 
@@ -40,9 +43,11 @@ Tiery Transcendence začínají na **1 600 / 1 900 / 2 200 / 2 500 GS**. Vyšš�
 
 ## Level karty není level schopnosti
 
-Karty rozvíjíš spotřebováním jiných karet nebo **Training Arcana**. Podklady popisují levelování do +5 a přenos vložených EXP při použití staré karty jako potravy. Rozložení přírůstků mezi skill řádky je náhodné; detailní limity řádků zdroj částečně odvozuje z asijské verze.
+Karty rozvíjíš spotřebováním jiných karet nebo **Training Arcana**. Podklady rozlišují strop podle grade: Common +2, Rare +3, Epic +4 a Unique +5. Při použití staré karty jako potravy popisují zachování vložených EXP; prohlédni náhled před potvrzením. Rozložení přírůstků mezi skill řádky je náhodné; detailní limity řádků zdroj částečně odvozuje z asijské verze.
 
 **Postup Tarot Clubu:** porovnej náhled EXP, cílovou kartu a řádky ještě před spotřebováním. Kartu se vzácnou použitelnou kombinací si označ nebo zamkni, pokud to klient umožňuje. Nevybírej automaticky všechny nenasazené karty jako materiál.
+
+**Upřesnění při rozšíření reference 12. října:** původní obecný strop +5 se vztahuje na Unique, nikoli každou kvalitu. Podkladem je Global tabulka v [Transcendence průvodci](https://aion2maps.com/guides/transcendence/).
 
 ## Kdy řešit Transmute
 

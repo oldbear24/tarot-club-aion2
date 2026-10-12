@@ -1,6 +1,8 @@
 ---
 import Default from '@astrojs/starlight/components/PageTitle.astro';
+import ReferenceBrowser from './ReferenceBrowser.astro';
 const data = Astro.locals.starlightRoute.entry.data;
+const aliases = [...data.aliases, ...data.lookupAliases.flatMap(item => item.aliases)];
 const labels = { official: 'Oficiální podklady', community: 'Komunitní podklady', editorial: 'Doporučení Tarot Clubu', mixed: 'Oficiální i komunitní podklady' };
 ---
 <Default {...Astro.props} />
@@ -9,3 +11,5 @@ const labels = { official: 'Oficiální podklady', community: 'Komunitní podkla
   <span>{labels[data.evidence]}</span>
   <span>Rešerše <time datetime={data.reviewedAt}>{new Intl.DateTimeFormat('cs-CZ', { timeZone: 'UTC' }).format(new Date(data.reviewedAt))}</time></span>
 </div>}
+{aliases.length > 0 && <details class="search-aliases"><summary>Názvy a zkratky pro vyhledávání</summary><p>{aliases.join(' · ')}</p></details>}
+{data.referenceHub && <ReferenceBrowser />}

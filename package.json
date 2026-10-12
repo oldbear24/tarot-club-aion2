@@ -9,7 +9,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "verify": "npm run check && npm run build && node scripts/verify-build.mjs"
+    "verify": "node --test scripts/reference.test.mjs && npm run check && npm run build && node scripts/verify-build.mjs"
   },
   "dependencies": { "@astrojs/starlight": "0.42.6", "astro": "7.3.8" },
   "devDependencies": { "@astrojs/check": "0.9.10", "typescript": "^5.9.3" }

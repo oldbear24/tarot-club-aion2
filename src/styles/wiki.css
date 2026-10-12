@@ -74,3 +74,23 @@ header.header { backdrop-filter: blur(16px); background: color-mix(in srgb, var(
 @media (max-width: 50rem) { .wiki-grid { grid-template-columns: repeat(2, 1fr); } .club-hero { gap: 1rem; } }
 @media (max-width: 35rem) { .club-hero { grid-template-columns: 1fr; padding-top: 1rem; } .hero-art { display: none; } .club-hero h1 { max-width: 11ch; } .wiki-grid { grid-template-columns: 1fr; } .wiki-grid a { min-height: auto; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+.search-aliases { margin-top: 1rem; color: var(--sl-color-gray-2); font-size: .8rem; }
+.search-aliases p { line-height: 1.6; }
+.reference-browser { margin-block: 2rem; }
+.reference-controls { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: .8rem; align-items: end; }
+.reference-controls label { display: grid; gap: .4rem; font-size: .8rem; color: var(--sl-color-gray-2); }
+.reference-controls input, .reference-controls select { width: 100%; min-width: 0; padding: .75rem; border: 1px solid var(--sl-color-gray-4); border-radius: .4rem; background: var(--sl-color-black); color: var(--sl-color-white); font: inherit; }
+.reference-browser button { border: 1px solid var(--sl-color-gray-4); border-radius: .4rem; padding: .65rem 1rem; background: var(--sl-color-gray-6); color: var(--sl-color-white); cursor: pointer; font: inherit; font-size: .85rem; }
+.reference-controls button { justify-self: start; }
+.reference-status { font-size: .85rem; color: var(--sl-color-gray-2); margin-block: 1.2rem; }
+.reference-results { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; }
+.reference-results li { min-width: 0; }
+.reference-results li[hidden], .reference-browser [hidden] { display: none; }
+.reference-results a { display: flex; flex-direction: column; gap: .55rem; height: 100%; border: 1px solid var(--sl-color-gray-5); border-radius: .5rem; padding: 1rem; color: var(--sl-color-white); text-decoration: none; overflow-wrap: anywhere; }
+.reference-results a:hover { border-color: var(--sl-color-accent); }
+.reference-results span { font-size: .7rem; color: var(--club-gold); }
+.reference-results small { font-size: .8rem; line-height: 1.5; color: var(--sl-color-gray-2); }
+.reference-results em { font-size: .7rem; font-style: normal; color: var(--sl-color-gray-3); }
+.sl-markdown-content span[id^='ref-'] { scroll-margin-top: 7rem; }
+@media (max-width: 50rem) { .reference-controls { grid-template-columns: 1fr 1fr; } .reference-controls label:first-child { grid-column: 1 / -1; } }
+@media (max-width: 35rem) { .reference-results, .reference-controls { grid-template-columns: 1fr; } }

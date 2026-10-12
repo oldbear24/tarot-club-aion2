@@ -1,0 +1,74 @@
+---
+import { getCollection } from 'astro:content';
+import { buildReferenceIndex, categoryLabels } from '../lib/reference';
+const entries = buildReferenceIndex(await getCollection('docs'), import.meta.env.BASE_URL);
+const categories = [...new Set(entries.map(entry => entry.category))];
+---
+<section class="reference-browser" aria-label="Vyhledávání v referenční příručce" data-pagefind-ignore>
+  <div class="reference-controls">
+    <label>Hledat název, zkratku nebo význam
+      <input type="search" data-ref-search placeholder="Např. Stigma, Kinah, kritický zásah…" autocomplete="off" />
+    </label>
+    <label>Téma
+      <select data-ref-category>
+        <option value="">Všechna témata</option>
+        {categories.map(category => <option value={category}>{categoryLabels[category]}</option>)}
+      </select>
+    </label>
+    <label>Výsledky
+      <select data-ref-kind><option value="">Hesla i články</option><option value="term">Jen hesla</option><option value="article">Jen články</option></select>
+    </label>
+    <button type="button" data-ref-reset>Vymazat filtry</button>
+  </div>
+  <p class="reference-status" role="status" aria-live="polite" data-ref-status>{entries.length} hesel a článků.</p>
+  <p data-ref-empty hidden>Nic jsme nenašli. Zkus kratší název nebo jiné téma. Pro ostatní průvodce použij hlavní vyhledávání wiki.</p>
+  <ul class="reference-results" data-ref-results>
+    {entries.map(entry => <li data-ref-entry data-search={entry.search} data-category={entry.category} data-kind={entry.kind}>
+      <a href={entry.href}><strong>{entry.name}</strong><span>{entry.kind === 'article' ? 'Článek' : 'Heslo'} · {categoryLabels[entry.category]}</span><small>{entry.summary}</small><em>{entry.page}</em></a>
+    </li>)}
+  </ul>
+  <button type="button" data-ref-more hidden>Zobrazit dalších 60</button>
+  <noscript>Všechna hesla jsou dostupná níže. Pro hledání použij také Ctrl+F v prohlížeči.</noscript>
+</section>
+<script>
+  import { normalize } from '../lib/reference';
+  function initReferences() {
+    document.querySelectorAll<HTMLElement>('.reference-browser').forEach(root => {
+      if (root.dataset.initialized) return;
+      root.dataset.initialized = 'true';
+      const search = root.querySelector<HTMLInputElement>('[data-ref-search]')!;
+      const category = root.querySelector<HTMLSelectElement>('[data-ref-category]')!;
+      const kind = root.querySelector<HTMLSelectElement>('[data-ref-kind]')!;
+      const items = [...root.querySelectorAll<HTMLElement>('[data-ref-entry]')];
+      const more = root.querySelector<HTMLButtonElement>('[data-ref-more]')!;
+      const status = root.querySelector<HTMLElement>('[data-ref-status]')!;
+      const empty = root.querySelector<HTMLElement>('[data-ref-empty]')!;
+      let limit = 60;
+      const render = () => {
+        const query = normalize(search.value).split(/\s+/).filter(Boolean);
+        let matches = 0;
+        for (const item of items) {
+          const match = (!category.value || item.dataset.category === category.value)
+            && (!kind.value || item.dataset.kind === kind.value)
+            && query.every(part => (item.dataset.search || '').includes(part));
+          if (match) matches++;
+          item.hidden = !match || matches > limit;
+        }
+        status.textContent = `Zobrazeno ${Math.min(matches, limit)} z ${matches} výsledků.`;
+        empty.hidden = matches !== 0;
+        more.hidden = matches <= limit;
+      };
+      const filter = () => { limit = 60; render(); };
+      search.addEventListener('input', filter);
+      category.addEventListener('change', filter);
+      kind.addEventListener('change', filter);
+      root.querySelector('[data-ref-reset]')!.addEventListener('click', () => {
+        search.value = ''; category.value = ''; kind.value = ''; filter(); search.focus();
+      });
+      more.addEventListener('click', () => { limit += 60; render(); });
+      render();
+    });
+  }
+  initReferences();
+  document.addEventListener('astro:page-load', initReferences);
+</script>

@@ -44,3 +44,7 @@ Ke čtení statů použij [Základní atributy](../../staty/zakladni/), [Útok](
 | Dungeon, který platí potřebný typ gearu. | [Dungeony a garantované odměny](../dungeony-odyle/). |
 
 Kompletní drop tabulky a nejlepší předměty pro jednotlivé třídy zde zatím nejsou. Konkrétní postup pro dosažení dalších vstupů najdeš v [GS progresi](../gs-progrese/); rozvoj mimo výbavu v [CP průvodci](../cp-postava/).
+
+## Referenční příručka
+
+Pro jednotlivé systémy použij [kameny a vylepšování](../../reference/kameny/) a [crafting](../../reference/crafting/).

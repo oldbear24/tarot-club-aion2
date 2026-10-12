@@ -4,12 +4,15 @@
 
 ## Aktuální obsah
 
-- 26 českých obsahových stránek: úvod, šest průvodců staty, patnáct praktických průvodců a čtyři stránky o wiki.
+- 62 českých obsahových stránek: úvod, šest průvodců staty, patnáct praktických průvodců, osmnáct referenčních stránek, devět stránek tříd, devět dungeonových stránek a čtyři stránky o wiki.
 - Vlastní tarotový motiv, české UI, mobilní navigace, světlý/tmavý režim.
 - Fulltextové vyhledávání Pagefind bez backendu.
 - Každý článek má cílovou edici, datum rešerše, typ podkladů a zdroje.
 - GS a CP progrese, otevřený svět, Abyss, daily/weekly s prioritami, limity a odlišením Global od neotevřeného obsahu.
-- Runy/pás/amulet, Enhancement a Transfer, Arcana, Daevanion, Specialty/Stigma, dungeonové odměny a Nightmare; úvod odkazuje na všech 25 tematických článků.
+- Runy/pás/amulet, Enhancement a Transfer, Arcana, Daevanion, Specialty/Stigma, dungeonové odměny a Nightmare; úvod odkazuje na všech 61 tematických článků.
+- Referenční hledání podle názvu, významu a aliasu s filtry a odkazy na konkrétní řádky; hesla se při sestavení odvozují přímo z Markdown tabulek.
+- Katalog 148 statů, měny, materiály, obchody, aktivity, crafting/gathering, kolekce, storage, Market a legie.
+- Osm class příruček a bossové tabulky šesti Expeditions, obou Transcendence dungeonů a historického kontextu Ludry.
 - Workflow pro ověření pull requestů a nasazení na GitHub Pages.
 
 Repozitář: [oldbear24/tarot-club-aion2](https://github.com/oldbear24/tarot-club-aion2). Živý web je dostupný až po zapnutí GitHub Pages a úspěšném nasazení.

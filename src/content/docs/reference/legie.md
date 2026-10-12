@@ -1,0 +1,48 @@
+---
+title: Legions — členové, Hall a společný sklad
+description: Fungování legie, oprávnění, pronájem Hallu a komunitní správa.
+sidebar:
+  order: 15
+edition: global-launch
+reviewedAt: '2026-10-12'
+evidence: community
+referenceCategory: ucet
+aliases:
+- legion
+- guild
+- gilda
+- legie
+- Hall
+- Elite Officer
+- Legion Storage
+- Legion Coin
+sources:
+- title: Aion 2 Maps — legions
+  url: https://aion2maps.com/guides/legions/
+  scope: global
+---
+
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+
+## Funkce legie
+
+| Funkce | Podklady Global / omezení |
+| --- | --- |
+| <span id="ref-kapacita">**Kapacita**</span> | 128 členů podle klientských dat; level legie sám nepřidává sloty. |
+| <span id="ref-role">**Role**</span> | Leader, až 4 Elite Officers, členové; oprávnění se nastavují. |
+| <span id="ref-legion-level">**Legion level**</span> | 20 úrovní a odpovídající malé bonusy podle dat. |
+| <span id="ref-hall">**Hall**</span> | Pronájem základny; podklady uvádějí 1 000 000 Kina na 30 dnů. |
+| <span id="ref-legion-storage-2">**Legion Storage**</span> | Základ 20 slotů; přístup podle oprávnění a tooltipu předmětu. |
+| <span id="ref-odchod-nove-clenstvi">**Odchod / nové členství**</span> | 24hodinovou čekací dobu zdroj dokládá asijským klientem; aktuální Global dialog má přednost. |
+
+## Hall a oprávnění
+
+Hall není automaticky permanentní vlastnictví. Sleduj konec pronájmu a kdo smí prodloužit nájem. U skladu nastav zvlášť vkládání a vybírání; sdílení zásoby není stejné jako sdílení osobních odměn nebo serverových daily limitů.
+
+## Doporučení Tarot Clubu
+
+Domluvte roli skladu, rozpočet Hallu a pravidla pro vzácné materiály. Pro dungeony odděl organizátora skupiny od vlastnictví gearu a odměn. Před hromadnou úpravou oprávnění zkontroluj, kdo získá přístup k výběru.
+
+Při řešení neaktivního Leader či rozpuštění legie postupuj podle aktuální podpory a Global policy; v této příručce nejsou automatické právní nebo obnovovací záruky.
+
+[Inventář](../inventar/) vysvětluje osobní sklady, [třídy](../../tridy/prehled/) pomáhají domluvit sestavu party.
