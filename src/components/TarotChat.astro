@@ -3,10 +3,10 @@
     <span class="tarot-chat__eyebrow">✦ TAROT AI · EXPERIMENTÁLNÍ</span>
     <h2>Najdi odpověď i její zdroj</h2>
     <p>Český pomocník vybere vysvětlení z článků wiki. Každou odpověď si můžeš otevřít přímo v příslušné sekci.</p>
-    <p><strong>Zapnutí stáhne přibližně 400 MB.</strong> Malý model Qwen3 0.6B běží na tvém zařízení; počítej orientačně se 2 GB volné grafické paměti a další operační pamětí. Příprava může trvat několik minut, zejména na mobilu.</p>
+    <p><strong>Zapnutí stáhne přibližně 1 GB.</strong> Model Qwen3 1.7B běží na tvém zařízení; počítej orientačně s 2–2,6 GB volné grafické paměti a další operační pamětí. Příprava může trvat několik minut, zejména na mobilu.</p>
     <p class="tarot-chat__fine">Soubory modelu se stahují z Hugging Face a úložiště MLC na GitHubu. Dotazy ani historie se neposílají vzdálené AI službě. Model se ukládá do cache prohlížeče, kterou může prohlížeč smazat. Chat zůstává jen v paměti této stránky.</p>
     <div class="tarot-chat__actions">
-      <button type="button" data-ai-activate>Zapnout lokální AI · cca 400 MB</button>
+      <button type="button" data-ai-activate>Zapnout lokální AI · cca 1 GB</button>
       <button type="button" data-ai-deactivate hidden>Vypnout AI</button>
       <button type="button" data-ai-search>Hledat ve wiki</button>
     </div>
@@ -22,6 +22,7 @@
     <label for="tarot-question">Otázka k AION 2</label>
     <textarea id="tarot-question" data-ai-input rows="3" maxlength="800" placeholder="Např. Co dělá Precision?" aria-describedby="tarot-input-help"></textarea>
     <p id="tarot-input-help" class="tarot-chat__fine">Enter odešle otázku, Shift+Enter vytvoří nový řádek. Nejvýše 800 znaků.</p>
+    <label class="tarot-chat__toggle"><input type="checkbox" data-ai-think checked /> Přemýšlet před odpovědí (pečlivější výběr, ale pomalejší)</label>
     <div class="tarot-chat__actions">
       <button type="submit" data-ai-send disabled>Odeslat</button>
       <button type="button" data-ai-reset>Nový chat</button>
@@ -54,6 +55,10 @@
   .tarot-chat [data-ai-status] { font-size: .85rem; color: var(--sl-color-accent-high); }
   .tarot-chat textarea { width: 100%; min-width: 0; resize: vertical; padding: .8rem; color: var(--sl-color-white); background: var(--sl-color-black); border: 1px solid var(--sl-color-gray-4); border-radius: .45rem; font: inherit; }
   .tarot-chat label { display: block; margin-bottom: .5rem; font-weight: 600; }
+  .tarot-chat .tarot-chat__toggle { display: flex; gap: .5rem; align-items: center; font-weight: normal; font-size: .85rem; }
+  .tarot-chat :global(.tarot-reasoning) { color: var(--sl-color-gray-2); font-size: .8rem; }
+  .tarot-chat :global(.tarot-reasoning summary) { cursor: pointer; }
+  .tarot-chat :global(.tarot-reasoning p) { white-space: pre-wrap; margin-block: .5rem 0; }
   .tarot-chat__messages { display: grid; gap: 1rem; margin-block: 1.5rem; overflow-wrap: anywhere; }
   .tarot-chat__messages:empty { display: none; }
   .tarot-chat :global(.tarot-message) { border: 1px solid var(--sl-color-gray-5); border-radius: .6rem; padding: 1rem; min-width: 0; }

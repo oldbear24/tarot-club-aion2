@@ -3,8 +3,9 @@ import { parseAnswer } from './protocol.ts';
 import { renderAnswer } from './render.ts';
 import type { WikiIndex } from './types.ts';
 import type { LocalModel } from './runtime.ts';
+import { modelFor } from './config.ts';
 
-type GPUAccess = { requestAdapter(): Promise<unknown | null> };
+type GPUAccess = { requestAdapter(): Promise<{ features?: { has(name: string): boolean } } | null> };
 
 function supportReason(): string | undefined {
   if (!window.isSecureContext) return 'Lokální AI potřebuje zabezpečené připojení HTTPS. Můžeš použít vyhledávání wiki.';
@@ -32,6 +33,7 @@ export function initTarotChat(): void {
   const send = get<HTMLButtonElement>('[data-ai-send]');
   const reset = get<HTMLButtonElement>('[data-ai-reset]');
   const progress = get<HTMLProgressElement>('[data-ai-progress]');
+  const think = get<HTMLInputElement>('[data-ai-think]');
   const base = import.meta.env.BASE_URL;
   let model: LocalModel | undefined;
   let ready = false, busy = false, loading = false;
@@ -68,7 +70,8 @@ export function initTarotChat(): void {
     updateControls();
     try {
       const gpu = (navigator as unknown as { gpu: GPUAccess }).gpu;
-      if (!await gpu.requestAdapter()) throw new Error('no-adapter');
+      const adapter = await gpu.requestAdapter();
+      if (!adapter) throw new Error('no-adapter');
       if (current !== generation) return;
       const { LocalModel } = await import('./runtime.ts');
       if (current !== generation) return;
@@ -76,7 +79,7 @@ export function initTarotChat(): void {
         if (current !== generation) return;
         progress.value = value;
         status.textContent = `Načítání modelu: ${Math.round(value * 100)} % (stažení a příprava).`;
-      });
+      }, modelFor(!!adapter.features?.has('shader-f16')));
       await model.initialize();
       if (current !== generation) return;
       ready = true;
@@ -178,14 +181,29 @@ export function initTarotChat(): void {
         status.textContent = 'Pro tuto otázku jsem nenašel dostatečné podklady.';
         return;
       }
-      status.textContent = 'AI vybírá vysvětlení z nalezených pasáží…';
+      const thinking = think.checked;
+      status.textContent = thinking ? 'AI přemýšlí nad nalezenými pasážemi… Může to trvat i minutu.' : 'AI vybírá vysvětlení z nalezených pasáží…';
       let rendered = '';
+      let reasoning: HTMLParagraphElement | undefined;
       const response = await model.generate(question, sources, previousQuestion, text => {
         if (current !== generation) return;
         const blocks = parseAnswer(text, sources, false);
         const signature = blocks.map(block => block.source.id).join(',');
         if (signature !== rendered) { rendered = signature; renderAnswer(answer, blocks, base, false); }
-      });
+      }, { think: thinking, onThinking: text => {
+        if (current !== generation || !text) return;
+        if (!reasoning) {
+          // Model-written prose is shown only as plain text and is never treated as a source.
+          const details = document.createElement('details');
+          details.className = 'tarot-reasoning';
+          const summary = document.createElement('summary');
+          summary.textContent = 'Jak AI přemýšlela (neověřená pracovní úvaha, není zdrojem)';
+          reasoning = document.createElement('p');
+          details.append(summary, reasoning);
+          answer.before(details);
+        }
+        reasoning.textContent = text;
+      } });
       if (current !== generation) return;
       const blocks = parseAnswer(response, sources, true);
       renderAnswer(answer, blocks, base, true);

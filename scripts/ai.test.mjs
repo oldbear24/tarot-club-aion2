@@ -3,9 +3,9 @@ import assert from 'node:assert/strict';
 import { prebuiltAppConfig } from '@mlc-ai/web-llm';
 import { extractPassages } from './ai-index.mjs';
 import { retrievePassages, retrievalQuery, validateIndex, CONTEXT_CHAR_LIMIT } from '../src/lib/ai/retrieval.ts';
-import { parseAnswer, buildPrompt } from '../src/lib/ai/protocol.ts';
+import { parseAnswer, buildPrompt, splitThinking } from '../src/lib/ai/protocol.ts';
 import { safeExternalUrl, safeWikiUrl } from '../src/lib/ai/urls.ts';
-import { MODEL_ID } from '../src/lib/ai/config.ts';
+import { MODEL_IDS, modelFor } from '../src/lib/ai/config.ts';
 
 const meta = { title: 'Základní atributy', aliases: ['Precision', 'GS'], sources: [
   { title: 'Tooltipy', url: 'https://example.com/stats', scope: 'unspecified' },
@@ -65,6 +65,9 @@ test('citations map only selected IDs and stream keeps identical application-own
   assert.deepEqual(parseAnswer(thinking, passages, true), blocks, 'WebLLM empty thinking prefix is not part of the answer');
   assert.deepEqual(parseAnswer(thinking.slice(0, -1), passages, false), blocks);
   assert.equal(parseAnswer('<think>\n\n</', passages, false).length, 0);
+  assert.deepEqual(splitThinking('<think>\nZvažuji [1]. Precision'), { thinking: 'Zvažuji [1]. Precision', answer: '' });
+  assert.deepEqual(splitThinking(`<think>\nPasáž 1 sedí.\n</think>\n\n${text}`), { thinking: 'Pasáž 1 sedí.', answer: `\n\n${text}` });
+  assert.equal(parseAnswer('<think>{"sourceIds":["' + passages[0].id + '"]}', passages, false).length, 0, 'IDs inside unfinished reasoning are not citations');
 });
 
 test('retrieval handles Czech, aliases, unknown subjects and context limits without remote calls', () => {
@@ -92,9 +95,15 @@ test('index validation rejects duplicate IDs, foreign article links and invalid 
 });
 
 test('model is present in the pinned runtime and prompt contains data, never model-authored URLs', () => {
-  const record = prebuiltAppConfig.model_list.find(model => model.model_id === MODEL_ID);
-  assert.ok(record);
-  assert.match(record.model, /^https:\/\/huggingface.co\/mlc-ai\/Qwen3-0\.6B/);
+  for (const id of Object.values(MODEL_IDS)) {
+    const record = prebuiltAppConfig.model_list.find(model => model.model_id === id);
+    assert.ok(record, id);
+    assert.match(record.model, /^https:\/\/huggingface.co\/mlc-ai\/Qwen3-1\.7B/);
+  }
+  assert.equal(modelFor(true), MODEL_IDS.f16);
+  assert.equal(modelFor(false), MODEL_IDS.f32);
+  assert.match(buildPrompt('Co?', passages, '', 'x'.repeat(2000)), /"analysis":"x{1500}"/);
+  assert.ok(!buildPrompt('Co?', passages).includes('analysis'));
   const prompt = buildPrompt('Co dělá Precision?', passages);
   assert.ok(!prompt.includes('https://example.com'));
   assert.ok(!prompt.includes('/club/staty/zakladni/'));

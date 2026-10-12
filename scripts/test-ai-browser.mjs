@@ -41,13 +41,15 @@ async function pageWithMock(options = {}) {
     export class LocalModel {
       constructor(progress) { this.progress=progress; window.__aiLifecycle={disposed:0,calls:0}; }
       async initialize() { this.progress(.5); await new Promise(r=>setTimeout(r,80)); if(window.__testMode==='init-error') throw new Error('out of memory'); }
-      async generate(question,sources,previous,onText) {
+      async generate(question,sources,previous,onText,options={}) {
         window.__aiLifecycle.calls++;
         if(window.__testMode==='error') throw new Error('device lost');
         const source=sources.find(s=>s.title==='Základní atributy'&&s.heading==='Body nejsou procentní šance')||sources[0];
         const id=window.__testMode==='unknown'?'invented:999':source.id;
+        window.__aiLifecycle.think=options.think;
+        if(options.think) options.onThinking?.('Pasáž o Precision odpovídá <b>přímo</b>.');
         // WebLLM keeps its prefilled empty thinking block in the streamed content.
-        const text='<think>\n\n</think>\n\n'+JSON.stringify({sourceIds:[id]});
+        const text='<think>\\n\\n</think>\\n\\n'+JSON.stringify({sourceIds:[id]});
         onText(text.slice(0,-1)); await new Promise(r=>setTimeout(r,30)); onText(text); return text;
       }
       dispose() { window.__aiLifecycle.disposed++; }
@@ -117,6 +119,15 @@ test('streamed citations link to the real section and separate article backgroun
   assert.match(await page.locator('[data-ai-messages]').textContent(), /Původní podklady/);
   assert.match(await page.locator('[data-ai-messages]').textContent(), /přiřazení ke konkrétní větě nebylo ověřeno/);
   for (const link of await page.locator('[data-ai-messages] a[target="_blank"]').all()) assert.equal(await link.getAttribute('rel'), 'noopener noreferrer');
+  assert.equal(await page.evaluate(() => window.__aiLifecycle.think), true, 'thinking is on by default');
+  const reasoning = page.locator('[data-ai-messages] details.tarot-reasoning');
+  assert.match(await reasoning.locator('summary').textContent(), /není zdrojem/);
+  assert.equal(await reasoning.locator('p').textContent(), 'Pasáž o Precision odpovídá <b>přímo</b>.');
+  assert.equal(await reasoning.locator('b, a').count(), 0, 'model reasoning is plain text');
+  await page.locator('[data-ai-think]').uncheck();
+  await ask(page, 'Co dělá Precision?');
+  assert.equal(await page.evaluate(() => window.__aiLifecycle.think), false);
+  assert.equal(await reasoning.count(), 1, 'no reasoning panel without thinking');
   await citation.click();
   assert.ok(await page.locator('[id="body-nejsou-procentní-šance"]').count());
   assert.deepEqual(errors, []);
