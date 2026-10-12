@@ -3,7 +3,7 @@ import { resolve, relative, sep } from 'node:path';
 
 // Verify the actual output, including relative Markdown links under a Pages base.
 const root = resolve('dist');
-const origin = new URL(process.env.SITE_URL || 'https://oldbear24.github.io').origin;
+const origin = new URL(process.env.SITE_URL || 'https://aion2.tarot-club.cz').origin;
 const base = `/${(process.env.BASE_PATH || '/').split('/').filter(Boolean).join('/')}`.replace(/\/$/, '') + '/';
 const errors = [];
 let checked = 0;
@@ -18,6 +18,15 @@ async function files(dir) {
 }
 const output = await files(root);
 const pages = output.filter(path => path.endsWith('.html'));
+// Frozen inventory from f838fff: editorial changes must keep all published deep links.
+const publicLinks = JSON.parse(await readFile('scripts/public-links.json', 'utf8'));
+for (const [page, anchors] of Object.entries(publicLinks)) {
+  try {
+    const html = await readFile(resolve(root, page), 'utf8');
+    const ids = new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]));
+    for (const id of anchors) if (!ids.has(id)) errors.push(`${page}: ztracená veřejná kotva #${id}`);
+  } catch { errors.push(`Ztracená veřejná stránka: ${page}`); }
+}
 const unescape = s => s.replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"');
 for (const page of pages) {
   const html = await readFile(page, 'utf8');
@@ -26,6 +35,12 @@ for (const page of pages) {
   if (!/<html\b[^>]*\blang="cs"/.test(html)) errors.push(`${name}: chybí lang=cs`);
   if ((html.match(/<h1\b/g) || []).length !== 1) errors.push(`${name}: očekáván právě jeden h1`);
   const ids = new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(m => unescape(m[1])));
+  const allIds = [...html.matchAll(/\bid="([^"]+)"/g)].map(m => unescape(m[1]));
+  if (allIds.length !== ids.size) errors.push(`${name}: duplicitní HTML ID`);
+  if (name !== '404.html') {
+    const canonical = html.match(/<link\b[^>]*rel="canonical"[^>]*href="([^"]+)"/);
+    if (!canonical || unescape(canonical[1]) !== url.href) errors.push(`${name}: nesprávná canonical URL`);
+  }
   for (const tag of html.matchAll(/<([a-z][a-z0-9-]*)\b([^>]+)>/g)) {
     // Canonical and alternate URLs are metadata, not navigable local links.
     if (tag[1] === 'link' && /\brel="(?:canonical|alternate)"/.test(tag[2])) continue;
@@ -56,5 +71,19 @@ for (const page of pages) {
 if (pages.length < 20) errors.push('Očekáváno alespoň 19 obsahových stránek a 404.');
 if (!output.some(path => path.endsWith('/pagefind.js'))) errors.push('Chybí Pagefind runtime.');
 if (!output.some(path => path.includes('pagefind') && path.endsWith('.pf_index'))) errors.push('Chybí Pagefind index.');
+const catalog = JSON.parse(await readFile(resolve(root, 'reference-index.json'), 'utf8'));
+for (const entry of catalog) {
+  const target = new URL(entry.href, origin);
+  if (target.origin !== origin || !target.pathname.startsWith(base)) { errors.push(`Katalog: odkaz mimo base ${entry.href}`); continue; }
+  try {
+    const html = await readFile(resolve(root, target.pathname.slice(base.length), 'index.html'), 'utf8');
+    if (target.hash && !html.includes(`id="${decodeURIComponent(target.hash.slice(1))}"`)) errors.push(`Katalog: chybí kotva ${entry.href}`);
+  } catch { errors.push(`Katalog: chybí cíl ${entry.href}`); }
+}
+const sitemap = await readFile(resolve(root, 'sitemap-0.xml'), 'utf8');
+const locations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
+if (locations.length !== new Set(locations).size) errors.push('Sitemap: duplicitní URL');
+for (const location of locations) if (!location.startsWith(origin + base)) errors.push(`Sitemap: nesprávná doména/base ${location}`);
+if (locations.length !== pages.length - 1) errors.push('Sitemap neobsahuje všechny kanonické obsahové stránky.');
 if (errors.length) { console.error([...new Set(errors)].join('\n')); process.exit(1); }
-console.log(`Ověřeno ${pages.length} HTML stránek, ${checked} lokálních odkazů/assetů, český jazyk, kotvy a Pagefind. Base: ${base}`);
+console.log(`Ověřeno ${pages.length} HTML stránek, ${checked} lokálních odkazů/assetů, ${catalog.length} položek katalogu, ${Object.values(publicLinks).flat().length} původních kotev, canonical, sitemap a Pagefind. Base: ${base}`);

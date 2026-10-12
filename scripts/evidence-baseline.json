@@ -1,0 +1,1787 @@
+{
+  "404": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "editorial"
+  },
+  "dungeony/draupnir": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "Draupnir",
+      "Transcendent Bakarma",
+      "Predator Saraswati",
+      "Phantasmal Lakshmi"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — draupnir",
+        "url": "https://aion2maps.com/guides/draupnir/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — dungeons-and-raids",
+        "url": "https://aion2maps.com/guides/dungeons-and-raids/",
+        "scope": "global"
+      }
+    ]
+  },
+  "dungeony/ferocious-horn-den": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "Ferocious Horn Den",
+      "Ferocious Horn Nuakum",
+      "Watchdog Kwapo",
+      "Necromancer Duanka"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — ferocious-horn-den",
+        "url": "https://aion2maps.com/guides/ferocious-horn-den/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — dungeons-and-raids",
+        "url": "https://aion2maps.com/guides/dungeons-and-raids/",
+        "scope": "global"
+      }
+    ]
+  },
+  "dungeony/fire-temple": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "Fire Temple",
+      "Kromede's Desire",
+      "Black Smoke Murute",
+      "Red Spark Ignus"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — fire-temple",
+        "url": "https://aion2maps.com/guides/fire-temple/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — dungeons-and-raids",
+        "url": "https://aion2maps.com/guides/dungeons-and-raids/",
+        "scope": "global"
+      }
+    ]
+  },
+  "dungeony/krao-cave": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "Krao Cave",
+      "Ultimate Berk",
+      "Neglected Gadioton",
+      "Enhanced Harcon"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — krao-cave",
+        "url": "https://aion2maps.com/guides/krao-cave/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — dungeons-and-raids",
+        "url": "https://aion2maps.com/guides/dungeons-and-raids/",
+        "scope": "global"
+      }
+    ]
+  },
+  "dungeony/ludra": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "Ludra",
+      "Abyssal Forge",
+      "Eternal Ludra",
+      "Rahu",
+      "Ketu",
+      "raid",
+      "board",
+      "reactor"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — ludra",
+        "url": "https://aion2maps.com/guides/ludra/",
+        "scope": "global"
+      }
+    ]
+  },
+  "dungeony/prehled": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "dungeons",
+      "boss",
+      "Conquest",
+      "Exploration",
+      "Transcendence",
+      "Nightmare",
+      "Ludra"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — dungeons-and-raids",
+        "url": "https://aion2maps.com/guides/dungeons-and-raids/",
+        "scope": "global"
+      }
+    ]
+  },
+  "dungeony/transcendence": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "Deus Research Base",
+      "Shattered Arkanis",
+      "Atiel",
+      "Talisra",
+      "Arcana",
+      "Transcendence",
+      "Morphic World",
+      "Refracting Spear"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — transcendence",
+        "url": "https://aion2maps.com/guides/transcendence/",
+        "scope": "global"
+      }
+    ]
+  },
+  "dungeony/urugugu-canyon": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "Urugugu Canyon",
+      "Divine Auldor",
+      "Guardian Captain Raur",
+      "Judge Urahum"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — urugugu-canyon",
+        "url": "https://aion2maps.com/guides/urugugu-canyon/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — dungeons-and-raids",
+        "url": "https://aion2maps.com/guides/dungeons-and-raids/",
+        "scope": "global"
+      }
+    ]
+  },
+  "dungeony/vakron-sky-island": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "Vakron Sky Island",
+      "Vakron, Boulder Lord",
+      "Tiere, Spirit Predator",
+      "Thamon, Island Warden"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — vakron-sky-island",
+        "url": "https://aion2maps.com/guides/vakron-sky-island/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — dungeons-and-raids",
+        "url": "https://aion2maps.com/guides/dungeons-and-raids/",
+        "scope": "global"
+      }
+    ]
+  },
+  "index": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "editorial"
+  },
+  "pruvodce/abyss": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "sources": [
+      {
+        "title": "Aion 2 Maps — Abyss, rozlišení Global a KR/TW",
+        "url": "https://aion2maps.com/guides/abyss/",
+        "scope": "global"
+      },
+      {
+        "title": "Corpus — Abyss Points, Commands, obchod a artefakty",
+        "url": "https://corpus.gg/blog/aion-2/abyss-guide",
+        "scope": "global"
+      },
+      {
+        "title": "S4G — Abyss Points, aktualizace a opravy 10. října",
+        "url": "https://space4games.com/en/games-en/aion-2-abyss-points/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — Azphel a Ereshkigal Monolith",
+        "url": "https://aion2maps.com/guides/daevanion-boards/",
+        "scope": "global"
+      },
+      {
+        "title": "AION 2 Global — databáze Supply Requests, verze 2.0.6.0",
+        "url": "https://aion2.gaming.tools/collections",
+        "scope": "global"
+      }
+    ]
+  },
+  "pruvodce/arcana": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "sources": [
+      {
+        "title": "Aion 2 Maps — Transcendence, grade caps Global launch",
+        "url": "https://aion2maps.com/guides/transcendence/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — Arcana, Global launch pool a odlišení asijských hodnot",
+        "url": "https://aion2maps.com/guides/arcana/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — Progression path, Transcendence tiery Global",
+        "url": "https://aion2maps.com/guides/progression-path/",
+        "scope": "global"
+      }
+    ]
+  },
+  "pruvodce/cp-postava": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "sources": [
+      {
+        "title": "Daeva Guides — Combat Power vs Item Level, Global 9. října",
+        "url": "https://daevaguides.com/en/guides/combat-power/index.html",
+        "scope": "global"
+      },
+      {
+        "title": "Raid Relay — pets a Genus, Global launcher v27",
+        "url": "https://raidrelay.com/aion-2-pets-genus-guide",
+        "scope": "global"
+      },
+      {
+        "title": "Corpus — permanentní kolekční efekty",
+        "url": "https://corpus.gg/blog/aion-2/collections-guide",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — Nightmare, odměny a obchod",
+        "url": "https://aion2maps.com/guides/nightmare/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — Daevanion Boards pro Global",
+        "url": "https://aion2maps.com/guides/daevanion-boards/",
+        "scope": "global"
+      }
+    ]
+  },
+  "pruvodce/daevanion": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "sources": [
+      {
+        "title": "Aion 2 Maps — Daevanion Boards, Global podklady 4. října",
+        "url": "https://aion2maps.com/guides/daevanion-boards/",
+        "scope": "global"
+      },
+      {
+        "title": "Corpus — Daevanion guide, 4. října, názvy a priority uzlů",
+        "url": "https://corpus.gg/blog/aion-2/daevanion-guide",
+        "scope": "global"
+      }
+    ]
+  },
+  "pruvodce/daily-weekly": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "sources": [
+      {
+        "title": "Aion 2 Maps — Daily and weekly, Global 9. října",
+        "url": "https://aion2maps.com/guides/daily-and-weekly/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion2Data — Global 2.0.6.0 hotfix 1, počítadla a reset",
+        "url": "https://aion2data.com/checklist",
+        "scope": "global"
+      },
+      {
+        "title": "MetaBot — Daily and weekly, tabulky zahrnují také neotevřený obsah",
+        "url": "https://metabot.gg/en/aion-2/guides/daily-weekly-checklist",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — reward cubes a Odyle",
+        "url": "https://aion2maps.com/guides/expeditions-and-odyle/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — Nightmare a Phantasmal Fragments",
+        "url": "https://aion2maps.com/guides/nightmare/",
+        "scope": "global"
+      }
+    ]
+  },
+  "pruvodce/dungeony-odyle": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "sources": [
+      {
+        "title": "Aion 2 Maps — Dungeons and raids, Global obsah 9. října",
+        "url": "https://aion2maps.com/guides/dungeons-and-raids/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — Expeditions and Odyle, Global reward data 9. října",
+        "url": "https://aion2maps.com/guides/expeditions-and-odyle/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — Progression path, garantované odměny Global",
+        "url": "https://aion2maps.com/guides/progression-path/",
+        "scope": "global"
+      }
+    ]
+  },
+  "pruvodce/gs-progrese": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "sources": [
+      {
+        "title": "Aion 2 Maps — Item level, součet ověřovaný proti Global profilům",
+        "url": "https://aion2maps.com/guides/item-level/",
+        "scope": "global"
+      },
+      {
+        "title": "Raid Relay — progression Global, klient launcher v28, kontrola 10. října",
+        "url": "https://raidrelay.com/aion-2-gear-score-guide",
+        "scope": "global"
+      },
+      {
+        "title": "Corpus — Gear score guide, aktualizace 10. října",
+        "url": "https://corpus.gg/blog/aion-2/gear-score-guide",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — Progression path a Global tier odměny",
+        "url": "https://aion2maps.com/guides/progression-path/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — pás, amulet a runy",
+        "url": "https://aion2maps.com/guides/special-slots/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — Odyle a rozdíl odměn obtížností",
+        "url": "https://aion2maps.com/guides/expeditions-and-odyle/",
+        "scope": "global"
+      }
+    ]
+  },
+  "pruvodce/lepsi-damage": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "editorial"
+  },
+  "pruvodce/nightmare": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "sources": [
+      {
+        "title": "Aion 2 Maps — Nightmare, Global Season 1 a odlišené asijské podklady",
+        "url": "https://aion2maps.com/guides/nightmare/",
+        "scope": "global"
+      },
+      {
+        "title": "Global Database — Clash Rune Chest v Trade Shopu, klient 2.0.6.0",
+        "url": "https://aion2.gaming.tools/items/533700064",
+        "scope": "global"
+      }
+    ]
+  },
+  "pruvodce/otevreny-svet": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "sources": [
+      {
+        "title": "Aion 2 Maps — Global launch, regionální jednorázové odměny",
+        "url": "https://aion2maps.com/guides/welcome/",
+        "scope": "global"
+      },
+      {
+        "title": "Codexgames — Empyrean Traces a Monolith",
+        "url": "https://codexgames.net/aion-2/guides/traces-monolith",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Raid Relay — Hidden Cubes, Global launcher v28",
+        "url": "https://raidrelay.com/aion-2-hidden-cube-guide",
+        "scope": "global"
+      },
+      {
+        "title": "Corpus — kolekce a permanentní staty",
+        "url": "https://corpus.gg/blog/aion-2/collections-guide",
+        "scope": "global"
+      },
+      {
+        "title": "Corpus — Gathering, část zdrojů pochází také z KR",
+        "url": "https://corpus.gg/blog/aion-2/gathering-guide",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Aion 2 Maps — mapa Altgard, data klientu Global",
+        "url": "https://aion2maps.com/altgard/",
+        "scope": "global"
+      }
+    ]
+  },
+  "pruvodce/runy-specialni-sloty": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "sources": [
+      {
+        "title": "Global Database — The Future Within the Past, klient 2.0.6.0",
+        "url": "https://aion2.gaming.tools/quests/2202037",
+        "scope": "global"
+      },
+      {
+        "title": "Global Database — Clash Rune Chest a nabídka obchodů, klient 2.0.6.0",
+        "url": "https://aion2.gaming.tools/items/533700064",
+        "scope": "global"
+      },
+      {
+        "title": "Global Database — Clash Rune, následek neúspěchu označen jako neověřený",
+        "url": "https://aion2.gaming.tools/items/310900001",
+        "scope": "global"
+      },
+      {
+        "title": "Raid Relay — questové runy a Substance Morph, kontrola Global 10. října",
+        "url": "https://raidrelay.com/aion-2-gear-score-guide",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — Special slots, porovnání Global launch a TW",
+        "url": "https://aion2maps.com/guides/special-slots/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — research tabulka následků neúspěchu vychází z KR disclosure",
+        "url": "https://aion2maps.com/guides/research/gear/special-enhancement-odds/",
+        "scope": "asian"
+      }
+    ]
+  },
+  "pruvodce/schopnosti-stigma": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "sources": [
+      {
+        "title": "Aion 2 Maps — Skills, Specialty and Stigma, Global launch data",
+        "url": "https://aion2maps.com/guides/skills-and-stigma/",
+        "scope": "global"
+      }
+    ]
+  },
+  "pruvodce/vybava": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "editorial"
+  },
+  "pruvodce/vylepsovani-vybavy": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "sources": [
+      {
+        "title": "Aion 2 Maps — Enhancement, Global data a odlišené asijské podklady",
+        "url": "https://aion2maps.com/guides/enhancement/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — Amp, Global launch data",
+        "url": "https://aion2maps.com/guides/amp/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — Potential, Global 1. října",
+        "url": "https://aion2maps.com/guides/potential/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — Soul Binding, Global a TW podklady",
+        "url": "https://aion2maps.com/guides/soul-binding/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — Transfer, pravidla Global launch",
+        "url": "https://aion2maps.com/guides/inheritance/",
+        "scope": "global"
+      }
+    ]
+  },
+  "pruvodce/zacatek": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "mixed",
+    "sources": [
+      {
+        "title": "NC America — zahájení Early Access a datum globálního launch",
+        "url": "https://about.ncsoft.com/en/news/article/aion2_update_20260930",
+        "scope": "global"
+      }
+    ]
+  },
+  "reference/aktivity": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "daily",
+      "weekly",
+      "reset",
+      "Odyle",
+      "Nightmare",
+      "Duty Missions",
+      "Daily Dungeon",
+      "Ascension Trial",
+      "Conquest",
+      "Exploration",
+      "Shugo",
+      "Dimensional Invasion",
+      "Abyss",
+      "Rift"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — daily-and-weekly",
+        "url": "https://aion2maps.com/guides/daily-and-weekly/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion2Data — Global 2.0.6.0 hotfix 1, checklist",
+        "url": "https://aion2data.com/checklist",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — dungeons-and-raids",
+        "url": "https://aion2maps.com/guides/dungeons-and-raids/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — expeditions-and-odyle",
+        "url": "https://aion2maps.com/guides/expeditions-and-odyle/",
+        "scope": "global"
+      }
+    ]
+  },
+  "reference/crafting": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "Blacksmithing",
+      "Armorsmithing",
+      "Handicrafting",
+      "Alchemy",
+      "Cooking",
+      "True Dragon Lord",
+      "Splendent",
+      "upcraft",
+      "combo",
+      "mastery"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — crafting",
+        "url": "https://aion2maps.com/guides/crafting/",
+        "scope": "global"
+      },
+      {
+        "title": "Global Database — True Dragon Lord Longsword, 2.0.6.0",
+        "url": "https://aion2.gaming.tools/items/110230015",
+        "scope": "global"
+      },
+      {
+        "title": "Global Database — True Dragon Lord Guard, 2.0.6.0",
+        "url": "https://aion2.gaming.tools/items/115030015",
+        "scope": "global"
+      }
+    ]
+  },
+  "reference/gathering": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "gathering",
+      "Essence Extraction",
+      "Odyle Extraction",
+      "ore",
+      "gem",
+      "log",
+      "Radiant",
+      "sběr",
+      "Skybound Treasure"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — crafting",
+        "url": "https://aion2maps.com/guides/crafting/",
+        "scope": "global"
+      },
+      {
+        "title": "Global Database — Skybound Treasure Asmodians, 2.0.6.0",
+        "url": "https://aion2.gaming.tools/achievements/444100700",
+        "scope": "global"
+      }
+    ]
+  },
+  "reference/inventar": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "inventory",
+      "Cube",
+      "Character Storage",
+      "Server Storage",
+      "Bound",
+      "tradeable",
+      "account",
+      "alt",
+      "mail",
+      "Recover Item"
+    ],
+    "lookupAliases": [
+      {
+        "term": "Server Storage",
+        "aliases": [
+          "sdílený sklad"
+        ]
+      },
+      {
+        "term": "Character Storage",
+        "aliases": [
+          "osobní sklad"
+        ]
+      },
+      {
+        "term": "Cube",
+        "aliases": [
+          "inventář"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — storage",
+        "url": "https://aion2maps.com/guides/storage/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — whats-bound",
+        "url": "https://aion2maps.com/guides/whats-bound/",
+        "scope": "global"
+      }
+    ]
+  },
+  "reference/kameny": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "manastone",
+      "soulstone",
+      "theostone",
+      "godstone",
+      "socket",
+      "engraving",
+      "glow",
+      "žlutý řádek",
+      "kameny"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — manastones",
+        "url": "https://aion2maps.com/guides/manastones/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — inheritance",
+        "url": "https://aion2maps.com/guides/inheritance/",
+        "scope": "global"
+      },
+      {
+        "title": "MetaBot — Theostone guide Global",
+        "url": "https://metabot.gg/en/aion-2/guides/theostone-guide",
+        "scope": "global"
+      }
+    ]
+  },
+  "reference/legie": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "legion",
+      "guild",
+      "gilda",
+      "legie",
+      "Hall",
+      "Elite Officer",
+      "Legion Storage",
+      "Legion Coin"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — legions",
+        "url": "https://aion2maps.com/guides/legions/",
+        "scope": "global"
+      }
+    ]
+  },
+  "reference/market": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "market",
+      "auction",
+      "trade",
+      "Kina",
+      "Kinah",
+      "Quna",
+      "membership",
+      "Special Quai",
+      "tax",
+      "fee",
+      "settlement"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — membership-and-shop",
+        "url": "https://aion2maps.com/guides/membership-and-shop/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — whats-bound",
+        "url": "https://aion2maps.com/guides/whats-bound/",
+        "scope": "global"
+      }
+    ]
+  },
+  "reference/materialy": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "Enhance Stone",
+      "Amplify Stone",
+      "Daevanion",
+      "Stigma",
+      "Soul Crystal",
+      "Wisdom Stone",
+      "scroll",
+      "key",
+      "Mysterious Crystal",
+      "Radiant Odyle",
+      "Refining Stone",
+      "Power Shard"
+    ],
+    "lookupAliases": [
+      {
+        "term": "Enhance Stone",
+        "aliases": [
+          "Enhance Stones",
+          "vylepšovací kámen"
+        ]
+      },
+      {
+        "term": "Soul Crystal",
+        "aliases": [
+          "Soul Crystals",
+          "krystaly pro Genus"
+        ]
+      },
+      {
+        "term": "Wisdom Stone",
+        "aliases": [
+          "Wisdom Stones",
+          "skill points",
+          "body schopností"
+        ]
+      },
+      {
+        "term": "Mysterious Crystal",
+        "aliases": [
+          "Mysterious Crystals",
+          "Arcana Transmute"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — enhancement",
+        "url": "https://aion2maps.com/guides/enhancement/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — amp",
+        "url": "https://aion2maps.com/guides/amp/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — soul-binding",
+        "url": "https://aion2maps.com/guides/soul-binding/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — inheritance",
+        "url": "https://aion2maps.com/guides/inheritance/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — special-slots",
+        "url": "https://aion2maps.com/guides/special-slots/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — arcana",
+        "url": "https://aion2maps.com/guides/arcana/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — crafting",
+        "url": "https://aion2maps.com/guides/crafting/",
+        "scope": "global"
+      },
+      {
+        "title": "Global Database — Soul Crystal",
+        "url": "https://aion2.gaming.tools/items/531900009",
+        "scope": "global"
+      },
+      {
+        "title": "Global Database — Hidden Cube key",
+        "url": "https://aion2.gaming.tools/items/630900003",
+        "scope": "global"
+      }
+    ]
+  },
+  "reference/meny": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "currency",
+      "Kinah",
+      "Shugo Token",
+      "Nightmare fragments",
+      "Season Shop",
+      "AP",
+      "Quna",
+      "A2 Mileage"
+    ],
+    "lookupAliases": [
+      {
+        "term": "Kina",
+        "aliases": [
+          "Kinah",
+          "herní peníze"
+        ]
+      },
+      {
+        "term": "Kina (Bound)",
+        "aliases": [
+          "bound kinah",
+          "vázaná kina"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — membership-and-shop",
+        "url": "https://aion2maps.com/guides/membership-and-shop/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — seasons-and-chapters",
+        "url": "https://aion2maps.com/guides/seasons-and-chapters/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — nightmare",
+        "url": "https://aion2maps.com/guides/nightmare/",
+        "scope": "global"
+      },
+      {
+        "title": "WikiRealm — přehled měn Global, kontrola regionálního rozsahu",
+        "url": "https://aion2.wikirealm.com/items/currencies/",
+        "scope": "global"
+      },
+      {
+        "title": "Global Database — Soul Crystal 2.0.6.0",
+        "url": "https://aion2.gaming.tools/items/531900009",
+        "scope": "global"
+      }
+    ]
+  },
+  "reference/obchody": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "shop",
+      "vendor",
+      "Stigma Shard",
+      "Daevanion Crystal",
+      "Soul Crystal",
+      "Rune Chest",
+      "Wind Breeze"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — skills-and-stigma",
+        "url": "https://aion2maps.com/guides/skills-and-stigma/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — daevanion-boards",
+        "url": "https://aion2maps.com/guides/daevanion-boards/",
+        "scope": "global"
+      },
+      {
+        "title": "Global Database — Clash Rune Chest 2.0.6.0",
+        "url": "https://aion2.gaming.tools/items/533700064",
+        "scope": "global"
+      },
+      {
+        "title": "Global Database — Soul Crystal a kontrola storefrontu 12. října",
+        "url": "https://aion2.gaming.tools/items/531900009",
+        "scope": "global"
+      },
+      {
+        "title": "Global Database — Key: Hidden Cube",
+        "url": "https://aion2.gaming.tools/items/630900003",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — membership-and-shop",
+        "url": "https://aion2maps.com/guides/membership-and-shop/",
+        "scope": "global"
+      }
+    ]
+  },
+  "reference/pets": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "pet",
+      "mount",
+      "souls",
+      "Cogni",
+      "Fera",
+      "Natura",
+      "Varian",
+      "Special",
+      "Genus",
+      "Analyze",
+      "Insight",
+      "Auto-Loot"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — pets",
+        "url": "https://aion2maps.com/guides/pets/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — pet-genus",
+        "url": "https://aion2maps.com/guides/pet-genus/",
+        "scope": "global"
+      },
+      {
+        "title": "Global Database — Soul Crystal",
+        "url": "https://aion2.gaming.tools/items/531900009",
+        "scope": "global"
+      }
+    ]
+  },
+  "reference/prehled": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "editorial",
+    "aliases": [
+      "reference",
+      "katalog",
+      "encyklopedie",
+      "slovník",
+      "měny",
+      "materiály",
+      "staty",
+      "třídy",
+      "bossové"
+    ],
+    "sources": []
+  },
+  "reference/slovnik": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "editorial",
+    "aliases": [
+      "glossary",
+      "kinah",
+      "gear score",
+      "combat power",
+      "AP",
+      "DPS",
+      "CC",
+      "DoT",
+      "HoT",
+      "cooldown",
+      "pity",
+      "wipe"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — combat-basics",
+        "url": "https://aion2maps.com/guides/combat-basics/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — expeditions-and-odyle",
+        "url": "https://aion2maps.com/guides/expeditions-and-odyle/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — skills-and-stigma",
+        "url": "https://aion2maps.com/guides/skills-and-stigma/",
+        "scope": "global"
+      }
+    ]
+  },
+  "reference/stagger": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "break",
+      "interrupt",
+      "stagger check",
+      "Wrath Wave",
+      "Empyrean Lord's Punishment",
+      "Savage Fang",
+      "Arrow Storm",
+      "Divine Burst",
+      "Jointstrike: Destructive Attack",
+      "Power Burst",
+      "Obliterate",
+      "taunt",
+      "aggro"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — stagger",
+        "url": "https://aion2maps.com/guides/stagger/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — combat-basics",
+        "url": "https://aion2maps.com/guides/combat-basics/",
+        "scope": "global"
+      }
+    ]
+  },
+  "reference/staty": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "stats",
+      "atributy",
+      "element",
+      "resist",
+      "tolerance",
+      "Smite",
+      "Attack Bonus",
+      "Max Attack",
+      "Fire Boost",
+      "Water Boost",
+      "Wind Boost",
+      "Earth Boost"
+    ],
+    "lookupAliases": [
+      {
+        "term": "Critical Hit",
+        "aliases": [
+          "kritický zásah",
+          "kritická šance",
+          "crit chance"
+        ]
+      },
+      {
+        "term": "Critical Hit Resist",
+        "aliases": [
+          "odpor kritickému zásahu"
+        ]
+      },
+      {
+        "term": "Damage Boost",
+        "aliases": [
+          "bonus poškození"
+        ]
+      },
+      {
+        "term": "Double Chance",
+        "aliases": [
+          "Smite",
+          "dvojitý zásah"
+        ]
+      },
+      {
+        "term": "Heal Boost",
+        "aliases": [
+          "poskytované léčení"
+        ]
+      },
+      {
+        "term": "Incoming Heal",
+        "aliases": [
+          "přijaté léčení"
+        ]
+      },
+      {
+        "term": "Accuracy",
+        "aliases": [
+          "přesnost"
+        ]
+      },
+      {
+        "term": "Evasion",
+        "aliases": [
+          "úhyb"
+        ]
+      },
+      {
+        "term": "Cooldown",
+        "aliases": [
+          "CDR",
+          "cooldown reduction"
+        ]
+      },
+      {
+        "term": "Combat Speed",
+        "aliases": [
+          "rychlost útoku",
+          "rychlost kouzlení"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikily — Hlavní atributy, tooltipová sada; patch Global nepotvrzen",
+        "url": "https://wikily.gg/aion-2/stats",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Wikily — Božské atributy, tooltipová sada; patch Global nepotvrzen",
+        "url": "https://wikily.gg/aion-2/stats/daevanion",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Wikily — Základní bojové hodnoty, tooltipová sada; patch Global nepotvrzen",
+        "url": "https://wikily.gg/aion-2/stats/basic",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Wikily — Útok a obrana, tooltipová sada; patch Global nepotvrzen",
+        "url": "https://wikily.gg/aion-2/stats/attack-and-defense",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Wikily — Aktivace a odpory, tooltipová sada; patch Global nepotvrzen",
+        "url": "https://wikily.gg/aion-2/stats/chances-and-resists",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Wikily — PvE a bossové, tooltipová sada; patch Global nepotvrzen",
+        "url": "https://wikily.gg/aion-2/stats/pve-and-boss",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Wikily — PvP, tooltipová sada; patch Global nepotvrzen",
+        "url": "https://wikily.gg/aion-2/stats/pvp",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Wikily — Rodové bonusy, tooltipová sada; patch Global nepotvrzen",
+        "url": "https://wikily.gg/aion-2/stats/creature-types",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Wikily — Obnova zdrojů, tooltipová sada; patch Global nepotvrzen",
+        "url": "https://wikily.gg/aion-2/stats/recovery",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Wikily — Ostatní, tooltipová sada; patch Global nepotvrzen",
+        "url": "https://wikily.gg/aion-2/stats/other",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Aion 2 Maps — stats-explained",
+        "url": "https://aion2maps.com/guides/stats-explained/",
+        "scope": "global"
+      }
+    ]
+  },
+  "reference/stavove-efekty": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "status effects",
+      "buff",
+      "debuff",
+      "CC",
+      "stun",
+      "root",
+      "fear",
+      "airborne",
+      "knockdown",
+      "bleed",
+      "blind",
+      "silence",
+      "cleanse",
+      "dispel"
+    ],
+    "sources": [
+      {
+        "title": "Global Database — debuff katalog 2.0.6.0",
+        "url": "https://aion2.gaming.tools/status-effects/debuffs",
+        "scope": "global"
+      },
+      {
+        "title": "Global Database — Root 2.0.6.0",
+        "url": "https://aion2.gaming.tools/status-effects/100000201",
+        "scope": "global"
+      },
+      {
+        "title": "Global Database — Knockdown 2.0.6.0",
+        "url": "https://aion2.gaming.tools/status-effects/100000321",
+        "scope": "global"
+      },
+      {
+        "title": "Global Database — Fear 2.0.6.0",
+        "url": "https://aion2.gaming.tools/status-effects/162100001",
+        "scope": "global"
+      },
+      {
+        "title": "Global Database — konkrétní Bleed, 2.0.5.0",
+        "url": "https://aion2.gaming.tools/status-effects/140500001",
+        "scope": "global"
+      },
+      {
+        "title": "Global Database — Battlefield Banner 2.0.6.0",
+        "url": "https://aion2.gaming.tools/status-effects/124500001",
+        "scope": "global"
+      }
+    ]
+  },
+  "reference/tituly-kolekce": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "titles",
+      "tituly",
+      "Closet",
+      "skin",
+      "transmog",
+      "collection",
+      "Artwork",
+      "Statue",
+      "Monolith",
+      "Guardian of Altgard",
+      "Empty Closet"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — closet",
+        "url": "https://aion2maps.com/guides/closet/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — pantheon-stats",
+        "url": "https://aion2maps.com/guides/pantheon-stats/",
+        "scope": "global"
+      },
+      {
+        "title": "Raid Relay — quest/Monolith titles, Global 10. října",
+        "url": "https://raidrelay.com/aion-2-gear-score-guide",
+        "scope": "global"
+      }
+    ]
+  },
+  "reference/wings": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "wings",
+      "křídla",
+      "sealed wing",
+      "Radiant Odyle",
+      "Black Fragment",
+      "Blue Wave",
+      "Ancient Aullaeu",
+      "Forest Spirit",
+      "Kromede",
+      "Dark Veil"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — wings",
+        "url": "https://aion2maps.com/guides/wings/",
+        "scope": "global"
+      },
+      {
+        "title": "Global Database — Ascension odměny 2.0.6.0",
+        "url": "https://aion2.gaming.tools/progression/character?tab=ascension",
+        "scope": "global"
+      }
+    ]
+  },
+  "staty/limity": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "sources": [
+      {
+        "title": "Aion 2 Maps — Accuracy and Crit, srovnání Global a TW",
+        "url": "https://aion2maps.com/guides/accuracy-and-crit/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — Stats explained",
+        "url": "https://aion2maps.com/guides/stats-explained/",
+        "scope": "global"
+      },
+      {
+        "title": "Wikily — Recovery, cena MP",
+        "url": "https://wikily.gg/aion-2/stats/recovery",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Global Database — Clash Rune a neověřená failure penalty, 2.0.6.0",
+        "url": "https://aion2.gaming.tools/items/310900001",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — varování pro speciální sloty Global",
+        "url": "https://aion2maps.com/guides/special-slots/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — research následků neúspěchu, KR disclosure",
+        "url": "https://aion2maps.com/guides/research/gear/special-enhancement-odds/",
+        "scope": "asian"
+      }
+    ]
+  },
+  "staty/obrana": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "sources": [
+      {
+        "title": "Wikily — Basic Stats",
+        "url": "https://wikily.gg/aion-2/stats/basic",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Wikily — Chance and Resist",
+        "url": "https://wikily.gg/aion-2/stats/chances-and-resists",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Wikily — Recovery",
+        "url": "https://wikily.gg/aion-2/stats/recovery",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Aion 2 Maps — léčení a tooltipy",
+        "url": "https://aion2maps.com/guides/stats-explained/",
+        "scope": "global"
+      }
+    ]
+  },
+  "staty/pantheon": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "sources": [
+      {
+        "title": "Wikily — Daevanion Stats, převody herních dat",
+        "url": "https://wikily.gg/aion-2/stats/daevanion",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Aion 2 Maps — rozdíly Global oproti KR/TW",
+        "url": "https://aion2maps.com/guides/global-differences/",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — Pantheon slots a zdroje, aktualizace 10. října",
+        "url": "https://aion2maps.com/guides/pantheon-stats/",
+        "scope": "global"
+      }
+    ]
+  },
+  "staty/procy": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "sources": [
+      {
+        "title": "Wikily — Chance and Resist, přepis tooltipů",
+        "url": "https://wikily.gg/aion-2/stats/chances-and-resists",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Aion 2 Maps — Global tooltip a asijská měření kritických zásahů",
+        "url": "https://aion2maps.com/guides/accuracy-and-crit/",
+        "scope": "global"
+      }
+    ]
+  },
+  "staty/utok": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "sources": [
+      {
+        "title": "Aion 2 Maps — Stats explained, tooltipy a výzkum",
+        "url": "https://aion2maps.com/guides/stats-explained/",
+        "scope": "global"
+      },
+      {
+        "title": "Wikily — Attack and Defense",
+        "url": "https://wikily.gg/aion-2/stats/attack-and-defense",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Wikily — PvE and Boss",
+        "url": "https://wikily.gg/aion-2/stats/pve-and-boss",
+        "scope": "unspecified"
+      }
+    ]
+  },
+  "staty/zakladni": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "sources": [
+      {
+        "title": "Wikily — přepis základních atributů",
+        "url": "https://wikily.gg/aion-2/stats",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Wikily — základní bojové staty",
+        "url": "https://wikily.gg/aion-2/stats/basic",
+        "scope": "unspecified"
+      },
+      {
+        "title": "Aion 2 Maps — tooltipy Combat Speed, Cooldown a MP Cost",
+        "url": "https://aion2maps.com/guides/stats-explained/",
+        "scope": "global"
+      }
+    ]
+  },
+  "tridy/assassin": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "Assassin",
+      "Dagger",
+      "Heart Gore",
+      "Insignia Explosion",
+      "Savage Roar",
+      "Quick Slice",
+      "Shadowstrike"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — assassin",
+        "url": "https://aion2maps.com/guides/assassin/",
+        "scope": "global"
+      }
+    ]
+  },
+  "tridy/chanter": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "Chanter",
+      "Staff",
+      "Dark Crush",
+      "Onslaught",
+      "Spinning Strike",
+      "Recuperation",
+      "Impactful Crush"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — chanter",
+        "url": "https://aion2maps.com/guides/chanter/",
+        "scope": "global"
+      }
+    ]
+  },
+  "tridy/cleric": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "Cleric",
+      "Mace",
+      "Condemnation",
+      "Chain of Torment",
+      "Earth's Retribution",
+      "Bolt",
+      "Light of Regeneration / další heals"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — cleric",
+        "url": "https://aion2maps.com/guides/cleric/",
+        "scope": "global"
+      }
+    ]
+  },
+  "tridy/gladiator": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "Gladiator",
+      "Greatsword",
+      "Overhead Slam",
+      "Rending Blow",
+      "Keen Strike",
+      "Ruinous Blow",
+      "Focused Block"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — gladiator",
+        "url": "https://aion2maps.com/guides/gladiator/",
+        "scope": "global"
+      }
+    ]
+  },
+  "tridy/prehled": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "classes",
+      "class",
+      "třídy",
+      "Gladiator",
+      "Templar",
+      "Assassin",
+      "Ranger",
+      "Sorcerer",
+      "Spiritmaster",
+      "Cleric",
+      "Chanter"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — classes",
+        "url": "https://aion2maps.com/guides/classes/",
+        "scope": "global"
+      }
+    ]
+  },
+  "tridy/ranger": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "Ranger",
+      "Bow",
+      "Deadshot",
+      "Snipe",
+      "Marking Shot",
+      "Drill Dart",
+      "Gale Arrow / Tempest Shot"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — ranger",
+        "url": "https://aion2maps.com/guides/ranger/",
+        "scope": "global"
+      }
+    ]
+  },
+  "tridy/sorcerer": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "Sorcerer",
+      "Spellbook",
+      "Hellfire",
+      "Firestorm",
+      "Flame Arrow",
+      "Bittercold Wind / Blaze",
+      "Wish of Concentration"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — sorcerer",
+        "url": "https://aion2maps.com/guides/sorcerer/",
+        "scope": "global"
+      }
+    ]
+  },
+  "tridy/spiritmaster": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "Elementalist",
+      "Spiritmaster",
+      "Orb",
+      "Elemental Fusion",
+      "Combustion",
+      "Summon: Fire / Water / Earth Spirit",
+      "Cold Shock",
+      "Jointstrike: Curse / Dimensional Control"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — spiritmaster",
+        "url": "https://aion2maps.com/guides/spiritmaster/",
+        "scope": "global"
+      }
+    ]
+  },
+  "tridy/templar": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "community",
+    "aliases": [
+      "Templar",
+      "Longsword / guard",
+      "Judgment",
+      "Vicious Strike",
+      "Warding Strike / Shield Smite",
+      "Punishment",
+      "Taunt"
+    ],
+    "sources": [
+      {
+        "title": "Aion 2 Maps — templar",
+        "url": "https://aion2maps.com/guides/templar/",
+        "scope": "global"
+      }
+    ]
+  },
+  "wiki/global": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "mixed",
+    "sources": [
+      {
+        "title": "NC America — globální Early Access a launch",
+        "url": "https://about.ncsoft.com/en/news/article/aion2_update_20260930",
+        "scope": "global"
+      },
+      {
+        "title": "Aion 2 Maps — What's different on Global",
+        "url": "https://aion2maps.com/guides/global-differences/",
+        "scope": "global"
+      }
+    ]
+  },
+  "wiki/prispivani": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "editorial"
+  },
+  "wiki/technologie": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "editorial",
+    "sources": [
+      {
+        "title": "Astro Starlight — funkce a podporované formáty",
+        "url": "https://starlight.astro.build/",
+        "scope": "technical"
+      },
+      {
+        "title": "Starlight — statické vyhledávání Pagefind",
+        "url": "https://starlight.astro.build/guides/site-search/",
+        "scope": "technical"
+      },
+      {
+        "title": "VitePress — oficiální dokumentace",
+        "url": "https://vitepress.dev/",
+        "scope": "technical"
+      },
+      {
+        "title": "MkDocs — oficiální dokumentace",
+        "url": "https://www.mkdocs.org/",
+        "scope": "technical"
+      },
+      {
+        "title": "GitHub Pages — vlastní workflow",
+        "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+        "scope": "technical"
+      }
+    ]
+  },
+  "wiki/zdroje": {
+    "edition": "global-launch",
+    "reviewedAt": "2026-10-12",
+    "evidence": "editorial"
+  }
+}

@@ -1,6 +1,25 @@
 {
   "search.label": "Hledat ve wiki",
-  "pagefind.search_label": "Hledat v české wiki AION 2",
+  "search.cancelLabel": "Zavřít hledání",
+  "search.devWarning": "Hledání v celém textu je dostupné po produkčním sestavení. Spusť build a náhled webu.",
+  "themeSelect.accessibleLabel": "Vyber barevný režim",
+  "themeSelect.auto": "Podle systému",
+  "languageSelect.accessibleLabel": "Vyber jazyk",
+  "menuButton.accessibleLabel": "Otevřít nebo zavřít menu",
+  "sidebarNav.accessibleLabel": "Témata wiki",
+  "404.text": "Stránku jsme nenašli. Zkontroluj adresu nebo použij vyhledávání.",
+  "aside.caution": "Pozor",
+  "aside.danger": "Kritické riziko",
+  "pagefind.search_label": "Hledat v celém textu české wiki AION 2",
+  "pagefind.clear_search": "Vymazat hledání",
+  "pagefind.load_more": "Zobrazit další výsledky",
   "pagefind.zero_results": "Pro [SEARCH_TERM] jsme nic nenašli.",
-  "pagefind.searching": "Hledám…"
+  "pagefind.one_result": "Nalezen 1 výsledek pro [SEARCH_TERM].",
+  "pagefind.many_results": "Počet výsledků pro [SEARCH_TERM]: [COUNT].",
+  "pagefind.alt_search": "Pro [SEARCH_TERM] jsme nic nenašli. Zobrazuji výsledky pro [DIFFERENT_TERM].",
+  "pagefind.searching": "Hledám…",
+  "i18n.untranslatedContent": "Tento obsah zatím není dostupný ve tvém jazyce.",
+  "builtWithStarlight.label": "Vytvořeno pomocí Starlight",
+  "pagefind.search_suggestion": "Pro [SEARCH_TERM] jsme nic nenašli. Zkus některý z těchto dotazů:",
+  "heading.anchorLabel": "Sekce „{{title}}“"
 }
