@@ -3,21 +3,41 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  workflow_run:
+    workflows: [Náhled pull requestu]
+    types: [completed]
+  pull_request_target:
+    types: [closed]
 permissions:
   contents: read
-  pages: write
-  id-token: write
 concurrency:
   group: pages
   cancel-in-progress: false
 jobs:
   build:
+    if: >-
+      github.event_name == 'push' || github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name == github.repository) ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.head_repository.full_name == github.repository)
+    permissions:
+      contents: read
+      pages: read
+      actions: read
+      pull-requests: read
     runs-on: ubuntu-latest
     timeout-minutes: 10
     outputs:
       artifact_name: ${{ steps.artifact-name.outputs.name }}
+      previews: ${{ steps.previews.outputs.manifest }}
+      site: ${{ steps.pages.outputs.origin }}
+      base: ${{ steps.pages.outputs.base_path }}/
     steps:
       - uses: actions/checkout@v6
+        with:
+          # Privileged publishing always uses trusted main, never PR scripts.
+          ref: main
+          persist-credentials: false
       - uses: actions/setup-node@v7
         with:
           node-version: '24'
@@ -32,19 +52,45 @@ jobs:
         env:
           SITE_URL: ${{ steps.pages.outputs.origin }}
           BASE_PATH: ${{ steps.pages.outputs.base_path }}/
+      - name: Připojit náhledy otevřených PR
+        id: previews
+        run: node scripts/pages-previews.mjs assemble
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          SITE_URL: ${{ steps.pages.outputs.origin }}
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}/
       - uses: actions/upload-pages-artifact@v4
         with:
           name: ${{ steps.artifact-name.outputs.name }}
           path: dist
   deploy:
     needs: build
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+      deployments: write
     runs-on: ubuntu-latest
     timeout-minutes: 10
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
       - uses: actions/deploy-pages@v4
         id: deployment
         with:
           artifact_name: ${{ needs.build.outputs.artifact_name }}
+      - name: Odkazy na náhledy v deployments PR
+        run: node scripts/pages-previews.mjs deployments
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PREVIEW_MANIFEST: ${{ needs.build.outputs.previews }}
+          SITE_URL: ${{ needs.build.outputs.site }}
+          BASE_PATH: ${{ needs.build.outputs.base }}
