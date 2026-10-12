@@ -117,4 +117,16 @@ V **Settings → Pages → Source** nastav **GitHub Actions**. Workflow Pages po
 
 Repozitář: [oldbear24/tarot-club-aion2](https://github.com/oldbear24/tarot-club-aion2). Pravidla úprav: [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Automatické náhledy PR
+
+Otevření, opětovné otevření a každý nový commit do PR z větve tohoto repozitáře spustí **Náhled pull requestu**. Platí i pro draft PR. Workflow ověří a sestaví web se správným Pages base, například `/pr-preview/pr-2/`. Po úspěšném buildu důvěryhodný Pages workflow zveřejní produkci z aktuálního `main` společně s posledními úspěšnými náhledy otevřených PR.
+
+Na vlastní doméně je náhled PR #2 na `https://aion2.tarot-club.cz/pr-preview/pr-2/`; při projektovém hostingu se automaticky přidá `/tarot-club-aion2/`. Odkaz se objeví v **Deployments** příslušného PR a ve výsledku Actions. Přehled je na `/pr-preview/`. Zavření nebo sloučení PR vyvolá nové nasazení bez jeho náhledu. Běžné nasazení `main` ostatní otevřené náhledy zachová.
+
+Kód PR se sestavuje pouze s oprávněními pro čtení a bez sdílené zapisovatelné cache. Publisher vždy používá skripty z `main`, ověřuje původ artefaktů a rozbaluje statická data do vyhrazených podadresářů; nespouští kód náhledu. Náhledy z forků se automaticky nepublikují. HTML náhledů má `noindex,nofollow` a produkční robots.txt zakazuje jejich indexování.
+
+Artefakty se uchovávají 90 dní, případně kratší dobu podle pravidel repozitáře. Pokud starý PR zůstane bez nového buildu a artefakt vyprší nebo ho někdo smaže, po příštím nasazení nebude jeho náhled dostupný; znovu spusť workflow nebo odešli další commit do PR. Při neúspěšném novém buildu zůstává poslední úspěšný náhled, dokud jeho artefakt existuje; přehled uvádí jeho commit.
+
+Workflow pro publikování musí být v `main`, aby fungoval trigger `workflow_run`. Nové workflow se následně spustí při dalším commitu do již otevřeného PR. **Settings → Pages → Source** zůstává **GitHub Actions**; náhledy nevyžadují nový hosting, účet ani token uložený v secrets.
+
 Neoficiální fanouškovský projekt. AION 2 a související značky patří NCSOFT. Repozitář neobsahuje převzaté herní obrázky ani plné kopie cizích průvodců.
