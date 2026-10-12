@@ -1,0 +1,12 @@
+---
+import Default from '@astrojs/starlight/components/Footer.astro';
+const { sources = [] } = Astro.locals.starlightRoute.entry.data;
+const scopeLabels = { global: 'Global', asian: 'KR / TW', technical: 'Technologie', unspecified: 'Region nepotvrzen' };
+---
+{sources.length > 0 && <section class="source-box" aria-label="Zdroje článku" data-pagefind-ignore>
+  <h2>Zdroje článku</h2>
+  <ul>{sources.map(source => <li><a href={source.url}>{source.title}</a><span>{scopeLabels[source.scope]}</span></li>)}</ul>
+  <p>Datum rešerše znamená kontrolu uvedených zdrojů, nikoli měření v herním klientu.</p>
+</section>}
+<Default {...Astro.props} />
+<p class="club-footer" data-pagefind-ignore>Tarot Club / Česká fanouškovská wiki · AION 2 je ochranná známka NCSOFT. Neoficiální projekt.</p>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" fill="none">
+<defs><linearGradient id="card" x1="20" y1="0" x2="370" y2="480" gradientUnits="userSpaceOnUse"><stop stop-color="#1e3144"/><stop offset="1" stop-color="#0d1422"/></linearGradient><linearGradient id="wing" x1="200" y1="150" x2="200" y2="330" gradientUnits="userSpaceOnUse"><stop stop-color="#9fefd8"/><stop offset="1" stop-color="#426b83"/></linearGradient></defs>
+<rect x="58" y="22" width="284" height="425" rx="22" stroke="#d7b87c" opacity=".25" transform="rotate(9 200 230)"/>
+<rect x="52" y="19" width="284" height="425" rx="22" fill="url(#card)" stroke="#d7b87c"/>
+<rect x="67" y="34" width="254" height="395" rx="12" stroke="#d7b87c" opacity=".3"/>
+<path d="M86 75H117M101 60V90M286 75H307M296 65V85" stroke="#d7b87c"/>
+<circle cx="194" cy="215" r="104" stroke="#80d9c7" opacity=".3"/><circle cx="194" cy="215" r="80" stroke="#d7b87c" opacity=".35"/>
+<path d="M194 137 207 191 261 204 207 217 194 271 181 217 127 204 181 191Z" fill="#d7b87c"/>
+<path d="M179 243C134 202 108 158 88 142 89 214 117 264 165 298L179 243ZM209 243C254 202 280 158 300 142 299 214 271 264 223 298L209 243Z" fill="url(#wing)"/>
+<path d="M96 167 168 265M100 197 158 278M291 167 219 265M287 197 229 278" stroke="#0d1f2c" stroke-width="3" opacity=".6"/>
+<path d="M194 242 211 280 194 315 177 280Z" fill="#80d9c7"/>
+<path d="M106 351H282M135 365H253" stroke="#d7b87c" opacity=".55"/>
+<circle cx="194" cy="389" r="6" stroke="#80d9c7"/><path d="m93 116 3 6 6 3-6 3-3 6-3-6-6-3 6-3ZM294 317l3 6 6 3-6 3-3 6-3-6-6-3 6-3Z" fill="#d7b87c"/>
+</svg>

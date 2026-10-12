@@ -1,0 +1,15 @@
+---
+const hero = Astro.locals.starlightRoute.entry.data.hero;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+{hero && <section class="club-hero">
+  <div class="hero-copy">
+    <p class="eyebrow">TAROT CLUB / AION 2</p>
+    <p class="hero-edition"><span></span> ČESKÁ WIKI · GLOBAL LAUNCH</p>
+    <h1 id="_top">{hero.title}</h1>
+    <p class="hero-description">{hero.tagline}</p>
+    <div class="hero-actions">{hero.actions?.map(action => <a class:list={['hero-button', { secondary: action.variant === 'secondary' }]} href={action.link}>{action.text}<span aria-hidden="true">↗</span></a>)}</div>
+    <p class="hero-note">Staty srozumitelně. Tipy do hry. Zdroje na dohled.</p>
+  </div>
+  <div class="hero-art" aria-hidden="true"><img src={`${base}/tarot-emblem.svg`} alt="" width="400" height="480" /><span class="art-caption">I — THE DAEVA</span></div>
+</section>}

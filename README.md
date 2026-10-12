@@ -10,7 +10,7 @@
 - Každý článek má cílovou edici, datum rešerše, typ podkladů a zdroje.
 - Workflow pro ověření pull requestů a nasazení na GitHub Pages.
 
-**Vzdálený GitHub repozitář a živý web nejsou tímto README deklarovány jako založené.** Místní projekt je připraven k nahrání a prvotnímu nasazení.
+Repozitář: [oldbear24/tarot-club-aion2](https://github.com/oldbear24/tarot-club-aion2). Živý web je dostupný až po zapnutí GitHub Pages a úspěšném nasazení.
 
 Herní slovník čerpá z komunitních přepisů tooltipů/dat. Globální serverové vzorce nebyly vlastními testy ověřeny. KR/TW limity, cílové staty bossů a endgame váhy se nevydávají za potvrzená čísla Global. Detaily: `src/content/docs/wiki/global.md` a `src/content/docs/staty/limity.md`.
 
@@ -47,22 +47,20 @@ npm run preview
 
 ## První nasazení na GitHub
 
-1. Vytvoř repozitář `tarot-club-aion2` a nahraj projekt na větev `main`.
-2. Otevři **Settings → Pages → Build and deployment → Source → GitHub Actions**.
-3. Spusť workflow **Nasazení na GitHub Pages** nebo odešli další commit na `main`.
-4. Počkej na úspěšný build a deploy. Skutečná URL bude ve výsledku jobu `deploy`.
+1. Otevři **Settings → Pages → Build and deployment → Source → GitHub Actions**.
+2. Spusť workflow **Nasazení na GitHub Pages** nebo odešli další commit na `main`.
+3. Počkej na úspěšný build a deploy. Skutečná URL bude ve výsledku jobu `deploy`.
 
 Při běžném projektovém hostingu pod účtem `oldbear24` je očekávaná adresa `https://oldbear24.github.io/tarot-club-aion2/`; není to potvrzení dokončeného nasazení.
 
-Pro GitHub Free použij veřejný repozitář. Soukromé repozitáře s Pages vyžadují podporovaný placený plán. Veřejnou viditelnost zdrojů zvol vědomě při zakládání.
-
-Pokud používáš autentizovaný GitHub CLI a místní Git repozitář:
+Pro lokální práci naklonuj zdroje:
 
 ```bash
-gh repo create tarot-club-aion2 --public --source=. --remote=origin --push
+git clone https://github.com/oldbear24/tarot-club-aion2.git
+cd tarot-club-aion2
+npm ci
+npm run dev
 ```
-
-Pokud jsi rozbalil ZIP zdrojů, nejprve inicializuj Git a vytvoř commit. ZIP nemusí obsahovat adresář `.git`.
 
 ## Struktura
 
