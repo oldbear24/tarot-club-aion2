@@ -1,0 +1,39 @@
+name: Vyžádání nasazení wiki a náhledů
+on:
+  push:
+    branches: [main]
+  pull_request_target:
+    types: [closed]
+  workflow_run:
+    workflows: [Náhled pull requestu]
+    types: [completed]
+permissions:
+  contents: read
+concurrency:
+  group: preview-publish-requests
+  cancel-in-progress: false
+jobs:
+  request:
+    if: >-
+      github.event_name == 'push' ||
+      (github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name == github.repository) ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.head_repository.full_name == github.repository)
+    permissions:
+      contents: read
+      actions: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Vyžádat nasazení z main
+        run: node scripts/pages-previews.mjs dispatch
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
