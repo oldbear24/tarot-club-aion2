@@ -1,6 +1,6 @@
 ---
 title: Cleric — příručka třídy
-description: Léčení, party buffy, debuffy a damage mezi reakcemi. Schopnosti, Stigmata, perky a kontrola výkonu.
+description: Léčení, skupinové buffy, debuffy a poškození mezi podpůrnými zásahy. Schopnosti, Stigmata, perky a kontrola výkonu.
 sidebar:
   order: 7
 edition: global-launch
@@ -21,25 +21,25 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Role a základní návaznost
 
-**Zbraň:** Mace. **Role:** Léčení, party buffy, debuffy a damage mezi reakcemi.
+**Zbraň:** Mace. **Role:** Léčení, skupinové buffy, debuffy a poškození mezi podpůrnými zásahy.
 
-:::note[Základ buildu: damage okna a reakční podpora]
-Chain of Torment připravuje Condemnation. Earth Punishment a příslušný kritický/reset perk vytvářejí opakované damage okno. Light of Protection podporuje party; heal, debuff a resurrection mají vlastní úlohu.
+:::note[Základ buildu: útočná okna a reakční podpora]
+Chain of Torment připravuje Condemnation. Earth Punishment a příslušný perk pro kritický zásah či reset vytvářejí opakované útočné okno. Light of Protection podporuje skupinu; léčení, debuff a oživení mají samostatnou úlohu.
 :::
 
 ## Důležité schopnosti
 
-| Schopnost | Použití v launch podkladech |
+| Schopnost | Použití podle podkladů pro Global launch |
 | --- | --- |
-| <span id="ref-condemnation">**Condemnation**</span> | Damage na cíli s potřebným debuffem. |
+| <span id="ref-condemnation">**Condemnation**</span> | Poškození cíle s požadovaným debuffem. |
 | <span id="ref-chain-of-torment">**Chain of Torment**</span> | Příprava cíle a debuff. |
-| <span id="ref-earth-s-retribution">**Earth's Retribution**</span> | Základní attack a MP. |
-| <span id="ref-bolt">**Bolt**</span> | Charge damage podle bezpečného okna. |
-| <span id="ref-light-of-regeneration-dalsi-heals">**Light of Regeneration / další heals**</span> | Udržení skupiny a reakce na příchozí damage. |
+| <span id="ref-earth-s-retribution">**Earth's Retribution**</span> | Základní útok a obnova MP. |
+| <span id="ref-bolt">**Bolt**</span> | Nabíjený útok podle dostupného bezpečného okna. |
+| <span id="ref-light-of-regeneration-dalsi-heals">**Light of Regeneration / další heals**</span> | Udržení skupiny a reakce na příchozí poškození. |
 
 ## Stigma a pasivy
 
@@ -47,21 +47,21 @@ Chain of Torment připravuje Condemnation. Earth Punishment a příslušný krit
 
 **Pasivy k porovnání:** Empyrean Lord's Grace, Earth's Grace, Healing Enhancement, Warm Benediction.
 
-Jde o komunitní výchozí sestavu, ne povinný build každé party. Stagger, sólo přežití a PvP mohou potřebovat jiné sloty.
+Sestava vychází z komunitního průvodce pro Global launch, zkontrolovaného k datu rešerše. Konkrétní číslo patche u sestavy není doložené; pro stagger, sólo hru nebo PvP můžeš potřebovat jiné schopnosti.
 
 ## Specialty a změna situace
 
 | Schopnost / situace | Co zkontrolovat |
 | --- | --- |
-| <span id="ref-condemnation-2">**Condemnation**</span> | Na 12 reset cooldownu při critu; kontroluj navazující podmínky. |
-| <span id="ref-earth-punishment">**Earth Punishment**</span> | Milník 5 podporuje kritické Condemnation okno podle podkladů. |
+| <span id="ref-condemnation-2">**Condemnation**</span> | Na úrovni schopnosti 12 reset cooldownu při kritickém zásahu; kontroluj navazující podmínky. |
+| <span id="ref-earth-punishment">**Earth Punishment**</span> | Milník 5 podporuje okno pro kritické zásahy Condemnation podle podkladů. |
 
 ## Kontrola Tarot Clubu před bojem
 
-1. V damage okně ponech dosažitelné reakční heals.
+1. Během útočení měj léčivé schopnosti připravené na snadno dostupných klávesách.
 2. Kontroluj příjemce, dosah a uptime Light of Protection.
 3. Pro stagger podle potřeby zvaž Power Burst; oživení nemusí být dostupné v každé mechanice.
 
-Pro PvP si odděleně sepiš reakce na CC, dosah, obranné možnosti a spotřebu zdrojů. Bossový preset nepovažuj za univerzální PvP sestavu. Přesné cooldowny a hodnoty se mění s úrovní, perky a patchem; kontroluj vlastní tooltip.
+Pro PvP si připrav samostatnou sestavu: zkontroluj reakce na CC, dosah, obranu a spotřebu zdrojů. Sestava pro bosse nemusí vyhovovat boji s hráči. Cooldowny a hodnoty vždy porovnej s vlastními tooltipy; závisejí na úrovních, percích a patchi.
 
-[Skill milníky](../../pruvodce/schopnosti-stigma/), [Daevanion](../../pruvodce/daevanion/), [Arcana](../../pruvodce/arcana/), [Staty](../../reference/staty/) a [Stagger](../../reference/stagger/) poskytují související referenci.
+[Milníky schopností](../../pruvodce/schopnosti-stigma/), [Daevanion](../../pruvodce/daevanion/), [Arcana](../../pruvodce/arcana/), [Staty](../../reference/staty/) a [Stagger](../../reference/stagger/) vysvětlují související systémy.

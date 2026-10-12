@@ -3,6 +3,7 @@ title: Limity a sporné hodnoty
 description: Co říkají tooltipy Global a které limity nebo vzorce vyžadují ověření.
 edition: global-launch
 reviewedAt: '2026-10-12'
+referenceCategory: staty
 evidence: community
 sources:
   - title: Aion 2 Maps — Accuracy and Crit, srovnání Global a TW
@@ -51,7 +52,7 @@ Asijská měření kritické šance se rozcházejí s globálním textem tooltip
 
 ## Následek neúspěšného upgradu runy
 
-Global průvodci varují před zničením runy od +2. Global Database přitom u failure penalty výslovně uvádí neověřené chování. Detailní research tabulka Maps vychází z KR disclosure. Nejde tedy o vlastní potvrzení serverového chování Global. Praktická rada zůstává **+1 pro první progresi a kontrola varování v klientu**; [runový průvodce](../../pruvodce/runy-specialni-sloty/) vysvětluje kontext.
+Global průvodci varují před zničením runy od +2. Global Database přitom u failure penalty výslovně uvádí neověřené chování. Detailní research tabulka Maps vychází z KR disclosure. Nejde tedy o vlastní potvrzení serverového chování Global. Doporučení pro první postup a upozornění na riziko najdeš v runovém průvodci; [runový průvodce](../../pruvodce/runy-specialni-sloty/) vysvětluje kontext.
 
 ## Jak dodat použitelný test
 

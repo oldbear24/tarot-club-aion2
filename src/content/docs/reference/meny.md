@@ -43,7 +43,7 @@ lookupAliases:
   - vázaná kina
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Kde měnu získáš a utratíš
 
@@ -61,7 +61,7 @@ lookupAliases:
 | <span id="ref-silver-gold-medal-of-merit">**Silver / Gold Medal of Merit**</span> | Způsobilé Abyss/PvP odměny či obchod. | Položky příslušného obchodu; kontroluj rank a aktuální nabídku. |
 | <span id="ref-legion-coin">**Legion Coin**</span> | Legion contribution podle pravidel legie. | Legion odměny a nabídky; dostupnost ověř v menu. |
 | <span id="ref-soul-crystal-point">**Soul Crystal Point**</span> | Použití Soul Crystal předmětu. | Genus Analyze. Nezaměňuj s Daevanion nebo Mysterious Crystal. |
-| <span id="ref-arena-token">**Arena Token**</span> | Název existuje v klientské měnové databázi. | Aktuální earn/spend cesta není v citovaném přehledu doložena; neplánujeme farm. |
+| <span id="ref-arena-token">**Arena Token**</span> | Název existuje v klientské měnové databázi. | Citovaný přehled nedokládá, kde ji nyní získat a utratit; farmu zatím neplánuj. |
 
 ## Sezóna a hranice dostupnosti
 
@@ -73,4 +73,4 @@ Položka **Oath Coin: Season 2** v databázi není důkaz otevřené Season 2. N
 
 ## Rozpočet Tarot Clubu
 
-Nejprve si zapiš chybějící milestone, cenu a zbývající limit. Odděl nákup, který otevře obsah, od dlouhodobého ladění. Přesné jednotlivé nákupy najdeš v [obchodech](../obchody/); ceny trhu porovnávej až po [poplatcích](../market/).
+Nejprve si zapiš chybějící milník, cenu a zbývající limit. Odděl nákup, který otevře obsah, od dlouhodobého ladění. Přesné jednotlivé nákupy najdeš v [obchodech](../obchody/); ceny trhu porovnávej až po [poplatcích](../market/).

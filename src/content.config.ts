@@ -11,7 +11,8 @@ export const collections = {
       reviewedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
       evidence: z.enum(['official', 'community', 'editorial', 'mixed']),
       referenceHub: z.boolean().default(false),
-      referenceCategory: z.enum(['slovnik', 'ekonomika', 'materialy', 'staty', 'vybava', 'boj', 'aktivity', 'crafting', 'kolekce', 'ucet', 'tridy', 'dungeony']).optional(),
+      topicHub: z.boolean().default(false),
+      referenceCategory: z.enum(['slovnik', 'ekonomika', 'materialy', 'staty', 'vybava', 'boj', 'aktivity', 'crafting', 'kolekce', 'ucet', 'tridy', 'dungeony', 'rozvoj', 'wiki']).optional(),
       aliases: z.array(z.string()).default([]),
       lookupAliases: z.array(z.object({ term: z.string(), aliases: z.array(z.string()) })).default([]),
       sources: z.array(z.object({

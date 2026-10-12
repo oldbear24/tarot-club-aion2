@@ -5,6 +5,7 @@ sidebar:
   order: 3
 edition: global-launch
 reviewedAt: '2026-10-12'
+referenceCategory: rozvoj
 evidence: community
 sources:
   - title: Daeva Guides — Combat Power vs Item Level, Global 9. října
@@ -36,11 +37,11 @@ Podobné GS může skrývat velmi odlišně rozvinuté postavy. Nepřeváděj GS
 | --- | --- |
 | **Stigma** | Obsazené odemčené sloty a úrovně skutečně používaných Stigmat. |
 | **Daevanion** | Zakoupené uzly a návaznost na hlavní schopnosti; ne jen počet krystalů v inventáři. |
-| **Pets / Pet Insight** | Nové odemčené pets a jejich vlastní úrovně. |
+| **Pets / Pet Insight** | Nově odemčené pets a jejich vlastní úrovně. |
 | **Genus Insight** | Odemčené rody a jejich aktivní statové řádky. |
-| **Titles / Wings** | Nasazený efekt i průběžné odemykání owned bonusů. |
+| **Titles / Wings** | Nasazený efekt i průběžné odemykání bonusů za vlastnictví. |
 | **Pantheon** | Získané a aktivované sochy a obrazy pro zamýšlený build. |
-| **Výbava a Arcana** | Použitelné staty, skill řádky a rozumné investice do kusů, které si necháš. |
+| **Výbava a Arcana** | Použitelné staty, řádky schopností a rozumné investice do kusů, které si necháš. |
 
 Tato tabulka je **redakční kontrolní seznam**, nikoli výpočet příspěvku každého systému do CP.
 
@@ -48,26 +49,17 @@ Tato tabulka je **redakční kontrolní seznam**, nikoli výpočet příspěvku 
 
 Stigma Shards rozvíjejí Stigma schopnosti; jedním z důležitých zdrojů nákupu jsou **Abyss Points**. Nejdřív se podívej na Stigmata, která ve svém buildu opravdu používáš. Přístup k Abyss shopu tedy má smysl i pro PvE postavu.
 
-Daevanion uzly přidávají staty i úrovně schopností. U hlavních desek plánuj cestu k důležitým skill uzlům. **Azphel je převážně PvP deska**: nenakupuj do ní body jen proto, aby se zvýšilo číslo, pokud cílem je nyní PvE výkon. Porovnej konkrétní efekt uzlu a cenu s ostatními potřebami.
+Daevanion uzly přidávají staty i úrovně schopností. U hlavních desek plánuj cestu k důležitým uzlům schopností. **Azphel je převážně PvP deska**: nenakupuj do ní body jen proto, aby se zvýšilo číslo, pokud cílem je nyní PvE výkon. Porovnej konkrétní efekt uzlu a cenu s ostatními potřebami.
 
 ## Pet Insight není Genus Insight
 
-Podklady Global popisují dvě vrstvy:
+Pet Insight rozvíjí konkrétního peta, Genus Insight jeho rod. Pro první rozvoj přidej sběr chybějících druhů k běžným úkolům a cestám; pro přesné náklady, zdroje a přerolování otevři [Pets a Genus Insight](../../reference/pets/).
 
-- **Pet Insight:** úroveň konkrétního peta, až **3**. Vlastní bonusy peta rostou s jeho úrovní.
-- **Genus Insight:** rozvoj rodu **Cogni, Fera, Natura, Varian nebo Special**, s dalšími statovými řádky.
-
-Pet souls získáváš od příslušných monster; jejich **Source** v Pets menu ukazuje zdroj. Odemknutí nového peta vyžaduje 5 souls, další úrovně dalších 25 a 75. Nové odemknutí je pro Genus EXP výrazně účinnější na jednu soul než poslední úroveň již známého peta.
-
-**Doporučení Tarot Clubu:** nejdřív sbírej chybějící druhy během úkolů a cest. Dokonči levné téměř hotové úrovně, potom plánuj cílenou farmu. Nezaměňuj výhodnější Genus EXP za automaticky nejlepší statový upgrade pro každou třídu.
-
-Rerolly Genus spotřebovávají **Soul Crystals**. U Special rodu nepočítej se stejnou farmou souls jako u běžných monster. Nepouštěj se do drahého uzamykání řádků na začátku rozvoje jen kvůli malému okamžitému růstu CP.
+**Doporučení Tarot Clubu:** dokonči levné, téměř hotové úrovně a teprve potom plánuj cílenou farmu. Výhodnější zisk Genus EXP není automaticky nejlepší statové vylepšení pro každou třídu. Drahé uzamykání řádků posuzuj podle cílového bonusu, ne jen okamžitého růstu CP.
 
 ## Titles a wings: vlastnictví i nasazení
 
-Kolekce rozlišují **owned effect** a **equipped effect**. Owned bonus souvisí s vlastnictvím, nasazený efekt vybíráš pro konkrétní situaci. Proto může být užitečný i další titul nebo pár křídel, který nebudeš trvale používat.
-
-Ne každé kosmetické křídlo má stejné statové využití. Zkontroluj tooltip a vybírej nasazený bonus podle buildu. Pro útočné, obranné nebo pohybové situace nemusí být nejlepší stejná volba.
+Další titul nebo pár křídel může být užitečný i tehdy, když jej nebudeš trvale používat. Při výběru rozlišuj bonus za vlastnictví a nasazený efekt a porovnej je s potřebami buildu. Pravidla a zdroje najdeš na stránkách [Titles a kolekce](../../reference/tituly-kolekce/) a [Wings](../../reference/wings/).
 
 ## Pantheon a Nightmare
 

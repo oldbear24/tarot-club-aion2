@@ -3,6 +3,7 @@ title: Obrana, léčení a zdroje
 description: Defense, Evasion, Block, Endurance, Regeneration a obnova HP, MP a staminy.
 edition: global-launch
 reviewedAt: '2026-10-12'
+referenceCategory: staty
 evidence: community
 sources:
   - title: Wikily — Basic Stats
@@ -56,7 +57,7 @@ Náhodný proc Regeneration se liší od pravidelné obnovy **Natural HP Regen**
 
 Doporučení Tarot Clubu:
 
-1. Zaznamenej příčinu smrti: jednorázový zásah, několik rychlých zásahů, nebo postupné ubývání HP.
+1. Zaznamenej příčinu smrti: jednorázový zásah, několik rychlých zásahů nebo postupné ubývání HP.
 2. Nejprve zkontroluj mechaniku a pozici. Výbava sama neřeší špatně načasovaný úhyb.
 3. Pro opakované pokusy porovnej nejen přežití, ale také ztrátu poškození a dostupnost léčivých schopností.
 4. V partě se domluv, kdy použít obranné a léčivé cooldowny. Překrytí všech najednou může vytvořit mezeru později.

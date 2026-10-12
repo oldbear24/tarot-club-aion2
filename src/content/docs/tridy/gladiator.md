@@ -1,6 +1,6 @@
 ---
 title: Gladiator — příručka třídy
-description: Melee damage a tankování podle sestavy. Schopnosti, Stigmata, perky a kontrola výkonu.
+description: Poškození zblízka a tankování podle sestavy. Schopnosti, Stigmata, perky a kontrola výkonu.
 sidebar:
   order: 1
 edition: global-launch
@@ -21,24 +21,24 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Role a základní návaznost
 
-**Zbraň:** Greatsword. **Role:** Melee damage a tankování podle sestavy.
+**Zbraň:** Greatsword. **Role:** Poškození zblízka a tankování podle sestavy.
 
 :::note[Základ buildu: aktivační okna a obnova MP]
-Overhead Slam má podmíněné okno aktivace; Rage Burst jej otevírá. Keen Strike pomáhá obnovovat MP. Focused Block a Experienced Counterstrike poskytují party utility podle Global podkladů.
+Overhead Slam má podmíněné okno aktivace; Rage Burst jej otevírá. Keen Strike pomáhá obnovovat MP. Focused Block a Experienced Counterstrike poskytují podporu skupiny podle podkladů pro Global.
 :::
 
 ## Důležité schopnosti
 
-| Schopnost | Použití v launch podkladech |
+| Schopnost | Použití podle podkladů pro Global launch |
 | --- | --- |
-| <span id="ref-overhead-slam">**Overhead Slam**</span> | Hlavní podmíněný zásah a Upward Strike chain. |
+| <span id="ref-overhead-slam">**Overhead Slam**</span> | Hlavní podmíněný zásah, na který navazuje Upward Strike. |
 | <span id="ref-rending-blow">**Rending Blow**</span> | Opakované poškození mezi okny. |
-| <span id="ref-keen-strike">**Keen Strike**</span> | Základní chain a obnova MP. |
-| <span id="ref-ruinous-blow">**Ruinous Blow**</span> | Přiblížení, damage a vlastní Prepare for Battle. |
+| <span id="ref-keen-strike">**Keen Strike**</span> | Základní řetězec útoků a obnova MP. |
+| <span id="ref-ruinous-blow">**Ruinous Blow**</span> | Přiblížení, poškození a vlastní bonus Prepare for Battle. |
 | <span id="ref-focused-block">**Focused Block**</span> | Reakční obrana a navazující party bonus. |
 
 ## Stigma a pasivy
@@ -47,14 +47,14 @@ Overhead Slam má podmíněné okno aktivace; Rage Burst jej otevírá. Keen Str
 
 **Pasivy k porovnání:** Experienced Counterstrike, Attack Preparation, Murderous Burst, Impact Hit.
 
-Jde o komunitní výchozí sestavu, ne povinný build každé party. Stagger, sólo přežití a PvP mohou potřebovat jiné sloty.
+Sestava vychází z komunitního průvodce pro Global launch, zkontrolovaného k datu rešerše. Konkrétní číslo patche u sestavy není doložené; pro stagger, sólo hru nebo PvP můžeš potřebovat jiné schopnosti.
 
 ## Specialty a změna situace
 
 | Schopnost / situace | Co zkontrolovat |
 | --- | --- |
-| <span id="ref-overhead-slam-2">**Overhead Slam**</span> | Chain Upward Strike; na 16 možnost odstranit cooldown. |
-| <span id="ref-keen-strike-2">**Keen Strike**</span> | MP obnova při levelování; později perk pro Ruinous Blow cooldown. |
+| <span id="ref-overhead-slam-2">**Overhead Slam**</span> | Navazující Upward Strike; na úrovni schopnosti 16 možnost odstranit cooldown. |
+| <span id="ref-keen-strike-2">**Keen Strike**</span> | Obnova MP při zvyšování úrovně; později perk pro zkrácení cooldownu Ruinous Blow. |
 
 ## Kontrola Tarot Clubu před bojem
 
@@ -62,6 +62,6 @@ Jde o komunitní výchozí sestavu, ne povinný build každé party. Stagger, s�
 2. Při tankování drž přední útoky mimo skupinu a rezervuj obranu podle animace.
 3. Pro stagger check zvaž Wrath Wave podle potřeb skupiny.
 
-Pro PvP si odděleně sepiš reakce na CC, dosah, obranné možnosti a spotřebu zdrojů. Bossový preset nepovažuj za univerzální PvP sestavu. Přesné cooldowny a hodnoty se mění s úrovní, perky a patchem; kontroluj vlastní tooltip.
+Pro PvP si připrav samostatnou sestavu: zkontroluj reakce na CC, dosah, obranu a spotřebu zdrojů. Sestava pro bosse nemusí vyhovovat boji s hráči. Cooldowny a hodnoty vždy porovnej s vlastními tooltipy; závisejí na úrovních, percích a patchi.
 
-[Skill milníky](../../pruvodce/schopnosti-stigma/), [Daevanion](../../pruvodce/daevanion/), [Arcana](../../pruvodce/arcana/), [Staty](../../reference/staty/) a [Stagger](../../reference/stagger/) poskytují související referenci.
+[Milníky schopností](../../pruvodce/schopnosti-stigma/), [Daevanion](../../pruvodce/daevanion/), [Arcana](../../pruvodce/arcana/), [Staty](../../reference/staty/) a [Stagger](../../reference/stagger/) vysvětlují související systémy.

@@ -43,7 +43,7 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Název nestačí: rozhoduje konkrétní efekt
 
@@ -68,4 +68,4 @@ Databáze rozlišuje nahrazení při nové aplikaci a podmínku vyšší priorit
 
 ## Doporučená reakce Tarot Clubu
 
-Nejdřív určuj, zda musíš změnit pozici, odstranit efekt, nebo vyčkat na mechaniku. Ověř, které typy debuffů tvoje cleanse opravdu odstraňuje. U bosse odděl běžné CC od [stagger checku](../stagger/). Po smrti nebo resetu boje zkontroluj znovu aktivní buffy a jejich příjemce.
+Nejdřív urči, zda musíš změnit pozici, odstranit efekt, nebo vyčkat na mechaniku. Ověř, které typy debuffů tvoje schopnost pro odstranění efektů (cleanse) opravdu odstraňuje. U bosse odděl běžné CC od [stagger checku](../stagger/). Po smrti nebo resetu boje zkontroluj znovu aktivní buffy a jejich příjemce.

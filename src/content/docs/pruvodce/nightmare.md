@@ -5,6 +5,7 @@ sidebar:
   order: 15
 edition: global-launch
 reviewedAt: '2026-10-12'
+referenceCategory: aktivity
 evidence: community
 sources:
   - title: Aion 2 Maps — Nightmare, Global Season 1 a odlišené asijské podklady
@@ -33,22 +34,17 @@ Na každém bossovi postupuješ stupni po jednom. První dokončení dává jin�
 
 ## Jak fungují pokusy
 
-Podklady uvádějí **+2 denně**, zásobu až **14** a spotřebu při **úspěšném dokončení**. Ke vstupu přesto potřebuješ dostupný pokus. **Instant Clear Ticket** opakuje již dokončený obsah a také spotřebovává pokus.
+Pokus se podle podkladů spotřebuje při **úspěšném dokončení**. Obnovu, zásobu a sdílení udržujeme v [tabulce denních limitů](../daily-weekly/#denní-obnovy-a-zásoby). Ke vstupu přesto potřebuješ dostupný pokus. **Instant Clear Ticket** opakuje již dokončený obsah a také spotřebovává pokus.
 
 :::tip[Tip: nenech propadnout obnovu pokusů]
-**Doporučení Tarot Clubu:** pro učení vybírej problémový stupeň cíleně. Jestli se blížíš plné bance, porovnej nový first clear se spolehlivým dokončením. Ticket používej až po kontrole vybraného bosse, stupně a počítadla.
+**Doporučení Tarot Clubu:** pro učení vybírej problémový stupeň cíleně. Jestli se blížíš plné zásobě, porovnej nový first clear se spolehlivým dokončením. Ticket používej až po kontrole vybraného bosse, stupně a počítadla.
 :::
 
 ## Co kupovat za fragmenty
 
-| Položka | Uváděná cena | Účel |
-| --- | --- | --- |
-| **Daevanion Crystal** | 300; nabídka až 50 na postavu. | Statové a skill uzly. |
-| **Stigma Shard** | 1 500; nabídka až 35 na postavu. | Rozvoj Stigmat. |
-| **Pantheon statues / Colossus** | Cena podle konkrétní položky. | Další božské staty. |
-| **Clash Rune Chest (Bound)** | 500 podle Global Database. | Runa a její enhance scrolly. |
+V Nightmare Trade Shopu najdeš Daevanion Crystals, Stigma Shards, sochy či Colossus pro Pantheon a Clash Rune Chest. Ceny a nákupní limity udržujeme v [přehledu obchodů](../../reference/obchody/#užitečné-položky-a-kontrolované-ceny); u konkrétní sochy ověř cenu a podmínku dokončení bosse v klientu.
 
-Nákup plánuj podle chybějícího systému a aktuální nabídky. **Doporučení Tarot Clubu:** při prázdném rune slotu porovnej chest s dalšími dostupnými questy; jinak zvaž nejbližší Daevanion/skill/Stigma milník. Obchod nemusíš vykoupit v pořadí od první položky.
+**Doporučení Tarot Clubu:** při prázdném slotu pro runu porovnej truhlu s dostupnými úkoly. Jinak zvaž nejbližší milník v Daevanion, schopnostech nebo Stigma. Obchod nemusíš vykoupit v pořadí od první položky.
 
 ## Když boss nejde porazit
 

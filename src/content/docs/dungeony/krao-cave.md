@@ -1,6 +1,6 @@
 ---
 title: Krao Cave — bossové a mechaniky
-description: 'Přístup, loot, Ultimate Berk a mid-bossové: signál, reakce, chyby.'
+description: 'Přístup, odměny, Ultimate Berk a vedlejší bossové: signály, reakce a časté chyby.'
 sidebar:
   order: 1
 edition: global-launch
@@ -21,24 +21,37 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Přístup a rozsah mechanik
 
-**Conquest GS:** 700. **Výbavový cíl:** Zbraň a příslušenství. **Final boss:** Ultimate Berk.
+**Conquest GS:** 700. **Výbavový cíl:** Zbraň a příslušenství. **Závěrečný boss:** Ultimate Berk.
 
-Mechanické podklady kombinují starší asijské návody s porovnáním Global klientu. Níže je praktický přehled, nikoli naše vlastní ověření každé serverové varianty. HP prahy a pořadí reakcí posuzuj podle živého castu; Exploration může být mírnější.
+Podklady k mechanikám kombinují starší asijské návody s porovnáním globálního klientu. Každou variantu jsme sami na serveru neověřili. HP prahy a pořadí reakcí proto porovnej s právě sesílanou schopností; Exploration může být mírnější.
 
-## Final boss — rychlé reakce
+## Tahák před prvním pokusem
+
+Výběr ze stávajících mechanik a příčin neúspěchu; platí stejné omezení podkladů jako pro detail níže.
+
+| Signál / mechanika | Co udělat | Riziko při chybě |
+| --- | --- | --- |
+| Kameny při Wave of Fury | Včas se postav za kámen. | Pozdní skrytí je uvedené mezi příčinami neúspěchu. |
+| Otevřený stagger při Extinction for Eternity | Použij připravenou stagger schopnost před koncem sesílání. | Již spotřebovaná Stigmata mohou chybět pro stagger. |
+
+<span id="final-boss--rychlé-reakce" class="legacy-anchor"></span>
+
+## Závěrečný boss — rychlé reakce
 
 | Mechanika | Signál | Reakce |
 | --- | --- | --- |
 | <span id="ref-wave-of-fury">**Wave of Fury**</span> | Kameny a cast v okolí 75 % a později nízkého HP. | Postav se za kámen; sleduj ochranu. |
 | <span id="ref-extinction-for-eternity">**Extinction for Eternity**</span> | Otevřený stagger ukazatel kolem 50 %. | Celá skupina použije připravený stagger před koncem castu. |
 | <span id="ref-whirlwind">**Whirlwind**</span> | Červený prach a pronásledující rotace. | Cíl vede rotaci od party; ostatní opustí trasu. |
-| <span id="ref-slam-swings">**Slam / swings**</span> | Přední pás a následné oblouky. | Melee čtou zadní bezpečné místo; tank drží směr. |
+| <span id="ref-slam-swings">**Slam / swings**</span> | Přední pás a následné oblouky. | Při boji zblízka hledej bezpečné místo za bossem; tank drží směr. |
 
-## Mid-bossové
+<span id="mid-bossové" class="legacy-anchor"></span>
+
+## Vedlejší bossové
 
 | Boss | Na co dát pozor |
 | --- | --- |
@@ -47,14 +60,14 @@ Mechanické podklady kombinují starší asijské návody s porovnáním Global 
 
 ## Příčiny neúspěchu
 
-:::caution[Pozor: časté příčiny wipe]
+:::caution[Pozor: časté příčiny neúspěchu]
 Pozdní ochrana za kamenem, utracené stagger Stigma a kite přes healera.
 :::
 
 ## Příprava Tarot Clubu
 
-Před pullem vyberte signál pro stagger a trasu cíle whirlwindu.
+Před pullem vyber se skupinou signál pro stagger a trasu cíle whirlwindu.
 
-Před dalšími pokusy kontrolujte jednu příčinu wipe a jednu změnu sestavy. Přeskočení mid-bosse může změnit odměnu; cíl runu ujasněte předem. Po clearu zkontrolujte claim a Guaranteed Reward.
+Před dalším pokusem vyber se skupinou jednu příčinu neúspěchu a jednu změnu sestavy. Cíl průchodu si domluv předem: přeskočení vedlejšího bosse může změnit odměnu. Po dokončení zkontroluj vyzvednutí odměny a Guaranteed Reward.
 
 [Vstupy a odměny](../../pruvodce/dungeony-odyle/), [Aktivity](../../reference/aktivity/) a [Stagger](../../reference/stagger/) doplňují tento přehled.

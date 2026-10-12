@@ -1,0 +1,6 @@
+---
+import Default from '@astrojs/starlight/components/MarkdownContent.astro';
+import HomepageTopics from './HomepageTopics.astro';
+---
+{Astro.locals.starlightRoute.entry.data.topicHub && <HomepageTopics />}
+<Default><slot /></Default>

@@ -1,6 +1,6 @@
 ---
 title: Vakron Sky Island — bossové a mechaniky
-description: 'Přístup, loot, Vakron, Boulder Lord a mid-bossové: signál, reakce, chyby.'
+description: 'Přístup, odměny, Vakron, Boulder Lord a vedlejší bossové: signály, reakce a časté chyby.'
 sidebar:
   order: 5
 edition: global-launch
@@ -21,24 +21,37 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Přístup a rozsah mechanik
 
-**Conquest GS:** 1 400. **Výbavový cíl:** Armor a guard. **Final boss:** Vakron, Boulder Lord.
+**Conquest GS:** 1 400. **Výbavový cíl:** Zbroj a guard. **Závěrečný boss:** Vakron, Boulder Lord.
 
-Mechanické podklady kombinují starší asijské návody s porovnáním Global klientu. Níže je praktický přehled, nikoli naše vlastní ověření každé serverové varianty. HP prahy a pořadí reakcí posuzuj podle živého castu; Exploration může být mírnější.
+Podklady k mechanikám kombinují starší asijské návody s porovnáním globálního klientu. Každou variantu jsme sami na serveru neověřili. HP prahy a pořadí reakcí proto porovnej s právě sesílanou schopností; Exploration může být mírnější.
 
-## Final boss — rychlé reakce
+## Tahák před prvním pokusem
+
+Výběr ze stávajících mechanik a příčin neúspěchu; platí stejné omezení podkladů jako pro detail níže.
+
+| Signál / mechanika | Co udělat | Riziko při chybě |
+| --- | --- | --- |
+| Skupina uvězněná v kamenech | Rozbij se skupinou červený kámen a odejdi ven. | Zkoušení všech kamenů zdržuje únik. |
+| Závěrečný zásah po vlnách | Připrav skok a plachtění. | Postavu na zemi může zasáhnout závěrečný útok. |
+
+<span id="final-boss--rychlé-reakce" class="legacy-anchor"></span>
+
+## Závěrečný boss — rychlé reakce
 
 | Mechanika | Signál | Reakce |
 | --- | --- | --- |
 | <span id="ref-thorn-mark">**Thorn mark**</span> | Osobní označení a kruh před uvězněním. | Označený odejde od party; ostatní jej včas uvolní. |
-| <span id="ref-surging-thorn">**Surging Thorn**</span> | Opakované vlny a navazující celoplošný zásah. | Přeskakuj kruhy; finální blast řeš skokem a glidem. |
-| <span id="ref-lodestone-prison">**Lodestone Prison**</span> | Skupina zavřená v kamenech, jeden červený. | Rozbijte červený kámen a opusťte vnitřek. |
+| <span id="ref-surging-thorn">**Surging Thorn**</span> | Opakované vlny a navazující celoplošný zásah. | Přeskakuj kruhy; závěrečný zásah řeš skokem a plachtěním. |
+| <span id="ref-lodestone-prison">**Lodestone Prison**</span> | Skupina zavřená v kamenech, jeden červený. | Rozbij se skupinou červený kámen a opusť vnitřek. |
 | <span id="ref-volleys">**Volleys**</span> | Osobní dopady kruhů. | Pohybuj se a neblokuj záchranu uvězněného. |
 
-## Mid-bossové
+<span id="mid-bossové" class="legacy-anchor"></span>
+
+## Vedlejší bossové
 
 | Boss | Na co dát pozor |
 | --- | --- |
@@ -47,14 +60,14 @@ Mechanické podklady kombinují starší asijské návody s porovnáním Global 
 
 ## Příčiny neúspěchu
 
-:::caution[Pozor: časté příčiny wipe]
-Hráči zkoušejí všechny kameny, označený uvězní i spoluhráče a finální blast trefí postavu na zemi.
+:::caution[Pozor: časté příčiny neúspěchu]
+Hráči zkoušejí všechny kameny, označený uvězní i spoluhráče a závěrečný zásah trefí postavu na zemi.
 :::
 
 ## Příprava Tarot Clubu
 
-Vyberte společný signál pro červený kámen a rozlište skok přes kruh od glidu pro závěr.
+Vyber se skupinou společný signál pro červený kámen a rozliš skok přes kruh od plachtění pro závěr.
 
-Před dalšími pokusy kontrolujte jednu příčinu wipe a jednu změnu sestavy. Přeskočení mid-bosse může změnit odměnu; cíl runu ujasněte předem. Po clearu zkontrolujte claim a Guaranteed Reward.
+Před dalším pokusem vyber se skupinou jednu příčinu neúspěchu a jednu změnu sestavy. Cíl průchodu si domluv předem: přeskočení vedlejšího bosse může změnit odměnu. Po dokončení zkontroluj vyzvednutí odměny a Guaranteed Reward.
 
 [Vstupy a odměny](../../pruvodce/dungeony-odyle/), [Aktivity](../../reference/aktivity/) a [Stagger](../../reference/stagger/) doplňují tento přehled.

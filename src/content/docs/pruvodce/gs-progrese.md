@@ -5,6 +5,7 @@ sidebar:
   order: 2
 edition: global-launch
 reviewedAt: '2026-10-12'
+referenceCategory: rozvoj
 evidence: community
 sources:
   - title: Aion 2 Maps — Item level, součet ověřovaný proti Global profilům
@@ -62,16 +63,16 @@ To jsou **podmínky vstupu, nikoli záruka snadného průchodu**. GS 2 800 pro L
 
 ## Do 1 000: oprav největší mezery
 
-Zkontroluj oba rune sloty i šperky. Questové **Clash Runes** mají po 40 GS. Pro Asmodiany uvádí průvodce úkol **The Future Within the Past** a řetězec **Hugo Mercenaries: Past and Present → Deep Shadow → An Old Promise**; pro Elyos **Cursed Blue Mineral** a **Zumion's Call: Part Two**. Před cestou zkontroluj navazující úkoly v Journalu.
+Zkontroluj oba sloty pro runy i šperky. Questové **Clash Runes** mají po 40 GS. Pro Asmodiany uvádí průvodce úkol **The Future Within the Past** a řetězec **Hugo Mercenaries: Past and Present → Deep Shadow → An Old Promise**; pro Elyos **Cursed Blue Mineral** a **Zumion's Call: Part Two**. Před cestou zkontroluj navazující úkoly v Journalu.
 
-Příběh poskytuje **Spiritforged** zbraň a následně guard. Oba sloty využij; na vedlejších úkolech doplň chybějící příslušenství. <mark class="focus">Runy zatím drž na +1</mark>: Global průvodci od +2 varují před zničením, databáze označuje failure behavior za neověřený. [Runy, pás a amulet](../runy-specialni-sloty/) rozlišují podklady a ukazují také další rune chesty z Nightmare obchodu.
+Příběh poskytuje **Spiritforged** zbraň a následně guard. Oba sloty využij; na vedlejších úkolech doplň chybějící příslušenství. <mark class="focus">Runy zatím drž na +1</mark>: Global průvodci od +2 varují před zničením, databáze označuje následek neúspěchu za neověřený. [Runy, pás a amulet](../runy-specialni-sloty/) rozlišují podklady a ukazují také další rune chesty z Nightmare obchodu.
 
 ## 1 000–1 400: dokonči trvalé zdroje
 
 - Doplň regionální úkoly a **Sealed Dungeons** ve vlastní startovní oblasti. Získané Daevanion Crystals také utrácej.
 - Udělej **Strongholds** kvůli scrollům na pás; sbírej **Empyrean Traces** a vyzvedávej Monolith odměny pro amulet.
-- U pásu a amuletu sleduj postup **+10 → Substance Morph do vyššího grade**. Jejich vylepšení používá vlastní scrolly.
-- Doplň levné Manastone/Soulstone řádky. Nerolluj draze každý kus, který brzy vyměníš.
+- U pásu a amuletu sleduj postup **+10 → Substance Morph do vyšší kvality**. Jejich vylepšení používá vlastní scrolly.
+- Doplň levné Manastone/Soulstone řádky. Nepřerolovávej draze každý kus, který brzy vyměníš.
 
 Více k těmto aktivitám: [Otevřený svět](../otevreny-svet/).
 
@@ -83,7 +84,7 @@ Na **1 600** doplň všech **pět Arcana slotů**. Přes 1 900 pomáhá vyšší
 
 ## Jak neplýtvat Odyle a Kina
 
-Odyle se obnovuje **15 za 3 hodiny**, tedy 120 za den; základní zásoba je **560**. Typický Conquest claim stojí **40**. Po překročení 1 400 zdroje uvádějí vyšší základní Kina odměnu než v prvních Conquestech při stejné spotřebě.
+Tempo obnovy, strop a spotřebu vysvětluje [hospodaření s Odyle](../dungeony-odyle/#jak-hospodařit-s-odyle). Po překročení 1 400 zdroje uvádějí vyšší základní Kina odměnu než v prvních Conquestech při stejné spotřebě.
 
 **Doporučení Tarot Clubu:** krátce před dalším vstupem nejdřív dodělej dostupný bezenergetický GS krok. Současně nenechávej Odyle přetékat a kontroluj počítadlo nevyzvednutých odměn. „Šetřím na další tier“ nemá znamenat, že zahodíš obnovu nebo bez kontroly odmítáš reward cube.
 
@@ -95,4 +96,4 @@ U dočasných kusů preferuj levné první enhancement úrovně. Drahé další 
 **Kontrola Tarot Clubu:** prázdný slot → nenasazená odměna → neutracené Daevanion body → prázdné stone řádky → nízké úrovně levných kusů → nedokončené regionální odměny → Arcana sloty. Teprve pak kupuj drahé náhradní vybavení.
 :::
 
-Pro konkrétní postup použij [Daevanion desky](../daevanion/), [Arcana](../arcana/) a [Enhancement a Transfer](../vylepsovani-vybavy/). Pokud dungeon odmítá vstup i při splněném GS, zkontroluj také [nevyzvednuté cubes a Guaranteed Reward](../dungeony-odyle/#nevyzvednutá-cube-může-zablokovat-další-vstup).
+Pro konkrétní postup použij [Daevanion desky](../daevanion/), [Arcana](../arcana/) a [Enhancement a Transfer](../vylepsovani-vybavy/). Pokud dungeon odmítá vstup i při splněném GS, zkontroluj také [nevyzvednuté odměnové truhly a Guaranteed Reward](../dungeony-odyle/#nevyzvednutá-cube-může-zablokovat-další-vstup).

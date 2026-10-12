@@ -3,6 +3,7 @@ title: Pantheon a božské staty
 description: Přehled Justice, Freedom, Illusion, Wisdom a dalších božských statů.
 edition: global-launch
 reviewedAt: '2026-10-12'
+referenceCategory: staty
 evidence: community
 sources:
   - title: Wikily — Daevanion Stats, převody herních dat
@@ -18,7 +19,7 @@ sources:
 
 ## Jak tabulku číst
 
-Vedle šestice základních atributů se setkáš se staty pojmenovanými po empyreanských bozích. Komunitní data pro Global popisují nižší převody než některé KR/TW návody.
+Vedle šestice základních atributů se setkáš s atributy pojmenovanými po empyreanských bozích. Komunitní data pro Global popisují nižší převody než některé KR/TW návody.
 
 Níže je výklad dvojic efektů z dat Wikily; přesný převod není vlastní měření Tarot Clubu.
 

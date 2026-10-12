@@ -1,6 +1,6 @@
 ---
-title: Aktivity — požadavky, odměny a limity
-description: Jedna rychlá tabulka launch aktivit, GS, energie, počítadel a sdílení.
+title: Aktivity — přehled a výběr obsahu
+description: Vyber aktivitu podle cíle a otevři její pravidla, odměny a limity.
 sidebar:
   order: 7
 edition: global-launch
@@ -37,35 +37,35 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Vstup, odměna a sdílení
 
-Uvádíme základní launch počítadla. Dodatečné tickety, membership zásoby a aktuální eventy se posuzují samostatně. „Server“ znamená společnou zásobu postav na témže serveru.
+Vstup, dokončení a vyzvednutí odměny mohou mít odlišné podmínky. Limity a ceny proto udržujeme na příslušných detailních stránkách; tento přehled ti pomůže vybrat obsah. „Serverový limit“ znamená společnou zásobu postav na témže serveru.
 
-| Aktivita / zdroj | Přístup / odměna | Obnova a základní limit | Sdílení / pozor |
-| --- | --- | --- | --- |
-| <span id="ref-duty-missions">**Duty Missions**</span> | Denní úkolové odměny. | 5 odměněných dokončení denně. | Server; nebankované. |
-| <span id="ref-nightmare">**Nightmare**</span> | Sólo bossové; fragmenty a first-clear. | +2 pokusy denně, zásoba 14. | Postava; dokončení spotřebuje pokus. |
-| <span id="ref-odyle-energy">**Odyle Energy**</span> | Energie pro reward cube. | +15 / 3 h; cap 560, člen 840. | Postava; obnova na stropu stojí. |
-| <span id="ref-conquest-reward-counts">**Conquest reward counts**</span> | Gear a materiály konkrétního dungeonu. | Podklady: +2 denně, banka 14 pro dungeon. | Nezávislé na Odyle; čti konkrétní counter. |
-| <span id="ref-shugo-festival">**Shugo Festival**</span> | Tokeny a eventové odměny. | +3 klíče denně; základní cap 12. | Server; další membership/item počítadla zvlášť. |
-| <span id="ref-dimensional-invasion">**Dimensional Invasion**</span> | Událost s vlastním reward key. | +1 denně; základní cap 7. | Server. |
-| <span id="ref-daily-dungeon">**Daily Dungeon**</span> | Enhance Stones podle obsahu/skóre. | 14 základních vstupů týdně. | Server; název Daily není povinný denní reset. |
-| <span id="ref-ascension-trial">**Ascension Trial**</span> | Sólo výzva; růstové odměny. | 3 základní vstupy týdně. | Postava; aktuální rotaci čti v panelu. |
-| <span id="ref-exploration">**Exploration**</span> | Questing/průzkum a dungeonové odměny. | Počítadlo konkrétního dungeonu. | Jednorázový Guaranteed Reward není denní farm. |
-| <span id="ref-conquest-tier-700">**Conquest — tier 700**</span> | Krao / Draupnir; gear tier. | Claim typicky 40 Odyle. | Vstupní GS neznamená zaručený clear. |
-| <span id="ref-conquest-tier-1-400">**Conquest — tier 1 400**</span> | Urugugu / Vakron; gear tier. | Claim typicky 40 Odyle. | Gear sloty podle konkrétního dungeonu. |
-| <span id="ref-conquest-tier-2-100">**Conquest — tier 2 100**</span> | Fire Temple / Horn Den. | Claim typicky 40 Odyle. | Náhled odměny rozhoduje o volbě. |
-| <span id="ref-transcendence">**Transcendence**</span> | Tiery 1 600 / 1 900 / 2 200 / 2 500; Arcana. | 40 Odyle za claim podle podkladů. | Sleduj reward counter a nevyzvednuté cubes. |
-| <span id="ref-unclaimed-cubes">**Unclaimed Cubes**</span> | Odchod bez dungeonového claimu. | 10 týdně podle Global podkladů. | Server; vyčerpání může blokovat vstup. |
-| <span id="ref-abyss">**Abyss**</span> | Level 45 / 1 000 GS podle průvodců. | 7 základních hodin týdně. | Středeční obnova zásoby; eventy mají vlastní časy. |
-| <span id="ref-sealed-dungeons-strongholds">**Sealed Dungeons / Strongholds**</span> | Vlastní regionální růstové odměny. | Jednorázový postup. | Nepatří jako identické odměny do daily farmu. |
-| <span id="ref-attendance-season-missions">**Attendance / Season Missions**</span> | Check-in a sezónní postup. | Vlastní denní/týdenní counter. | Čti konkrétní odměnovou větev. |
-| <span id="ref-ludra">**Ludra**</span> | Raid uvedený v launch datech. | K rešerši dočasně stažen. | Nepočítat jako dostupnou týdenní farmu. |
+| Aktivita / zdroj | K čemu slouží | Pravidla a limity |
+| --- | --- | --- |
+| <span id="ref-duty-missions">**Duty Missions**</span> | Denní úkolové odměny; rozlišuj je od Duty Commands. | [Denní limity](../../pruvodce/daily-weekly/#denní-obnovy-a-zásoby) |
+| <span id="ref-nightmare">**Nightmare**</span> | Sólo bossové, fragmenty a odměny za první dokončení. | [Postup a pokusy](../../pruvodce/nightmare/) |
+| <span id="ref-odyle-energy">**Odyle Energy**</span> | Energie pro vyzvednutí dungeonové odměny. | [Odyle a obnova](../../pruvodce/dungeony-odyle/#jak-hospodařit-s-odyle) |
+| <span id="ref-conquest-reward-counts">**Conquest reward counts**</span> | Počítadlo odměn konkrétního dungeonu, nezávislé na Odyle. | [Denní zásoby](../../pruvodce/daily-weekly/#denní-obnovy-a-zásoby) |
+| <span id="ref-shugo-festival">**Shugo Festival**</span> | Tokeny a odměny z události. | [Klíče a sdílení](../../pruvodce/daily-weekly/#denní-obnovy-a-zásoby) |
+| <span id="ref-dimensional-invasion">**Dimensional Invasion**</span> | Událost s vlastním odměnovým klíčem. | [Klíče a sdílení](../../pruvodce/daily-weekly/#denní-obnovy-a-zásoby) |
+| <span id="ref-daily-dungeon">**Daily Dungeon**</span> | Enhance Stones podle konkrétního obsahu a skóre. | [Týdenní zásoba](../../pruvodce/daily-weekly/#týdenní-obsah) |
+| <span id="ref-ascension-trial">**Ascension Trial**</span> | Sólo výzva s odměnami pro rozvoj; aktuální rotaci ověř v panelu. | [Týdenní zásoba](../../pruvodce/daily-weekly/#týdenní-obsah) |
+| <span id="ref-exploration">**Exploration**</span> | Průzkum a dungeonové odměny; jednorázová Guaranteed Reward není denní farma. | [Vstup a odměna](../../pruvodce/dungeony-odyle/) |
+| <span id="ref-conquest-tier-700">**Conquest — tier 700**</span> | Krao Cave a Draupnir; vstupní GS nezaručuje dokončení. | [Výběr výbavového slotu](../../pruvodce/dungeony-odyle/#kam-jít-pro-chybějící-slot) |
+| <span id="ref-conquest-tier-1-400">**Conquest — tier 1 400**</span> | Urugugu Canyon a Vakron Sky Island; liší se výbavovými sloty. | [Výběr výbavového slotu](../../pruvodce/dungeony-odyle/#kam-jít-pro-chybějící-slot) |
+| <span id="ref-conquest-tier-2-100">**Conquest — tier 2 100**</span> | Fire Temple a Ferocious Horn Den; rozhoduje náhled odměny. | [Výběr výbavového slotu](../../pruvodce/dungeony-odyle/#kam-jít-pro-chybějící-slot) |
+| <span id="ref-transcendence">**Transcendence**</span> | Zdroj Arcana; sleduj tier, počítadlo odměn a Odyle. | [GS milníky](../../pruvodce/gs-progrese/#milníky-global) a [mechaniky](../../dungeony/transcendence/) |
+| <span id="ref-unclaimed-cubes">**Unclaimed Cubes**</span> | Odchod bez vyzvednutí odměny může blokovat další vstup. | [Nevyzvednuté odměny](../../pruvodce/dungeony-odyle/#nevyzvednutá-cube-může-zablokovat-další-vstup) |
+| <span id="ref-abyss">**Abyss**</span> | AP, sbírka a frakční události s vlastními časy. | [Přístup a čas](../../pruvodce/abyss/#vstup-a-dostupná-oblast) |
+| <span id="ref-sealed-dungeons-strongholds">**Sealed Dungeons / Strongholds**</span> | Jednorázové regionální odměny; neplánuj je jako totožnou denní farmu. | [Otevřený svět](../../pruvodce/otevreny-svet/) |
+| <span id="ref-attendance-season-missions">**Attendance / Season Missions**</span> | Přihlašovací a sezónní odměny; sleduj konkrétní odměnovou větev. | [Denní plán](../../pruvodce/daily-weekly/) |
+| <span id="ref-ludra">**Ludra**</span> | Historický raid; k datu rešerše je podle komunitního přehledu stažený. | [Dostupnost a historie](../../dungeony/ludra/) |
 
 ## Český čas
 
-Uváděný reset je **07:00 UTC**, týdenní ve středu: v Česku **09:00 v letním čase a 08:00 v zimním čase**. Siege a jiné eventové hodiny nejsou totožné s resetem counterů. Po změně služby porovnej countdown v klientu.
+Čas a převod mezi letním a zimním časem najdeš v [denním a týdenním plánu](../../pruvodce/daily-weekly/#reset-v-českém-čase). Časy siege a dalších událostí se řídí vlastním kalendářem, nikoli resetem počítadel.
 
 **Doporučení Tarot Clubu:** krátkou session plánuj podle propadající odměny a blížícího se stropu. Volbu konkrétního obsahu popisují [Daily/weekly](../../pruvodce/daily-weekly/) a [Dungeony a Odyle](../../pruvodce/dungeony-odyle/).

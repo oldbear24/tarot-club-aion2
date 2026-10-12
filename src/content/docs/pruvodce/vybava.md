@@ -5,6 +5,7 @@ sidebar:
   order: 8
 edition: global-launch
 reviewedAt: '2026-10-12'
+referenceCategory: vybava
 evidence: editorial
 ---
 
@@ -42,11 +43,13 @@ Ke čtení statů použij [Základní atributy](../../staty/zakladni/), [Útok](
 | --- | --- |
 | Prázdné runy, pás nebo amulet. | [Zdroje a rozvoj speciálních slotů](../runy-specialni-sloty/). |
 | + úrovně, přerolování řádku nebo nový kus. | [Enhancement, Soul Binding a Transfer](../vylepsovani-vybavy/). |
-| Arcana sloty a skill řádky. | [Výběr a levelování karet](../arcana/). |
-| Dungeon, který platí potřebný typ gearu. | [Dungeony a garantované odměny](../dungeony-odyle/). |
+| Arcana sloty a řádky schopností. | [Výběr a zvyšování úrovně karet](../arcana/). |
+| Dungeon, který poskytuje potřebný typ výbavy. | [Dungeony a garantované odměny](../dungeony-odyle/). |
 
 Kompletní drop tabulky a nejlepší předměty pro jednotlivé třídy zde zatím nejsou. Konkrétní postup pro dosažení dalších vstupů najdeš v [GS progresi](../gs-progrese/); rozvoj mimo výbavu v [CP průvodci](../cp-postava/).
 
-## Referenční příručka
+<span id="referenční-příručka" class="legacy-anchor"></span>
+
+## Kameny a výroba
 
 Pro jednotlivé systémy použij [kameny a vylepšování](../../reference/kameny/) a [crafting](../../reference/crafting/).

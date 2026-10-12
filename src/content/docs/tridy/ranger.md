@@ -1,6 +1,6 @@
 ---
 title: Ranger — příručka třídy
-description: Ranged damage s charge hlavním útokem. Schopnosti, Stigmata, perky a kontrola výkonu.
+description: Poškození na dálku s nabíjeným hlavním útokem. Schopnosti, Stigmata, perky a kontrola výkonu.
 sidebar:
   order: 4
 edition: global-launch
@@ -21,24 +21,24 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Role a základní návaznost
 
-**Zbraň:** Bow. **Role:** Ranged damage s charge hlavním útokem.
+**Zbraň:** Bow. **Role:** Poškození na dálku s nabíjeným hlavním útokem.
 
-:::note[Základ buildu: charge útok a zkracování cooldownu]
-Deadshot se nabíjí; Snipe chain s příslušným perkem zkracuje jeho cooldown. Marking Shot poskytuje vlastní Precision. Buffy v launch podkladech převážně podporují Rangera samotného.
+:::note[Základ buildu: nabíjený útok a zkracování cooldownu]
+Deadshot se nabíjí; řetězec Snipe s příslušným perkem zkracuje jeho cooldown. Marking Shot poskytuje vlastní Precision. Buffy v launch podkladech převážně podporují Rangera samotného.
 :::
 
 ## Důležité schopnosti
 
-| Schopnost | Použití v launch podkladech |
+| Schopnost | Použití podle podkladů pro Global launch |
 | --- | --- |
-| <span id="ref-deadshot">**Deadshot**</span> | Hlavní charge zásah. |
-| <span id="ref-snipe">**Snipe**</span> | Základní chain a návaznost na Deadshot. |
+| <span id="ref-deadshot">**Deadshot**</span> | Hlavní nabíjený zásah. |
+| <span id="ref-snipe">**Snipe**</span> | Základní řetězec útoků navazující na Deadshot. |
 | <span id="ref-marking-shot">**Marking Shot**</span> | Vlastní Precision bonus. |
-| <span id="ref-drill-dart">**Drill Dart**</span> | Způsobilý damage/debuff útok. |
+| <span id="ref-drill-dart">**Drill Dart**</span> | Útok s poškozením a debuffem podle zvoleného nastavení. |
 | <span id="ref-gale-arrow-tempest-shot">**Gale Arrow / Tempest Shot**</span> | Další útočné schopnosti podle buildu. |
 
 ## Stigma a pasivy
@@ -47,14 +47,14 @@ Deadshot se nabíjí; Snipe chain s příslušným perkem zkracuje jeho cooldown
 
 **Pasivy k porovnání:** Focused Eye, Hunter's Resolve, Hunter's Soul.
 
-Jde o komunitní výchozí sestavu, ne povinný build každé party. Stagger, sólo přežití a PvP mohou potřebovat jiné sloty.
+Sestava vychází z komunitního průvodce pro Global launch, zkontrolovaného k datu rešerše. Konkrétní číslo patche u sestavy není doložené; pro stagger, sólo hru nebo PvP můžeš potřebovat jiné schopnosti.
 
 ## Specialty a změna situace
 
 | Schopnost / situace | Co zkontrolovat |
 | --- | --- |
-| <span id="ref-snipe-2">**Snipe**</span> | Perk pro Deadshot cooldown po zásahu. |
-| <span id="ref-deadshot-2">**Deadshot**</span> | Porovnej plný charge a skutečné možnosti bezpečného použití. |
+| <span id="ref-snipe-2">**Snipe**</span> | Perk pro zkrácení cooldownu Deadshot po zásahu. |
+| <span id="ref-deadshot-2">**Deadshot**</span> | Porovnej plné nabití a skutečné možnosti bezpečného použití. |
 
 ## Kontrola Tarot Clubu před bojem
 
@@ -62,6 +62,6 @@ Jde o komunitní výchozí sestavu, ne povinný build každé party. Stagger, s�
 2. Pro mechaniku stacku přijď ke skupině, i když máš dostřel.
 3. Pro silný stagger podle potřeby zvaž Arrow Storm.
 
-Pro PvP si odděleně sepiš reakce na CC, dosah, obranné možnosti a spotřebu zdrojů. Bossový preset nepovažuj za univerzální PvP sestavu. Přesné cooldowny a hodnoty se mění s úrovní, perky a patchem; kontroluj vlastní tooltip.
+Pro PvP si připrav samostatnou sestavu: zkontroluj reakce na CC, dosah, obranu a spotřebu zdrojů. Sestava pro bosse nemusí vyhovovat boji s hráči. Cooldowny a hodnoty vždy porovnej s vlastními tooltipy; závisejí na úrovních, percích a patchi.
 
-[Skill milníky](../../pruvodce/schopnosti-stigma/), [Daevanion](../../pruvodce/daevanion/), [Arcana](../../pruvodce/arcana/), [Staty](../../reference/staty/) a [Stagger](../../reference/stagger/) poskytují související referenci.
+[Milníky schopností](../../pruvodce/schopnosti-stigma/), [Daevanion](../../pruvodce/daevanion/), [Arcana](../../pruvodce/arcana/), [Staty](../../reference/staty/) a [Stagger](../../reference/stagger/) vysvětlují související systémy.

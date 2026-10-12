@@ -1,10 +1,11 @@
 ---
 title: Runy, pás a amulet
-description: Kde získat obě Clash Runes, náhradní rune chesty a jak rozvíjet Noble Belt a Revelation Amulet.
+description: Kde získat obě Clash Runes, náhradní truhly s runami a jak rozvíjet Noble Belt a Revelation Amulet.
 sidebar:
   order: 9
 edition: global-launch
 reviewedAt: '2026-10-12'
+referenceCategory: vybava
 evidence: community
 sources:
   - title: Global Database — The Future Within the Past, klient 2.0.6.0
@@ -31,7 +32,7 @@ sources:
 
 **Clash Rune patří do dvou samostatných výbavových slotů.** Questová runa má základní Item Level 40; zaplnění obou prázdných slotů proto pomůže s prvním GS požadavkem. Rune chest otevři a výsledný předmět nasaď — samotná truhla v inventáři GS nepřidává.
 
-Podklady jsou komunitní přepisy Global, kontrolované 12. října 2026; databázové stránky uvádějí klient **2.0.6.0**. Nejde o naše vlastní testování.
+Podklady jsou komunitní přepisy Global, kontrolované 12. října 2026; databázové stránky uvádějí klient **2.0.6.0**. Údaje jsme sami v globální verzi netestovali.
 
 ## Které úkoly hledat
 
@@ -44,13 +45,13 @@ Podklady jsou komunitní přepisy Global, kontrolované 12. října 2026; datab�
 
 ## Náhradní runy z Nightmare
 
-Databáze Global uvádí **Clash Rune Chest (Bound)** v Nightmare **Trade Shopu za 500 Phantasmal Fragments**. Obsahuje **jednu runu a devět Clash Rune Enhance Scrolls**. Přítomnost v datech ověř v aktuální nabídce obchodu; sezónní nebo eventovou nabídku nepovažuj za trvale dostupnou.
+Databáze Global uvádí **Clash Rune Chest (Bound)** v Nightmare **Trade Shopu**; cenu najdeš v [přehledu obchodů](../../reference/obchody/#ref-clash-rune-chest-nightmare). Obsahuje **jednu runu a devět Clash Rune Enhance Scrolls**. Přítomnost v datech ověř v aktuální nabídce obchodu; sezónní nebo eventovou nabídku nepovažuj za trvale dostupnou.
 
 To je další možnost, když ti po questech runa chybí. Doporučení Tarot Clubu: před nákupem porovnej cenu s plánovanými Daevanion Crystals nebo Stigma Shards. [Nightmare](../nightmare/) vysvětluje získávání fragmentů.
 
 ## Kdy přestat vylepšovat
 
-:::danger[Riziko: průvodci varují před zničením runy od +2]
+:::caution[Pozor: průvodci varují před zničením runy od +2]
 Global Database uvádí **+1 jako zaručený pokus**, ale následek dalších neúspěchů označuje za **neověřený**. Global průvodci Raid Relay a Aion 2 Maps varují před **zničením od +2**; podrobná tabulka zničení v research knihovně Maps je označená KR. Pro Global tedy riziko nepodceňuj, ale nepovažuj jej zde za námi změřené chování serveru. Před potvrzením čti varování v klientu.
 :::
 
@@ -60,9 +61,9 @@ Global Database uvádí **+1 jako zaručený pokus**, ale následek dalších ne
 
 | Předmět | Zdroj vlastních scrollů | Praktický postup |
 | --- | --- | --- |
-| **Noble Belt** | Strongholds ve vlastním regionu. | Vylepšit na +10, zkontrolovat recept na vyšší grade v **Substance Morph**. |
-| **Revelation Amulet** | Monolith odměny za Empyrean Traces ve vlastním regionu. | Vylepšit na +10 a pokračovat přes příslušný morph recept. |
+| **Noble Belt** | Strongholds ve vlastním regionu. | Vylepši na +10 a zkontroluj recept na vyšší kvalitu v **Substance Morph**. |
+| **Revelation Amulet** | Monolith odměny za Empyrean Traces ve vlastním regionu. | Vylepši na +10 a pokračuj přes příslušný morph recept. |
 
-Jednotlivé kroky +1 až +10 mají podle podkladů zaručený úspěch, ale spotřebovávají vlastní scrolly a další materiály. Morph mění grade; není to další obyčejné +1.
+Jednotlivé kroky +1 až +10 mají podle podkladů zaručený úspěch, ale spotřebovávají vlastní scrolly a další materiály. Morph mění kvalitu; není to další obyčejné +1.
 
 **Plán Tarot Clubu:** nejdřív porovnej náhled výsledku a cenu s chybějícím GS. Na Unique +0 se znovu rozhodni, zda drahé další úrovně řeší aktuální překážku. Zdroje scrollů podrobněji: [Otevřený svět](../otevreny-svet/).

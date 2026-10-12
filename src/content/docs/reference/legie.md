@@ -22,7 +22,7 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní přepis dat nebo návod není naše vlastní měření serveru. U cen, dostupnosti a sdílení má přednost aktuální tooltip či panel klientu.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Funkce legie
 
@@ -37,12 +37,12 @@ sources:
 
 ## Hall a oprávnění
 
-Hall není automaticky permanentní vlastnictví. Sleduj konec pronájmu a kdo smí prodloužit nájem. U skladu nastav zvlášť vkládání a vybírání; sdílení zásoby není stejné jako sdílení osobních odměn nebo serverových daily limitů.
+Hall není trvalým vlastnictvím legie. Sleduj konec pronájmu a kdo smí prodloužit nájem. U skladu nastav zvlášť vkládání a vybírání; sdílení zásoby není stejné jako sdílení osobních odměn nebo serverových daily limitů.
 
 ## Doporučení Tarot Clubu
 
-Domluvte roli skladu, rozpočet Hallu a pravidla pro vzácné materiály. Pro dungeony odděl organizátora skupiny od vlastnictví gearu a odměn. Před hromadnou úpravou oprávnění zkontroluj, kdo získá přístup k výběru.
+Domluv se s legií na využití skladu, rozpočtu Hallu a pravidlech pro vzácné materiály. Pro dungeony odděl organizátora skupiny od vlastnictví gearu a odměn. Před hromadnou úpravou oprávnění zkontroluj, kdo získá přístup k výběru.
 
-Při řešení neaktivního Leader či rozpuštění legie postupuj podle aktuální podpory a Global policy; v této příručce nejsou automatické právní nebo obnovovací záruky.
+Při řešení neaktivního vůdce nebo rozpuštění legie postupuj podle aktuálních pravidel globální služby a pokynů podpory. Obnovení legie nebo předmětů zde nemůžeme zaručit.
 
 [Inventář](../inventar/) vysvětluje osobní sklady, [třídy](../../tridy/prehled/) pomáhají domluvit sestavu party.

@@ -40,4 +40,4 @@ sources:
 
 Každý průvodce odděluje signál, reakci a příčinu neúspěchu. Komunitní zdroje obsahují i starší asijské mechanické návody; označení Global u databázového porovnání není naše vlastní měření všech serverových patternů.
 
-**Doporučení Tarot Clubu:** před prvním pokusem si vyber hlavní wipe mechaniku a reakční klávesu. Po wipe oprav jednu věc. Vstupní GS, loot a countery dohledáš v [Aktivitách](../../reference/aktivity/); [Stagger](../../reference/stagger/) doplňuje reakce celé party.
+**Doporučení Tarot Clubu:** před prvním pokusem si vyber hlavní mechaniku, která může ukončit pokus a reakční klávesu. Po neúspěchu oprav jednu věc. Vstupní GS, odměny a počítadla dohledáš v [Aktivitách](../../reference/aktivity/); [Stagger](../../reference/stagger/) doplňuje reakce celé party.
