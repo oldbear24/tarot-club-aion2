@@ -1,7 +1,8 @@
 ---
 title: Tarot Club — česká wiki AION 2
 description: Srozumitelný průvodce staty a výbavou AION 2 pro globální launch.
-template: splash
+template: doc
+tableOfContents: false
 edition: global-launch
 reviewedAt: '2026-10-12'
 evidence: editorial
