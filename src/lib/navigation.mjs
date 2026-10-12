@@ -1,6 +1,7 @@
 // Navigation groups describe subjects, never storage directories. Slugs stay public.
 export const sidebar = [
   { label: 'Úvod', slug: '' },
+  { label: 'Zeptat se AI', slug: 'ai' },
   { label: 'Hledání a slovník', items: [
     { slug: 'reference/prehled' }, { slug: 'reference/slovnik' },
   ] },

@@ -3,9 +3,13 @@ import Default from '@astrojs/starlight/components/PageTitle.astro';
 import ReferenceBrowser from './ReferenceBrowser.astro';
 const data = Astro.locals.starlightRoute.entry.data;
 const aliases = [...data.aliases, ...data.lookupAliases.flatMap(item => item.aliases)];
+const aiMetadata = JSON.stringify({ title: data.title, description: data.description, aliases,
+  sources: data.sources, edition: data.edition, reviewedAt: data.reviewedAt, evidence: data.evidence });
 const labels = { official: 'Oficiální podklady', community: 'Komunitní podklady', editorial: 'Doporučení Tarot Clubu', mixed: 'Oficiální i komunitní podklady' };
 ---
 <Default {...Astro.props} />
+{data.template !== 'splash' && !data.referenceHub && Astro.locals.starlightRoute.entry.id !== 'ai' &&
+  <script is:inline type="application/json" data-tarot-document set:html={aiMetadata.replace(/</g, '\\u003c')} />}
 {data.template !== 'splash' && data.reviewedAt && <div class="article-meta" data-pagefind-ignore>
   <span class="edition-dot">AION 2 · Global launch</span>
   <span>{labels[data.evidence]}</span>

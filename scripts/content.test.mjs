@@ -37,8 +37,9 @@ test('critical repeating values have a single owner and overview links to it', (
 
 test('original evidence, dates, editions, aliases and source scopes survive the editorial pass', async () => {
   const original = JSON.parse(await readFile('scripts/evidence-baseline.json', 'utf8'));
-  for (const doc of docs) {
-    const baseline = original[doc.id]; assert.ok(baseline, doc.id);
+  // The frozen baseline protects original articles; new pages have no historical snapshot.
+  for (const [id, baseline] of Object.entries(original)) {
+    const doc = docs.find(doc => doc.id === id); assert.ok(doc, id);
     for (const key of ['edition', 'reviewedAt', 'evidence', 'aliases', 'lookupAliases']) assert.deepEqual(doc.data[key], baseline[key], `${doc.id}: ${key}`);
     for (const source of baseline.sources || []) assert.ok(doc.data.sources?.some(current => current.url === source.url && current.scope === source.scope), `${doc.id}: ${source.url}`);
   }

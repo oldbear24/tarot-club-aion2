@@ -1,5 +1,6 @@
 import { readdir, readFile, stat } from 'node:fs/promises';
 import { resolve, relative, sep } from 'node:path';
+import { retrievePassages } from '../src/lib/ai/retrieval.ts';
 
 // Verify the actual output, including relative Markdown links under a Pages base.
 const root = resolve('dist');
@@ -85,5 +86,32 @@ const locations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => mat
 if (locations.length !== new Set(locations).size) errors.push('Sitemap: duplicitní URL');
 for (const location of locations) if (!location.startsWith(origin + base)) errors.push(`Sitemap: nesprávná doména/base ${location}`);
 if (locations.length !== pages.length - 1) errors.push('Sitemap neobsahuje všechny kanonické obsahové stránky.');
+// Audit every AI citation target against the published HTML, not just links already in a page.
+const aiIndex = JSON.parse(await readFile(resolve(root, 'ai/wiki-index.json'), 'utf8'));
+const htmlCache = new Map();
+for (const passage of aiIndex.passages) {
+  const target = new URL(passage.url, origin);
+  if (target.origin !== origin || !target.pathname.startsWith(base)) { errors.push(`AI: odkaz mimo base ${passage.url}`); continue; }
+  const path = resolve(root, decodeURIComponent(target.pathname.slice(base.length)), 'index.html');
+  try {
+    if (!htmlCache.has(path)) htmlCache.set(path, await readFile(path, 'utf8'));
+    if (target.hash) {
+      const ids = [...htmlCache.get(path).matchAll(/\bid="([^"]+)"/g)].map(match => unescape(match[1]));
+      if (!ids.includes(decodeURIComponent(target.hash.slice(1)))) errors.push(`AI: neexistující kotva ${passage.url}`);
+    }
+  } catch { errors.push(`AI: neexistující článek ${passage.url}`); }
+}
+const homepage = await readFile(resolve(root, 'index.html'), 'utf8');
+if (/TarotChat[^" ]*\.js|runtime\.[^" ]*\.js|worker-[^" ]*\.js/.test(homepage)) errors.push('AI JavaScript se nesmí načítat na běžné úvodní stránce.');
+for (const [question, expected] of [
+  ['Jak rychle zvýším GS?', '/pruvodce/gs-progrese/'],
+  ['Co znamená CP?', '/pruvodce/cp-postava/'],
+  ['K čemu jsou runy?', '/pruvodce/runy-specialni-sloty/'],
+  ['Co dělá Precision?', '/staty/zakladni/#body-nejsou-'],
+  ['Jaké jsou denní aktivity?', '/pruvodce/daily-weekly/'],
+]) {
+  if (!retrievePassages(aiIndex, question).some(passage => passage.url.includes(expected))) errors.push(`AI: chybí očekávaný podklad k otázce ${question}`);
+}
+if (retrievePassages(aiIndex, 'Jaký je přesný drop rate meče Zephyra z bosse Banana King?').length) errors.push('AI: neznámý předmět dostal podklady k jinému tématu.');
 if (errors.length) { console.error([...new Set(errors)].join('\n')); process.exit(1); }
 console.log(`Ověřeno ${pages.length} HTML stránek, ${checked} lokálních odkazů/assetů, ${catalog.length} položek katalogu, ${Object.values(publicLinks).flat().length} původních kotev, canonical, sitemap a Pagefind. Base: ${base}`);
