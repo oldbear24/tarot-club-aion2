@@ -33,7 +33,7 @@ export class LocalModel {
       rejectAbort = () => reject(signal.reason);
       signal.addEventListener('abort', rejectAbort, { once: true });
     });
-    const timer = setTimeout(() => this.dispose('AI neodpovídá. Zkus ji znovu zapnout nebo použij vyhledávání.'), timeoutMs);
+    const timer = setTimeout(() => this.dispose('AI neodpovídá. Zkus otázku odeslat znovu nebo použij vyhledávání.'), timeoutMs);
     try { return await Promise.race([operation(), aborted]); }
     finally { clearTimeout(timer); signal.removeEventListener('abort', rejectAbort); }
   }

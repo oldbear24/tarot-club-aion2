@@ -59,7 +59,7 @@ Dostupnost zdrojů je informativní kontrola. Běží samostatně i každý týd
 
 ## Tarot AI
 
-V navigaci zvol **Zeptat se AI**. AI je volitelná; běžné články nenačítají její JavaScript ani model. Na AI stránce se runtime a worker načtou až po kliknutí **Zapnout lokální AI**. Chat nemá účet, API klíč, serverovou inferenci ani cloudový fallback.
+V navigaci zvol **Zeptat se AI**. AI je volitelná; běžné články nenačítají její JavaScript ani model. Na AI stránce se runtime a worker načtou až při odeslání první otázky, a to jen pokud retrieval ve wiki najde podklady. Poprvé se chat v dialogu zeptá, zda smí stáhnout model (cca 1 GB). Souhlas se uloží do `localStorage` (`tarot-ai-download-consent`) a další otázky už model načítají bez ptaní. Odmítnutí se neukládá. Najednou běží vždy jen jeden dotaz: během stahování a odpovědi je odeslání zablokované a tlačítko **Zastavit** dotaz ukončí. Chat nemá účet, API klíč, serverovou inferenci ani cloudový fallback.
 
 ### Runtime a model
 
