@@ -21,6 +21,7 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: '24'
+          package-manager-cache: false
           # PR builds do not share a writable cache with the trusted publisher.
       - uses: actions/configure-pages@v5
         id: pages

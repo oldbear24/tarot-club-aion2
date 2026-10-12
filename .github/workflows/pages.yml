@@ -1,13 +1,11 @@
 name: Nasazení na GitHub Pages
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
-  workflow_run:
-    workflows: [Náhled pull requestu]
-    types: [completed]
-  pull_request_target:
-    types: [closed]
+    inputs:
+      closed_pr:
+        description: Číslo právě zavřeného PR (0 pro běžné nasazení)
+        type: number
+        default: 0
 permissions:
   contents: read
 concurrency:
@@ -15,11 +13,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
-    if: >-
-      github.event_name == 'push' || github.event_name == 'workflow_dispatch' ||
-      (github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name == github.repository) ||
-      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' &&
-       github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.head_repository.full_name == github.repository)
+    if: github.ref == 'refs/heads/main'
     permissions:
       contents: read
       pages: read
@@ -94,3 +88,4 @@ jobs:
           PREVIEW_MANIFEST: ${{ needs.build.outputs.previews }}
           SITE_URL: ${{ needs.build.outputs.site }}
           BASE_PATH: ${{ needs.build.outputs.base }}
+          CLOSED_PR: ${{ inputs.closed_pr }}
