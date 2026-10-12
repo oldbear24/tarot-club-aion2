@@ -1,42 +1,35 @@
 # Tarot Club — AION 2
 
-Česká statická wiki pro globální launch AION 2. Obsah žije v Markdownu, vzhled a navigaci poskytuje Astro + Starlight. Výsledkem jsou statické soubory určené pro GitHub Pages.
+Česká statická příručka pro AION 2 Global launch na [aion2.tarot-club.cz](https://aion2.tarot-club.cz/). Obsah a jeho zdroje zůstávají v Markdownu; Astro + Starlight vytváří statické stránky pro GitHub Pages.
 
-## Aktuální obsah
+## Obsah a orientace
 
-- 62 českých obsahových stránek: úvod, šest průvodců staty, patnáct praktických průvodců, osmnáct referenčních stránek, devět stránek tříd, devět dungeonových stránek a čtyři stránky o wiki.
-- Vlastní tarotový motiv, české UI, mobilní navigace, světlý/tmavý režim.
-- Jemné barevné boxy pro tipy, vysvětlení, upozornění a rizika; vybrané krátké fráze zvýrazněné v textu.
-- Fulltextové vyhledávání Pagefind bez backendu.
-- Každý článek má cílovou edici, datum rešerše, typ podkladů a zdroje.
-- GS a CP progrese, otevřený svět, Abyss, daily/weekly s prioritami, limity a odlišením Global od neotevřeného obsahu.
-- Runy/pás/amulet, Enhancement a Transfer, Arcana, Daevanion, Specialty/Stigma, dungeonové odměny a Nightmare; úvod odkazuje na všech 61 tematických článků.
-- Referenční hledání podle názvu, významu a aliasu s filtry a odkazy na konkrétní řádky; hesla se při sestavení odvozují přímo z Markdown tabulek.
-- Katalog 148 statů, měny, materiály, obchody, aktivity, crafting/gathering, kolekce, storage, Market a legie.
-- Osm class příruček a bossové tabulky šesti Expeditions, obou Transcendence dungeonů a historického kontextu Ludry.
-- Workflow pro ověření pull requestů a nasazení na GitHub Pages.
+- 62 obsahových stránek: rozvoj GS/CP, staty, osm tříd, výbava, výroba, ekonomika, aktivity a dungeonové mechaniky.
+- Jedno tematické menu; původní veřejné adresy zůstávají funkční. Adresář `reference/` popisuje umístění zdrojových souborů, nikoli další paralelní obsahovou sekci.
+- Kompaktní úvod s pěti rychlými cestami a tematickým přehledem odvozeným ze stejného seznamu jako menu.
+- **Hledat ve wiki** prohledává celé články přes Pagefind. **Katalog hesel a článků** filtruje názvy, aliasy, témata a krátké popisy; stav lze sdílet v URL.
+- Katalog 148 statů a šesti dalších názvů zachovává všechny původní odkazy `#ref-*`. Tabulková hesla mají kontext podle názvů sloupců a sekcí.
+- České UI, světlý/tmavý režim, mobilní menu, klávesnice a střídmé významové callouty.
 
-Repozitář: [oldbear24/tarot-club-aion2](https://github.com/oldbear24/tarot-club-aion2). Živý web je dostupný až po zapnutí GitHub Pages a úspěšném nasazení.
+Herní údaje vycházejí z uvedených podkladů. Datum rešerše nepotvrzuje vlastní měření serveru. KR/TW hodnoty, historické mechaniky a neotevřený obsah mají v článcích označenou platnost nebo nejistotu. Jazyková úprava nemění datum věcné rešerše.
 
-Herní slovník čerpá z komunitních přepisů tooltipů/dat. Globální serverové vzorce nebyly vlastními testy ověřeny. KR/TW limity, cílové staty bossů a endgame váhy se nevydávají za potvrzená čísla Global. Detaily: `src/content/docs/wiki/global.md` a `src/content/docs/staty/limity.md`.
+## Lokální práce
 
-## Lokální spuštění
-
-Použij Node.js 24 (minimum frameworku 22.12) a npm:
+Použij Node.js 24 (minimum 22.12) a npm:
 
 ```bash
 npm ci
 npm run dev
 ```
 
-Produkční kontrola včetně vyhledávání:
+Produkční kontrola článků, metadat, indexu a hotových odkazů:
 
 ```bash
 npm run verify
 npm run preview
 ```
 
-Bez proměnných prostředí funguje lokální web v kořeni `/`. Pro ověření podadresáře Pages:
+Bez proměnných používá build canonical doménu `https://aion2.tarot-club.cz/` a cesty v kořeni. Projektový GitHub Pages režim:
 
 ```bash
 SITE_URL=https://oldbear24.github.io BASE_PATH=/tarot-club-aion2/ npm run verify
@@ -48,47 +41,39 @@ PowerShell:
 $env:SITE_URL = 'https://oldbear24.github.io'
 $env:BASE_PATH = '/tarot-club-aion2/'
 npm run verify
-npm run preview
 ```
 
-## První nasazení na GitHub
+Hledání Pagefind se sestavuje pro produkční náhled; v běžném dev režimu nemusí fungovat.
 
-1. Otevři **Settings → Pages → Build and deployment → Source → GitHub Actions**.
-2. Spusť workflow **Nasazení na GitHub Pages** nebo odešli další commit na `main`.
-3. Počkej na úspěšný build a deploy. Skutečná URL bude ve výsledku jobu `deploy`.
-
-Při běžném projektovém hostingu pod účtem `oldbear24` je očekávaná adresa `https://oldbear24.github.io/tarot-club-aion2/`; není to potvrzení dokončeného nasazení.
-
-Pro lokální práci naklonuj zdroje:
+## Testy rozhraní a zdrojů
 
 ```bash
-git clone https://github.com/oldbear24/tarot-club-aion2.git
-cd tarot-club-aion2
-npm ci
-npm run dev
+npx playwright install chromium
+npm run test:e2e
+npm run check:sources
 ```
 
-## Struktura
+E2E používá již sestavený `dist/`; před změnou domény nebo `BASE_PATH` znovu spusť `verify` se stejnými proměnnými. Testy pokrývají URL filtry, aliasy, fulltext, přímé odkazy, chybu načítání, obnovu, klávesnici, desktop, mobil a obě témata. `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` umožňuje použít vlastní lokální Chromium.
+
+Dostupnost zdrojů je informativní kontrola. Běží samostatně i každý týden a neblokuje produkční nasazení při externím výpadku.
+
+## Struktura a publikování
 
 | Cesta | Účel |
 | --- | --- |
-| `src/content/docs/` | Veškerý obsah a metadata článků v `.md`. |
-| `src/content.config.ts` | Povinné schéma článků a zdrojů. |
-| `src/components/` | Úvod, metadata a seznamy zdrojů. |
-| `src/styles/wiki.css` | Vzhled a responzivní pravidla. |
-| `public/` | Vlastní SVG emblém a favicon. |
-| `scripts/verify-build.mjs` | Kontrola hotového HTML a odkazů. |
-| `.github/workflows/` | CI a GitHub Pages. |
-| `dist/` | Generovaný web, neukládá se do Gitu. |
+| `src/content/docs/` | Markdown a metadata článků. |
+| `src/content.config.ts` | Schéma článků a zdrojů. |
+| `src/lib/navigation.mjs` | Tematické skupiny, které sdílejí menu a úvod. |
+| `src/lib/reference.ts` | Katalog, kontext tabulek, filtry a bezpečné zvýraznění. |
+| `src/pages/reference-index.json.ts` | Statický index bez duplicitního vyhledávacího textu. |
+| `src/pages/robots.txt.ts` | Sitemap podle domény a base. |
+| `src/components/`, `src/styles/wiki.css` | Rozhraní a vzhled. |
+| `scripts/`, `tests/` | Kontroly obsahu, kompatibility a rozhraní. |
+| `docs/revize-v2.md` | Vlastníci informací, výsledky revize a zbývající úkoly. |
+| `.github/workflows/` | CI pro oba režimy, GitHub Pages a kontrola zdrojů. |
 
-Technologické porovnání: `src/content/docs/wiki/technologie.md`. Pravidla psaní: [CONTRIBUTING.md](CONTRIBUTING.md).
+V **Settings → Pages → Source** nastav **GitHub Actions**. Workflow Pages používá skutečnou doménu a base z `actions/configure-pages`; vlastní doména musí být nastavená v Pages. Po sloučení na `main` se spustí ověření a nasazení.
 
-## Zdroje
+Repozitář: [oldbear24/tarot-club-aion2](https://github.com/oldbear24/tarot-club-aion2). Pravidla úprav: [CONTRIBUTING.md](CONTRIBUTING.md).
 
-- [Starlight](https://starlight.astro.build/)
-- [VitePress](https://vitepress.dev/)
-- [MkDocs](https://www.mkdocs.org/)
-- [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
-- [GitHub Pages workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
-
-Neoficiální fanouškovský projekt. AION 2 a související značky patří NCSOFT. Repozitář neobsahuje převzaté herní obrázky ani kompletní kopie cizích průvodců.
+Neoficiální fanouškovský projekt. AION 2 a související značky patří NCSOFT. Repozitář neobsahuje převzaté herní obrázky ani plné kopie cizích průvodců.
