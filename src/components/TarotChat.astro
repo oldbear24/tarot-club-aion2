@@ -1,0 +1,67 @@
+<section class="tarot-chat" data-tarot-chat data-pagefind-ignore aria-label="Tarot AI — chat s wiki">
+  <div class="tarot-chat__intro">
+    <span class="tarot-chat__eyebrow">✦ TAROT AI · EXPERIMENTÁLNÍ</span>
+    <h2>Najdi odpověď i její zdroj</h2>
+    <p>Český pomocník vybere vysvětlení z článků wiki. Každou odpověď si můžeš otevřít přímo v příslušné sekci.</p>
+    <p><strong>Zapnutí stáhne přibližně 400 MB.</strong> Malý model Qwen3 0.6B běží na tvém zařízení; počítej orientačně se 2 GB volné grafické paměti a další operační pamětí. Příprava může trvat několik minut, zejména na mobilu.</p>
+    <p class="tarot-chat__fine">Soubory modelu se stahují z Hugging Face a úložiště MLC na GitHubu. Dotazy ani historie se neposílají vzdálené AI službě. Model se ukládá do cache prohlížeče, kterou může prohlížeč smazat. Chat zůstává jen v paměti této stránky.</p>
+    <div class="tarot-chat__actions">
+      <button type="button" data-ai-activate>Zapnout lokální AI · cca 400 MB</button>
+      <button type="button" data-ai-deactivate hidden>Vypnout AI</button>
+      <button type="button" data-ai-search>Hledat ve wiki</button>
+    </div>
+    <progress data-ai-progress max="1" value="0" aria-label="Průběh načítání modelu" hidden></progress>
+    <p data-ai-status role="status" aria-live="polite">Model se načte až po kliknutí na Zapnout lokální AI.</p>
+  </div>
+  <div class="tarot-chat__examples" aria-label="Ukázkové otázky">
+    {['Jak rychle zvýším GS?', 'Co znamená CP?', 'K čemu jsou runy?', 'Jaké jsou denní aktivity?'].map(question =>
+      <button type="button" data-ai-example={question}>{question}</button>)}
+  </div>
+  <div data-ai-messages class="tarot-chat__messages" role="log" aria-label="Historie chatu" aria-live="off"></div>
+  <form data-ai-form>
+    <label for="tarot-question">Otázka k AION 2</label>
+    <textarea id="tarot-question" data-ai-input rows="3" maxlength="800" placeholder="Např. Co dělá Precision?" aria-describedby="tarot-input-help"></textarea>
+    <p id="tarot-input-help" class="tarot-chat__fine">Enter odešle otázku, Shift+Enter vytvoří nový řádek. Nejvýše 800 znaků.</p>
+    <div class="tarot-chat__actions">
+      <button type="submit" data-ai-send disabled>Odeslat</button>
+      <button type="button" data-ai-reset>Nový chat</button>
+    </div>
+  </form>
+  <p class="tarot-chat__fine">AI vybírá celé pasáže a nepřidává vlastní herní výpočty. Komunitní zdroj ani označení článku „Global“ nepotvrzují každý údaj v klientu Global. Při nejistotě otevři článek a jeho podklady.</p>
+  <noscript>Chat potřebuje JavaScript. Články zůstávají dostupné v navigaci wiki.</noscript>
+</section>
+<script>
+  import { initTarotChat } from '../lib/ai/ui';
+  initTarotChat();
+  document.addEventListener('astro:page-load', initTarotChat);
+</script>
+<style>
+  .tarot-chat { margin-top: 1.5rem; min-width: 0; }
+  .tarot-chat [hidden] { display: none !important; }
+  .tarot-chat__intro { border: 1px solid var(--sl-color-gray-5); background: var(--sl-color-gray-6); border-radius: .8rem; padding: clamp(1rem, 3vw, 1.6rem); }
+  .tarot-chat__eyebrow { color: var(--club-gold); font-size: .72rem; letter-spacing: .1em; }
+  .tarot-chat h2 { font-size: 1.35rem; margin-block: .65rem; }
+  .tarot-chat p { margin-block: .8rem; }
+  .tarot-chat__fine { color: var(--sl-color-gray-2); font-size: .8rem; line-height: 1.65; }
+  .tarot-chat button { color: var(--sl-color-white); background: var(--sl-color-black); border: 1px solid var(--sl-color-gray-4); border-radius: .45rem; padding: .65rem .9rem; font: inherit; font-size: .85rem; cursor: pointer; white-space: normal; text-align: start; }
+  .tarot-chat button:hover:not(:disabled) { border-color: var(--sl-color-accent); }
+  .tarot-chat button:disabled { opacity: .55; cursor: default; }
+  .tarot-chat [data-ai-activate], .tarot-chat [data-ai-send] { background: var(--sl-color-accent-low); border-color: var(--sl-color-accent); }
+  .tarot-chat__actions, .tarot-chat__examples { display: flex; flex-wrap: wrap; gap: .6rem; }
+  .tarot-chat__actions > *, .tarot-chat__examples > * { margin: 0; }
+  .tarot-chat__examples { margin-block: 1.2rem; }
+  .tarot-chat progress { width: 100%; margin-top: 1rem; accent-color: var(--sl-color-accent); }
+  .tarot-chat [data-ai-status] { font-size: .85rem; color: var(--sl-color-accent-high); }
+  .tarot-chat textarea { width: 100%; min-width: 0; resize: vertical; padding: .8rem; color: var(--sl-color-white); background: var(--sl-color-black); border: 1px solid var(--sl-color-gray-4); border-radius: .45rem; font: inherit; }
+  .tarot-chat label { display: block; margin-bottom: .5rem; font-weight: 600; }
+  .tarot-chat__messages { display: grid; gap: 1rem; margin-block: 1.5rem; overflow-wrap: anywhere; }
+  .tarot-chat__messages:empty { display: none; }
+  .tarot-chat :global(.tarot-message) { border: 1px solid var(--sl-color-gray-5); border-radius: .6rem; padding: 1rem; min-width: 0; }
+  .tarot-chat :global(.tarot-message--question) { border-inline-start: 3px solid var(--club-gold); white-space: pre-wrap; }
+  .tarot-chat :global(.tarot-message h3) { margin-top: 1rem; font-size: 1rem; }
+  .tarot-chat :global(.tarot-message h4) { margin-top: .85rem; font-size: .85rem; }
+  .tarot-chat :global(.tarot-message p), .tarot-chat :global(.tarot-message li) { font-size: .9rem; }
+  .tarot-chat :global(.tarot-citation) { display: inline-block; padding-inline: .3rem; font-weight: bold; }
+  .tarot-chat :global(.tarot-message ul) { padding-inline-start: 1.3rem; }
+  .tarot-chat :global(.tarot-evidence-note) { color: var(--sl-color-gray-2); font-size: .75rem !important; }
+</style>
