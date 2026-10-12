@@ -2,7 +2,7 @@
 title: Výbava a rozumné upgrady
 description: Jak porovnávat předměty a plánovat zlepšení bez univerzálního žebříčku statů.
 sidebar:
-  order: 3
+  order: 8
 edition: global-launch
 reviewedAt: '2026-10-12'
 evidence: editorial
@@ -36,4 +36,4 @@ Ke čtení statů použij [Základní atributy](../../staty/zakladni/), [Útok](
 
 ## Co v první verzi chybí
 
-Přesné šance vylepšování, ceny, drop tabulky a nejlepší předměty pro jednotlivé třídy nejsou součástí tohoto průvodce. Přidáme je s datem, patchem a dohledatelným podkladem pro Global.
+Přesné šance vylepšování, drop tabulky a nejlepší předměty pro jednotlivé třídy nejsou součástí tohoto průvodce. Konkrétní postup pro dosažení dalších vstupů najdeš v [GS progresi](../gs-progrese/); rozvoj mimo výbavu v [CP průvodci](../cp-postava/).

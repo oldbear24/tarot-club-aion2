@@ -28,13 +28,23 @@ hero:
 <a href="./wiki/global/"><span>06 / GLOBAL</span><strong>Správná verze hry</strong><small>Co bereme ze zdrojů pro Global a co zatím vyžaduje ověření.</small></a>
 </div>
 
+## Další krok po levelu 45
+
+| Co právě potřebuješ | Kam pokračovat |
+| --- | --- |
+| Dosáhnout dalšího vstupního požadavku | [Jak efektivně zvyšovat GS](./pruvodce/gs-progrese/) |
+| Posílit celou postavu | [Jak efektivně zvyšovat CP](./pruvodce/cp-postava/) |
+| Pochopit peříčka, truhly a mapové aktivity | [K čemu slouží otevřený svět](./pruvodce/otevreny-svet/) |
+| Využít Abyss Points a týdenní čas | [Abyss — co dělat a proč](./pruvodce/abyss/) |
+| Sestavit rozumnou denní rutinu | [Daily a weekly](./pruvodce/daily-weekly/) |
+
 ## Jak tu informace číst
 
 **Český výklad, anglické názvy ze hry.** Stat najdeš podle názvu na svém předmětu i přes vyhledávání. Překlad vysvětluje význam, nemění herní terminologii.
 
 Wiki míří na **globální launch**. U mechanik rozlišujeme oficiální oznámení, komunitní přepis tooltipů a vlastní doporučení. Čísla, která nelze spolehlivě převést z KR/TW na Global, najdeš na stránce [Limity a sporné hodnoty](./staty/limity/).
 
-První vydání obsahuje slovník nejdůležitějších statů a praktické průvodce. Přesné rotace tříd a návody jednotlivých bossů budeme přidávat po ověření pro Global.
+Wiki obsahuje slovník nejdůležitějších statů, GS a CP progresi a průvodce mapovými i pravidelnými aktivitami. Přesné rotace tříd a návody jednotlivých bossů budeme přidávat po ověření pro Global.
 
 ## Pomoz rozdat další karty
 

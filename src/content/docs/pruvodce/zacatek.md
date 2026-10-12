@@ -34,4 +34,4 @@ Nejdřív zjisti přesný požadavek z herního menu. Zapiš jeho název i hodno
 
 Potom porovnej všechny sloty a zdroje růstu, které už máš dostupné. Při hledání rady sdílej screenshot celého panelu, ne pouze jediný zvýrazněný kus výbavy.
 
-Čti dále: [Výbava a rozumné upgrady](../vybava/) a [Základní atributy](../../staty/zakladni/).
+Čti dále: [GS progrese](../gs-progrese/), [Rozvoj CP](../cp-postava/), [Otevřený svět](../otevreny-svet/) a [Daily / weekly](../daily-weekly/).

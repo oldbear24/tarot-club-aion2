@@ -1,0 +1,85 @@
+---
+title: K čemu slouží otevřený svět
+description: Empyrean Traces, Monolith, Strongholds, Sealed Dungeons, Hidden Cubes, bosses, pets a gathering.
+sidebar:
+  order: 4
+edition: global-launch
+reviewedAt: '2026-10-12'
+evidence: community
+sources:
+  - title: Aion 2 Maps — Global launch, regionální jednorázové odměny
+    url: https://aion2maps.com/guides/welcome/
+    scope: global
+  - title: Codexgames — Empyrean Traces a Monolith
+    url: https://codexgames.net/aion-2/guides/traces-monolith
+    scope: unspecified
+  - title: Raid Relay — Hidden Cubes, Global launcher v28
+    url: https://raidrelay.com/aion-2-hidden-cube-guide
+    scope: global
+  - title: Corpus — kolekce a permanentní staty
+    url: https://corpus.gg/blog/aion-2/collections-guide
+    scope: global
+  - title: Corpus — Gathering, část zdrojů pochází také z KR
+    url: https://corpus.gg/blog/aion-2/gathering-guide
+    scope: unspecified
+  - title: Aion 2 Maps — mapa Altgard, data klientu Global
+    url: https://aion2maps.com/altgard/
+    scope: global
+---
+
+**Otevřený svět není jen cesta mezi dungeony.** Obsahuje jednorázový postup pro GS, trvalé staty pro CP i opakovatelnou farmu. Vyplatí se vědět, kterou z těchto tří věcí právě potřebuješ.
+
+## Rychlá orientace
+
+| Aktivita / objekt | K čemu slouží | Jak ji plánovat |
+| --- | --- | --- |
+| **Regional / District Quests** | Regionální odměny, vybavení a rozvoj postavy. | Dokončuj cíleně, zejména úkoly pro prázdné sloty. |
+| **Sealed Dungeons** | Jednorázové regionální odměny pro Daevanion a schopnosti. | Postupně čistit vlastní region. |
+| **Strongholds** | Ve vlastním regionu scrolly pro Noble Belt. | Naplánovat dokončení, ne denní kolečko. |
+| **Empyrean Traces — „peříčka“** | Regionální sbírka navázaná na Monolith. | Brát po cestě, odměny pak vyzvednout. |
+| **Monolith** | Převádí postup sbírky na odměny a rozvoj. | Zastavit se po dosažení další úrovně. |
+| **Hidden Cubes** | Truhly otevírané klíčem, mimo jiné pro Soul Crystals. | Sbírat dostupné klíče a využívat je. |
+| **Field bosses / named monsters** | Loot a možné achievementy či kolekční odměny. | Sledovat mapu a konkrétní seznam odměn. |
+| **Monstra pro pet souls** | Rozvoj pets a Genus. | Přidat k úkolové nebo farmicí trase. |
+| **Gathering / Essence Extraction** | Suroviny pro crafting a obchod. | Volit podle vlastní potřeby a trhu serveru. |
+| **Teleport statues** | Body pro přesun po mapě. | Propojovat trasu tak, aby se omezilo vracení. |
+
+Tabulka spojuje doložené funkce s **doporučeným plánováním Tarot Clubu**; neříká, že každá aktivita má denní reset.
+
+## Vlastní region: vysoká priorita pro první GS
+
+Na Global je vlastní startovní oblast **Verteron pro Elyos** a **Altgard pro Asmodiany**. Zdejší regionální obsah má jiný význam než výlet do oblasti opačné frakce.
+
+Podklady Global uvádějí pro vlastní region **61 Sealed Dungeons**, s odměnou **2 Daevanion Crystals a 2 Wisdom Stones** za každý, a **15 Strongholds**, dohromady **30 scrollů pro pás**. Jde o jednorázové odměny. Příběh také postupně odemyká další regionální úkoly.
+
+Získané krystaly a Wisdom Stones použij a rozvoj nakup v příslušném menu. Hromada odměn v inventáři ještě nezlepší aktivní postavu.
+
+**Proč nepospíchat do nepřátelského regionu kvůli stejným odměnám:** tamní Sealed Dungeons a Strongholds podle Global podkladů platí Kina, Abyss Points a Enhance Stones, nikoli vlastní regionální Daevanion/Wisdom odměny ani belt scrolly.
+
+## Peříčka a Monolith
+
+**Empyrean Traces** jsou regionálně označené sběratelské předměty, kterým hráči říkají peříčka. **Monolith** je místo, kde sběr proměníš v postup a odměny. Nepleť si jej s náhodnou farmicí truhlou.
+
+Pro vlastní Revelation Amulet jsou Monolith odměny důležité kvůli jeho upgrade scrollům. Po sbírání proto zkontroluj dostupné úrovňové odměny; nezařazuj další hodinu farmy jen proto, že už hotovou odměnu nemáš vyzvednutou.
+
+**Doporučení Tarot Clubu:** při jednom průchodu oblasti kombinuj peříčka, zbývající regionální úkol a Sealed Dungeon. Druhou trasu dělej jen pro konkrétní chybějící marker. Abyss má vlastní Monolith a navazující PvP rozvoj — viz [Abyss](../abyss/).
+
+## Hidden Cubes: klíč není totéž co spawn
+
+Hidden Cube se otevírá **Key: Hidden Cube**. Globální podklady aktualizované 10. října uvádějí **1 000 Soul Crystals za otevřenou cube**. Soul Crystals využíváš při rozvoji **Genus Insight**.
+
+Klíče získávej nejdřív z dostupných postupových, úkolových a dalších odměn. Nabídka v Quna shopu představuje další možnost, nikoli povinnou součást efektivní hry.
+
+Mapa ukazuje možné pozice. Konkrétní bod může být právě prázdný nebo otevřený jiným hráčem; Hidden Cube nepovažuj za garantovanou denní truhlu na každém markeru. Tím se liší od jednorázového dokončení Sealed Dungeon.
+
+## Boss, pet farm nebo gathering?
+
+U **field bosse** zkontroluj loot a související achievementy. Kolekce mohou přinést titul, obraz či jiný dlouhodobý přínos. Není správné slíbit stejný titul za první zabití každého pojmenovaného monstra.
+
+U **pet farmy** sleduj, které souls opravdu chybí. Více chybějících pets na společné trase může být užitečnější než bezcílné vybíjení jednoho typu. Podrobnosti jsou v [CP průvodci](../cp-postava/).
+
+**Gathering / Essence Extraction** poskytuje materiály. Potřebná úroveň, kvalita výsledku a zvolená gathering vylepšení ovlivňují jeho použití. Ceny a nejlepší výdělečná trasa se mění se serverovým trhem; obecný návod z KR není záruka zisku na Global.
+
+## Jednorázové aktivity nepatří do každé daily rutiny
+
+**Doporučení Tarot Clubu:** pro vlastní region veď seznam hotovo/zbývá. Den začni obsahovými limity, které se ztrácejí nebo přestávají doplňovat. Otevřený svět využívej jako další postup mezi nimi. [Daily a weekly](../daily-weekly/) rozlišují oba typy.

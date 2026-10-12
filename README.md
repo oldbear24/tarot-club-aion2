@@ -4,10 +4,11 @@
 
 ## Stav prvního vydání
 
-- 14 českých obsahových stránek: úvod, šest průvodců staty, tři praktické průvodce a čtyři stránky o wiki.
+- 19 českých obsahových stránek: úvod, šest průvodců staty, osm praktických průvodců a čtyři stránky o wiki.
 - Vlastní tarotový motiv, české UI, mobilní navigace, světlý/tmavý režim.
 - Fulltextové vyhledávání Pagefind bez backendu.
 - Každý článek má cílovou edici, datum rešerše, typ podkladů a zdroje.
+- GS a CP progrese, otevřený svět, Abyss, daily/weekly s prioritami, limity a odlišením Global od neotevřeného obsahu.
 - Workflow pro ověření pull requestů a nasazení na GitHub Pages.
 
 Repozitář: [oldbear24/tarot-club-aion2](https://github.com/oldbear24/tarot-club-aion2). Živý web je dostupný až po zapnutí GitHub Pages a úspěšném nasazení.

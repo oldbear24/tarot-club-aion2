@@ -2,7 +2,7 @@
 title: Proč nedělám damage?
 description: Praktický postup pro srovnání výbavy a zlepšení výkonu v partě.
 sidebar:
-  order: 2
+  order: 7
 edition: global-launch
 reviewedAt: '2026-10-12'
 evidence: editorial

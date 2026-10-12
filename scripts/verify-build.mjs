@@ -53,7 +53,7 @@ for (const page of pages) {
     }
   }
 }
-if (pages.length < 15) errors.push('Očekáváno 14 obsahových stránek a 404.');
+if (pages.length < 20) errors.push('Očekáváno alespoň 19 obsahových stránek a 404.');
 if (!output.some(path => path.endsWith('/pagefind.js'))) errors.push('Chybí Pagefind runtime.');
 if (!output.some(path => path.includes('pagefind') && path.endsWith('.pf_index'))) errors.push('Chybí Pagefind index.');
 if (errors.length) { console.error([...new Set(errors)].join('\n')); process.exit(1); }
