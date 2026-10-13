@@ -74,7 +74,7 @@ Pro vlastní Revelation Amulet jsou Monolith odměny důležité kvůli jeho scr
 
 Hidden Cube se otevírá **Key: Hidden Cube**. Globální podklady aktualizované 10. října uvádějí **1 000 Soul Crystals za otevřenou truhlu**. Soul Crystals využíváš při rozvoji **Genus Insight a Analyze**.
 
-Klíče získávej nejdřív z bezplatných zdrojů: úkolů, achievementů a Monolithu. Placené nabídky, například v Quna Shopu, jsou další možnost, nikoli povinná součást efektivní hry; aktuální nabídky a limity najdeš v [přehledu obchodů](../../reference/obchody/).
+Klíče získávej nejdřív z bezplatných zdrojů: úkolů, achievementů a Monolithu. Placené nabídky, například [klíč v Quna Shopu](../../reference/obchody/#ref-key-hidden-cube-quna-shop), jsou další možnost, nikoli povinná součást efektivní hry; aktuální nabídky a limity najdeš v [přehledu obchodů](../../reference/obchody/).
 
 Mapa ukazuje možné pozice. Konkrétní bod může být právě prázdný nebo otevřený jiným hráčem; Hidden Cube nepovažuj za garantovanou denní truhlu na každém markeru. Tím se liší od jednorázového dokončení Sealed Dungeon.
 

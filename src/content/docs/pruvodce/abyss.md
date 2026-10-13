@@ -67,7 +67,7 @@ U artefaktů jde o boj o cíle eventu, včetně Dimensional Core; ne o běžný 
 | **Stigma Shard** | Body pro rozvoj Stigma schopností. |
 | **Daevanion Crystal: Azphel** | Body do převážně PvP Daevanion desky. |
 | **Potential Stone: Abyss** | PvP bonusy Potential, viz [Enhancement a Transfer](../vylepsovani-vybavy/#amp-a-potential). |
-| **Abyssal Manastone / další kameny** | Výbavové staty podle konkrétního předmětu. |
+| **Abyssal Manastone / další kameny** | Výbavové staty podle konkrétního předmětu; cena a limit Lesser Abyssal Manastone jsou v [přehledu obchodů](../../reference/obchody/#ref-lesser-abyssal-manastone). |
 | **Silver Medal of Merit** | Další měna a navazující odměny. |
 
 Obchod používá limity a u některých nákupů rostoucí cenové stupně. Cenové stupně Stigma Shards najdeš v [přehledu obchodů](../../reference/obchody/#ref-stigma-shard-ap). Nejnižší cena neplatí automaticky pro každý další kus.
