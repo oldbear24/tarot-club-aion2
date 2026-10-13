@@ -57,7 +57,7 @@ sources:
 
 | Událost | Kdy a kde | Od kdy se vyplatí |
 | --- | --- | --- |
-| <span id="ref-shugo-festival-2">**Shugo Festival**</span> | Každou celou hodinu (:00); vstupy ve Verteronu a Altgardu. Po 3minutové čekárně následuje kolo na 3–5 minut. | Odměny od úrovně 10. Otevírá ho příběhový quest Visions in Smoke (Elyos) / Urgent Pursuit (Asmodian). |
+| <span id="ref-shugo-festival-2">**Shugo Festival**</span> | Každou celou hodinu (:00); vstupy ve Verteronu a Altgardu. Po 3minutové čekárně následuje kolo na 3–5 minut. | Otevře ho příběhový quest Visions in Smoke (Elyos) / Urgent Pursuit (Asmodian), podle Maps kolem úrovně 12–13. Tabulka odměn v klientu začíná úrovní 10. |
 | <span id="ref-dimensional-invasion-2">**Dimensional Invasion**</span> | Každou hodinu v :30 na náhodném místě ve Verteronu a Altgardu; hra ji ohlásí a označí na mapě. Po 3minutové čekárně bojuješ až 10 minut s vlnami nepřátel a bossy. | Odměny od úrovně 45. Party ani minimální počet hráčů klient nevyžaduje. |
 
 Obě události tedy jdou v jedné hodině za sebou: minihra v :00, invaze v :30. Dimensional Invasion má tři varianty — **Beritra Air Raid**, **Accursed Sword** a **Incursion of the Spirits** — se společnou tabulkou odměn.

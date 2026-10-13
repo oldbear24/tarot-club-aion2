@@ -43,7 +43,7 @@ sources:
 
 ## Vlastnictví a nasazení
 
-**Owned Effect** platí trvale, jakmile křídla vlastníš, ať je nosíš, nebo ne. **Equip Effect** platí jen u páru, který máš právě nasazený. Kosmetická křídla z obchodu, například Blazing Sun Wings z Founder's Packu, podle NC staty nemají. Global podle klientských dat vylepšování křídel přes Enhancement nemá a Owned Effect je pevný; pozdější KR systém do launch návodu nepřenášíme.
+**Owned Effect** platí trvale, jakmile křídla vlastníš, ať je nosíš, nebo ne. **Equip Effect** platí jen u páru, který máš právě nasazený. Kosmetická křídla z obchodu, například Blazing Sun Wings z Founder's Packu, podle NC staty nemají. Podle Aion 2 Maps Global vylepšování křídel přes Enhancement nemá a Owned Effect je pevný; MetaBot ale vylepšování popisuje (viz níže). Pozdější KR systém do launch návodu nepřenášíme.
 
 | Conquest dungeon | Sealed wings podle podkladů | Owned Effect | Equip Effect |
 | --- | --- | --- | --- |
