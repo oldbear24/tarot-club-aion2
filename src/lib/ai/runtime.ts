@@ -54,7 +54,7 @@ export class LocalModel {
     const messages = [{ role: 'system' as const, content: SYSTEM_PROMPT },
       { role: 'user' as const, content: buildPrompt(question, sources, previousQuestion) }];
     // Qwen3 non-thinking settings, slightly cooler so the answer stays close to the passages.
-    return this.guarded(() => this.stream({ messages, temperature: 0.5, top_p: 0.8, presence_penalty: 0.5,
+    return this.guarded(() => this.stream({ messages, temperature: 0.3, top_p: 0.8, presence_penalty: 0.5,
       max_tokens: ANSWER_TOKENS, extra_body: { enable_thinking: false } }, onText), 180_000);
   }
 

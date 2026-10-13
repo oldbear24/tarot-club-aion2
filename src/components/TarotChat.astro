@@ -48,9 +48,10 @@
   .tarot-chat .tarot-chat__lead { margin: .15rem 0 0; font-size: .85rem; color: var(--sl-color-gray-2); }
   .tarot-chat__fine { color: var(--sl-color-gray-2); font-size: .8rem; line-height: 1.6; }
   .tarot-chat__sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-  .tarot-chat button { color: var(--sl-color-white); background: var(--sl-color-black); border: 1px solid var(--sl-color-gray-4); border-radius: .45rem; padding: .45rem .75rem; font: inherit; font-size: .8rem; cursor: pointer; white-space: normal; text-align: start; }
-  .tarot-chat button:hover:not(:disabled) { border-color: var(--sl-color-accent); }
-  .tarot-chat button:disabled { opacity: .55; cursor: default; }
+  /* Global: buttons added by script carry no scoped attribute. */
+  .tarot-chat :global(button) { color: var(--sl-color-white); background: var(--sl-color-black); border: 1px solid var(--sl-color-gray-4); border-radius: .45rem; padding: .45rem .75rem; font: inherit; font-size: .8rem; cursor: pointer; white-space: normal; text-align: start; }
+  .tarot-chat :global(button:hover:not(:disabled)) { border-color: var(--sl-color-accent); }
+  .tarot-chat :global(button:disabled) { opacity: .55; cursor: default; }
   .tarot-chat [data-ai-consent-accept] { background: var(--sl-color-accent-low); border-color: var(--sl-color-accent); }
   .tarot-chat__tools, .tarot-chat__examples { display: flex; flex-wrap: wrap; gap: .4rem; }
   .tarot-chat__tools > *, .tarot-chat__examples > * { margin: 0; }

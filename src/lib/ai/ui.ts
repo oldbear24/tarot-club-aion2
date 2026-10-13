@@ -1,4 +1,4 @@
-import { MAX_QUESTION_LENGTH, retrievalQuery, retrievePassages, validateIndex } from './retrieval.ts';
+import { MAX_QUESTION_LENGTH, retrieveForQuestion, validateIndex } from './retrieval.ts';
 import { NO_EVIDENCE, parseAnswer } from './protocol.ts';
 import { renderAnswer } from './render.ts';
 import type { WikiIndex } from './types.ts';
@@ -203,8 +203,7 @@ export function initTarotChat(): void {
         } finally { clearTimeout(timer); }
       }
       if (current !== generation) return;
-      const query = retrievalQuery(question, previousQuestion);
-      const sources = retrievePassages(index, query);
+      const sources = retrieveForQuestion(index, question, previousQuestion);
       // Without evidence there is nothing for the model to work with, so nothing is downloaded.
       if (!sources.length) { say(body, NO_EVIDENCE, question); return; }
       if (!ready || !model) {
