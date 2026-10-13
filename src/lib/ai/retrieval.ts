@@ -4,7 +4,10 @@ import type { Passage, WikiIndex } from './types.ts';
 
 export const MAX_QUESTION_LENGTH = 800;
 export const CONTEXT_CHAR_LIMIT = 3500;
-const stopWords = new Set(('jak jaka jake jaky co k ke na se si v ve z ze pro a i o do to je jsou ma mam mi me muj moje kde kdy kolik cim cem cemu ktery ktere prosim rychle efektivne zvysit zvysim zvyseni znamena delaji dela slouzi funguje fungujou fungovat ziskat ziskam ziskavat vybrat vyberu dostat dostanu dostanes udelat delat muzu muzes muze potrebuji potrebuju chci mit nejaky nejaka nejake jaky jakou jakym nebo ale tak uz jeste ted lepsi nejlepsi what how does do is the can are aion 2').split(' '));
+const stopWords = new Set(('jak jaka jake jaky co k ke na se si v ve z ze pro a i o do to je jsou ma mam mi me muj moje kde kdy kolik cim cem cemu ktery ktere prosim rychle efektivne zvysit zvysim zvyseni znamena delaji dela slouzi funguje fungujou fungovat ziskat ziskam ziskavat vybrat vyberu dostat dostanu dostanes udelat delat muzu muzes muze potrebuji potrebuju chci mit nejaky nejaka nejake jaky jakou jakym nebo ale tak uz jeste ted lepsi nejlepsi ' +
+  // Conversational filler: rare enough in the wiki to outweigh the real subject of a question.
+  'by bys bych jsi jsem jste jsme kvuli tomu toho tom tim tohle tomhle doporucil doporucila doporucis doporucujes doporucit poradil poradis poradit chodit chodim chodis hrat hraju hrajes mel mela meli mas bude budu budes nejlip nejvic vic hodne taky take pak potom nejak dobre dobry ' +
+  'what how does do is the can are aion 2').split(' '));
 const aliases: Record<string, string[]> = {
   gs: ['gear score', 'item level', 'vybava'], cp: ['combat power', 'bojova sila'],
   runy: ['rune', 'runes', 'run'], rune: ['runy', 'runes'], runes: ['runy', 'rune'],
@@ -25,9 +28,20 @@ export function queryTerms(query: string): string[] {
   return [...new Set(words(query).filter(word => !stopWords.has(word)))];
 }
 
+// "A jaké…", "kvůli tomu", "k tomu": the question continues the previous one.
+const followUp = /^(?:a|i|a co|a jak|taky|jeste)\b|\b(?:tomu|toho|tom|tim|tohle|tomhle|tohoto|tomto|nemu|nej)\b/;
+
 export function retrievalQuery(question: string, previousQuestion = ''): string {
-  // Resolve short follow-ups only; an unrelated new question must not inherit old evidence.
-  return queryTerms(question).length === 0 && previousQuestion ? `${previousQuestion.slice(0, 400)} ${question}` : question;
+  // Resolve follow-ups only; an unrelated new question must not inherit old evidence.
+  if (!previousQuestion || (queryTerms(question).length && !followUp.test(normalize(question)))) return question;
+  return `${previousQuestion.slice(0, 400)} ${question}`;
+}
+
+// A follow-up that finds nothing together with the previous question may still stand on its own.
+export function retrieveForQuestion(index: WikiIndex, question: string, previousQuestion = ''): Passage[] {
+  const query = retrievalQuery(question, previousQuestion);
+  const found = retrievePassages(index, query);
+  return found.length || query === question ? found : retrievePassages(index, question);
 }
 
 export function retrievePassages(index: WikiIndex, question: string): Passage[] {
