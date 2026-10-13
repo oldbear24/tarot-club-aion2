@@ -37,6 +37,8 @@ Podklady jsou komunitní přepisy Global launch, kontrolované 12. října 2026.
 
 Azphel používá vlastní **Daevanion Crystal: Azphel** z Abyss rozvoje. Nepoužívej plán na budoucí Ariel či jiné desky jako launch seznam.
 
+Desky nesou jména bohů, ale nejsou totožné s božskými atributy Pantheonu. Například atribut Freedom [Vaizel] dává Accuracy a Evasion, kdežto deska Vaizel Critical Damage; rozdíl vysvětluje [Pantheon](../../staty/pantheon/).
+
 ## Barva uzlu a cena
 
 | Uzel | Efekt | Cena v běžných krystalech |

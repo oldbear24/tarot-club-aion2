@@ -48,6 +48,6 @@ Stejný název mechaniky ještě nezaručuje stejnou hodnotu.
 
 ## Známá omezení
 
-Slovník statů vychází z komunitních přepisů herních dat. Nemáme vlastní screenshoty všech tooltipů Global ani úplná měření serverových vzorců. Tyto články jsou označené jako komunitní podklady; konkrétní nejistoty jsou v [přehledu limitů](../../staty/limity/).
+Slovník statů vychází z komunitních přepisů herních dat. Nemáme vlastní screenshoty všech tooltipů Global ani úplná měření serverových vzorců. Tyto články jsou označené jako komunitní podklady; konkrétní nejistoty jsou na stránce [Limity a sporné hodnoty](../../staty/limity/).
 
 Návod bez jasné informace o regionu nesmí získat označení „ověřeno pro Global“. Pokud se klient rozchází s článkem, ulož screenshot s datem a verzí a přidej opravu podle [pravidel přispívání](../prispivani/).
