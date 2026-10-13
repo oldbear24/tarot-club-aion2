@@ -23,6 +23,12 @@ sources:
 - title: MetaBot — Legion guide, levels a Legion Hall
   url: https://metabot.gg/en/aion-2/guides/legion-guide
   scope: global
+- title: NC — AION2 Operation Policies, neaktivní Legion Master, název legie a obnova
+  url: https://aion2.plaync.com/en-us/board/rules/view?articleId=6aac4c8fab04307987fe2b4c
+  scope: global
+- title: NC — Server Transfer Products Info, podmínka členství v legii
+  url: https://aion2.plaync.com/en-us/board/notice/view?articleId=6ac932a8fa34c1011d627bc9
+  scope: global
 ---
 
 **Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní podklady, nikoli naše měření v klientu. Ceny a limity porovnej s aktuálním tooltipem nebo panelem hry.
@@ -47,6 +53,8 @@ Hall není trvalým vlastnictvím legie. Pronajímá ho hodnost s oprávněním 
 
 Domluv se s legií na využití skladu, rozpočtu Hallu a pravidlech pro vzácné materiály. U dungeonů předem urči, kdo partu organizuje a jak se dělí výbava a odměny. Před hromadnou úpravou oprávnění zkontroluj, kdo získá přístup k výběru.
 
-Při řešení neaktivního vůdce nebo rozpuštění legie postupuj podle aktuálních pravidel globální služby a pokynů podpory. Obnovení legie nebo předmětů zde nemůžeme zaručit.
+Pro neaktivní legie platí oficiální pravidla NC: pokud se **Legion Master** nepřihlásil 30 dní nebo má zákaz hry na 90 a více dní, může člen legie požádat o odebrání nebo převedení jeho pravomocí. Název legie, ve které se 30 dní nepřihlásil žádný člen, může NC resetovat. **Rozpuštěnou legii ani její úroveň NC neobnovuje.** Porušení předem domluvené dělby lootu NC trestá jako Raid Exploitation; přehled je v [Pravidlech NC](../pravidla-nc/).
+
+Před přesunem serveru musí postava z legie odejít a nesmí mít podanou přihlášku; legie zůstává na původním serveru. Termíny přesunů najdeš na stránce [Servery a přesun postav](../servery/#server-transfer-v-říjnu-2026).
 
 [Inventář](../inventar/) vysvětluje osobní sklady, [třídy](../../tridy/prehled/) pomáhají domluvit sestavu party.

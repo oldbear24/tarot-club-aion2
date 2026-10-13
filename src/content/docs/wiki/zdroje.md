@@ -18,6 +18,9 @@ sources: []
 | [NC America — Early Access](https://about.ncsoft.com/en/news/article/aion2_update_20260930) | Ověření data Early Access a launch. |
 | [AION 2 na Steamu](https://store.steampowered.com/app/3393110/AION_2/) | Produktová stránka globální PC verze. |
 | [Update on Sanctuary Raid](https://aion2.plaync.com/en-us/board/notice/view?articleId=6ac39140d97eae18cc40e294) | Oznámení NC z 5. října 2026 o dočasném stažení Ludry a jejím návratu. |
+| [Announcements](https://aion2.plaync.com/en-us/board/notice/list) a [Updates](https://aion2.plaync.com/en-us/board/update/list) | Údržby, patch notes, nové servery, Server Transfer a produktová oznámení; stejné texty vycházejí i ve zprávách na Steamu. Shrnutí: [Změny po launchi](../../pruvodce/zmeny-po-launchi/). |
+| [Rules](https://aion2.plaync.com/en-us/board/rules/view?articleId=6aac4c8fab04307987fe2b4c) | AION2 Operation Policies a Trust Status; shrnutí v [Pravidlech NC](../../reference/pravidla-nc/). |
+| [Podpora NC — FAQ](https://help.plaync.com/faq/aion2global) | Systémové požadavky, omezené země, propojení Steamu a PURPLE. |
 
 ## Datové a výzkumné zdroje
 
@@ -28,6 +31,9 @@ sources: []
 | [Aion 2 Maps — Accuracy and Crit](https://aion2maps.com/guides/accuracy-and-crit/) | Podklady k rozporu mezi tooltipem Global a asijskými výsledky. |
 | [Aion 2 Maps — Global differences](https://aion2maps.com/guides/global-differences/) | Rozdíly verzí a odkazy na podklady jednotlivých tvrzení. |
 | [AION2 Hub — stat calculator](https://aion2hub.com/tools/stat-calculator) | Pomůcka k porovnání převodů; před použitím zkontroluj region a sazby. |
+| [MetaBot — Event Schedule](https://metabot.gg/en/aion-2/events) | Rozvrhy, minihry, invaze a arény čtené z Global klientu; časová pásma regionů MetaBot jen předpokládá. |
+| [Aion 2 Maps — What unlocks when](https://aion2maps.com/guides/unlocks/) | Odemykání obsahu podle úrovně a příběhových úkolů. |
+| [Global Database (aion2.gaming.tools)](https://aion2.gaming.tools/) | Předměty, recepty a achievementy z klientu 2.0.6.0. Stránky chrání Cloudflare; automatická kontrola dostupnosti proto může hlásit chybu, i když v prohlížeči fungují. |
 
 <span id="pravidla-použití" class="legacy-anchor"></span>
 <span id="detailní-podklady-pro-rozvoj-postavy" class="legacy-anchor"></span>

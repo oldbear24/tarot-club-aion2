@@ -46,7 +46,7 @@ Následující hodnocení je naše rozhodnutí pro tuto wiki, nikoli obecný že
 - Výběr světlého nebo tmavého režimu.
 - Fulltextové vyhledávání **Pagefind** nad sestavenými stránkami, bez vyhledávacího serveru.
 - Zdrojové odkazy a datum rešerše každého článku.
-- Volitelného lokálního pomocníka **Tarot AI**. Model (přibližně 1 GB) se stáhne z Hugging Face a z GitHubu až po tvém souhlasu a běží jen v prohlížeči; dotazy se neposílají vzdálené AI službě.
+- Volitelného lokálního pomocníka **Tarot AI**. Model Gemma 4 E2B (přibližně 2,8 GB) se stáhne z Hugging Face a z GitHubu až po tvém souhlasu a běží jen v prohlížeči; dotazy se neposílají vzdálené AI službě.
 
 Vyhledávání se generuje při produkčním buildu. Pro jeho lokální kontrolu použij `npm run build` a `npm run preview`; v běžném dev režimu nemusí být dostupné.
 

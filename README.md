@@ -4,7 +4,7 @@
 
 ## Obsah a orientace
 
-- 63 stránek včetně Tarot AI: rozvoj GS/CP, staty, osm tříd, výbava, výroba, ekonomika, aktivity a dungeonové mechaniky.
+- 69 stránek včetně Tarot AI: rozvoj GS/CP, staty, osm tříd, výbava, výroba, ekonomika, aktivity, PvP, servery a přesun postav, pravidla NC a dungeonové mechaniky.
 - Jedno tematické menu; původní veřejné adresy zůstávají funkční. Adresář `reference/` popisuje umístění zdrojových souborů, nikoli další paralelní obsahovou sekci.
 - Kompaktní úvod s pěti rychlými cestami a tematickým přehledem odvozeným ze stejného seznamu jako menu.
 - **Hledat ve wiki** prohledává celé články přes Pagefind. **Katalog hesel a článků** filtruje názvy, aliasy, témata a krátké popisy; stav lze sdílet v URL.

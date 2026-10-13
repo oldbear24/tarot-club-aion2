@@ -41,6 +41,9 @@ sources:
 - title: Global Database — Battlefield Banner 2.0.6.0
   url: https://aion2.gaming.tools/status-effects/124500001
   scope: global
+- title: Aion 2 Maps — PvP, rodiny stavových efektů a Defiance
+  url: https://aion2maps.com/guides/pvp/
+  scope: global
 ---
 
 **Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní podklady, nikoli naše měření v klientu. Hodnoty porovnej s tooltipem ve hře.
@@ -65,6 +68,10 @@ Stejná rodina může mít různé hodnoty nebo pravidla obnovy. Níže rozlišu
 ## Obnova efektu a stackování
 
 Databáze rozlišuje nahrazení při nové aplikaci a podmínku vyšší priority. **Battlefield Banner** má uvedeno nahrazení běžící aplikace; **Root**, **Knockdown** a citovaný **Bleed** přijímají jen aplikaci s vyšší prioritou. U **Fear** aplikace s vyšší prioritou nahradí běžící efekt. Neodvozuj z dvojího seslání automaticky dvojnásobný bonus.
+
+## Rodiny efektů a Defiance
+
+Podle dat Global klientu (Aion 2 Maps) se ovládací efekty dělí do tří rodin a každá má vlastní odpor: **Impact-type** (Stun, Knockdown, Airborne, Grab), **Mental-type** (Seal, Fear, Taunt, Polymorph) a **Ailment-type** (Root, Slow, Lethargy, Frost, Blind, Bleed, Poison). Každá třída má CC break **Defiance**, který uvolní ze Stun, Knockdown, Airborne, Grab, Frost a Fear a dá krátkou imunitu; na Root, Slow, Seal, Blind, Taunt ani Polymorph nepůsobí. Hodnoty a použití proti hráčům popisuje [PvP průvodce](../../pruvodce/pvp/#defiance).
 
 ## Doporučená reakce Tarot Clubu
 

@@ -23,6 +23,9 @@ sources:
 - title: AION 2 — Update on Sanctuary Raid (oficiální oznámení NC)
   url: https://aion2.plaync.com/en-us/board/notice/view?articleId=6ac39140d97eae18cc40e294
   scope: global
+- title: NC — AION 2 Producer's Letter (9. října 2026)
+  url: https://aion2.plaync.com/en-us/board/notice/view?articleId=6ac95cd8d97eae18cc40e3d7
+  scope: global
 ---
 
 <span id="dostupnost-k-12-říjnu-2026" class="legacy-anchor"></span>
@@ -32,6 +35,8 @@ sources:
 :::caution[Pozor: historický návod nepotvrzuje dostupnost]
 Podle oficiálního oznámení NC z 5. října 2026 je **Ludra od spuštění dočasně stažená**; nová verze má mít upravené mechaniky, First Clear event a resetovaný Hall of Fame. NC slíbila oznámit datum návratu do 16. října; k 13. říjnu ho neoznámila. Historický GS 2 800 není potvrzení otevřeného vstupu.
 :::
+
+Oznámení NC dále uvádí, že Ludra padla v Early Access při nižší úrovni progrese, než NC zamýšlela. **Výbava specifická pro Ludru** získaná v Early Access je proto dočasně odebraná; po návratu raidu ji NC vrátí hráčům, kteří ji získali, a proplatí materiály vložené do jejího vylepšení. Každý, kdo Ludru v Early Access porazil v regionu **Europe**, dostane unikátní pamětní titul. Dopis producenta z 9. října jmenuje návrat Ludry jako první z chystaných novinek; datum ani v něm není.
 
 ## Historická orientace
 

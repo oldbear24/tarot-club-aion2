@@ -6,7 +6,7 @@ export const sidebar = [
     { slug: 'reference/prehled' }, { slug: 'reference/slovnik' },
   ] },
   { label: 'Začínáme a rozvoj', items: [
-    { slug: 'pruvodce/zacatek' }, { slug: 'pruvodce/gs-progrese' }, { slug: 'pruvodce/cp-postava' },
+    { slug: 'pruvodce/zacatek' }, { slug: 'pruvodce/zmeny-po-launchi' }, { slug: 'pruvodce/gs-progrese' }, { slug: 'pruvodce/cp-postava' },
     { slug: 'pruvodce/daevanion' }, { slug: 'pruvodce/arcana' }, { slug: 'pruvodce/schopnosti-stigma' },
     { slug: 'reference/pets' }, { slug: 'reference/wings' }, { slug: 'reference/tituly-kolekce' },
   ] },
@@ -27,7 +27,7 @@ export const sidebar = [
   ] },
   { label: 'Aktivity a otevřený svět', collapsed: true, items: [
     { slug: 'pruvodce/daily-weekly' }, { slug: 'reference/aktivity' }, { slug: 'pruvodce/otevreny-svet' },
-    { slug: 'pruvodce/abyss' }, { slug: 'pruvodce/nightmare' },
+    { slug: 'pruvodce/abyss' }, { slug: 'pruvodce/pvp' }, { slug: 'pruvodce/nightmare' }, { slug: 'pruvodce/shugo-festival-invasion' },
   ] },
   { label: 'Dungeony', collapsed: true, items: [
     { slug: 'dungeony/prehled' }, { slug: 'pruvodce/dungeony-odyle' },
@@ -36,8 +36,8 @@ export const sidebar = [
     { slug: 'dungeony/transcendence' }, { slug: 'dungeony/ludra' },
   ] },
   { label: 'Ekonomika a účet', collapsed: true, items: [
-    { slug: 'reference/meny' }, { slug: 'reference/obchody' }, { slug: 'reference/market' },
-    { slug: 'reference/inventar' }, { slug: 'reference/legie' },
+    { slug: 'reference/meny' }, { slug: 'reference/obchody' }, { slug: 'reference/market' }, { slug: 'reference/daeva-pass' },
+    { slug: 'reference/inventar' }, { slug: 'reference/legie' }, { slug: 'reference/servery' }, { slug: 'reference/pravidla-nc' },
   ] },
   { label: 'O wiki', collapsed: true, items: [
     { slug: 'wiki/global' }, { slug: 'wiki/zdroje' }, { slug: 'wiki/prispivani' }, { slug: 'wiki/technologie' },

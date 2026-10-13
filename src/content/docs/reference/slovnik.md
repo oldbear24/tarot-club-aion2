@@ -87,6 +87,12 @@ sources:
 | <span id="ref-main-alt">**Main / Alt**</span> | Hlavní / další postava. |
 | <span id="ref-bis-best-in-slot">**BiS / Best in Slot**</span> | Nejlepší kus pro konkrétní slot, build a podmínky; není univerzální vlastnost barvy. |
 | <span id="ref-rng">**RNG**</span> | Náhodnost výsledku. Průměrný počet pokusů není garance. |
+| <span id="ref-server-transfer-parovani">**Server Transfer / párování serverů**</span> | Přesun postavy na jiný server stejné frakce a regionu / dočasné spojení Elyos a Asmodian serveru pro Abyss a rifty. Viz [Servery a přesun postav](../servery/). |
+| <span id="ref-daeva-pass">**Daeva Pass**</span> | Sezónní pass s bezplatnou a prémiovou větví, kupovaný pro jednu postavu. Viz [Daeva Pass](../daeva-pass/). |
+| <span id="ref-defiance">**Defiance**</span> | CC break, který má každá třída; uvolní z části ovládacích efektů a dá krátkou imunitu. Viz [PvP](../../pruvodce/pvp/#defiance). |
+| <span id="ref-battlefield">**Battlefield / Arena of Tactics**</span> | PvP 10 vs 10 se srovnanou výbavou; vedle něj jsou arény 1 vs 1 a 5 vs 5. |
+| <span id="ref-trust-status">**Trust Status**</span> | Důvěryhodnost účtu podle NC; může omezit Market a Exchange. Viz [Pravidla NC](../pravidla-nc/#trust-status-účtu). |
+| <span id="ref-maintenance">**Maintenance / údržba**</span> | Pravidelná středeční odstávka serverů. Přehled je ve [Změnách po launchi](../../pruvodce/zmeny-po-launchi/). |
 
 ## Co hledat dál
 
