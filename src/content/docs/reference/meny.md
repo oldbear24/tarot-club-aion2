@@ -38,6 +38,15 @@ sources:
 - title: MetaBot — Theostone guide, Arena shop
   url: https://metabot.gg/en/aion-2/guides/theostone-guide
   scope: global
+- title: MetaBot — Arena Guide, skrytý Arena Token a odměny v AP (8. října 2026)
+  url: https://metabot.gg/en/aion-2/guides/arena-pvp-guide
+  scope: global
+- title: NC — Daeva Pass, Pass Shop Coin a jeho platnost
+  url: https://aion2.plaync.com/en-us/board/notice/view?articleId=6abbb27d71f8fb7c2a7a32a9
+  scope: global
+- title: NC — Server Transfer Q&A, přenos Quna a Mileage
+  url: https://aion2.plaync.com/en-us/board/notice/view?articleId=6ac7e128d97eae18cc40e3b7
+  scope: global
 lookupAliases:
 - term: Kina
   aliases:
@@ -57,17 +66,17 @@ lookupAliases:
 | --- | --- | --- |
 | <span id="ref-kina">**Kina**</span> | Obchodovatelnou Kina dávají truhly z Conquest a Transcendence a prodej na Marketu. | Upgrady, crafting, nákupy. Market přijímá jen obchodovatelnou Kina; mezi postavami serveru ji přesuneš přes Server Storage. |
 | <span id="ref-kina-bound">**Kina (Bound)**</span> | Exploration truhly, questy a prodej NPC obchodníkům. | Crafting, vylepšování a nákupy u NPC; hra ji utrácí vždy jako první. Na Marketu za ni nenakoupíš a podle asijské verze ji neuložíš do skladu. |
-| <span id="ref-quna">**Quna**</span> | Nákup za skutečné peníze nebo směna za Kina přes Quna Exchange (jen se členstvím). | Quna Shop a prémiová větev Daeva Pass. Patří postavě a při převodu serveru jde s ní. |
-| <span id="ref-a2-mileage">**A2 Mileage**</span> | Propagační akce k nákupům; po 30 dnech vyprší. | Kategorie A2 Mileage v Shopu. Patří postavě; před koupí ověř přesný produkt a připsání. |
+| <span id="ref-quna">**Quna**</span> | Nákup za skutečné peníze (balíčky 400–4 000 Quna; ceník v [Daeva Pass](../daeva-pass/#kolik-stojí-quna)) nebo směna za Kina přes Quna Exchange (jen se členstvím). | Quna Shop (Tsenka Merchants) a prémiová větev Daeva Pass. Podle Aion 2 Maps patří postavě. Oficiální Q&A k přesunu serverů ale uvádí, že se Quna a Mileage „ze serveru“ přičtou k zůstatku na cílovém serveru; rozsah zůstatku si ověř v obchodě. |
+| <span id="ref-a2-mileage">**A2 Mileage**</span> | Propagační akce k nákupům (NC u produktu uvádí, kolik Mileage dává); po 30 dnech vyprší. | Kategorie A2 Mileage v Shopu; vybrané položky v [Obchodech](../obchody/#ref-a2-mileage-shop). Před koupí ověř přesný produkt a připsání. |
 | <span id="ref-abyss-points-ap">**Abyss Points / AP**</span> | Abyss, Duty, rift a Supply Requests podle nabídky. | Stigma, Azphel, Potential a další růstové nákupy. |
-| <span id="ref-centuryroot-token-shugo-token">**Centuryroot Token / Shugo Token**</span> | Minihry Shugo Festivalu. | Festival Shop; nesčítá se s Oath Coin. Konec Season 1 podle Aion 2 Maps přežije, WikiRealm ale uvádí, že eventové tokeny zanikají s eventem. Rozpor zdrojů: zůstatek sleduj v tooltipu. |
+| <span id="ref-centuryroot-token-shugo-token">**Centuryroot Token / Shugo Token**</span> | Minihry Shugo Festivalu a Dimensional Invasion; viz [Shugo Festival a Dimensional Invasion](../../pruvodce/shugo-festival-invasion/). | Festival Shop; nesčítá se s Oath Coin. Konec Season 1 podle Aion 2 Maps přežije, WikiRealm ale uvádí, že eventové tokeny zanikají s eventem. Rozpor zdrojů: zůstatek sleduj v tooltipu. |
 | <span id="ref-phantasmal-fragment">**Phantasmal Fragment**</span> | Nightmare první a opakovaná dokončení. | Nightmare Trade Shop: krystaly, Stigma, Pantheon, rune chesty. Konec sezóny podle Aion 2 Maps přežije. |
 | <span id="ref-oath-coin">**Oath Coin**</span> | Season Missions a sezónní odměny. | Season Shop; s koncem sezóny se maže. |
-| <span id="ref-daeva-pass-shop-coin">**Daeva Pass Shop Coin**</span> | Příslušná Daeva Pass odměnová větev. | Pass Shop; s koncem sezóny se maže. |
+| <span id="ref-daeva-pass-shop-coin">**Daeva Pass Shop Coin**</span> | Prémiová větev Season 1 Daeva Pass, celkem 45 000 mincí (NC). | Pass Shop; podle NC platí do údržby 15. 12. 2026 (PST). Nabídku popisuje [Daeva Pass](../daeva-pass/#pass-shop). |
 | <span id="ref-silver-gold-medal-of-merit">**Silver / Gold Medal of Merit**</span> | Abyss a PvP odměny či obchod. | Položky příslušného obchodu; kontroluj rank a aktuální nabídku. |
 | <span id="ref-legion-coin">**Legion Coin**</span> | Legion contribution podle pravidel legie. | Legion odměny a nabídky; dostupnost ověř v menu. |
 | <span id="ref-soul-crystal-point">**Soul Crystal Point**</span> | Získáváš je při Analyze v Genus Insight. | Odměny související s pety. Nejde o platidlo za Analyze (to stojí Soul Crystals) a nezaměňuj je s Daevanion nebo Mysterious Crystal. |
-| <span id="ref-arena-token">**Arena Token**</span> | Podle popisu odměna z arén. | Zdroje se rozcházejí: WikiRealm v klientu nenašel zdroj ani obchod, MetaBot uvádí Arena shop (Rare Theostone Chest za 1 Arena Token). Farmu zatím neplánuj. |
+| <span id="ref-arena-token">**Arena Token**</span> | Podle popisu odměna z arén. | WikiRealm v klientu nenašel zdroj ani obchod. Novější průvodce MetaBot (8. 10.) uvádí, že měna v klientu existuje, ale je skrytá: arény platí Abyss Points a arénový obchod prodává za AP. Starší údaj MetaBotu o Rare Theostone Chest za 1 Arena Token tím pozbývá oporu. Odměny arén: [PvP](../../pruvodce/pvp/#týdenní-odměny). |
 
 ## Sezóna a hranice dostupnosti
 

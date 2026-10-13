@@ -29,6 +29,12 @@ sources:
   - title: Raid Relay — Gear score guide, Sealed Dungeons, Strongholds, Monolith a nepřátelský region, klient Global launcher v28, kontrola 10. října
     url: https://raidrelay.com/aion-2-gear-score-guide
     scope: global
+  - title: Aion 2 Maps — What to do at 45, pořadí Sealed Dungeons, odměny v cizím regionu a Monolith
+    url: https://aion2maps.com/guides/what-to-do-at-45/
+    scope: global
+  - title: NC — Server Transfer Q&A, Monolith a Sync Empyrean Traces
+    url: https://aion2.plaync.com/en-us/board/notice/view?articleId=6ac7e128d97eae18cc40e3b7
+    scope: global
 ---
 
 **Otevřený svět není jen cesta mezi dungeony.** Obsahuje jednorázový postup pro GS, trvalé staty pro CP i opakovatelnou farmu. Vyplatí se vědět, kterou z těchto tří věcí právě potřebuješ.
@@ -54,19 +60,21 @@ Tabulka spojuje doložené funkce s **doporučeným plánováním Tarot Clubu**;
 
 Na Global je vlastní startovní oblast **Verteron pro Elyos** a **Altgard pro Asmodiany**. Zdejší regionální obsah má jiný význam než výlet do oblasti opačné frakce.
 
-Raid Relay podle dat Global klientu uvádí pro vlastní region **61 Sealed Dungeons**, s odměnou **2 Daevanion Crystals a 2 Wisdom Stones** za každý, a **15 Strongholds**, dohromady **30 scrollů pro pás**. <mark class="focus">Jde o jednorázové odměny.</mark> Příběh také postupně odemyká další regionální úkoly.
+Raid Relay podle dat Global klientu uvádí pro vlastní region **61 Sealed Dungeons**, s odměnou **2 Daevanion Crystals a 2 Wisdom Stones** za každý, a **15 Strongholds**, dohromady **30 scrollů pro pás**. <mark class="focus">Jde o jednorázové odměny.</mark> Příběh také postupně odemyká další regionální úkoly; podle Aion 2 Maps dají regionální úkoly dohromady 58 Daevanion Crystals a 58 Wisdom Stones.
+
+Čtyři Sealed Dungeons se podle Maps otevírají postupně, každý až po dokončení předchozího: u Elyos Distorted Cave → Fissure Cave → Rift Cave → Ruins of the Ancient City of Roah, u Asmodianů Lost Ruins → Twisted Pit → Rift Fissure → Ruins of the Ancient City of Roah. Dokončení Ruins of the Ancient City of Roah dává titul [Through Hell and Back](../../reference/tituly-kolekce/#ref-through-hell-and-back). Přehled všech bodů ukazuje panel Collect na mapě.
 
 Získané krystaly a Wisdom Stones použij a rozvoj nakup v příslušném menu. Hromada odměn v inventáři ještě nezlepší aktivní postavu.
 
 :::caution[Pozor: nepřátelský region má jiné odměny]
-Podle Raid Relay (data Global klientu) dávají tamní Sealed Dungeons **Enhance Stones a Abyss Points** a Strongholds **jen Abyss Points**. Daevanion Crystals, Wisdom Stones ani scrolly na pás tam nezískáš. Do oblasti opačné frakce vede **Spacetime Rift**, který se otevírá každé 3 hodiny serverového času; uvnitř máš hodinu a stráže u ikon andělů na minimapě zabíjejí okamžitě.
+Podle Raid Relay (data Global klientu) dávají tamní Sealed Dungeons **Enhance Stones a Abyss Points** a Strongholds **jen Abyss Points**; Aion 2 Maps uvádí za každý Sealed Dungeon 2 500 Enhance Stones, 1 000 AP a 15 000 Kina a za každý Stronghold 3 000 AP a 15 000 Kina. Daevanion Crystals, Wisdom Stones ani scrolly na pás tam nezískáš. Do oblasti opačné frakce vede **Spacetime Rift**, který se otevírá každé 3 hodiny serverového času; uvnitř máš hodinu a stráže u ikon andělů na minimapě zabíjejí okamžitě.
 :::
 
 ## Peříčka a Monolith
 
 **Empyrean Traces** jsou regionálně označené sběratelské předměty, kterým hráči říkají peříčka. **Monolith** je místo, kde sběr proměníš v postup a odměny. Nepleť si jej s náhodnou farmářskou truhlou.
 
-Pro vlastní Revelation Amulet jsou Monolith odměny důležité kvůli jeho scrollům na vylepšení. Raid Relay uvádí za všechny úrovně Monolithu celkem 30 těchto scrollů a 12 klíčů od Hidden Cube. Po sbírání proto nejdřív vyzvedni hotové úrovně Monolithu; další trasu za peříčky přidej, až když ti konkrétní odměna stále chybí.
+Pro vlastní Revelation Amulet jsou Monolith odměny důležité kvůli jeho scrollům na vylepšení. Raid Relay uvádí za všechny úrovně Monolithu celkem 30 těchto scrollů a 12 klíčů od Hidden Cube; Maps počítá 80 Traces na úroveň 10, 255 na úroveň 20 a 560 na úroveň 30. Hra má funkci **Sync Empyrean Traces** (zmiňuje ji NC v Q&A k přesunu serverů); podle Maps jí další postavy na serveru převezmou úrovně Monolithu bez nového sbírání. Po sbírání proto nejdřív vyzvedni hotové úrovně Monolithu; další trasu za peříčky přidej, až když ti konkrétní odměna stále chybí.
 
 **Doporučení Tarot Clubu:** při jednom průchodu oblasti kombinuj peříčka, zbývající regionální úkol a Sealed Dungeon. Druhou trasu dělej jen pro konkrétní chybějící marker. Abyss má vlastní Monolith a navazující PvP rozvoj — viz [Abyss](../abyss/).
 

@@ -33,6 +33,9 @@ sources:
 - title: Global Database — Soul Crystal
   url: https://aion2.gaming.tools/items/531900009
   scope: global
+- title: NC — Server Transfer Q&A, pety a Genus Insight při přesunu
+  url: https://aion2.plaync.com/en-us/board/notice/view?articleId=6ac7e128d97eae18cc40e3b7
+  scope: global
 ---
 
 **Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní podklady, nikoli naše měření v klientu. Ceny a limity porovnej s aktuálním tooltipem nebo panelem hry.
@@ -62,7 +65,7 @@ Global klient má podle dat 207 petů: 200 z monster a 7 Special. Pet souls zís
 
 Podklady uvádějí pět desek (Cogni, Fera, Natura, Varian, Special) s devíti řádky. Analyze přeroluje všechny otevřené, nezamčené řádky najednou. Každý přerolovaný řádek stojí 4 Soul Crystals a 1 000 Kina a dá 100 Genus EXP. Platit můžeš krystaly rodu dané desky, nebo obecnými Soul Crystals, které přijme každá deska. Zámky přidávají ke každému dalšímu Analyze příplatek: za 1 až 8 zamčených řádků 8 / 16 / 36 / 76 / 156 / 236 / 316 / 396 krystalů a 2 000 až 99 000 Kina.
 
-Šance na kvalitu řádku závisí jen na Insight. Pod Insight 9 padne Unique nebo lepší nejvýše v 5 % případů, na Insight 9 asi v 11 % a na Insight 10 ve 20 %. Návody proto doporučují nic nezamykat před Insight 9. Screenshot cizí hotové desky není záruka stejného výsledku na tvém stupni. Postup Pets a Genus je podle asijské verze společný pro postavy na serveru.
+Šance na kvalitu řádku závisí jen na Insight. Pod Insight 9 padne Unique nebo lepší nejvýše v 5 % případů, na Insight 9 asi v 11 % a na Insight 10 ve 20 %. Návody proto doporučují nic nezamykat před Insight 9. Screenshot cizí hotové desky není záruka stejného výsledku na tvém stupni. Postup Pets a Genus je podle asijské verze společný pro postavy na serveru. Při přesunu serveru se pety a Genus Crystals podle NC sloučí s cílovým serverem a u Genus Insight si vybereš postup jednoho z obou serverů; viz [Servery a přesun postav](../servery/#co-se-přenese-a-co-zůstane).
 
 ## Doporučení Tarot Clubu
 

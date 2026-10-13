@@ -48,6 +48,11 @@ Napiš anglický název, český význam nebo zkratku. Katalog výše rozlišuje
 | <span id="ref-bound-storage-alt">**Bound / storage / alt**</span> | [Inventář](../inventar/) |
 | <span id="ref-market-a-poplatky">**Market a poplatky**</span> | [Market](../market/) |
 | <span id="ref-guild-hall-opravneni">**Guild / Hall / oprávnění**</span> | [Legions](../legie/) |
+| <span id="ref-server-prenos-postavy">**Server, frakce a přesun postavy**</span> | [Servery a přesun postav](../servery/) |
+| <span id="ref-pravidla-postihy-obnova">**Pravidla, postihy a obnova předmětu**</span> | [Pravidla NC](../pravidla-nc/) |
+| <span id="ref-daeva-pass-quna">**Daeva Pass a Quna**</span> | [Daeva Pass](../daeva-pass/) |
+| <span id="ref-pvp-arena">**PvP a arény**</span> | [PvP průvodce](../../pruvodce/pvp/) |
+| <span id="ref-patch-udrzba">**Patch, údržba a novinky**</span> | [Změny po launchi](../../pruvodce/zmeny-po-launchi/) |
 | <span id="ref-schopnosti-tridy">**Schopnosti třídy**</span> | [Třídy](../../tridy/prehled/) |
 | <span id="ref-mechanika-konkretniho-bosse">**Mechanika konkrétního bosse**</span> | [Dungeony](../../dungeony/prehled/) |
 

@@ -49,7 +49,7 @@ lookupAliases:
 | <span id="ref-shop-storage-mail">**Shop Storage / Mail**</span> | Podle konkrétní odměny. | Přečti příjemce ještě před vyzvednutím. |
 | <span id="ref-legion-storage">**Legion Storage**</span> | Legii a nastaveným oprávněním. | Nezaměňuj ho s osobním či serverovým skladem. |
 
-Server a Character Storage rozšiřuješ po řádcích (5 slotů) za Kina; ceny obou skladů jsou stejné, platí se zvlášť a každý další řádek je dražší. Za Kina dojdeš na 180 slotů; podle klientských dat je strop 400 slotů s vouchery. Cube má deset rozšíření za Kina, celkem asi 2,7 milionu.
+Server a Character Storage rozšiřuješ po řádcích (5 slotů) za Kina; ceny obou skladů jsou stejné, platí se zvlášť a každý další řádek je dražší. Za Kina dojdeš na 180 slotů; podle klientských dat je strop 400 slotů s vouchery. Expansion Vouchers prodávají Tsenka Merchants za 200 Quna; ceny a limity jsou v [Obchodech](../obchody/#ref-rozsireni-skladu-tsenka). Cube má deset rozšíření za Kina, celkem asi 2,7 milionu.
 
 ## Bound není jediná odpověď
 
@@ -59,14 +59,14 @@ Crafting, Material Conversion, Supply Requests a Enhancement čerpají materiál
 
 ## Co se sdílí
 
-Členství platí pro postavy na serveru, kde ho aktivuješ; Quna, A2 Mileage a Daeva Pass patří konkrétní postavě. Poštu pro účet (account mail) vyzvedne jen jedna postava účtu, ne každý alt zvlášť. NC 3. října oznámila, že titul, skiny, pet a křídla z Founder's Packu budou po opravě fungovat na všech postavách účtu; do té doby platí původní pravidla, aktuální stav ověř v klientu.
+Členství platí pro postavy na serveru, kde ho aktivuješ; Daeva Pass patří konkrétní postavě. Quna a A2 Mileage vede Aion 2 Maps také u postavy, oficiální Q&A k přesunu o nich ale píše jako o zůstatku na serveru — viz [Měny](../meny/#ref-quna). Poštu pro účet (account mail) vyzvedne jen jedna postava účtu, ne každý alt zvlášť. Kosmetiku z Founder's Packu (titul, skiny, pet a křídla) můžeš od údržby 7. října používat na všech postavách a serverech; chybějící kusy si zdarma vybereš ve speciálním obchodě pro majitele packu (patch notes NC). Členství, Supply Chest a Styling Chest z packu zůstávají jednorázové.
 
-Při převodu serveru (server transfer) zůstává na starém serveru obsah Server Storage, pošta, nabídky na Marketu a sloty postav. Rozšíření Server Storage se přenášejí. Poštu proto vyzvedni předem.
+Při přesunu serveru (Server Transfer) zůstává na starém serveru obsah Server Storage včetně Kina v něm a dokoupené sloty postav. Počet rozšíření Server Storage bude vyšší z obou serverů; Character Storage jde s postavou celý. Nevyzvednutá pošta, Shop Storage a nabídky na Marketu přesun zablokují, proto je vyřeš předem. Všechna pravidla jsou na stránce [Servery a přesun postav](../servery/#co-se-přenese-a-co-zůstane).
 
 ## Doporučení Tarot Clubu
 
 :::caution[Pozor: důležité kusy chraň před spotřebováním]
-Před extrakcí nebo prodejem zamkni důležité kusy výbavy a karty. Používej náhled zpracování a nezpracovávej hromadně všechny Unique dropy. Recover Item podle klientských dat vrátí předmět do 3 dnů, ale jen v omezeném počtu na postavu a rok: 30 prodejů NPC obchodníkovi, 1 extrakci (Unique a výš) a 1 Soul Sync. Chyby při craftingu podpora podle asijské verze neobnovuje.
+Před extrakcí nebo prodejem zamkni důležité kusy výbavy a karty. Používej náhled zpracování a nezpracovávej hromadně všechny Unique dropy. Recover Item podle klientských dat vrátí předmět do 3 dnů, ale jen v omezeném počtu na postavu a rok: 30 prodejů NPC obchodníkovi, 1 extrakci (Unique a výš) a 1 Soul Sync. Podle Operation Policies NC pro Global podpora neobnovuje nechtěný craft ani předmět zničený neúspěšným vylepšením; co obnovit jde, shrnují [Pravidla NC](../pravidla-nc/#co-podpora-obnoví).
 :::
 
 Navazují [Market](../market/) a [Legions](../legie/).

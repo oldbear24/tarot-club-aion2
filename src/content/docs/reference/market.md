@@ -26,6 +26,12 @@ sources:
 - title: Aion 2 Maps — whats-bound
   url: https://aion2maps.com/guides/whats-bound/
   scope: global
+- title: 'NC — New Product Announcement: Special Quai Membership (aktualizace 2. října 2026)'
+  url: https://aion2.plaync.com/en-us/board/notice/view?articleId=6a850010fa34c1011d6273b2
+  scope: global
+- title: NC — AION 2 Trust Status System Notice
+  url: https://aion2.plaync.com/en-us/board/rules/view?articleId=6abcf9c0d97eae18cc40e1e4
+  scope: global
 ---
 
 **Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní podklady, nikoli naše měření v klientu. Ceny a limity porovnej s aktuálním tooltipem nebo panelem hry.
@@ -52,7 +58,9 @@ Klientská data (Aion 2 Maps) uvádějí **2% poplatek za vystavení** a **10% d
 
 ## Co členství mění
 
-Členství (Special Quai Membership) platí pro všechny postavy na serveru, kde ho aktivuješ, a jinde ne. 30 dní běží od aktivace, ne od nákupu. NC uvádí cenu 14,99 USD za 30 dní na server; částku ve tvé měně ukáže obchod. Kromě Marketu a Quna Exchange odemyká Remote Storage a Wind Breeze Merchants. Dopad na Odyle a odměnové truhly vysvětluje [Odyle průvodce](../../pruvodce/dungeony-odyle/#jak-hospodařit-s-odyle). Přímý obchod ani další čas v Abyssu členství nepřidává.
+Členství (Special Quai Membership) platí pro všechny postavy na serveru, kde ho aktivuješ, a jinde ne. 30 dní běží od aktivace, ne od nákupu. NC uvádí cenu 14,99 USD za 30 dní na server; částku ve tvé měně ukáže obchod. Kromě Marketu a Quna Exchange odemyká Remote Storage a Wind Breeze Merchants a zvyšuje strop klíčů Shugo Festivalu z 12 na 21. Dopad na Odyle a odměnové truhly vysvětluje [Odyle průvodce](../../pruvodce/dungeony-odyle/#jak-hospodařit-s-odyle). Přímý obchod ani další čas v Abyssu členství nepřidává.
+
+Podle podmínek NC koupíš členství jen tehdy, když ti zbývá **méně než 60 dní**, a nejvýše **3× měsíčně na server**; každý nákup přidá dalších 30 dní. NC ze seznamu výhod před launchem vyřadila World Exchange. Při přesunu serveru se zbývající dny přičtou k členství na cílovém serveru; viz [Servery a přesun postav](../servery/#co-se-přenese-a-co-zůstane). Trust Status účtu, který omezuje Market a Exchange, popisují [Pravidla NC](../pravidla-nc/#trust-status-účtu).
 
 ## Doporučení Tarot Clubu
 

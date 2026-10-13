@@ -32,6 +32,12 @@ sources:
   - title: Raid Relay — serverový čas na hodinách mapy, příběhový Spiritforged Guard
     url: https://raidrelay.com/aion-2-gear-score-guide
     scope: global
+  - title: NC — Special Quai Membership, oficiální seznam výhod (bez času v Abyssu)
+    url: https://aion2.plaync.com/en-us/board/notice/view?articleId=6a850010fa34c1011d6273b2
+    scope: global
+  - title: MetaBot — Event Schedule, artefakty, Watcher Kaira a bossové z Global klientu
+    url: https://metabot.gg/en/aion-2/events
+    scope: global
 ---
 
 **Abyss má hodnotu i pro PvE postavu:** Abyss Points pomáhají rozvíjet Stigmata a další systémy. Není ale nutné proměnit každou návštěvu v hon za PvP rankem.
@@ -40,10 +46,12 @@ sources:
 
 Aion 2 Maps uvádějí **úroveň 45 a 1 000 GS** (Item Level); Corpus zmiňuje jen 1 000 GS a úroveň 45 spojuje s odemčením Abyss rankingu. Launch otevírá **Chaotic Lower Reshanta**. To, že databáze obsahuje Middle/Upper Reshanta, není potvrzení jejich dostupnosti.
 
+Hráči druhé frakce, které tu potkáš, pocházejí ze serveru spárovaného s tvým; NC párování průběžně mění, viz [Servery](../../reference/servery/#region-frakce-a-server).
+
 Portál hledej podle frakce: Elyos u **Garden of the Illusion God ve Verteronu**, Asmodiani u **Black Claw Village v Altgardu**. Přesun do frakční základny stojí podle Maps 1 Return Scroll (Bound). Při první návštěvě odevzdej poslední příběhový úkol (**Draupnir / Forgotten Commander**) u **Koro** v základně; odměnou je **Spiritforged Guard**.
 
 :::caution[Pozor: týdenní čas se nehromadí]
-**Čas není neomezený:** základní příděl je **7 hodin týdně**. Středeční reset nastaví zásobu zpět na sedm hodin, nepřičte dalších sedm. Vliv členství podklady popisují rozporně (Maps: bez vlivu, MetaBot: 14 hodin, Corpus: 14 hodin jen v KR), proto sleduj skutečné počítadlo v klientu.
+**Čas není neomezený:** základní příděl je **7 hodin týdně**. Středeční reset nastaví zásobu zpět na sedm hodin, nepřičte dalších sedm. Vliv členství podklady popisují rozporně (Maps: bez vlivu, MetaBot: 14 hodin, Corpus: 14 hodin jen v KR). Oficiální seznam výhod členství od NC čas v Abyssu neuvádí, což odpovídá Maps; přesto sleduj skutečné počítadlo v klientu.
 :::
 
 ## K čemu slouží jednotlivé věci
@@ -58,7 +66,7 @@ Portál hledej podle frakce: Elyos u **Garden of the Illusion God ve Verteronu**
 | **Abyss bosses** | Boss odměny a frakčně soupeřený obsah. | Podle času eventu a síly skupiny. |
 | **Rank / medals** | Sezónní postup a další obchodní odměny. | Řeš je cíleně, pokud chceš rozvíjet PvP. |
 
-U artefaktů jde o boj o cíle eventu, včetně Dimensional Core; ne o běžný sběratelský marker. **Corridor je důsledek držení artefaktu**, nikoli libovolně dostupný další dungeon. Přesný počet vstupů a pravidla odměny vždy ověř v aktuálním event panelu.
+U artefaktů jde o boj o cíle eventu, včetně Dimensional Core; ne o běžný sběratelský marker. Podle MetaBotu (data Global klientu) jsou v Lower Reshantě tři artefakty — **Reshanta's Root**, **Sulfur Tree Island** a **Archipelago of Siel's Wings** — a každý držený zvyšuje frakci zisk AP o 2,5 % (všechny tři o 7,5 %). Když frakce přijde o všechny artefakty, otevře se podle textu klientu v její základně samostatný Abyss Corridor jen pro ni. **Corridor je důsledek držení artefaktu**, nikoli libovolně dostupný další dungeon. Přesný počet vstupů a pravidla odměny vždy ověř v aktuálním event panelu.
 
 ## Kam investovat Abyss Points
 
@@ -88,6 +96,7 @@ Daevanion podklady uvádějí v otevřené Lower Reshantě **200 Empyrean Traces
 | --- | --- |
 | **Artifact Siege** | Pondělí, čtvrtek, sobota: příprava od 21:00, boj od 21:10. |
 | **Guardian Lord Nahma** | Pátek a neděle ve 21:00. |
+| **Watcher Kaira** | Každé 3 hodiny od 01:00 (Maps, MetaBot). |
 | **Executors Tamasa, Argo, Kaira** | Pondělí, čtvrtek, sobota ve 21:30. |
 
 Časy jsou **serverové** a NC časová pásma regionů nezveřejnila. Komunitní časovače shugo.gg, MetaBot a Daeva Guides předpokládají, že EU servery běží na středoevropském čase. Siege by pak začínal ve 21:00 českého času a po přechodu na zimní čas 25. října by se hodina nezměnila. Questlog ale uvádí 21:00 UTC a aion2hub korejský čas, proto převod ber jako nepotvrzený.

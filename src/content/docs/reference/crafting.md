@@ -28,6 +28,9 @@ sources:
 - title: Global Database — True Dragon Lord Guard, 2.0.6.0
   url: https://aion2.gaming.tools/items/115030015
   scope: global
+- title: Aion 2 Maps — crafting, požadavky mastery a spotřeba Balaur's Essence
+  url: https://aion2maps.com/guides/crafting/
+  scope: global
 ---
 
 **Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní podklady, nikoli naše měření v klientu. Ceny a limity porovnej s aktuálním tooltipem nebo panelem hry.
@@ -57,7 +60,7 @@ Každý vyšší tier vzniká upcraftem z kusu o stupeň níž. Frakční názvy
 
 ## Konkrétní příklad: Elyos longsword
 
-Databáze Global **2.0.6.0**, kontrolovaná 12. října: **True Dragon Lord Longsword**, Blacksmithing **55**, požadavek Elyos.
+Databáze Global **2.0.6.0** (aktualizace 8. října), kontrolovaná 12. a znovu 13. října: **True Dragon Lord Longsword**, Blacksmithing **55**, požadavek Elyos. Aion 2 Maps nezávisle uvádí stejný požadavek 55 i 44 Balaur's Essence na longsword, tedy 22 Fine Thick Balaur Horn.
 
 | Surovina | Počet pro recept |
 | --- | --- |
@@ -68,7 +71,7 @@ Databáze Global **2.0.6.0**, kontrolovaná 12. října: **True Dragon Lord Long
 | <span id="ref-radiant-orichalcum-ore">**Radiant Orichalcum Ore**</span> | 9 |
 | <span id="ref-radiant-odyle-2">**Radiant Odyle**</span> | 5 |
 
-Zdroj uvádí základní úspěch **67,51 %** při mastery rovné požadavku receptu; při mastery 100 roste podle Aion 2 Maps asi na 94 %. Po úspěšném craftu hra ve **25 %** případů zkusí místo běžného výsledku lucky (combo) craft s vlastním hodem; u kusu 62 tak může vzniknout rovnou kus 70. Neznamená to dvě výstupní zbraně a neúspěšný lucky craft podle asijské verze nedá nic. Guard má v téže databázi Blacksmithing požadavek **60**, stejně jako rukavice, boty, plášť, náhrdelník a náušnice; pravidlo pro jednu zbraň proto nepřenášej na všechny sloty.
+Zdroj uvádí základní úspěch **67,51 %** při mastery rovné požadavku receptu a strop **94,64 %**; Aion 2 Maps shodně uvádí 67,5 % a asi 94 % při mastery 100. Po úspěšném craftu hra ve **25 %** případů zkusí místo běžného výsledku lucky (combo) craft s vlastním hodem; u kusu 62 tak může vzniknout rovnou kus 70. Neznamená to dvě výstupní zbraně a neúspěšný lucky craft podle asijské verze nedá nic. Guard má v téže databázi Blacksmithing požadavek **60**, stejně jako rukavice, boty, plášť, náhrdelník a náušnice; pravidlo pro jednu zbraň proto nepřenášej na všechny sloty.
 
 ## Cena výsledku
 

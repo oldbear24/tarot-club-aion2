@@ -49,8 +49,8 @@ Vstup, dokončení a vyzvednutí odměny mohou mít odlišné podmínky. Limity 
 | <span id="ref-nightmare">**Nightmare**</span> | Sólo bossové, fragmenty a odměny za první dokončení. | [Postup a pokusy](../../pruvodce/nightmare/) |
 | <span id="ref-odyle-energy">**Odyle Energy**</span> | Energie pro vyzvednutí dungeonové odměny. | [Odyle a obnova](../../pruvodce/dungeony-odyle/#jak-hospodařit-s-odyle) |
 | <span id="ref-conquest-reward-counts">**Conquest reward counts**</span> | Počítadlo odměn konkrétního dungeonu, nezávislé na Odyle. | [Denní zásoby](../../pruvodce/daily-weekly/#denní-obnovy-a-zásoby) |
-| <span id="ref-shugo-festival">**Shugo Festival**</span> | Tokeny a odměny z události. | [Klíče a sdílení](../../pruvodce/daily-weekly/#denní-obnovy-a-zásoby) |
-| <span id="ref-dimensional-invasion">**Dimensional Invasion**</span> | Událost s vlastním odměnovým klíčem. | [Klíče a sdílení](../../pruvodce/daily-weekly/#denní-obnovy-a-zásoby) |
+| <span id="ref-shugo-festival">**Shugo Festival**</span> | Hodinové minihry ve Verteronu a Altgardu; tokeny, Enhance Stones a s klíčem další odměny. | [Rozvrh a odměny](../../pruvodce/shugo-festival-invasion/), [klíče a sdílení](../../pruvodce/daily-weekly/#denní-obnovy-a-zásoby) |
+| <span id="ref-dimensional-invasion">**Dimensional Invasion**</span> | Hodinová vlnová událost od úrovně 45 s vlastním odměnovým klíčem. | [Rozvrh a odměny](../../pruvodce/shugo-festival-invasion/), [klíče a sdílení](../../pruvodce/daily-weekly/#denní-obnovy-a-zásoby) |
 | <span id="ref-daily-dungeon">**Daily Dungeon**</span> | Enhance Stones podle konkrétního obsahu a skóre. | [Týdenní zásoba](../../pruvodce/daily-weekly/#týdenní-obsah) |
 | <span id="ref-ascension-trial">**Ascension Trial**</span> | Sólo výzva s odměnami pro rozvoj; aktuální rotaci ověř v panelu. | [Týdenní zásoba](../../pruvodce/daily-weekly/#týdenní-obsah) |
 | <span id="ref-exploration">**Exploration**</span> | Snazší verze expedic, otevřená už při levelování; levnější vyzvednutí odměny a garantovaný výběr po určitém počtu vyzvednutí. Odměny vyplácejí vázaná Kina. | [Vstup a odměna](../../pruvodce/dungeony-odyle/) |
@@ -60,8 +60,9 @@ Vstup, dokončení a vyzvednutí odměny mohou mít odlišné podmínky. Limity 
 | <span id="ref-transcendence">**Transcendence**</span> | Zdroj Arcana; sleduj tier, počítadlo odměn a Odyle. | [GS milníky](../../pruvodce/gs-progrese/#milníky-global) a [mechaniky](../../dungeony/transcendence/) |
 | <span id="ref-unclaimed-cubes">**Unclaimed Cubes**</span> | Odchod bez vyzvednutí odměny může blokovat další vstup. | [Nevyzvednuté odměny](../../pruvodce/dungeony-odyle/#nevyzvednutá-cube-může-zablokovat-další-vstup) |
 | <span id="ref-abyss">**Abyss**</span> | AP, sbírka a frakční události s vlastními časy. | [Přístup a čas](../../pruvodce/abyss/#vstup-a-dostupná-oblast) |
+| <span id="ref-arena-battlefield">**Arena / Battlefield**</span> | PvP 1v1, 5v5 a 10v10 za Abyss Points s týdenním limitem odměn a sezónním žebříčkem. | [PvP průvodce](../../pruvodce/pvp/) |
 | <span id="ref-sealed-dungeons-strongholds">**Sealed Dungeons / Strongholds**</span> | Jednorázové regionální odměny; nepočítej s nimi jako s denní farmou. | [Otevřený svět](../../pruvodce/otevreny-svet/) |
-| <span id="ref-attendance-season-missions">**Attendance / Season Missions**</span> | Přihlašovací a sezónní odměny; sleduj konkrétní odměnovou větev. | [Denní plán](../../pruvodce/daily-weekly/) |
+| <span id="ref-attendance-season-missions">**Attendance / Season Missions**</span> | Přihlašovací a sezónní odměny; sleduj konkrétní odměnovou větev. Attendance dává i EXP do Daeva Pass. | [Denní plán](../../pruvodce/daily-weekly/), [Daeva Pass](../daeva-pass/) |
 | <span id="ref-ludra">**Ludra**</span> | Launch raid, od spuštění 5. října dočasně stažený ze hry; NC oznámila návrat s novými mechanikami. | [Dostupnost a historie](../../dungeony/ludra/) |
 
 ## Český čas

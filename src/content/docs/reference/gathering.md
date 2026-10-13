@@ -48,12 +48,15 @@ Každý bod rudy a Odyle může dát kterýkoli grade (plain, Fine, Pure, Radian
 
 ## Příklad achievementu pro Asmodiany
 
-Global Database 2.0.6.0 uvádí achievement **Skybound Treasure** za úspěšné extrakce Odyle:
+Global Database 2.0.6.0 (aktualizace 8. října, ověřeno 13. října) uvádí achievement **Skybound Treasure** za úspěšné extrakce Odyle. Má sedm stupňů a počítá se pro každou postavu zvlášť:
 
 | Milník | Odměna podle databáze |
 | --- | --- |
 | <span id="ref-5-uspesnych-sberu">**5 úspěšných extrakcí Odyle**</span> | 3 Refining Stone (Bound), 4 000 Kina (Bound). |
+| <span id="ref-30-uspesnych-sberu">**30 úspěšných extrakcí Odyle**</span> | 4 Refining Stone (Bound), 6 000 Kina (Bound). |
+| <span id="ref-60-uspesnych-sberu">**60 úspěšných extrakcí Odyle**</span> | 4 Expert's Refining Stone (Bound), 8 000 Kina (Bound). |
 | <span id="ref-100-uspesnych-sberu">**100 úspěšných extrakcí Odyle**</span> | 4 Expert's Refining Stone (Bound), 10 000 Kina (Bound). |
+| <span id="ref-150-uspesnych-sberu">**150 úspěšných extrakcí Odyle**</span> | 3 Artisan's Refining Stone (Bound), 12 000 Kina (Bound). |
 | <span id="ref-300-uspesnych-sberu">**300 úspěšných extrakcí Odyle**</span> | 3 Artisan's Refining Stone (Bound), 13 000 Kina (Bound), Title: Extracting in My Sleep. |
 | <span id="ref-500-uspesnych-sberu">**500 úspěšných extrakcí Odyle**</span> | 2 Artisan's Ultimate Refining Stone (Bound), 14 000 Kina (Bound). |
 

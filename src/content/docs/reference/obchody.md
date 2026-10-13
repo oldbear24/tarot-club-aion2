@@ -58,6 +58,21 @@ sources:
 - title: MetaBot — Theostone guide
   url: https://metabot.gg/en/aion-2/guides/theostone-guide
   scope: global
+- title: NC — 9/30 (Wed) Common Product Info, Tsenka Merchants a Mileage Shop
+  url: https://aion2.plaync.com/en-us/board/notice/view?articleId=6abcf9c0fa34c1011d6279b9
+  scope: global
+- title: NC — Patch Notes 7. října 2026, Resurrection Spiritstone (Season 1)
+  url: https://aion2.plaync.com/en-us/board/update/view?articleId=6ac5e6e8d97eae18cc40e34e
+  scope: global
+- title: NC — Server Transfer Q&A, nabídka Wind Breeze Merchants během přesunů
+  url: https://aion2.plaync.com/en-us/board/notice/view?articleId=6ac7e128d97eae18cc40e3b7
+  scope: global
+- title: MetaBot — Arena Guide, nabídka Trade Shopu za AP
+  url: https://metabot.gg/en/aion-2/guides/arena-pvp-guide
+  scope: global
+- title: Aion 2 Maps — What to do at 45, Abyss Shop kameny
+  url: https://aion2maps.com/guides/what-to-do-at-45/
+  scope: global
 ---
 
 **Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní podklady, nikoli naše měření v klientu. Ceny a limity porovnej s aktuálním tooltipem nebo panelem hry.
@@ -72,7 +87,8 @@ sources:
 | <span id="ref-season-shop">**Season Shop**</span> | Oath Coin; sezónní položky. | Season ID, konec prodeje a limit; budoucí řádek v datech není živá nabídka. |
 | <span id="ref-daeva-pass-shop">**Daeva Pass Shop**</span> | Pass Shop Coin. | Platnou sezónu a postavu, na které byla měna získána. |
 | <span id="ref-wind-breeze-merchants">**Wind Breeze Merchants**</span> | Kina, jen se členstvím (Special Quai Membership): Soul Crystals, Odyle Energy, tickety, Auto-Loot Voucher, Resurrection Spiritstone, lektvary a Power Shards. | Hra utrácí nejdřív vázanou Kina. Některé limity platí na server, jiné na postavu. |
-| <span id="ref-quna-shop">**Quna Shop**</span> | Quna; kosmetika, spotřební předměty, prémiová Daeva Pass a Key: Hidden Cube. | Postavu, na které Quna máš: Quna se mezi postavami nepřesouvá. |
+| <span id="ref-quna-shop">**Quna Shop**</span> | Quna; kosmetika, spotřební předměty, prémiová Daeva Pass a Key: Hidden Cube. Spotřební nabídku za Quna NC vede pod názvem **Tsenka Merchants** (Shop → Tsenka Merchants → Consumable). | Postavu, na které Quna máš: podle Aion 2 Maps se Quna mezi postavami nepřesouvá, oficiální Q&A k přesunu ji ale popisuje jako zůstatek na serveru ([Měny](../meny/#ref-quna)). Denní limity se podle NC obnovují v 16:00 KST, tedy ve stejný okamžik jako denní reset. |
+| <span id="ref-a2-mileage-shop">**A2 Mileage Shop**</span> | A2 Mileage z nákupů: mimo jiné Key: Hidden Cube (2 000), Soul Codex (2 000, 3× denně), 10 Battle Enhance Scrolls (4 000, 3× denně) a Appearance Change Voucher (26 000, 2× na postavu). | Mileage vyprší po 30 dnech; viz [Měny](../meny/#ref-a2-mileage). |
 | <span id="ref-black-cloud-merchants">**Black Cloud Merchants**</span> | Kina; náhodná nabídka, která se mění každou hodinu, včetně petů, skinů a Theostones. | Aktuální obsah nabídky; není seznam všech trvale prodávaných položek. |
 
 ## Užitečné položky a kontrolované ceny
@@ -93,9 +109,13 @@ sources:
 | <span id="ref-instant-clear-ticket-daily-dungeon">**Instant Clear Ticket: Daily Dungeon — Wind Breeze Merchants**</span> | 30 000 Kina. | 7 týdně na server. |
 | <span id="ref-auto-loot-voucher">**Pet: Auto-Loot Voucher (30 dní) — Wind Breeze Merchants**</span> | 500 000 Kina. | 2 měsíčně na postavu. |
 | <span id="ref-resurrection-spiritstone-wind-breeze">**Resurrection Spiritstone — Wind Breeze Merchants**</span> | 100 000 Kina. | 7 týdně na postavu. |
+| <span id="ref-resurrection-spiritstone-season-1">**Resurrection Spiritstone (Season 1) — Wind Breeze Merchants**</span> | 25 000 Kina. | Od údržby 7. 10. 2026 (patch notes NC): 10 týdně na server, v prodeji do údržby 15. 12. 2026. |
 | <span id="ref-key-hidden-cube-season-shop">**Key: Hidden Cube — Season Shop**</span> | 3 000 Oath Coin. | 10 na účet v rámci serveru; v prodeji do konce Season 1. |
-| <span id="ref-key-hidden-cube-quna-shop">**Key: Hidden Cube — Quna Shop**</span> | 50 Quna. | 3 denně na postavu. Otevřená Hidden Cube dá 1 000 Soul Crystals, truhlu ale musíš najít v otevřeném světě. |
+| <span id="ref-key-hidden-cube-quna-shop">**Key: Hidden Cube — Quna Shop**</span> | 50 Quna. | 3 denně na postavu (Tsenka Merchants; potvrzuje NC). Otevřená Hidden Cube dá 1 000 Soul Crystals, truhlu ale musíš najít v otevřeném světě. |
+| <span id="ref-rozsireni-skladu-tsenka">**Rozšíření Cube a skladů — Tsenka Merchants**</span> | 200 Quna za voucher. | Cube a Character Storage 20× na postavu, Server Storage 20× na server (NC). |
+| <span id="ref-pet-pagati-tsenka">**Pet: Pagati — Tsenka Merchants**</span> | 2 000 000 Kina. | Jednou na server (NC). |
 | <span id="ref-lesser-abyssal-manastone">**Lesser Abyssal Manastone — Abyss Shop**</span> | 1 000 AP. | 50 týdně. |
+| <span id="ref-lesser-abyssal-soulstone">**Lesser Abyssal Soulstone — Abyss Shop**</span> | 2 000 AP. | 50 týdně (Maps, MetaBot). |
 | <span id="ref-rare-theostone-chest">**Rare Theostone Chest**</span> | Abyss Shop: výběrová truhla za 35 000 AP; Season Shop: 17 500 Oath Coin. | MetaBot: v Season Shopu 10 na účet v rámci serveru, do 16. 12. 2026. |
 
 ## Per Character, Per Server, Weekly
@@ -103,5 +123,7 @@ sources:
 :::note[Důležité: limit postavy a serveru se liší]
 **Per Character** patří jedné postavě, **Per Server** se může dělit s altem. Týdenní nebo měsíční údaj je další nezávislá podmínka. Konečná nabídka může vyžadovat dokončení předchozí cenové skupiny.
 :::
+
+Během Server Transfer (14.–28. 10. 2026) Wind Breeze Merchants – Special neprodávají Soul Crystals ani Instant Clear Tickets (Server) a Odyle Energy má limit na postavu místo serverového; podrobnosti na stránce [Servery a přesun postav](../servery/#co-se-přenese-a-co-zůstane).
 
 **Doporučení Tarot Clubu:** před drahým nákupem porovnej zbývající zásobu, aktivní build a příští reset. Eventové NPC z klientských tabulek sem nepřebíráme jako potvrzení otevřeného eventu. [Měny](../meny/) a [materiály](../materialy/) vysvětlují účel položek.

@@ -26,6 +26,15 @@ sources:
   - title: Daeva Guides — časovače EU, reset v UTC a změna času 25. října
     url: https://daevaguides.com/en/guides/timers/
     scope: global
+  - title: NC — Server Transfer Q&A, serverový postup Daily Dungeon, Shugo Festivalu a Dimensional Invasion
+    url: https://aion2.plaync.com/en-us/board/notice/view?articleId=6ac7e128d97eae18cc40e3b7
+    scope: global
+  - title: NC — Special Quai Membership, strop Shugo Festa Key 12 / 21
+    url: https://aion2.plaync.com/en-us/board/notice/view?articleId=6a850010fa34c1011d6273b2
+    scope: global
+  - title: NC — Daeva Pass, předmět Unknown Fissure Challenge Ticket
+    url: https://aion2.plaync.com/en-us/board/notice/view?articleId=6abbb27d71f8fb7c2a7a32a9
+    scope: global
 ---
 
 <mark class="focus">Každý den nemusíš vyčerpat úplně vše.</mark> Priorita je neztrácet nepřenosné denní odměny, nenechat zastavit obnovu na plné zásobě a včas spotřebovat týdenní vstupy.
@@ -40,6 +49,8 @@ Uváděný společný reset Global je **07:00 UTC denně**, týdenní ve **stře
 
 Čas v UTC uvádějí Aion 2 Maps a komunitní časovače; Aion2Data upozorňuje, že časové pásmo není uložené v klientu a je odvozené z pozorování. Spolehlivý je odpočet v Journalu (záložka Duty).
 
+Pravidelná **týdenní údržba** začíná ve středu ráno před týdenním resetem (7. i 14. října v 8:30 SELČ) a trvá několik hodin; během ní se nepřihlásíš. Přehled údržeb je v [Změnách po launchi](../zmeny-po-launchi/#týdenní-údržba).
+
 Tohle jsou **resety počítadel**. Shugo Festival, rifty a siege se řídí **serverovým časem**, ne pevným UTC. Komunitní časovače předpokládají, že EU servery běží na středoevropském čase, takže by se jejich hodina při změně času neposouvala; NC to nepotvrdilo. Jak serverový čas ověřit, popisuje [Abyss](../abyss/#kdy-probíhají-větší-události).
 
 ## Denní obnovy a zásoby
@@ -50,16 +61,16 @@ Tohle jsou **resety počítadel**. Shugo Festival, rifty a siege se řídí **se
 | **Nightmare** | +2 pokusy denně, základní rezerva až 14. | Postava; při plné rezervě další obnova propadá. |
 | **Odyle Energy** | Průběžná obnova; [tempo a strop](../dungeony-odyle/#jak-hospodařit-s-odyle). | Postava; nejde o jednorázové ranní doplnění. |
 | **Conquest — vyzvednutí odměn** | +2 denně pro konkrétní dungeon, až 14 v základním počítadle. | Počítadlo odměn a Odyle jsou dvě oddělené podmínky. |
-| **Shugo Festival** | Základní serverové počítadlo +3 klíče denně, až 12; s členstvím strop 21 (Maps, MetaBot). | Aion2Data uvádí navíc postavové počítadlo +4 denně, až 28; ověř v klientu. |
-| **Dimensional Invasion** | +1 odměnový klíč denně, základní rezerva až 7. | Serverový limit podle MetaBot a Aion2Data; Maps sdílení dokládá asijskou verzí. |
+| **Shugo Festival** | Základní serverové počítadlo +3 klíče denně, až 12; s členstvím strop 21 (strop potvrzuje i NC v popisu členství). | Serverový postup odměn potvrzuje NC. Aion2Data uvádí navíc postavové počítadlo +4 denně, až 28; ověř v klientu. |
+| **Dimensional Invasion** | +1 odměnový klíč denně, základní rezerva až 7. | Serverový postup odměn potvrzuje NC v Q&A k přesunu serverů. |
 
 Základní zásoba vstupů není totéž co dodatečná zásoba z ticketů. U konkrétního obsahu si přečti, **zda se počet spotřebovává vstupem, dokončením nebo vyzvednutím odměnové truhly (cube)**.
 
 ## Co z jednotlivých aktivit získáš
 
-**Duty Missions** poskytují pravidelné odměny; MetaBot uvádí za každé dokončení 50 000 vázaných Kina a 1 000 AP. Nepleť je s **Duty Commands** (Maps je nazývá jen Commands), které se kupují za Kina a mají vlastní týdenní limit. Při přerolování vyber odměnu, kterou potřebuješ. Každé další přerolování je dražší (podle Maps od 1 000 do 200 000 Kina), proto si nastav strop.
+**Duty Missions** poskytují pravidelné odměny; MetaBot uvádí za každé dokončení 50 000 vázaných Kina a 1 000 AP. Podle dat klientu (Maps) nabízí každá mise pět náhodných odměn: první padne vždy, další s pravděpodobností 50, 33, 25 a 10 %. Nepleť je s **Duty Commands** (Maps je nazývá jen Commands), které se kupují za Kina a mají vlastní týdenní limit. Při přerolování vyber odměnu, kterou potřebuješ. Každé další přerolování je dražší (podle Maps od 1 000 do 200 000 Kina), proto si nastav strop.
 
-**Nightmare** poskytuje **Phantasmal Fragments** pro svůj obchod a postup přes první dokončení bossů/stupňů. **Shugo Festival** dává **Centuryroot Tokens** pro Festival Shop; tam porovnávej dostupné krystaly, shards a další položky s tím, co postavě chybí. **Dimensional Invasion** má vlastní odměny za klíč; jejich obsah ověř v klientu.
+**Nightmare** poskytuje **Phantasmal Fragments** pro svůj obchod a postup přes první dokončení bossů/stupňů. **Shugo Festival** a **Dimensional Invasion** dávají **Centuryroot Tokens** pro Festival Shop, Enhance Stones a s klíčem navíc Soul Codex a Abyss Points; ve Festival Shopu porovnávej krystaly, shards a další položky s tím, co postavě chybí. Rozvrh obou hodinových událostí a obsah odměn popisuje [Shugo Festival a Dimensional Invasion](../shugo-festival-invasion/).
 
 U **Conquest / Transcendence** je důležitý obsah odměnové truhly (reward cube): výbava, materiály a u Transcendence zejména **Arcana**. Spotřebu energie vysvětluje [Odyle průvodce](../dungeony-odyle/#jak-hospodařit-s-odyle). Tvoje síla, dostupný tier a odměny konkrétního dungeonu rozhodují, kam energii utratit.
 
@@ -73,14 +84,14 @@ Kdy se pokus v Nightmare spotřebuje a jak s ním pracuje **Instant Clear Ticket
 
 | Aktivita | Uváděná základní týdenní zásoba | Praktické použití |
 | --- | --- | --- |
-| **Daily Dungeon** | 14 vstupů, sdílených na serveru. | Název „Daily“ neznamená povinnost dvou vstupů každý jednotlivý den. |
+| **Daily Dungeon** | 14 vstupů, sdílených na serveru (serverový postup odměn potvrzuje NC). | Název „Daily“ neznamená povinnost dvou vstupů každý jednotlivý den. |
 | **Ascension Trial** | 3 vstupy na postavu. | Sólo obsah; zkontroluj odměnu a zvládnutelnou obtížnost. |
 | **Exploration dungeons** | Základní týdenní počítadlo odměn konkrétního dungeonu. | Vyber zbývající garantovanou odměnu podle panelu. |
 | **Abyss** | Omezený týdenní čas; [příděl a obnova](../abyss/#vstup-a-dostupná-oblast). | Commands, sbírka, siege a bossové podle cíle. |
 | **Duty Commands** | Maps: 12 od Command Merchant v hlavním městě a až 20 v Lower Abyss, sdílené na serveru. | Porovnej cenu a odměnu před nákupem. |
 | **Supply Requests / shop limity** | Vlastní limity a reset jednotlivých nabídek. | Porovnej cenu a odměnu před nákupem či odevzdáním. |
 
-Daily Dungeon je zdroj Enhance Stones. Maps jej uvádí jako Daeva Bio-Research Base, počítadlo vstupů Aion2Data a MetaBot nazývají **Unknown Fissure**. Vyšší dosažené skóre mění odměnu; nejvyšší stupeň podle Maps vyžaduje skóre 10 000. Týdenní zásobu proto plánuj na obtížnost, kterou skutečně využiješ, ne jen na co nejrychlejší vstup a výstup.
+Daily Dungeon je zdroj Enhance Stones. Maps jej uvádí jako Daeva Bio-Research Base, počítadlo vstupů Aion2Data a MetaBot nazývají **Unknown Fissure**; NC v odměnách passu Planet's Call uvádí předmět **Unknown Fissure Challenge Ticket**. Vyšší dosažené skóre mění odměnu; nejvyšší stupeň podle Maps vyžaduje skóre 10 000. Týdenní zásobu proto plánuj na obtížnost, kterou skutečně využiješ, ne jen na co nejrychlejší vstup a výstup.
 
 **Ludra není v této rutině plánovanou týdenní farmou:** k datu rešerše zdroje Global stále uvádějí dočasné stažení. Neber další raidy uvedené v kompletní databázi jako otevřené launch aktivity.
 

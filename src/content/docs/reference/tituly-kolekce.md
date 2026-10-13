@@ -35,6 +35,21 @@ sources:
 - title: Mobalytics — Transcendent Bakarma Statue
   url: https://mobalytics.gg/gamebase/guides/aion-2-transcendent-bakarma-statue
   scope: global
+- title: NC — Founder's Packs Cosmetics Soon Available On All Characters (3. října 2026)
+  url: https://aion2.plaync.com/en-us/board/notice/view?articleId=6ac1229d5657e135c2f5ef65
+  scope: global
+- title: NC — Patch Notes 7. října 2026, Founder's Pack na všech postavách a serverech
+  url: https://aion2.plaync.com/en-us/board/update/view?articleId=6ac5e6e8d97eae18cc40e34e
+  scope: global
+- title: NC — Update on Sanctuary Raid, titul pro EU hráče Early Access
+  url: https://aion2.plaync.com/en-us/board/notice/view?articleId=6ac39140d97eae18cc40e294
+  scope: global
+- title: Aion 2 Maps — Seasons and chapters, sezónní žebříčky a tituly
+  url: https://aion2maps.com/guides/seasons-and-chapters/
+  scope: global
+- title: Global Database — titul Empty Closet a achievement Fashionista, 2.0.6.0
+  url: https://aion2.gaming.tools/titles/13050009
+  scope: global
 ---
 
 **Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní podklady, nikoli naše měření v klientu. Ceny a limity porovnej s aktuálním tooltipem nebo panelem hry.
@@ -54,10 +69,13 @@ sources:
 | --- | --- |
 | <span id="ref-guardian-of-altgard-guardian-of-verteron">**Guardian of Altgard / Guardian of Verteron**</span> | Monolith úrovně 20 ve vlastním regionu. Equip: 3 % PvE Damage Boost a Penetration 210; Owned: +4 PvE Attack. |
 | <span id="ref-through-hell-and-back">**Through Hell and Back**</span> | Dokončení Ruins of the Ancient City of Roah. Equip: Cooldown Reduction 3 %, HP 900, Stamina 225; Owned: Block 10. |
-| <span id="ref-empty-closet">**Empty Closet**</span> | Equip podle klientských dat (Aion 2 Maps): Combat Speed 3,5 %, Cooldown Reduction 3,5 %, Natural HP Regen 42. Návod ExitLag uvádí jiné hodnoty (Combat Speed 5 %, Natural HP Regen 40) a podmínku 700 skinů; rozhoduje tooltip. |
+| <span id="ref-empty-closet">**Empty Closet**</span> | Achievement Fashionista VII za 700 skinů. Equip: Combat Speed 3,5 %, Cooldown Reduction 3,5 %, Natural HP Regen 42; Owned: HP 120. Hodnoty shodně uvádějí Aion 2 Maps i Global Database 2.0.6.0 (ověřeno 13. 10.); starší návod ExitLag s Combat Speed 5 % a Natural HP Regen 40 je neaktuální. |
 | <span id="ref-transcendent-bakarma-statue">**Transcendent Bakarma — Statue**</span> | Achievement za 10 dokončení Draupnir Conquest na obtížnost Normal; Exploration se nepočítá. |
 | <span id="ref-asahr-s-mirror-statue">**Asahr's Mirror — Statue**</span> | Dostaneš ji po Ascension questu úrovně 45 (The One Who Witnesses the Nightmare) spolu s dalšími příběhovými sochami. |
 | <span id="ref-zikel-s-apparition-colossus">**Zikel's Apparition — Colossus**</span> | Nightmare obchod po poražení bosse Zikel's Apparition; cenu najdeš v [Obchodech](../obchody/#ref-zikel-s-apparition-nightmare). |
+| <span id="ref-vanguard-of-atreia">**Vanguard of Atreia — titul**</span> | Founder's Pack všech úrovní. Od údržby 7. října ho podle NC používáš na všech postavách a serverech; skiny, pet a křídla z packu jsou podle NC jen vzhled bez statů. |
+| <span id="ref-titul-ludra-early-access">**Titul za Ludru z Early Access**</span> | Podle NC unikátní pamětní titul pro každého, kdo Ludru porazil během Early Access v regionu Europe. |
+| <span id="ref-sezonni-tituly">**Sezónní tituly Season 1**</span> | Odměna za umístění v žebříčcích Nightmare, Transcendence, Ascension Trial, Abyss a obou arén; vyplácí se po konci sezóny. Rozsah odměněných pořadí se v komunitních zdrojích liší. |
 
 ## Skins a synthesis
 

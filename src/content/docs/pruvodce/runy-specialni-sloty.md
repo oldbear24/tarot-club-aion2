@@ -26,6 +26,9 @@ sources:
   - title: Aion 2 Maps — research tabulka následků neúspěchu z KR disclosure, s porovnáním proti datům Global launch klientu
     url: https://aion2maps.com/guides/research/gear/special-enhancement-odds/
     scope: asian
+  - title: Aion 2 Maps — What to do at 45, questy s Clash Rune Chest a cena pásu a amuletu
+    url: https://aion2maps.com/guides/what-to-do-at-45/
+    scope: global
 ---
 
 ## Dvě runy před drahým upgradem
@@ -41,7 +44,7 @@ Podklady jsou komunitní přepisy Global, kontrolované 12. října 2026; datab�
 | **Asmodians / Altgard** | **The Future Within the Past** u Haralda, Abandoned Site. Databáze uvádí předchozí **Canyon's Secret** a doporučený level 30. | **Hugo Mercenaries: Past and Present → Deep Shadow → An Old Promise**. |
 | **Elyos / Verteron** | **Cursed Blue Mineral**. | **Zumion's Call: Part Two**, po předchozí části řetězce. |
 
-Raid Relay uvádí ještě dvě další Clash Rune Chests mezi posledními regionálními úkoly, které se otevírají spolu s hlavním příběhem; poslouží jako náhradní runy a scrolly.
+Raid Relay uvádí ještě dvě další Clash Rune Chests mezi posledními regionálními úkoly, které se otevírají spolu s hlavním příběhem; poslouží jako náhradní runy a scrolly. Aion 2 Maps je podle dat klientu jmenuje: u Elyos **All Work and No Play** (Aullaeu Village) a **Kraka Pond Pests** (Southern Altamia Highland), u Asmodianů **Fallout** (Southern Gribade Highland) a **Another Survivor** (Nornir Assembly). Otevřou se až po odevzdání příběhového úkolu Draupnir / Forgotten Commander v Abyssu.
 
 **Postup Tarot Clubu při chybějícím questu:** najdi název v Journalu, ověř předchozí část a dokonči rozpracovaný řetězec. Nehledej pouze poslední NPC, pokud nemáš splněné předpoklady.
 
@@ -67,5 +70,7 @@ Global Database uvádí **+1 jako zaručený pokus**, ale následek dalších ne
 | **Revelation Amulet** | Monolith odměny za Empyrean Traces ve vlastním regionu. | Vylepši na +10 a pokračuj přes příslušný morph recept. |
 
 Pás i amulet dává hlavní příběh. Jednotlivé kroky +1 až +10 mají podle podkladů zaručený úspěch, ale každý pokus spotřebuje vlastní scroll, Kina a Enhance Stones. Morph mění kvalitu: Raid Relay popisuje cestu Rare → Epic → Unique, vždy z +10 na +0 vyšší kvality, a nejvyšší kvalita je podle Aion 2 Maps Unique s Item Level 65. Není to další obyčejné +1.
+
+Podle Aion 2 Maps stojí první kvalita na +10 a přechod do Epic 10 scrollů a 232 000 Kina (+23 Item Level), Epic na +10 a přechod do Unique dalších 10 scrollů a 1 579 000 Kina (+29 Item Level). Vlastních +10 v kvalitě Unique stojí 5 026 000 Kina, proto je Maps doporučuje nechat na později. Na amulet potřebuješ 80 Empyrean Traces pro úroveň Monolithu 10, 255 pro úroveň 20 a 560 pro úroveň 30; každá úroveň dá jeden scroll.
 
 **Plán Tarot Clubu:** nejdřív porovnej náhled výsledku a cenu s chybějícím GS. Na Unique +0 se znovu rozhodni, zda drahé další úrovně řeší aktuální překážku. Zdroje scrollů podrobněji: [Otevřený svět](../otevreny-svet/).
