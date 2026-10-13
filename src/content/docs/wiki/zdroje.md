@@ -7,6 +7,7 @@ edition: global-launch
 reviewedAt: '2026-10-12'
 referenceCategory: wiki
 evidence: editorial
+sources: []
 ---
 
 ## Oficiální informace Global
@@ -16,6 +17,7 @@ evidence: editorial
 | [AION 2 Global](https://aion2.plaync.com/en-us/) | Novinky a oznámení pro globální službu. |
 | [NC America — Early Access](https://about.ncsoft.com/en/news/article/aion2_update_20260930) | Ověření data Early Access a launch. |
 | [AION 2 na Steamu](https://store.steampowered.com/app/3393110/AION_2/) | Produktová stránka globální PC verze. |
+| [Update on Sanctuary Raid](https://aion2.plaync.com/en-us/board/notice/view?articleId=6ac39140d97eae18cc40e294) | Oznámení NC z 5. října 2026 o dočasném stažení Ludry a jejím návratu. |
 
 ## Datové a výzkumné zdroje
 
@@ -27,9 +29,10 @@ evidence: editorial
 | [Aion 2 Maps — Global differences](https://aion2maps.com/guides/global-differences/) | Rozdíly verzí a odkazy na podklady jednotlivých tvrzení. |
 | [AION2 Hub — stat calculator](https://aion2hub.com/tools/stat-calculator) | Pomůcka k porovnání převodů; před použitím zkontroluj region a sazby. |
 
-## Pravidla použití
+<span id="pravidla-použití" class="legacy-anchor"></span>
+<span id="detailní-podklady-pro-rozvoj-postavy" class="legacy-anchor"></span>
 
-### Detailní podklady pro rozvoj postavy
+## Podklady pro rozvoj postavy
 
 | Zdroj | Co v něm hledat |
 | --- | --- |
@@ -44,7 +47,7 @@ evidence: editorial
 | [Aion 2 Maps — Odyle](https://aion2maps.com/guides/expeditions-and-odyle/) | Odměnové truhly, energie a další omezení vyzvednutí odměn. |
 | [Aion 2 Maps — Nightmare](https://aion2maps.com/guides/nightmare/) | Season 1 postup, pokusy a obchod. |
 
-### Jak podklady přebíráme
+## Jak podklady přebíráme
 
 Komunitní databáze a návody nejsou oficiální potvrzení serverové mechaniky. Podklady pro jednotlivé články jsou uvedené přímo pod jejich obsahem.
 

@@ -28,7 +28,7 @@ sources: []
 ---
 ```
 
-Pod metadata napiš český text. Začni nadpisem `##`; hlavní nadpis stránky vytvoří web z `title`. Novou stránku přidej do tematické skupiny v `src/lib/navigation.mjs` a nastav `referenceCategory`. Název se do menu i úvodního přehledu převezme z metadat článku.
+Pod metadata napiš český text. Začni nadpisem `##`; hlavní nadpis stránky vytvoří web z `title`. Novou stránku přidej do tematické skupiny v `src/lib/navigation.mjs`; u referenčních článků nastav také `referenceCategory`. Název se do menu i úvodního přehledu převezme z metadat článku.
 
 ## Přidání zdroje
 
@@ -44,7 +44,7 @@ Nahraď příklad konkrétní URL oznámení. Pro zdroje jsou povoleny regiony `
 
 ## Podmínky pro herní tvrzení
 
-- Anglický název statu zachovej a význam vysvětli česky.
+- Oficiální herní názvy (staty, schopnosti, bossové) zachovej anglicky a význam vysvětli česky.
 - U čísel přilož podklad pro Global, datum a patch; u měření také podmínky testu.
 - KR/TW podklady označ regionem a neprezentuj jejich hodnoty jako změřené pro Global.
 - U vlastní rady řekni, že jde o doporučení.
@@ -60,7 +60,7 @@ Než utratíš materiály, zkontroluj dostupné odměny a neobsazené sloty.
 :::
 ```
 
-Místo `tip` můžeš použít `note`, `caution` nebo `danger`. Vždy napiš jasný český titul. Krátkou frázi výjimečně zvýrazni pomocí `<mark class="focus">důležitý krok</mark>`. Neoznačuj celé odstavce ani každý herní název; běžné tučné písmo zůstává hlavní pomůckou pro skenování textu.
+Místo `tip` můžeš použít `note`, `caution` nebo `danger`. Vždy napiš jasný český nadpis boxu. Krátkou frázi výjimečně zvýrazni pomocí `<mark class="focus">důležitý krok</mark>`. Neoznačuj celé odstavce ani každý herní název; běžné tučné písmo zůstává hlavní pomůckou pro skenování textu.
 
 ## Odkazy a sestavení
 

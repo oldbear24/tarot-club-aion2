@@ -1,6 +1,6 @@
 ---
 title: Gladiator — příručka třídy
-description: Poškození zblízka a tankování podle sestavy. Schopnosti, Stigmata, perky a kontrola výkonu.
+description: Poškození zblízka a tankování podle sestavy. Schopnosti, Stigmata, milníky Specialty a kontrola před bojem.
 sidebar:
   order: 1
 edition: global-launch
@@ -18,6 +18,9 @@ aliases:
 sources:
 - title: Aion 2 Maps — gladiator
   url: https://aion2maps.com/guides/gladiator/
+  scope: global
+- title: Metabot — Gladiator (globální klient)
+  url: https://metabot.gg/en/aion-2/classes/gladiator
   scope: global
 ---
 
@@ -45,11 +48,13 @@ Overhead Slam má podmíněné okno aktivace; Rage Burst jej otevírá. Keen Str
 
 **Příklad PvE sestavy ze zdroje:** Lunge Stance, Zikel's Blessing, Rage Burst, Focused Block.
 
-**Pasivy k porovnání:** Experienced Counterstrike, Attack Preparation, Murderous Burst, Impact Hit.
+**Pasivy podle priority zdroje:** Experienced Counterstrike, Attack Preparation, Murderous Burst, Impact Hit, Identify Weakness.
 
-Sestava vychází z komunitního průvodce pro Global launch, zkontrolovaného k datu rešerše. Konkrétní číslo patche u sestavy není doložené; pro stagger, sólo hru nebo PvP můžeš potřebovat jiné schopnosti.
+**Typ podkladu:** zdroj sestavu neoznačuje jako spornou. Číslo patche sestava neuvádí; pro stagger nebo sólo hru můžeš potřebovat jiné schopnosti.
 
-## Specialty a změna situace
+<span id="specialty-a-změna-situace" class="legacy-anchor"></span>
+
+## Milníky Specialty
 
 | Schopnost / situace | Co zkontrolovat |
 | --- | --- |
@@ -62,6 +67,6 @@ Sestava vychází z komunitního průvodce pro Global launch, zkontrolovaného k
 2. Při tankování drž přední útoky mimo skupinu a rezervuj obranu podle animace.
 3. Pro stagger check zvaž Wrath Wave podle potřeb skupiny.
 
-Pro PvP si připrav samostatnou sestavu: zkontroluj reakce na CC, dosah, obranu a spotřebu zdrojů. Sestava pro bosse nemusí vyhovovat boji s hráči. Cooldowny a hodnoty vždy porovnej s vlastními tooltipy; závisejí na úrovních, percích a patchi.
+Cooldowny a hodnoty porovnej s vlastními tooltipy; pro PvP si připrav samostatnou sestavu (viz [přehled tříd](../prehled/)).
 
 [Milníky schopností](../../pruvodce/schopnosti-stigma/), [Daevanion](../../pruvodce/daevanion/), [Arcana](../../pruvodce/arcana/), [Staty](../../reference/staty/) a [Stagger](../../reference/stagger/) vysvětlují související systémy.

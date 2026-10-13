@@ -1,6 +1,6 @@
 # Přispívání
 
-Články ukládej do `src/content/docs/` jako `.md` v UTF-8. Herní názvy zachovej anglicky, vysvětlení napiš česky. Používej nadpisy od `##` a relativní odkazy s koncovým lomítkem.
+Články ukládej do `src/content/docs/` jako `.md` v UTF-8. Oficiální herní názvy (staty, schopnosti, bossové, předměty) zachovej anglicky, popisné výrazy a vysvětlení napiš česky. Používej nadpisy od `##` a relativní odkazy s koncovým lomítkem.
 
 ## Povinná metadata
 
@@ -18,7 +18,7 @@ sources:
 ---
 ```
 
-Použij skutečné datum a konkrétní zdroj. `reviewedAt` je datum kontroly zdrojů, nikoli tvrzení o měření v klientu. Přípustné `evidence`: `official`, `community`, `editorial`, `mixed`. Přípustné `scope`: `global`, `asian`, `technical`, `unspecified`.
+Použij skutečné datum a konkrétní zdroj. Redakční stránka bez externích herních tvrzení může mít `sources: []`. `reviewedAt` je datum kontroly zdrojů, nikoli tvrzení o měření v klientu. Přípustné `evidence`: `official`, `community`, `editorial`, `mixed`. Přípustné `scope`: `global`, `asian`, `technical`, `unspecified`.
 
 ## Ověřování obsahu
 
@@ -49,7 +49,7 @@ Než utratíš materiály, zkontroluj dostupné odměny a neobsazené sloty.
 :::
 ```
 
-Krátkou klíčovou frázi lze výjimečně označit `<mark class="focus">důležitý krok</mark>`. Použij ji nejvýše jednou či dvakrát v článku a neopakuj stejné sdělení i v boxu. Běžné `**tučné názvy**` zůstávají neutrální. Box musí mít srozumitelný český titul, aby jeho význam nezávisel jen na barvě.
+Krátkou klíčovou frázi lze výjimečně označit `<mark class="focus">důležitý krok</mark>`. Použij ji nejvýše jednou či dvakrát v článku a neopakuj stejné sdělení i v boxu. Běžné `**tučné názvy**` zůstávají neutrální. Box musí mít srozumitelný český nadpis, aby jeho význam nezávisel jen na barvě.
 
 ## Pull request
 
@@ -66,7 +66,7 @@ Hesla pro vyhledávací rozcestník zapisuj do tabulky. První buňka musí mít
 
 ## Čeština a vlastnictví informací
 
-Hráče oslovuj v jednotném čísle a tykej mu. Oficiální názvy ponech anglicky; běžné činnosti vysvětli česky. Rozlišuj vstup, pokus, dokončení a vyzvednutí odměny, postavový a serverový limit i denní a týdenní reset. Datum jazykové úpravy nepoužívej jako nové datum věcné rešerše.
+Hráče oslovuj v jednotném čísle a tykej mu. Oficiální názvy ponech anglicky; popisné názvy mechanik a běžné činnosti piš česky. Rozlišuj vstup, pokus, dokončení a vyzvednutí odměny, postavový a serverový limit i denní a týdenní reset. Datum jazykové úpravy nepoužívej jako nové datum věcné rešerše.
 
 Každá mechanika má jednu hlavní stránku. Přehled nebo průvodce prioritami ji krátce vysvětlí a odkáže na podrobnosti; nekopíruj ceny a patchově citlivé limity. Mapa vlastníků je v `docs/revize-v2.md`.
 

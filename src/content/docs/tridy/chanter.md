@@ -1,6 +1,6 @@
 ---
 title: Chanter — příručka třídy
-description: Podpora zblízka, mantry, doplňkové léčení a poškození. Schopnosti, Stigmata, perky a kontrola výkonu.
+description: Podpora zblízka, mantry, doplňkové léčení a poškození. Schopnosti, Stigmata, milníky Specialty a kontrola před bojem.
 sidebar:
   order: 8
 edition: global-launch
@@ -18,6 +18,9 @@ aliases:
 sources:
 - title: Aion 2 Maps — chanter
   url: https://aion2maps.com/guides/chanter/
+  scope: global
+- title: Metabot — Chanter (globální klient)
+  url: https://metabot.gg/en/aion-2/classes/chanter
   scope: global
 ---
 
@@ -45,11 +48,13 @@ Dark Crush otevírají Spinning Strike, Impactful Crush a Marchutan's Wrath. Ře
 
 **Příklad PvE sestavy ze zdroje:** Undefeated Mantra, Sprint Mantra, Power of the Storm; Marchutan's Wrath nebo Obliterate.
 
-**Pasivy k porovnání:** Wind's Promise, Attack Preparation, Impact Hit, Inspiring Spell.
+**Pasivy podle priority zdroje:** Wind's Promise, Attack Preparation, Impact Hit, Inspiring Spell, Blessing of Life.
 
-Sestava vychází z komunitního průvodce pro Global launch, zkontrolovaného k datu rešerše. Konkrétní číslo patche u sestavy není doložené; pro stagger, sólo hru nebo PvP můžeš potřebovat jiné schopnosti.
+**Typ podkladu:** zdroje se rozcházejí (u Guardian Blessing po úrovni 45). Číslo patche sestava neuvádí; pro stagger nebo sólo hru můžeš potřebovat jiné schopnosti.
 
-## Specialty a změna situace
+<span id="specialty-a-změna-situace" class="legacy-anchor"></span>
+
+## Milníky Specialty
 
 | Schopnost / situace | Co zkontrolovat |
 | --- | --- |
@@ -58,10 +63,10 @@ Sestava vychází z komunitního průvodce pro Global launch, zkontrolovaného k
 
 ## Kontrola Tarot Clubu před bojem
 
-1. Po smrti zkontroluj opět aktivní mantry a jejich dosah.
+1. Po smrti mantry znovu zapni a zkontroluj jejich dosah.
 2. Při přesunu skupiny sleduj příjemce buffů, ne pouze vlastní panel.
-3. Obliterate plánuj podle stagger potřeby; zvolené Stigma musí odpovídat roli.
+3. Obliterate plánuj podle stagger checku; zvolené Stigma musí odpovídat roli.
 
-Pro PvP si připrav samostatnou sestavu: zkontroluj reakce na CC, dosah, obranu a spotřebu zdrojů. Sestava pro bosse nemusí vyhovovat boji s hráči. Cooldowny a hodnoty vždy porovnej s vlastními tooltipy; závisejí na úrovních, percích a patchi.
+Cooldowny a hodnoty porovnej s vlastními tooltipy; pro PvP si připrav samostatnou sestavu (viz [přehled tříd](../prehled/)).
 
 [Milníky schopností](../../pruvodce/schopnosti-stigma/), [Daevanion](../../pruvodce/daevanion/), [Arcana](../../pruvodce/arcana/), [Staty](../../reference/staty/) a [Stagger](../../reference/stagger/) vysvětlují související systémy.

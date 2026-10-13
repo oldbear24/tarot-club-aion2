@@ -1,6 +1,6 @@
 ---
 title: Fire Temple — bossové a mechaniky
-description: 'Přístup, odměny, Kromede''s Desire a vedlejší bossové: signály, reakce a časté chyby.'
+description: 'Přístup, výbavový cíl, Kromede''s Desire a vedlejší bossové: signály, reakce a časté chyby.'
 sidebar:
   order: 3
 edition: global-launch
@@ -25,18 +25,18 @@ sources:
 
 ## Přístup a rozsah mechanik
 
-**Conquest GS:** 2 100. **Výbavový cíl:** Zbraň a příslušenství. **Závěrečný boss:** Kromede's Desire.
+**Conquest GS:** 2 100 ([milníky GS](../../pruvodce/gs-progrese/#milníky-global)). **Výbavový cíl:** Zbraň a příslušenství. **Závěrečný boss:** Kromede's Desire.
 
-Podklady k mechanikám kombinují starší asijské návody s porovnáním globálního klientu. Každou variantu jsme sami na serveru neověřili. HP prahy a pořadí reakcí proto porovnej s právě sesílanou schopností; Exploration může být mírnější.
+Podklady k mechanikám kombinují starší asijské návody s porovnáním globálního klientu. Každou variantu jsme sami na serveru neověřili. HP prahy a pořadí reakcí proto porovnej s právě sesílanou schopností. Oproti asijské verzi na Global boss střílí méně malých sky arrows.
+
+**Enrage (Conquest):** přibližně po 5 minutách; Exploration má vzorce výrazně zmírněné.
 
 ## Tahák před prvním pokusem
 
-Výběr ze stávajících mechanik a příčin neúspěchu; platí stejné omezení podkladů jako pro detail níže.
-
 | Signál / mechanika | Co udělat | Riziko při chybě |
 | --- | --- | --- |
-| Luk míří k zemi; osobní červené linie | Opusť svou linii a při boji zblízka ustup. | Překryv linií je uvedený mezi příčinami neúspěchu. |
-| Pohybující se ohnivé stěny | Projdi mezerou a šetři staminu. | Přeběhnutí přes stěnu je uvedené mezi příčinami neúspěchu. |
+| Luk míří k zemi; osobní červené linie | Opusť svou linii a při boji zblízka ustup. | Série zásahů může zabít několik hráčů zblízka najednou; po druhých stěnách střílí dvakrát a oba zásahy nepřežiješ. |
+| Pohybující se ohnivé stěny | Projdi mezerou a šetři staminu. | Stěna zanechá popálení (odstraní ho léčivý lektvar); bez staminy pak neuhneš další mechanice. |
 
 <span id="final-boss--rychlé-reakce" class="legacy-anchor"></span>
 
@@ -44,9 +44,9 @@ Výběr ze stávajících mechanik a příčin neúspěchu; platí stejné omeze
 
 | Mechanika | Signál | Reakce |
 | --- | --- | --- |
-| <span id="ref-downward-bow-shot">**Downward bow shot**</span> | Luk míří k zemi a osobní červené linie. | Při boji zblízka ustup; každý opustí svou linii. |
-| <span id="ref-flame-walls">**Flame walls**</span> | Pohyblivé řady s mezerou. | Procházej mezerami a šetři staminu. |
-| <span id="ref-clones">**Clones**</span> | Klon u hráče s pásem a vějířem. | Rozestup, uhni pásu a vyřeš svůj klon. |
+| <span id="ref-downward-bow-shot">**Výstřel z luku k zemi**</span> | Luk míří k zemi a osobní červené linie. | Při boji zblízka ustup; každý opustí svou linii. |
+| <span id="ref-flame-walls">**Ohnivé stěny**</span> | Pohyblivé řady s mezerou. | Procházej mezerami a šetři staminu. |
+| <span id="ref-clones">**Klony**</span> | Klon u hráče s pásem a vějířem. | Rozestup, uhni pásu a vyřeš svůj klon. |
 | <span id="ref-sky-arrow-leap">**Sky arrow / leap**</span> | Osobní kruh a navazující skok. | Opusť kruh, uvolni případný CC a sleduj navazující dopad. |
 
 <span id="mid-bossové" class="legacy-anchor"></span>
@@ -60,14 +60,14 @@ Výběr ze stávajících mechanik a příčin neúspěchu; platí stejné omeze
 
 ## Příčiny neúspěchu
 
-:::caution[Pozor: časté příčiny neúspěchu]
-Hráč zblízka zůstane v překryvu linií, hráči přebíhají přes wall blok a osobní plochy zakryjí cestu.
+:::caution[Pozor: enrage a běžné útoky]
+Conquest nemá skriptovaný wipe; zabíjejí běžné útoky a enrage zhruba po 5 minutách, kdy se boss pohybuje dvakrát rychleji a udeří až třikrát silněji. Časté chyby: hráč zblízka zůstane v překryvu linií, hráči přebíhají přes ohnivou stěnu a osobní plochy zakryjí cestu.
 :::
 
 ## Příprava Tarot Clubu
 
-Výběr pozice připrav před oknem pro nabíjení; domluvte přesuny a obnovu zdrojů.
+Před nabíjecím oknem si zvol pozici; domluv přesuny a obnovu zdrojů.
 
-Před dalším pokusem vyber se skupinou jednu příčinu neúspěchu a jednu změnu sestavy. Cíl průchodu si domluv předem: přeskočení vedlejšího bosse může změnit odměnu. Po dokončení zkontroluj vyzvednutí odměny a Guaranteed Reward.
+Před dalším pokusem se skupinou vyber jednu příčinu neúspěchu a jednu změnu sestavy. Cíl průchodu si domluv předem: přeskočení vedlejšího bosse může změnit odměnu. Po dokončení zkontroluj vyzvednutí odměny a Guaranteed Reward.
 
 [Vstupy a odměny](../../pruvodce/dungeony-odyle/), [Aktivity](../../reference/aktivity/) a [Stagger](../../reference/stagger/) doplňují tento přehled.

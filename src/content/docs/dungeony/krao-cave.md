@@ -1,6 +1,6 @@
 ---
 title: Krao Cave — bossové a mechaniky
-description: 'Přístup, odměny, Ultimate Berk a vedlejší bossové: signály, reakce a časté chyby.'
+description: 'Přístup, výbavový cíl, Ultimate Berk a vedlejší bossové: signály, reakce a časté chyby.'
 sidebar:
   order: 1
 edition: global-launch
@@ -25,18 +25,18 @@ sources:
 
 ## Přístup a rozsah mechanik
 
-**Conquest GS:** 700. **Výbavový cíl:** Zbraň a příslušenství. **Závěrečný boss:** Ultimate Berk.
+**Conquest GS:** 700 ([milníky GS](../../pruvodce/gs-progrese/#milníky-global)). **Výbavový cíl:** Zbraň a příslušenství. **Závěrečný boss:** Ultimate Berk.
 
-Podklady k mechanikám kombinují starší asijské návody s porovnáním globálního klientu. Každou variantu jsme sami na serveru neověřili. HP prahy a pořadí reakcí proto porovnej s právě sesílanou schopností; Exploration může být mírnější.
+Podklady k mechanikám kombinují starší asijské návody s porovnáním globálního klientu. Každou variantu jsme sami na serveru neověřili. HP prahy a pořadí reakcí proto porovnej s právě sesílanou schopností.
+
+**Enrage (Conquest):** přibližně po 5 minutách; Exploration enrage nemá a vzorce má výrazně zmírněné.
 
 ## Tahák před prvním pokusem
 
-Výběr ze stávajících mechanik a příčin neúspěchu; platí stejné omezení podkladů jako pro detail níže.
-
 | Signál / mechanika | Co udělat | Riziko při chybě |
 | --- | --- | --- |
-| Kameny při Wave of Fury | Včas se postav za kámen. | Pozdní skrytí je uvedené mezi příčinami neúspěchu. |
-| Otevřený stagger při Extinction for Eternity | Použij připravenou stagger schopnost před koncem sesílání. | Již spotřebovaná Stigmata mohou chybět pro stagger. |
+| Wave of Fury (~75 % a ~25 %) | Než skončí pětisekundové sesílání, schovej se za kámen. | Mimo kryt okamžitá smrt (5× max HP); Barrier Spell, Tenaciousness ani Salvation nechrání (NC). |
+| Extinction for Eternity (50 %) | Během 9 s se skupinou zlom stagger. | Nezlomený stagger = wipe. |
 
 <span id="final-boss--rychlé-reakce" class="legacy-anchor"></span>
 
@@ -44,10 +44,10 @@ Výběr ze stávajících mechanik a příčin neúspěchu; platí stejné omeze
 
 | Mechanika | Signál | Reakce |
 | --- | --- | --- |
-| <span id="ref-wave-of-fury">**Wave of Fury**</span> | Kameny a cast v okolí 75 % a později nízkého HP. | Postav se za kámen; sleduj ochranu. |
+| <span id="ref-wave-of-fury">**Wave of Fury**</span> | Kameny a cast kolem 75 % a znovu kolem 25 % HP. | Postav se za kámen; sleduj ochranu. |
 | <span id="ref-extinction-for-eternity">**Extinction for Eternity**</span> | Otevřený stagger ukazatel kolem 50 %. | Celá skupina použije připravený stagger před koncem castu. |
-| <span id="ref-whirlwind">**Whirlwind**</span> | Červený prach a pronásledující rotace. | Cíl vede rotaci od party; ostatní opustí trasu. |
-| <span id="ref-slam-swings">**Slam / swings**</span> | Přední pás a následné oblouky. | Při boji zblízka hledej bezpečné místo za bossem; tank drží směr. |
+| <span id="ref-whirlwind">**Vír**</span> | Červený prach a pronásledující rotace. | Hráč, kterého vír pronásleduje, ho vede od skupiny; ostatní opustí jeho trasu. |
+| <span id="ref-slam-swings">**Úder a máchnutí**</span> | Přední pás a následné oblouky. | Při boji zblízka hledej bezpečné místo za bossem; tank drží směr. |
 
 <span id="mid-bossové" class="legacy-anchor"></span>
 
@@ -60,14 +60,14 @@ Výběr ze stávajících mechanik a příčin neúspěchu; platí stejné omeze
 
 ## Příčiny neúspěchu
 
-:::caution[Pozor: časté příčiny neúspěchu]
-Pozdní ochrana za kamenem, utracené stagger Stigma a kite přes healera.
+:::danger[Riziko: okamžitá smrt a wipe]
+Kdo se při Wave of Fury nestihne schovat za kámen, okamžitě zemře; nezlomený stagger při Extinction for Eternity znamená wipe. Další častou chybou jsou předem utracená Stigmata pro stagger a vedení bosse přes healera.
 :::
 
 ## Příprava Tarot Clubu
 
-Před pullem vyber se skupinou signál pro stagger a trasu cíle whirlwindu.
+Před pullem se skupinou vyber signál pro stagger a trasu hráče, kterého vír pronásleduje.
 
-Před dalším pokusem vyber se skupinou jednu příčinu neúspěchu a jednu změnu sestavy. Cíl průchodu si domluv předem: přeskočení vedlejšího bosse může změnit odměnu. Po dokončení zkontroluj vyzvednutí odměny a Guaranteed Reward.
+Před dalším pokusem se skupinou vyber jednu příčinu neúspěchu a jednu změnu sestavy. Cíl průchodu si domluv předem: přeskočení vedlejšího bosse může změnit odměnu. Po dokončení zkontroluj vyzvednutí odměny a Guaranteed Reward.
 
 [Vstupy a odměny](../../pruvodce/dungeony-odyle/), [Aktivity](../../reference/aktivity/) a [Stagger](../../reference/stagger/) doplňují tento přehled.

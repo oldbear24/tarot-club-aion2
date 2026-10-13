@@ -1,6 +1,6 @@
 ---
 title: Sorcerer — příručka třídy
-description: Kouzelník na dálku s nabíjeným útokem pro krátké okno poškození. Schopnosti, Stigmata, perky a kontrola výkonu.
+description: Kouzelník na dálku s nabíjeným útokem pro krátké okno poškození. Schopnosti, Stigmata, milníky Specialty a kontrola před bojem.
 sidebar:
   order: 6
 edition: global-launch
@@ -18,6 +18,9 @@ aliases:
 sources:
 - title: Aion 2 Maps — sorcerer
   url: https://aion2maps.com/guides/sorcerer/
+  scope: global
+- title: Metabot — Sorcerer (globální klient)
+  url: https://metabot.gg/en/aion-2/classes/sorcerer
   scope: global
 ---
 
@@ -45,11 +48,13 @@ Hellfire je hlavní nabíjený útok. Firestorm s příslušným perkem na úrov
 
 **Příklad PvE sestavy ze zdroje:** Element Enhancement, Fire Wall, Delayed Explosion, Cold Storm; pro stagger Divine Burst.
 
-**Pasivy k porovnání:** Robe of Flame, Fire Mark, Robe of Earth, Grace of Enhancement.
+**Pasivy podle priority zdroje:** Robe of Flame, Fire Mark, Robe of Earth, Grace of Enhancement, Vitality Evaporation.
 
-Sestava vychází z komunitního průvodce pro Global launch, zkontrolovaného k datu rešerše. Konkrétní číslo patche u sestavy není doložené; pro stagger, sólo hru nebo PvP můžeš potřebovat jiné schopnosti.
+**Typ podkladu:** zdroje se rozcházejí. Číslo patche sestava neuvádí; pro stagger nebo sólo hru můžeš potřebovat jiné schopnosti.
 
-## Specialty a změna situace
+<span id="specialty-a-změna-situace" class="legacy-anchor"></span>
+
+## Milníky Specialty
 
 | Schopnost / situace | Co zkontrolovat |
 | --- | --- |
@@ -62,6 +67,6 @@ Sestava vychází z komunitního průvodce pro Global launch, zkontrolovaného k
 2. Zóny používej podle skutečného pohybu bosse.
 3. Při nízkém výkonu nejdřív spočítej použití Hellfire a Firestorm, potom měň výbavu.
 
-Pro PvP si připrav samostatnou sestavu: zkontroluj reakce na CC, dosah, obranu a spotřebu zdrojů. Sestava pro bosse nemusí vyhovovat boji s hráči. Cooldowny a hodnoty vždy porovnej s vlastními tooltipy; závisejí na úrovních, percích a patchi.
+Cooldowny a hodnoty porovnej s vlastními tooltipy; pro PvP si připrav samostatnou sestavu (viz [přehled tříd](../prehled/)).
 
 [Milníky schopností](../../pruvodce/schopnosti-stigma/), [Daevanion](../../pruvodce/daevanion/), [Arcana](../../pruvodce/arcana/), [Staty](../../reference/staty/) a [Stagger](../../reference/stagger/) vysvětlují související systémy.

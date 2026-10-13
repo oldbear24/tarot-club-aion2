@@ -1,6 +1,6 @@
 ---
 title: Ranger — příručka třídy
-description: Poškození na dálku s nabíjeným hlavním útokem. Schopnosti, Stigmata, perky a kontrola výkonu.
+description: Poškození na dálku s nabíjeným hlavním útokem. Schopnosti, Stigmata, milníky Specialty a kontrola před bojem.
 sidebar:
   order: 4
 edition: global-launch
@@ -19,6 +19,9 @@ sources:
 - title: Aion 2 Maps — ranger
   url: https://aion2maps.com/guides/ranger/
   scope: global
+- title: Metabot — Ranger (globální klient)
+  url: https://metabot.gg/en/aion-2/classes/ranger
+  scope: global
 ---
 
 **Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní podklady, nikoli naše měření v klientu.
@@ -36,20 +39,22 @@ Deadshot se nabíjí; řetězec Snipe s příslušným perkem zkracuje jeho cool
 | Schopnost | Použití podle podkladů pro Global launch |
 | --- | --- |
 | <span id="ref-deadshot">**Deadshot**</span> | Hlavní nabíjený zásah. |
-| <span id="ref-snipe">**Snipe**</span> | Základní řetězec útoků navazující na Deadshot. |
+| <span id="ref-snipe">**Snipe**</span> | Základní řetězec; s perkem zkracuje cooldown Deadshot o 1 s za zásah. |
 | <span id="ref-marking-shot">**Marking Shot**</span> | Vlastní Precision bonus. |
-| <span id="ref-drill-dart">**Drill Dart**</span> | Útok s poškozením a debuffem podle zvoleného nastavení. |
+| <span id="ref-drill-dart">**Drill Dart**</span> | Útočná schopnost; perk dává v sólu absorpci HP, ve skupině +20 % Skill Speed. |
 | <span id="ref-gale-arrow-tempest-shot">**Gale Arrow / Tempest Shot**</span> | Další útočné schopnosti podle buildu. |
 
 ## Stigma a pasivy
 
 **Příklad PvE sestavy ze zdroje:** Vaizel's Authority, Bow of Blessing, Supporting Fire; Griffon Arrow nebo Explosive Arrow.
 
-**Pasivy k porovnání:** Focused Eye, Hunter's Resolve, Hunter's Soul.
+**Pasivy podle priority zdroje:** Focused Eye, Hunter's Resolve, Hunter's Soul.
 
-Sestava vychází z komunitního průvodce pro Global launch, zkontrolovaného k datu rešerše. Konkrétní číslo patche u sestavy není doložené; pro stagger, sólo hru nebo PvP můžeš potřebovat jiné schopnosti.
+**Typ podkladu:** první tři Stigmata podle Global parsů. Číslo patche sestava neuvádí; pro stagger nebo sólo hru můžeš potřebovat jiné schopnosti.
 
-## Specialty a změna situace
+<span id="specialty-a-změna-situace" class="legacy-anchor"></span>
+
+## Milníky Specialty
 
 | Schopnost / situace | Co zkontrolovat |
 | --- | --- |
@@ -62,6 +67,6 @@ Sestava vychází z komunitního průvodce pro Global launch, zkontrolovaného k
 2. Pro mechaniku stacku přijď ke skupině, i když máš dostřel.
 3. Pro silný stagger podle potřeby zvaž Arrow Storm.
 
-Pro PvP si připrav samostatnou sestavu: zkontroluj reakce na CC, dosah, obranu a spotřebu zdrojů. Sestava pro bosse nemusí vyhovovat boji s hráči. Cooldowny a hodnoty vždy porovnej s vlastními tooltipy; závisejí na úrovních, percích a patchi.
+Cooldowny a hodnoty porovnej s vlastními tooltipy; pro PvP si připrav samostatnou sestavu (viz [přehled tříd](../prehled/)).
 
 [Milníky schopností](../../pruvodce/schopnosti-stigma/), [Daevanion](../../pruvodce/daevanion/), [Arcana](../../pruvodce/arcana/), [Staty](../../reference/staty/) a [Stagger](../../reference/stagger/) vysvětlují související systémy.

@@ -23,16 +23,19 @@ sources:
 - title: Aion 2 Maps — classes
   url: https://aion2maps.com/guides/classes/
   scope: global
+- title: Metabot — třídy (globální klient)
+  url: https://metabot.gg/en/aion-2/classes
+  scope: global
 ---
 
 ## Vyber konkrétní příručku
 
-Stránky tříd vysvětlují základní návaznosti a komunitní PvE sestavy pro Global launch. Přesné hodnoty patří konkrétní skill úrovni a patchi; obecná role není DPS žebříček.
+Stránky tříd vysvětlují základní návaznosti a komunitní PvE sestavy pro Global launch. Přesné hodnoty závisejí na úrovni schopnosti a patchi; obecná role není žebříček poškození.
 
 | Třída | Zbraň / role | Příručka |
 | --- | --- | --- |
-| <span id="ref-gladiator-2">**Gladiator**</span> | Greatsword — Poškození zblízka a tankování podle sestavy. | [Gladiator](../gladiator/) |
-| <span id="ref-templar-2">**Templar**</span> | Longsword / guard — Tank se schopností Taunt a podporou skupiny. | [Templar](../templar/) |
+| <span id="ref-gladiator-2">**Gladiator**</span> | Greatsword — Poškození zblízka, tankování bez Taunt a buff skupiny. | [Gladiator](../gladiator/) |
+| <span id="ref-templar-2">**Templar**</span> | Longsword — Tank se schopností Taunt a podporou skupiny. | [Templar](../templar/) |
 | <span id="ref-assassin-2">**Assassin**</span> | Dagger — Poškození zblízka s důrazem na pozici za cílem. | [Assassin](../assassin/) |
 | <span id="ref-ranger-2">**Ranger**</span> | Bow — Poškození na dálku s nabíjeným hlavním útokem. | [Ranger](../ranger/) |
 | <span id="ref-spiritmaster-2">**Spiritmaster**</span> | Orb — Poškození na dálku pomocí spiritů a návaznosti elementů. | [Spiritmaster](../spiritmaster/) |
@@ -42,6 +45,8 @@ Stránky tříd vysvětlují základní návaznosti a komunitní PvE sestavy pro
 
 ## Jak příručku použít
 
-**Doporučení Tarot Clubu:** vyber roli, ověř klíčové aktivátory a milníky schopností, potom plánuj staty a karty. Pokud se rozhoduješ mezi Sorcererem a Spiritmasterem, porovnej okna pro nabíjení Hellfire s prací se spirits a elementy; tabulka neslibuje univerzálně vyšší poškození jedné třídy.
+**Doporučení Tarot Clubu:** vyber roli, ověř klíčové aktivátory a milníky schopností, potom plánuj staty a karty. Pokud se rozhoduješ mezi Sorcererem a Spiritmasterem, porovnej okna pro nabíjení Hellfire s prací se spirity a elementy; tabulka neslibuje univerzálně vyšší poškození jedné třídy.
 
 Při sestavování party ujasni tankování, léčení, buffy a stagger. Konkrétní schopnost může potřebovat příjemce v dosahu nebo aktivní debuff; samotné jméno třídy nezaručuje její využití.
+
+Pro PvP si připrav samostatnou sestavu: zkontroluj reakce na CC, dosah, obranu a spotřebu zdrojů. Sestava pro bosse nemusí vyhovovat boji s hráči. Cooldowny a hodnoty vždy porovnej s vlastními tooltipy; závisejí na úrovních, percích a patchi.

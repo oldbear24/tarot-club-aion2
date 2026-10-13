@@ -44,7 +44,9 @@ Stejný název mechaniky ještě nezaručuje stejnou hodnotu.
 **Datum rešerše potvrzuje kontrolu zdrojů, nikoli vlastní hraní nebo test v klientu.** Také označení zdroje „Global“ znamená zaměření zdroje, nikoli automatické potvrzení každého tvrzení.
 :::
 
-## První verze a její omezení
+<span id="první-verze-a-její-omezení" class="legacy-anchor"></span>
+
+## Známá omezení
 
 Slovník statů vychází z komunitních přepisů herních dat. Nemáme vlastní screenshoty všech tooltipů Global ani úplná měření serverových vzorců. Tyto články jsou označené jako komunitní podklady; konkrétní nejistoty jsou v [přehledu limitů](../../staty/limity/).
 
