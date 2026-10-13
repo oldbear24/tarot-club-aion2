@@ -3,11 +3,11 @@ import { NO_EVIDENCE, parseAnswer } from './protocol.ts';
 import { renderAnswer } from './render.ts';
 import type { WikiIndex } from './types.ts';
 import type { LocalModel } from './runtime.ts';
-import { modelFor } from './config.ts';
+import { DOWNLOAD_SIZE, modelFor } from './config.ts';
 
 // Bump when the download changes substantially, so people are asked again.
 const CONSENT_KEY = 'tarot-ai-download-consent';
-const CONSENT_VALUE = 'qwen3-1.7b';
+const CONSENT_VALUE = 'gemma-4-e2b';
 
 function hasConsent(): boolean {
   try { return localStorage.getItem(CONSENT_KEY) === CONSENT_VALUE; } catch { return false; }
@@ -208,7 +208,7 @@ export function initTarotChat(): void {
       if (!sources.length) { say(body, NO_EVIDENCE, question); return; }
       if (!ready || !model) {
         if (!hasConsent()) {
-          setPending('Čekám na souhlas se stažením modelu (cca 1 GB)…');
+          setPending(`Čekám na souhlas se stažením modelu (cca ${DOWNLOAD_SIZE})…`);
           const accepted = await askConsent();
           if (current !== generation) return;
           if (!accepted) { say(body, 'Model se nestáhl, proto AI neodpověděla. Při další otázce se zeptám znovu.', question); return; }

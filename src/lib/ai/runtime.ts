@@ -53,9 +53,10 @@ export class LocalModel {
   generate(question: string, sources: Passage[], previousQuestion: string, onText: (text: string) => void): Promise<string> {
     const messages = [{ role: 'system' as const, content: SYSTEM_PROMPT },
       { role: 'user' as const, content: buildPrompt(question, sources, previousQuestion) }];
-    // Qwen3 non-thinking settings, slightly cooler so the answer stays close to the passages.
+    // Cool sampling keeps the answer close to the passages. No enable_thinking flag: WebLLM would prefill
+    // a Qwen-style <think> block, and Gemma thinks only when the system prompt asks for it.
     return this.guarded(() => this.stream({ messages, temperature: 0.3, top_p: 0.8, presence_penalty: 0.5,
-      max_tokens: ANSWER_TOKENS, extra_body: { enable_thinking: false } }, onText), 180_000);
+      max_tokens: ANSWER_TOKENS }, onText), 180_000);
   }
 
   dispose(message = 'AI byla vypnuta.'): void {

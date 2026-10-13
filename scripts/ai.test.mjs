@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { prebuiltAppConfig } from '@mlc-ai/web-llm';
 import { extractPassages } from './ai-index.mjs';
 import { retrievePassages, retrievalQuery, retrieveForQuestion, validateIndex, CONTEXT_CHAR_LIMIT } from '../src/lib/ai/retrieval.ts';
-import { parseAnswer, buildPrompt, stripThinking } from '../src/lib/ai/protocol.ts';
+import { parseAnswer, buildPrompt } from '../src/lib/ai/protocol.ts';
 import { safeExternalUrl, safeWikiUrl } from '../src/lib/ai/urls.ts';
 import { MODEL_IDS, modelFor } from '../src/lib/ai/config.ts';
 
@@ -61,11 +61,6 @@ test('citations map only offered numbers, renumber by first use and never come f
   assert.deepEqual(parseAnswer('Nevim.', sources, true).parts, []);
   assert.deepEqual(parseAnswer('', sources, true).parts, []);
   assert.deepEqual(parseAnswer('**Precision** je stat [1].', sources, true).parts, ['Precision je stat', 1, '.'], 'Markdown stays out of plain text');
-  const thinking = '<think>\n\n</think>\n\nPrecision je stat [1].';
-  assert.deepEqual(parseAnswer(thinking, sources, true).parts, ['Precision je stat', 1, '.'], 'WebLLM empty thinking prefix is not part of the answer');
-  assert.equal(stripThinking('<think>\nZvažuji [1]. Precision'), '', 'unfinished reasoning is never shown');
-  assert.equal(parseAnswer('<think>Precision [1]', sources, false).parts.length, 0);
-  assert.equal(stripThinking('Bez úvahy'), 'Bez úvahy');
 });
 
 test('retrieval handles Czech, aliases, unknown subjects and context limits without remote calls', () => {
@@ -103,7 +98,7 @@ test('model is present in the pinned runtime and prompt contains data, never mod
   for (const id of Object.values(MODEL_IDS)) {
     const record = prebuiltAppConfig.model_list.find(model => model.model_id === id);
     assert.ok(record, id);
-    assert.match(record.model, /^https:\/\/huggingface.co\/mlc-ai\/Qwen3-1\.7B/);
+    assert.match(record.model, /^https:\/\/huggingface.co\/mlc-ai\/gemma-4-E2B-it-/);
   }
   assert.equal(modelFor(true), MODEL_IDS.f16);
   assert.equal(modelFor(false), MODEL_IDS.f32);
