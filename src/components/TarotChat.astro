@@ -1,3 +1,6 @@
+---
+import { DOWNLOAD_SIZE, MODEL_NAME, VRAM_RANGE } from '../lib/ai/config.ts';
+---
 <section class="tarot-chat" data-tarot-chat data-pagefind-ignore aria-label="Tarot AI — chat s wiki">
   <header class="tarot-chat__head">
     <div>
@@ -24,7 +27,7 @@
   <dialog data-ai-consent class="tarot-chat__dialog" aria-labelledby="tarot-consent-title">
     <form method="dialog">
       <h2 id="tarot-consent-title">Stáhnout lokální AI?</h2>
-      <p>Pro odpověď se stáhne model Qwen3 1.7B, <strong>přibližně 1 GB</strong>. Běží jen ve tvém prohlížeči přes WebGPU a potřebuje zhruba 2–2,6 GB grafické paměti. Na mobilu nebo pomalém připojení může příprava trvat několik minut.</p>
+      <p>Pro odpověď se stáhne model {MODEL_NAME}, <strong>přibližně {DOWNLOAD_SIZE}</strong>. Běží jen ve tvém prohlížeči přes WebGPU a potřebuje zhruba {VRAM_RANGE} grafické paměti. Na pomalém připojení může příprava trvat několik minut; na mobilu a slabších noteboocích nemusí běžet vůbec.</p>
       <p class="tarot-chat__fine">Soubory se stahují z Hugging Face a GitHubu a zůstanou v cache prohlížeče. Dotazy ani historie se nikam neposílají. AI odpovídá jen z nalezených pasáží wiki, ale může se splést, proto ověř údaje v odkázaném článku. Volbu si zapamatujeme.</p>
       <div class="tarot-chat__tools">
         <button type="submit" value="cancel" data-ai-consent-cancel>Ne, zrušit</button>

@@ -37,7 +37,7 @@ async function pageWithMock(options = {}) {
   await page.addInitScript(({ gpu, adapter, mode, consent }) => {
     Object.defineProperty(navigator, 'gpu', { value: gpu ? { requestAdapter: async () => adapter ? {} : null } : undefined });
     window.__testMode = mode;
-    if (consent) localStorage.setItem('tarot-ai-download-consent', 'qwen3-1.7b');
+    if (consent) localStorage.setItem('tarot-ai-download-consent', 'gemma-4-e2b');
   }, { gpu: options.gpu !== false, adapter: options.adapter !== false, mode: options.mode || 'normal', consent: options.consent !== false });
   // This fixture verifies UI and lifecycle only. It never claims actual model inference.
   await page.route('**/_astro/runtime.*.js', route => route.fulfill({ contentType: 'text/javascript', body: `
@@ -51,8 +51,7 @@ async function pageWithMock(options = {}) {
         const n=sources.findIndex(s=>s.title==='Základní atributy'&&s.heading==='Body nejsou procentní šance')+1||1;
         const answer={unknown:'Precision je stat [99].',nevim:'NEVÍM',uncited:'Precision je stat.'}[window.__testMode]
           ||'Precision navyšuje <b>Accuracy</b> a Critical Hit, nejde o procentní šanci ['+n+'].';
-        // WebLLM keeps its prefilled empty thinking block in the streamed content.
-        const text='<think>\\n\\n</think>\\n\\n'+answer;
+        const text=answer;
         onText(text.slice(0,-3)); await new Promise(r=>setTimeout(r,window.__generateDelay||30)); onText(text); return text;
       }
       dispose() { window.__aiLifecycle.disposed++; }
@@ -102,7 +101,7 @@ test('first question asks before downloading, remembers yes and never remembers 
   await page.locator('[data-ai-input]').fill('Co dělá Precision?');
   await page.locator('[data-ai-send]').click();
   await page.locator('[data-ai-consent][open]').waitFor();
-  assert.match(await dialog.textContent(), /přibližně 1 GB/);
+  assert.match(await dialog.textContent(), /Gemma 4 E2B, přibližně 2,8 GB/);
   assert.equal(modelRequests(requests), 0, 'nothing is downloaded before consent');
   await page.locator('[data-ai-consent-cancel]').click();
   await idle(page);
@@ -115,7 +114,7 @@ test('first question asks before downloading, remembers yes and never remembers 
   await page.locator('[data-ai-consent-accept]').click();
   await idle(page);
   assert.ok(await page.locator('.tarot-citation').count());
-  assert.equal(await page.evaluate(() => localStorage.getItem('tarot-ai-download-consent')), 'qwen3-1.7b');
+  assert.equal(await page.evaluate(() => localStorage.getItem('tarot-ai-download-consent')), 'gemma-4-e2b');
   await page.reload();
   await page.locator('[data-tarot-chat][data-initialized]').waitFor();
   await ask(page, 'Co dělá Precision?');
@@ -185,7 +184,7 @@ test('unknown subjects skip download; unknown, missing or refused citations neve
   assert.equal(modelRequests(requests), 0);
   assert.match(await messageText(page), /nemám ve wiki ověřitelný zdroj/);
   assert.equal(await page.locator('.tarot-citation').count(), 0);
-  await page.evaluate(() => { localStorage.setItem('tarot-ai-download-consent', 'qwen3-1.7b'); window.__testMode = 'unknown'; });
+  await page.evaluate(() => { localStorage.setItem('tarot-ai-download-consent', 'gemma-4-e2b'); window.__testMode = 'unknown'; });
   await ask(page, 'Co dělá Precision?');
   assert.equal(await page.locator('.tarot-citation').count(), 0);
   assert.match(await page.locator('.tarot-message--answer').last().textContent(), /AI neuvedla zdroj/, 'retrieved articles are offered for checking');
