@@ -58,7 +58,7 @@ Vyhledávání se generuje při produkčním buildu. Pro jeho lokální kontrolu
 4. Workflow sestaví HTML, CSS, JavaScript a vyhledávací index.
 5. GitHub zveřejní hotové soubory.
 
-Workflow je připravené v repozitáři `oldbear24/tarot-club-aion2`. Hosting musí mít v **Settings → Pages → Source** zvolenou možnost **GitHub Actions**. Web běží na adrese [aion2.tarot-club.cz](https://aion2.tarot-club.cz/).
+Workflow je připravené v repozitáři `oldbear24/tarot-club-aion2`. Hosting musí mít v **Settings → Pages → Source** zvolenou možnost **GitHub Actions**. Produkční web běží na adrese `https://aion2.tarot-club.cz/`.
 
 ## Provoz a rozšíření
 
