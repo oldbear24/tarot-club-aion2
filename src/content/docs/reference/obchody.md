@@ -40,6 +40,24 @@ sources:
 - title: Aion 2 Maps — membership-and-shop
   url: https://aion2maps.com/guides/membership-and-shop/
   scope: global
+- title: Aion 2 Maps — hidden-cubes, zdroje klíčů
+  url: https://aion2maps.com/guides/hidden-cubes/
+  scope: global
+- title: Aion 2 Maps — manastones, Abyssal Manastones
+  url: https://aion2maps.com/guides/manastones/
+  scope: global
+- title: Aion 2 Maps — pantheon-stats, Zikel's Apparition
+  url: https://aion2maps.com/guides/pantheon-stats/
+  scope: global
+- title: MetaBot — AION 2 Shops
+  url: https://metabot.gg/en/aion-2/shops
+  scope: global
+- title: MetaBot — Clash Rune Chest (Bound)
+  url: https://metabot.gg/en/aion-2/items/clash-rune-chest-bound
+  scope: global
+- title: MetaBot — Theostone guide
+  url: https://metabot.gg/en/aion-2/guides/theostone-guide
+  scope: global
 ---
 
 **Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní podklady, nikoli naše měření v klientu. Ceny a limity porovnej s aktuálním tooltipem nebo panelem hry.
@@ -50,25 +68,35 @@ sources:
 | --- | --- | --- |
 | <span id="ref-abyss-ap-trade-shop">**Abyss / AP Trade Shop**</span> | AP; Stigma, Azphel, Potential, scrolly a další růst. | Cenový stupeň, požadovaný rank, limit na postavu nebo server. |
 | <span id="ref-nightmare-trade-shop">**Nightmare Trade Shop**</span> | Phantasmal Fragments; rozvoj, Pantheon, runy. | Podmínku dokončení bosse a dostupný nákupní limit. |
-| <span id="ref-festival-shop">**Festival Shop**</span> | Centuryroot Tokens; krystaly, shards a kolekce. | Zvyšující se cenu některých krystalů; měsíční limit každé položky. |
+| <span id="ref-festival-shop">**Festival Shop**</span> | Centuryroot Tokens; krystaly, shards a kolekce. | Zvyšující se cenu některých krystalů. Limity platí na postavu; měsíční je jen u Soul Crystals. |
 | <span id="ref-season-shop">**Season Shop**</span> | Oath Coin; sezónní položky. | Season ID, konec prodeje a limit; budoucí řádek v datech není živá nabídka. |
 | <span id="ref-daeva-pass-shop">**Daeva Pass Shop**</span> | Pass Shop Coin. | Platnou sezónu a postavu, na které byla měna získána. |
-| <span id="ref-wind-breeze-merchants">**Wind Breeze Merchants**</span> | Způsobilé nákupy za Kina a přístup podmíněný členstvím. | Aktivaci členství a sdílení zásoby konkrétního předmětu. |
-| <span id="ref-black-cloud-merchants">**Black Cloud Merchants**</span> | Proměnlivá nabídka včetně pet předmětů. | Aktuální obsah nabídky; není seznam všech trvale prodávaných položek. |
+| <span id="ref-wind-breeze-merchants">**Wind Breeze Merchants**</span> | Kina, jen se členstvím (Special Quai Membership): Soul Crystals, Odyle Energy, tickety, Auto-Loot Voucher, Resurrection Spiritstone, lektvary a Power Shards. | Hra utrácí nejdřív vázanou Kina. Některé limity platí na server, jiné na postavu. |
+| <span id="ref-quna-shop">**Quna Shop**</span> | Quna; kosmetika, spotřební předměty, prémiová Daeva Pass a Key: Hidden Cube. | Postavu, na které Quna máš: Quna se mezi postavami nepřesouvá. |
+| <span id="ref-black-cloud-merchants">**Black Cloud Merchants**</span> | Kina; náhodná nabídka, která se mění každou hodinu, včetně petů, skinů a Theostones. | Aktuální obsah nabídky; není seznam všech trvale prodávaných položek. |
 
 ## Užitečné položky a kontrolované ceny
 
 | Položka / obchod | Cena podle zdroje | Limit / význam |
 | --- | --- | --- |
-| <span id="ref-stigma-shard-ap">**Stigma Shard — AP**</span> | 10 000 / 15 000 / 20 000 / 25 000 AP. | Cenové skupiny po 50; není denní obnova nejlevnější skupiny. |
+| <span id="ref-stigma-shard-ap">**Stigma Shard — AP**</span> | 10 000 / 15 000 / 20 000 / 25 000 AP. | 50 kusů na postavu v každém cenovém stupni; nejlevnější stupeň se denně neobnovuje. |
 | <span id="ref-stigma-shard-nightmare">**Stigma Shard — Nightmare**</span> | 1 500 Phantasmal Fragments. | Uváděno až 35 na postavu; ověř zbývající nabídku. |
 | <span id="ref-stigma-shard-festival">**Stigma Shard — Festival**</span> | 300 Centuryroot Tokens. | Uváděno až 35 na postavu; není stejný limit jako AP nabídka. |
 | <span id="ref-daevanion-crystal-nightmare">**Daevanion Crystal — Nightmare**</span> | 300 Phantasmal Fragments. | Uváděno až 50 na postavu. |
 | <span id="ref-daevanion-crystal-festival">**Daevanion Crystal — Festival**</span> | 50 / 100 / 200 / 400 tokenů. | Skupiny 10 / 10 / 15 / 15; celkem 10 500 tokenů za všech 50. |
 | <span id="ref-clash-rune-chest-nightmare">**Clash Rune Chest — Nightmare**</span> | 500 Phantasmal Fragments. | Obsah truhly viz [Runy](../../pruvodce/runy-specialni-sloty/#náhradní-runy-z-nightmare); další omezení čti v klientu. |
-| <span id="ref-soul-crystal-festival">**Soul Crystal — Festival**</span> | 50 tokenů za 100 kusů. | Databáze: 30 nákupů měsíčně na postavu. |
-| <span id="ref-soul-crystal-special-shop">**Soul Crystal — Special shop**</span> | 500 Kina za kus. | Databáze: 1 000 týdně na server; storefront označen jako dostupný 12. října. |
-| <span id="ref-key-hidden-cube-season-shop">**Key: Hidden Cube — Season Shop**</span> | 3 000 Oath Coin. | Databáze: 10 na server; aktuální sezónní nabídku ověř. |
+| <span id="ref-clash-rune-chest-season-shop">**Clash Rune Chest — Season Shop**</span> | 4 000 Oath Coin. | MetaBot: 50 na účet, v prodeji do 16. 12. 2026. |
+| <span id="ref-zikel-s-apparition-nightmare">**Zikel's Apparition (Colossus) — Nightmare**</span> | 14 000 Phantasmal Fragments. | Až po poražení bosse Zikel's Apparition. |
+| <span id="ref-soul-crystal-festival">**Soul Crystal — Festival**</span> | 50 tokenů za 100 kusů. | 30 nákupů měsíčně na postavu. |
+| <span id="ref-soul-crystal-special-shop">**Soul Crystal — Wind Breeze Merchants**</span> | 500 Kina za kus. | 1 000 týdně na server; jen se členstvím. Nejlevnější pravidelný zdroj pro Genus Analyze. |
+| <span id="ref-odyle-energy-wind-breeze">**Odyle Energy — Wind Breeze Merchants**</span> | 100 000 Kina. | 4 týdně na postavu, nejvýše 16 na server. |
+| <span id="ref-instant-clear-ticket-daily-dungeon">**Instant Clear Ticket: Daily Dungeon — Wind Breeze Merchants**</span> | 30 000 Kina. | 7 týdně na server. |
+| <span id="ref-auto-loot-voucher">**Pet: Auto-Loot Voucher (30 dní) — Wind Breeze Merchants**</span> | 500 000 Kina. | 2 měsíčně na postavu. |
+| <span id="ref-resurrection-spiritstone-wind-breeze">**Resurrection Spiritstone — Wind Breeze Merchants**</span> | 100 000 Kina. | 7 týdně na postavu. |
+| <span id="ref-key-hidden-cube-season-shop">**Key: Hidden Cube — Season Shop**</span> | 3 000 Oath Coin. | 10 na účet v rámci serveru; v prodeji do konce Season 1. |
+| <span id="ref-key-hidden-cube-quna-shop">**Key: Hidden Cube — Quna Shop**</span> | 50 Quna. | 3 denně na postavu. Otevřená Hidden Cube dá 1 000 Soul Crystals, truhlu ale musíš najít v otevřeném světě. |
+| <span id="ref-lesser-abyssal-manastone">**Lesser Abyssal Manastone — Abyss Shop**</span> | 1 000 AP. | 50 týdně. |
+| <span id="ref-rare-theostone-chest">**Rare Theostone Chest**</span> | Abyss Shop: výběrová truhla za 35 000 AP; Season Shop: 17 500 Oath Coin. | MetaBot: v Season Shopu 10 na účet v rámci serveru, do 16. 12. 2026. |
 
 ## Per Character, Per Server, Weekly
 
