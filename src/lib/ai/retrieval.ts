@@ -7,6 +7,9 @@ export const CONTEXT_CHAR_LIMIT = 3500;
 const stopWords = new Set(('jak jaka jake jaky co k ke na se si v ve z ze pro a i o do to je jsou ma mam mi me muj moje kde kdy kolik cim cem cemu ktery ktere prosim rychle efektivne zvysit zvysim zvyseni znamena delaji dela slouzi funguje fungujou fungovat ziskat ziskam ziskavat vybrat vyberu dostat dostanu dostanes udelat delat muzu muzes muze potrebuji potrebuju chci mit nejaky nejaka nejake jaky jakou jakym nebo ale tak uz jeste ted lepsi nejlepsi ' +
   // Conversational filler: rare enough in the wiki to outweigh the real subject of a question.
   'by bys bych jsi jsem jste jsme kvuli tomu toho tom tim tohle tomhle doporucil doporucila doporucis doporucujes doporucit poradil poradis poradit chodit chodim chodis hrat hraju hrajes mel mela meli mas bude budu budes nejlip nejvic vic hodne taky take pak potom nejak dobre dobry ' +
+  'zvednu zvednout zvedat zvedam zlepsit zlepsim zlepsovat ' +
+  // Pronouns point back at the previous question; on their own they match random passages.
+  'ho mu ji jej jeho jeji jejich jim jimi nej nem nemu ni nich nim nimi on ona ono oni ten ta ty tento tato toto tyto tenhle tahle tohle tam tady sem ' +
   'what how does do is the can are aion 2').split(' '));
 const aliases: Record<string, string[]> = {
   gs: ['gear score', 'item level', 'vybava'], cp: ['combat power', 'bojova sila'],
@@ -28,8 +31,8 @@ export function queryTerms(query: string): string[] {
   return [...new Set(words(query).filter(word => !stopWords.has(word)))];
 }
 
-// "A jaké…", "kvůli tomu", "k tomu": the question continues the previous one.
-const followUp = /^(?:a|i|a co|a jak|taky|jeste)\b|\b(?:tomu|toho|tom|tim|tohle|tomhle|tohoto|tomto|nemu|nej)\b/;
+// "A jaké…", "kvůli tomu", "jak ho…": the question continues the previous one.
+const followUp = /^(?:a|i|a co|a jak|taky|jeste)\b|\b(?:tomu|toho|tom|tim|tohle|tomhle|tohoto|tomto|ho|mu|ji|jej|jeho|jeji|jejich|jim|nej|nem|nemu|nich|nim|tam)\b/;
 
 export function retrievalQuery(question: string, previousQuestion = ''): string {
   // Resolve follow-ups only; an unrelated new question must not inherit old evidence.

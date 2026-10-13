@@ -80,6 +80,8 @@ test('retrieval handles Czech, aliases, unknown subjects and context limits with
   assert.ok(retrieveForQuestion(index, 'a co bys mi k tomu doporučil?', 'Co dělá Precision?').some(item => item.id === passages[0].id));
   assert.ok(retrieveForQuestion(index, 'A Precision?', 'Co je sandwich?').some(item => item.id === passages[0].id), 'a follow-up stands alone when the pair finds nothing');
   assert.equal(retrieveForQuestion(index, 'Co je sandwich?', 'Co dělá Precision?').length, 0);
+  assert.equal(retrievalQuery('Jak ho zvednu', 'Co dělá Precision?'), 'Co dělá Precision? Jak ho zvednu', 'a pronoun refers to the previous subject');
+  assert.equal(retrievePassages(index, 'Jak ho zvednu').length, 0, 'pronouns alone are not evidence');
   assert.ok(retrievePassages(index, 'Co dělá Precision, kvůli čemu bys ho doporučil?').some(item => item.id === passages[0].id), 'conversational filler does not veto evidence');
   const many = { version: 1, passages: Array.from({ length: 30 }, (_, i) => ({ ...passages[0], id: `doc/${i}:1`, url: `/club/doc/${i}/`, excerpt: 'Precision vysvětlení. '.repeat(65) })) };
   const found = retrievePassages(many, 'Precision');
