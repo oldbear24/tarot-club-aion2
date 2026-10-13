@@ -30,30 +30,30 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní podklady, nikoli naše měření v klientu. Ceny a limity porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Co vyrábějí profese
 
 | Profese | Hlavní výrobky |
 | --- | --- |
-| <span id="ref-blacksmithing">**Blacksmithing**</span> | Swords, greatswords, daggers, maces, guards. |
-| <span id="ref-armorsmithing">**Armorsmithing**</span> | Sedm slotů zbroje včetně cape. |
-| <span id="ref-handicrafting">**Handicrafting**</span> | Bows, staffs a příslušenství. |
-| <span id="ref-alchemy">**Alchemy**</span> | Spellbooks, orbs, potions, scrolly, manastones. |
+| <span id="ref-blacksmithing">**Blacksmithing**</span> | Meče, obouruční meče, dýky, palcáty a guardy. |
+| <span id="ref-armorsmithing">**Armorsmithing**</span> | Všech sedm kusů zbroje: hruď, kalhoty, helma, ramena, rukavice, boty a plášť (cape). |
+| <span id="ref-handicrafting">**Handicrafting**</span> | Luky, hole, náhrdelníky, náušnice, prsteny a náramky. |
+| <span id="ref-alchemy">**Alchemy**</span> | Spellbooks a orby, lektvary, scrolly a Manastones. |
 | <span id="ref-cooking">**Cooking**</span> | Jídlo a jeho bonusy. |
 
 ## Dragon Lord ladder
 
 | Tier / Item Level | Postup |
 | --- | --- |
-| <span id="ref-true-dragon-lord-62">**True Dragon Lord — 62**</span> | Výroba základního kusu kvality Unique. |
-| <span id="ref-splendent-true-dragon-lord-70">**Splendent True Dragon Lord — 70**</span> | Navazující výroba vyššího stupně (upcraft). |
-| <span id="ref-white-dragon-lord-78">**White Dragon Lord — 78**</span> | Navazující výroba vyššího stupně (upcraft). |
-| <span id="ref-splendent-white-dragon-lord-86">**Splendent White Dragon Lord — 86**</span> | Navazující výroba vyššího stupně (upcraft). |
-| <span id="ref-wise-dragon-lord-94">**Wise Dragon Lord — 94**</span> | Navazující výroba vyššího stupně (upcraft). |
-| <span id="ref-splendent-wise-dragon-lord-102">**Splendent Wise Dragon Lord — 102**</span> | Navazující výroba vyššího stupně (upcraft). |
+| <span id="ref-true-dragon-lord-62">**True Dragon Lord — 62**</span> | Jediný přímý craft kvality Unique: Artisan's Splendent Orichalcum kus (Unique, Item Level 44) a dračí materiály. Může selhat. |
+| <span id="ref-splendent-true-dragon-lord-70">**Splendent True Dragon Lord — 70**</span> | Upcraft kusu 62 s materiály. |
+| <span id="ref-white-dragon-lord-78">**White Dragon Lord — 78**</span> | Upcraft kusu 70 s dalším Artisan's Splendent Orichalcum kusem a materiály. |
+| <span id="ref-splendent-white-dragon-lord-86">**Splendent White Dragon Lord — 86**</span> | Upcraft s materiály. |
+| <span id="ref-wise-dragon-lord-94">**Wise Dragon Lord — 94**</span> | Upcraft s dalším Artisan's Splendent Orichalcum kusem a materiály. |
+| <span id="ref-splendent-wise-dragon-lord-102">**Splendent Wise Dragon Lord — 102**</span> | Upcraft s materiály. |
 
-Frakční názvy se mohou lišit; porovnávej tier a recept. Upcraft podle Global podkladů přenáší Enhancement, Amp a Soul Binding, ale ne Manastones. Kus vzniklý pomocí upcraftu se váže na výrobce. Běžný craft může selhat; není to stejná operace jako upcraft.
+Každý vyšší tier vzniká upcraftem z kusu o stupeň níž. Frakční názvy se liší (True/Star Dragon Lord, White/Dark Dragon Lord); porovnávej tier a recept, ne jméno. Podle klientských dat upcraft vždy uspěje a přenáší Enhancement, Amp a Soul Binding, ale ne Manastones. Splendent kroky stojí jen materiály, ne Kina. Kus vzniklý upcraftem se váže na výrobce, proto vyráběj na postavě, která ho bude nosit. Běžný craft (například kus 62) selhat může a neúspěch nevrací nic.
 
 ## Konkrétní příklad: Elyos longsword
 
@@ -68,7 +68,7 @@ Databáze Global **2.0.6.0**, kontrolovaná 12. října: **True Dragon Lord Long
 | <span id="ref-radiant-orichalcum-ore">**Radiant Orichalcum Ore**</span> | 9 |
 | <span id="ref-radiant-odyle-2">**Radiant Odyle**</span> | 5 |
 
-Zdroj uvádí základní úspěch **67,51 %** při nulovém rozdílu mastery vůči požadavku receptu a samostatnou **25% combo šanci**. Neznamená to dvě garantované výstupní zbraně. Guard má v téže databázi Blacksmithing požadavek **60** — pravidlo pro jednu zbraň nelze přenést na všechny sloty.
+Zdroj uvádí základní úspěch **67,51 %** při mastery rovné požadavku receptu; při mastery 100 roste podle Aion 2 Maps asi na 94 %. Po úspěšném craftu hra ve **25 %** případů zkusí místo běžného výsledku lucky (combo) craft s vlastním hodem; u kusu 62 tak může vzniknout rovnou kus 70. Neznamená to dvě výstupní zbraně a neúspěšný lucky craft podle asijské verze nedá nic. Guard má v téže databázi Blacksmithing požadavek **60**, stejně jako rukavice, boty, plášť, náhrdelník a náušnice; pravidlo pro jednu zbraň proto nepřenášej na všechny sloty.
 
 ## Cena výsledku
 

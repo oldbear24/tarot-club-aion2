@@ -37,7 +37,7 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní podklady, nikoli naše měření v klientu. Ceny a limity porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Vstup, odměna a sdílení
 
@@ -53,19 +53,19 @@ Vstup, dokončení a vyzvednutí odměny mohou mít odlišné podmínky. Limity 
 | <span id="ref-dimensional-invasion">**Dimensional Invasion**</span> | Událost s vlastním odměnovým klíčem. | [Klíče a sdílení](../../pruvodce/daily-weekly/#denní-obnovy-a-zásoby) |
 | <span id="ref-daily-dungeon">**Daily Dungeon**</span> | Enhance Stones podle konkrétního obsahu a skóre. | [Týdenní zásoba](../../pruvodce/daily-weekly/#týdenní-obsah) |
 | <span id="ref-ascension-trial">**Ascension Trial**</span> | Sólo výzva s odměnami pro rozvoj; aktuální rotaci ověř v panelu. | [Týdenní zásoba](../../pruvodce/daily-weekly/#týdenní-obsah) |
-| <span id="ref-exploration">**Exploration**</span> | Průzkum a dungeonové odměny; jednorázová Guaranteed Reward není denní farma. | [Vstup a odměna](../../pruvodce/dungeony-odyle/) |
+| <span id="ref-exploration">**Exploration**</span> | Snazší verze expedic, otevřená už při levelování; levnější vyzvednutí odměny a garantovaný výběr po určitém počtu vyzvednutí. Odměny vyplácejí vázaná Kina. | [Vstup a odměna](../../pruvodce/dungeony-odyle/) |
 | <span id="ref-conquest-tier-700">**Conquest — tier 700**</span> | Krao Cave a Draupnir; vstupní GS nezaručuje dokončení. | [Výběr výbavového slotu](../../pruvodce/dungeony-odyle/#kam-jít-pro-chybějící-slot) |
 | <span id="ref-conquest-tier-1-400">**Conquest — tier 1 400**</span> | Urugugu Canyon a Vakron Sky Island; liší se výbavovými sloty. | [Výběr výbavového slotu](../../pruvodce/dungeony-odyle/#kam-jít-pro-chybějící-slot) |
 | <span id="ref-conquest-tier-2-100">**Conquest — tier 2 100**</span> | Fire Temple a Ferocious Horn Den; rozhoduje náhled odměny. | [Výběr výbavového slotu](../../pruvodce/dungeony-odyle/#kam-jít-pro-chybějící-slot) |
 | <span id="ref-transcendence">**Transcendence**</span> | Zdroj Arcana; sleduj tier, počítadlo odměn a Odyle. | [GS milníky](../../pruvodce/gs-progrese/#milníky-global) a [mechaniky](../../dungeony/transcendence/) |
 | <span id="ref-unclaimed-cubes">**Unclaimed Cubes**</span> | Odchod bez vyzvednutí odměny může blokovat další vstup. | [Nevyzvednuté odměny](../../pruvodce/dungeony-odyle/#nevyzvednutá-cube-může-zablokovat-další-vstup) |
 | <span id="ref-abyss">**Abyss**</span> | AP, sbírka a frakční události s vlastními časy. | [Přístup a čas](../../pruvodce/abyss/#vstup-a-dostupná-oblast) |
-| <span id="ref-sealed-dungeons-strongholds">**Sealed Dungeons / Strongholds**</span> | Jednorázové regionální odměny; neplánuj je jako totožnou denní farmu. | [Otevřený svět](../../pruvodce/otevreny-svet/) |
+| <span id="ref-sealed-dungeons-strongholds">**Sealed Dungeons / Strongholds**</span> | Jednorázové regionální odměny; nepočítej s nimi jako s denní farmou. | [Otevřený svět](../../pruvodce/otevreny-svet/) |
 | <span id="ref-attendance-season-missions">**Attendance / Season Missions**</span> | Přihlašovací a sezónní odměny; sleduj konkrétní odměnovou větev. | [Denní plán](../../pruvodce/daily-weekly/) |
-| <span id="ref-ludra">**Ludra**</span> | Historický raid; k datu rešerše je podle komunitního přehledu stažený. | [Dostupnost a historie](../../dungeony/ludra/) |
+| <span id="ref-ludra">**Ludra**</span> | Launch raid, od spuštění 5. října dočasně stažený ze hry; NC oznámila návrat s novými mechanikami. | [Dostupnost a historie](../../dungeony/ludra/) |
 
 ## Český čas
 
-Čas a převod mezi letním a zimním časem najdeš v [denním a týdenním plánu](../../pruvodce/daily-weekly/#reset-v-českém-čase). Časy siege a dalších událostí se řídí vlastním kalendářem, nikoli resetem počítadel.
+Čas a převod mezi letním a zimním časem najdeš v [denním a týdenním plánu](../../pruvodce/daily-weekly/#reset-v-českém-čase). Časy obléhání (siege) a dalších událostí se řídí vlastním kalendářem, nikoli resetem počítadel.
 
-**Doporučení Tarot Clubu:** krátkou session plánuj podle propadající odměny a blížícího se stropu. Volbu konkrétního obsahu popisují [Daily/weekly](../../pruvodce/daily-weekly/) a [Dungeony a Odyle](../../pruvodce/dungeony-odyle/).
+**Doporučení Tarot Clubu:** krátké hraní plánuj podle propadající odměny a blížícího se stropu. Volbu konkrétního obsahu popisují [Daily/weekly](../../pruvodce/daily-weekly/) a [Dungeony a Odyle](../../pruvodce/dungeony-odyle/).

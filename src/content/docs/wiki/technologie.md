@@ -46,6 +46,7 @@ Následující hodnocení je naše rozhodnutí pro tuto wiki, nikoli obecný že
 - Výběr světlého nebo tmavého režimu.
 - Fulltextové vyhledávání **Pagefind** nad sestavenými stránkami, bez vyhledávacího serveru.
 - Zdrojové odkazy a datum rešerše každého článku.
+- Volitelného lokálního pomocníka **Tarot AI**. Model (přibližně 1 GB) se stáhne z Hugging Face a z GitHubu až po tvém souhlasu a běží jen v prohlížeči; dotazy se neposílají vzdálené AI službě.
 
 Vyhledávání se generuje při produkčním buildu. Pro jeho lokální kontrolu použij `npm run build` a `npm run preview`; v běžném dev režimu nemusí být dostupné.
 
@@ -57,7 +58,7 @@ Vyhledávání se generuje při produkčním buildu. Pro jeho lokální kontrolu
 4. Workflow sestaví HTML, CSS, JavaScript a vyhledávací index.
 5. GitHub zveřejní hotové soubory.
 
-Workflow je připravené v repozitáři `oldbear24/tarot-club-aion2`. Hosting musí mít v **Settings → Pages → Source** zvolenou možnost **GitHub Actions**. Živý web vznikne po prvním úspěšném nasazení.
+Workflow je připravené v repozitáři `oldbear24/tarot-club-aion2`. Hosting musí mít v **Settings → Pages → Source** zvolenou možnost **GitHub Actions**. Produkční web běží na adrese `https://aion2.tarot-club.cz/`.
 
 ## Provoz a rozšíření
 

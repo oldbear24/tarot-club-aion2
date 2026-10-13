@@ -35,7 +35,7 @@ sources:
 - title: Global Database — Fear 2.0.6.0
   url: https://aion2.gaming.tools/status-effects/162100001
   scope: global
-- title: Global Database — konkrétní Bleed, 2.0.5.0
+- title: Global Database — konkrétní Bleed (Drill Dart), 2.0.6.0
   url: https://aion2.gaming.tools/status-effects/140500001
   scope: global
 - title: Global Database — Battlefield Banner 2.0.6.0
@@ -43,7 +43,7 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní podklady, nikoli naše měření v klientu. Hodnoty porovnej s tooltipem ve hře.
 
 ## Název nestačí: rozhoduje konkrétní efekt
 
@@ -51,12 +51,12 @@ Stejná rodina může mít různé hodnoty nebo pravidla obnovy. Níže rozlišu
 
 | Efekt / rodina | Co poznat | Co zkontrolovat |
 | --- | --- | --- |
-| <span id="ref-root-immobilized">**Root / Immobilized**</span> | Omezení pohybu. | Zda dovoluje útok, úhyb nebo zrušení konkrétní schopností. |
+| <span id="ref-root-immobilized">**Root / Immobilized**</span> | Omezení pohybu. | Zda dovoluje útok, úhyb nebo zrušení konkrétními schopnostmi. |
 | <span id="ref-knockdown">**Knockdown**</span> | Sražení postavy. | Způsob uvolnění a navazující podmíněné útoky protivníka. |
-| <span id="ref-airborne">**Airborne**</span> | Omezení spojené s vynesením do vzduchu. | Dostupný CC break; neplést se svobodným létáním. |
-| <span id="ref-fear">**Fear**</span> | Strach; vlastní debuff rodina. | Délku, chování a zrušení v daném tooltipu. Citovaný záznam není zobrazován na HUD. |
-| <span id="ref-slow">**Slow**</span> | Zpomalení z konkrétního efektu. | Jestli mění pohyb, provedení schopnosti nebo jinou rychlost. |
-| <span id="ref-bleed">**Bleed**</span> | Průběžné poškození. | Konkrétní záznam 140500001 uvádí i −60 % Incoming Heal; to neplatí automaticky pro každý bleed. |
+| <span id="ref-airborne">**Airborne**</span> | Omezení spojené s vynesením do vzduchu. | Dostupný CC break; nepleť si ho s volným letem. |
+| <span id="ref-fear">**Fear**</span> | Strach; vlastní debuff rodina. | Délku, chování a zrušení v daném tooltipu. Citovaný záznam se podle databáze nezobrazuje na HUD. |
+| <span id="ref-slow">**Slow**</span> | Zpomalení z konkrétního efektu. | Zda mění pohyb, provedení schopnosti nebo jinou rychlost. |
+| <span id="ref-bleed">**Bleed**</span> | Průběžné poškození. | Konkrétní záznam 140500001 (Drill Dart) uvádí i −60 % Incoming Heal; to neplatí automaticky pro každý bleed. |
 | <span id="ref-blind">**Blind**</span> | Oslepení; samostatná rodina. | Konkrétní postih a možnost odstranění; samotný název neurčuje přesnou šanci zásahu. |
 | <span id="ref-seal-silence">**Seal / Silence**</span> | Omezení akcí podle přesného tooltipu. | Které schopnosti jsou blokované; různé názvy nelze automaticky sloučit. |
 | <span id="ref-knock-back-pulled">**Knock Back / Pulled**</span> | Nucený přesun. | Směr a pozici vůči okraji, trhlině nebo osobní mechanice. |
@@ -64,8 +64,8 @@ Stejná rodina může mít různé hodnoty nebo pravidla obnovy. Níže rozlišu
 
 ## Obnova efektu a stackování
 
-Databáze rozlišuje nahrazení při nové aplikaci a podmínku vyšší priority. **Battlefield Banner** má uvedeno nahrazení běžící aplikace; **Root** přijímá jen aplikaci s vyšší prioritou. Neodvozuj z dvojího seslání automaticky dvojnásobný bonus.
+Databáze rozlišuje nahrazení při nové aplikaci a podmínku vyšší priority. **Battlefield Banner** má uvedeno nahrazení běžící aplikace; **Root**, **Knockdown** a citovaný **Bleed** přijímají jen aplikaci s vyšší prioritou. U **Fear** aplikace s vyšší prioritou nahradí běžící efekt. Neodvozuj z dvojího seslání automaticky dvojnásobný bonus.
 
 ## Doporučená reakce Tarot Clubu
 
-Nejdřív urči, zda musíš změnit pozici, odstranit efekt, nebo vyčkat na mechaniku. Ověř, které typy debuffů tvoje schopnost pro odstranění efektů (cleanse) opravdu odstraňuje. U bosse odděl běžné CC od [stagger checku](../stagger/). Po smrti nebo resetu boje zkontroluj znovu aktivní buffy a jejich příjemce.
+Nejdřív urči, zda musíš změnit pozici, odstranit efekt, nebo vyčkat na mechaniku. Ověř, které typy debuffů tvůj cleanse skutečně sejme. U bosse odděl běžné CC od [stagger checku](../stagger/). Po smrti nebo resetu boje zkontroluj znovu aktivní buffy a jejich příjemce.

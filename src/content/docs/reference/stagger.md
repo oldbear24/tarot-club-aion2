@@ -28,35 +28,38 @@ sources:
 - title: Aion 2 Maps — combat-basics
   url: https://aion2maps.com/guides/combat-basics/
   scope: global
+- title: Aion 2 Maps — Party buffs, buffující třídy podle asijské verze
+  url: https://aion2maps.com/guides/party-buffs/
+  scope: asian
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní podklady, nikoli naše měření v klientu. Hodnoty porovnej s tooltipem ve hře.
 
 ## Přerušení není automaticky stagger
 
-Boss má pod HP ukazatel staggeru (gauge). Vybrané schopnosti jej snižují; při otevřeném stagger checku jej musí skupina vyprázdnit před koncem sesílání. Šedý ukazatel označuje nedostupné okno. Nezaměňuj běžný stun, silence a damage za stejné množství staggeru.
+Boss má pod HP ukazatel staggeru (gauge). Vybrané schopnosti jej snižují; při otevřeném stagger checku jej musí skupina vyprázdnit před koncem sesílání, jinak podle Aion 2 Maps následuje wipe. Vyprázdněný ukazatel bosse na chvíli vyřadí: podle dat klientu u většiny bossů na 5 sekund, kdy nemůže jednat, blokovat ani uhýbat. Šedý ukazatel označuje nedostupné okno. Nezaměňuj běžný stun, silence a poškození za stejné množství staggeru.
 
-| Třída | Stigma pro silný stagger podle podkladů |
-| --- | --- |
-| <span id="ref-gladiator">**Gladiator**</span> | Wrath Wave |
-| <span id="ref-templar">**Templar**</span> | Empyrean Lord's Punishment |
-| <span id="ref-assassin">**Assassin**</span> | Savage Fang |
-| <span id="ref-ranger">**Ranger**</span> | Arrow Storm |
-| <span id="ref-sorcerer">**Sorcerer**</span> | Divine Burst |
-| <span id="ref-spiritmaster">**Spiritmaster**</span> | Jointstrike: Destructive Attack |
-| <span id="ref-cleric">**Cleric**</span> | Power Burst |
-| <span id="ref-chanter">**Chanter**</span> | Obliterate |
+| Třída | Stigma pro silný stagger podle podkladů | Poznámka podle Aion 2 Maps |
+| --- | --- | --- |
+| <span id="ref-gladiator">**Gladiator**</span> | Wrath Wave | 50 staggeru; Zikel's Blessing od Stigma úrovně 5 přidává +50 % staggeru ze Stigmat. |
+| <span id="ref-templar">**Templar**</span> | Empyrean Lord's Punishment | 50, od Stigma úrovně 10 celkem 100. |
+| <span id="ref-assassin">**Assassin**</span> | Savage Fang | 50, od Stigma úrovně 10 celkem 100. |
+| <span id="ref-ranger">**Ranger**</span> | Arrow Storm | 50. |
+| <span id="ref-sorcerer">**Sorcerer**</span> | Divine Burst | 50. |
+| <span id="ref-spiritmaster">**Spiritmaster**</span> | Jointstrike: Destructive Attack | 50, nabitím od Stigma úrovně 5 až 65. |
+| <span id="ref-cleric">**Cleric**</span> | Power Burst | 50. |
+| <span id="ref-chanter">**Chanter**</span> | Obliterate | 50. |
 
-Přesnou hodnotu čti v tooltipu aktuálního skillu a Specialty. Charge, vybrané perky a bonusy mohou měnit příspěvek; vyšší běžná úroveň automaticky neznamená více staggeru.
+Hodnoty pocházejí z dat klientu podle Maps; přesnou hodnotu čti v tooltipu aktuálního skillu, kde je uvedena na posledním řádku. Běžná úroveň skillu ani Stigmatu stagger obecně nezvyšuje. Výjimkou jsou nabíjení (Charge) a výše uvedené Stigma milníky.
 
 ## Co domluvit před pullem
 
-:::tip[Priorita: domluv stagger ještě před pullem]
-**Doporučení Tarot Clubu:** domluv, kdo sleduje otevření ukazatele, které schopnosti si skupina nechá připravené a kdo zastoupí hráče mimo dosah. Po úspěšném breaku využij okno poškození; před ním nevyčerpej všechna reakční Stigmata bez cíle.
+:::tip[Priorita: šetři stagger Stigmata na check]
+**Doporučení Tarot Clubu:** domluv, kdo sleduje otevření ukazatele, které schopnosti si skupina nechá připravené a kdo zastoupí hráče mimo dosah. Po úspěšném breaku využij okno poškození; před ním nevyčerpej stagger Stigmata bez cíle.
 :::
 
 ## Buffy a aggro
 
-Komunitní Global class podklady uvádějí podporu skupiny zejména u Templara, Gladiatora, Clerica a Chantera. U dalších tříd může jít o vlastní buffy, poškození nebo stagger. Tabulky stackování z asijské endgame nejsou potvrzení libovolné kombinace Global.
+Aion 2 Maps uvádí, že skupinu buffují jen Templar, Gladiator, Chanter a Cleric; toto tvrzení označuje jako převzaté z asijské verze. U dalších tříd jde hlavně o vlastní buffy, poškození nebo stagger. Tabulky stackování z asijské endgame nejsou potvrzení libovolné kombinace Global.
 
-**Doporučení Tarot Clubu:** buffuj v dosahu správných příjemců a zohledni trvání buffu. Tank drží čelo a aggro tak, aby skupinu neotáčel do frontálních útoků. Konkrétní vazby najdeš v [příručkách tříd](../../tridy/prehled/).
+**Doporučení Tarot Clubu:** buffuj v dosahu správných příjemců a zohledni trvání buffu. Tank drží aggro a natáčí bosse tak, aby frontální útoky nemířily na skupinu. Konkrétní vazby najdeš v [příručkách tříd](../../tridy/prehled/).

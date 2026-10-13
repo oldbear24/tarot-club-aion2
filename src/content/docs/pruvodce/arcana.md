@@ -21,9 +21,9 @@ sources:
 
 ## Nejprve zaplň pět slotů
 
-Global launch používá **Chalice, Parchment, Compass, Bell a Mirror**. Karty z **Transcendence** přidávají vlastní Item Level, božský stat a řádky schopností. Podklady jsou komunitní Global launch data kontrolovaná 12. října 2026.
+Global launch používá **Chalice, Parchment, Compass, Bell a Mirror**. Karty padají na launchi jen v **Transcendence** a přidávají vlastní Item Level, božský stat a řádky schopností. Podklady jsou komunitní Global launch data kontrolovaná 12. října 2026.
 
-| Kvalita | Základní Item Level karty | Počet řádků | Max. level podle Global dat |
+| Kvalita | Základní Item Level karty | Počet řádků | Max. úroveň karty podle Transcendence průvodce |
 | --- | --- | --- | --- |
 | Common | 20 | 1 | +2 |
 | Rare | 40 | 2 | +3 |
@@ -37,25 +37,24 @@ Vstupní požadavky jednotlivých stupňů Transcendence najdeš v [GS milnící
 | Typ | Pool řádků |
 | --- | --- |
 | **Chalice** | Aktivní i pasivní schopnosti. |
-| **Parchment / Compass** | Každá vlastní část aktivních schopností. |
-| **Bell / Mirror** | Každá vlastní část pasivních schopností. |
+| **Parchment / Compass** | Každá z nich jinou polovinu aktivních schopností. |
+| **Bell / Mirror** | Každá z nich jinou polovinu pasivních schopností. |
 
 **Doporučení Tarot Clubu:** nejdřív vyber dvě hlavní schopnosti a sepiš jejich celkové úrovně. Při porovnání karet sleduj chybějící [Specialty milník](../schopnosti-stigma/), božský stat a teprve potom kvalitu samotnou. Lepší barva může otevřít GS vstup, ale sama nezaručuje lepší build.
 
 ## Level karty není level schopnosti
 
-Karty rozvíjíš spotřebováním jiných karet nebo **Training Arcana**. Strop podle kvality uvádí tabulka výše. Při použití staré karty jako materiálu popisují zachování vložených EXP; prohlédni náhled před potvrzením. <mark class="focus">Rozložení přírůstků mezi řádky schopností je náhodné</mark>; detailní limity řádků zdroj částečně odvozuje z asijské verze.
+Karty rozvíjíš spotřebováním jiných karet nebo **Training Arcana**. Strop podle kvality uvádí tabulka výše. Podle Global dat Aion 2 Maps vrací stará karta použitá jako materiál všechny vložené EXP i svou základní hodnotu; přesto si před potvrzením prohlédni náhled. <mark class="focus">Úroveň karty neurčuje, který řádek vyroste</mark>: podle podkladů z asijské verze přidá každá úroveň +1 náhodnému řádku schopnosti a jeden řádek má strop 4. Pro Global tyto dvě podrobnosti ověř v klientu.
+
+**Zdroje se v jednom bodě rozcházejí:** Arcana průvodce Aion 2 Maps uvádí úrovně karet 0–5 bez rozlišení kvality, zatímco tabulka odměn v jeho [Transcendence průvodci](https://aion2maps.com/guides/transcendence/) dává strop +2 / +3 / +4 / +5 podle kvality. Tabulka výše se drží podrobnější Transcendence verze; skutečný strop konkrétní karty zkontroluj v klientu.
 
 :::caution[Pozor: použitelná karta není automaticky materiál]
 **Postup Tarot Clubu:** porovnej náhled EXP, cílovou kartu a řádky ještě před spotřebováním. Kartu se vzácnou použitelnou kombinací si označ nebo zamkni, pokud to klient umožňuje. Nevybírej automaticky všechny nenasazené karty jako materiál.
 :::
-
-**Upřesnění při rozšíření reference 12. října:** původní obecný strop +5 se vztahuje na Unique, nikoli každou kvalitu. Podkladem je Global tabulka v [Transcendence průvodci](https://aion2maps.com/guides/transcendence/).
-
 ## Kdy řešit Transmute
 
-**Arcana Transmute** používá **Mysterious Crystals** a Kina; umožňuje volit až dva řádky, nikoli celou perfektní kartu. Krystaly poskytuje extrakce karet a vybrané sezónní odměny či Season Shop. Recept a limity zkontroluj v klientu.
+**Arcana Transmute** používá **Mysterious Crystals** a Kina; umožňuje volit až dva řádky, nikoli celou perfektní kartu. Podle Global dat Aion 2 Maps stojí základ Transmute 5 krystalů a 2 000 000 Kina a každý zvolený řádek dalších 10 krystalů a 3 000 000 Kina. Krystaly poskytuje extrakce karet, sezónní výzva za vyzvedávání odměn Ascension Trial a Season Shop; nelze je obchodovat. Recept a limity zkontroluj v klientu.
 
-**Doporučení Tarot Clubu:** nejdřív sestav funkční sadu z dostupných dropů. Potom napiš, který konkrétní skill a milník chceš craftem získat, a porovnej plnou cenu s ostatními upgrady. Kartu plánuj jako součást celé postavy, ne jako izolovaný čtyřřádkový jackpot.
+**Doporučení Tarot Clubu:** nejdřív sestav funkční sadu z dostupných dropů. Potom napiš, kterou konkrétní schopnost a milník chceš přes Transmute získat, a porovnej plnou cenu s ostatními upgrady. Kartu plánuj jako součást celé postavy, ne jako izolovaný čtyřřádkový jackpot.
 
-Navazuje [Pantheon a božské staty](../../staty/pantheon/) a [Daevanion](../daevanion/).
+Navazují [Pantheon a božské staty](../../staty/pantheon/) a [Daevanion](../daevanion/).

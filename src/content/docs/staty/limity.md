@@ -15,6 +15,12 @@ sources:
   - title: Wikily — Recovery, cena MP
     url: https://wikily.gg/aion-2/stats/recovery
     scope: unspecified
+  - title: Wikily — Basic Stats, tooltip Critical Hit, Evasion a Move Speed
+    url: https://wikily.gg/aion-2/stats/basic
+    scope: unspecified
+  - title: Wikily — Other, tooltip Cooldown
+    url: https://wikily.gg/aion-2/stats/other
+    scope: unspecified
   - title: Global Database — Clash Rune a neověřená failure penalty, 2.0.6.0
     url: https://aion2.gaming.tools/items/310900001
     scope: global
@@ -28,17 +34,19 @@ sources:
 
 ## Tooltip není měření serveru
 
-Komunitní extrakce globálního klientu uvádí tyto limity:
+Komunitní přepisy tooltipů uvádějí tyto limity. Aion 2 Maps čte text přímo z klientu Global; Wikily region ani patch svých přepisů neuvádí.
 
-| Stat | Uváděný limit | Jak informaci používat |
+| Stat | Uváděný limit | Původ a poznámka |
 | --- | --- | --- |
-| **Critical Hit Rate** | 50 % | Text tooltipu Global; skutečný serverový limit zde není změřen. |
-| **Evasion Rate** | 30 % | Text tooltipu Global. |
-| **Cooldown Reduction** | 60 % | Uváděná maximální redukce. |
-| **MP Cost Reduction** | 60 % | Uváděná maximální redukce. |
-| **Move Speed** | 150 % | Uváděná horní hodnota rychlosti, nikoli automaticky +150 % navíc. |
+| **Critical Hit Rate** | 50 % | Tooltip Global (Maps, Wikily). V asijské verzi komunitní měření ukazují kritickou šanci kolem 80 %; serverový limit Global zde není změřen. |
+| **Evasion Rate** | 30 % | Tooltip Global (Maps, Wikily); stejný text mají i varianty Evasion. |
+| **Cooldown Reduction** | 60 % | Tooltip (Maps, Wikily): maximální zkrácení cooldownu. |
+| **MP Cost Reduction** | 60 % | Tooltip (Maps, Wikily): maximální snížení ceny MP. |
+| **Move Speed** | 150 % | Tooltip (Maps, Wikily): rychlost nepřekročí 150 %, nejde automaticky o +150 % navíc. |
 
-:::caution[Nezaměňuj KR/TW a Global]
+Podle Maps je text tooltipu jediné místo v klientu Global, kde se limit kritické šance a Evasion objevuje; žádná datová tabulka klientu takový strop neukládá. Proto ho nelze brát jako potvrzený serverový limit.
+
+:::caution[Pozor: nezaměňuj KR/TW a Global]
 Asijská měření kritické šance se rozcházejí s globálním textem tooltipu. **80% crit cap ani univerzální počet bodů Accuracy/Crit zde nejsou ověřeným cílem pro Global.**
 :::
 
@@ -46,13 +54,13 @@ Asijská měření kritické šance se rozcházejí s globálním textem tooltip
 
 - Přesná převodní křivka mezi Critical Hit body a kritickou šancí.
 - Resisty jednotlivých bossů Global a z nich odvozené cílové staty.
-- Skrytá základní šance Multi-hit a poškození jeho dodatečných zásahů.
-- Pořadí serverových výpočtů a společná aktivace Critical, Perfect a Double.
+- Skrytá základní šance Multi-hit a poškození jeho dodatečných zásahů. Maps uvádí z dat klientu 20 % základní šance; přínos dodatečného zásahu se podle Maps ve zdrojích rozchází.
+- Pořadí serverových výpočtů a společná aktivace Critical, Perfect a Double. Pro příchozí zásah uvádí Maps podle tvůrce Grobs pořadí Evasion → Block/Parry → Endurance → Regeneration; Global měření chybí.
 - Přesné váhy statů pro jednotlivé třídy a vybavení.
 
 ## Následek neúspěšného upgradu runy
 
-Global průvodci varují před zničením runy od +2. Global Database přitom u failure penalty výslovně uvádí neověřené chování. Detailní research tabulka Maps vychází z KR disclosure. Nejde tedy o vlastní potvrzení serverového chování Global. Doporučení pro první postup a upozornění na riziko najdeš v runovém průvodci; [runový průvodce](../../pruvodce/runy-specialni-sloty/) vysvětluje kontext.
+Riziko při upgradu runy není limit statu. Podklady, rozpor mezi Global průvodci a databází i doporučený postup drží [runový průvodce](../../pruvodce/runy-specialni-sloty/).
 
 ## Jak dodat použitelný test
 

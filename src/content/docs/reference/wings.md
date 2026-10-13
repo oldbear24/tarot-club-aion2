@@ -25,13 +25,16 @@ sources:
 - title: Global Database — Ascension odměny 2.0.6.0
   url: https://aion2.gaming.tools/progression/character?tab=ascension
   scope: global
+- title: Aion 2 Maps — hidden-cubes
+  url: https://aion2maps.com/guides/hidden-cubes/
+  scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní podklady, nikoli naše měření v klientu. Ceny a limity porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Vlastnictví a nasazení
 
-**Owned Effect** je bonus vlastnictví, **Equip Effect** platí při nasazení. Kosmetický kus z obchodu nemusí mít stejné statové použití jako dungeonová křídla. Podklady Global neuvádějí běžné vylepšování křídel pomocí Enhancement; pozdější KR systém nepřenášíme do launch návodu.
+**Owned Effect** platí trvale, jakmile křídla vlastníš, ať je nosíš, nebo ne. **Equip Effect** platí jen u páru, který máš právě nasazený. Kosmetická křídla z obchodu, například Blazing Sun Wings z Founder's Packu, podle NC staty nemají. Global podle klientských dat vylepšování křídel přes Enhancement nemá a Owned Effect je pevný; pozdější KR systém do launch návodu nepřenášíme.
 
 | Conquest dungeon | Sealed wings podle podkladů |
 | --- | --- |
@@ -42,18 +45,20 @@ sources:
 | <span id="ref-fire-temple">**Fire Temple**</span> | Kromede Wings |
 | <span id="ref-ferocious-horn-den">**Ferocious Horn Den**</span> | Dark Veil Wings |
 
+Sealed wing padá jen v Conquest, bez pity. Klientská data uvádějí 0,75 % z odměny finálního bosse a 0,25 % z odměny každého mid-bosse. Jedno vyzvednutí odměny zahrnuje všechny tři bosse, tedy asi 1,25 %, v průměru zhruba 80 vyzvednutí na jeden drop. Průměr není garance.
+
 ## Jak zpracovat sealed drop
 
 :::caution[Pozor: morph recepty mají různé výsledky]
-Global podklady uvádějí **sealed wing + 10 Radiant Odyle** přes Substance Morph. Sealed kus může být obchodovatelný, hotová křídla jsou vázaná. Alternativní morph na Enhance Stones je jiný výsledek: před potvrzením zkontroluj přesný recept.
+Hotová křídla vzniknou Substance Morphem **sealed wing + 10 Radiant Odyle**. Sealed kus je obchodovatelný, hotová křídla jsou vázaná. Druhý recept promění sealed wing na 10 000 Enhance Stones místo křídel: před potvrzením zkontroluj, který recept máš vybraný.
 :::
 
 ## Další zdroje
 
-Wings poskytují také vybrané Ascension odměny, Hidden Cube a měnové obchody. Nabídka, podmínka a cena konkrétní varianty jsou důležitější než obecná kvalita.
+Další křídla získáš z Hidden Cube (Radiant Love Wings, šance 1 % za otevřenou truhlu), z Ascension (Superior a Ultimate Daeva Wings) a z měnových obchodů (například Talisra, Brawler, Warrior, Nightmare a Conqueror Wings). U konkrétní varianty rozhoduje nabídka, podmínka a cena, ne obecná kvalita.
 
 ## Doporučení Tarot Clubu
 
 Než křídla prodáš nebo rozbalíš, porovnej bonus za vlastnictví, nasazený efekt, cenu receptu a tržní cenu po poplatcích. Výběr uprav podle potřeb postavy; nejdražší křídla nejsou automaticky nejlepší nasazený efekt pro každý obsah.
 
-Navazuje [Materiály](../materialy/), [Market](../market/) a [CP průvodce](../../pruvodce/cp-postava/).
+Navazují [Materiály](../materialy/), [Market](../market/) a [CP průvodce](../../pruvodce/cp-postava/).

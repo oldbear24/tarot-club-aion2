@@ -11,7 +11,7 @@ hero:
   title: Karty na stůl. Staty pod kontrolou.
   tagline: Český průvodce světem AION 2. Rozuměj své postavě, vybírej výbavu s rozmyslem a přicházej do party připravený.
   actions:
-    - text: Hledat heslo
+    - text: Katalog hesel
       link: ./reference/prehled/
       variant: primary
     - text: Pochopit staty
@@ -26,7 +26,7 @@ hero:
 
 <p class="reading-key"><span class="reading-key__tip">Tip / priorita</span><span class="reading-key__note">Vysvětlení</span><span class="reading-key__caution">Pozor / omezení</span><span class="reading-key__danger">Kritické riziko</span></p>
 
-Barva upozorňuje na význam poznámky; titul ho popisuje i bez barev. Zvýrazňujeme jen vybrané kroky a časté chyby.
+Barva upozorňuje na význam poznámky; nadpis boxu ho popisuje i bez barev. Zvýrazňujeme jen vybrané kroky a časté chyby.
 
 **Český výklad, anglické názvy ze hry.** Stat najdeš podle názvu na předmětu i přes vyhledávání. Český popis vysvětluje jeho význam.
 

@@ -1,6 +1,6 @@
 ---
 title: Spiritmaster — příručka třídy
-description: Poškození na dálku pomocí spiritů a návaznosti elementů. Schopnosti, Stigmata, perky a kontrola výkonu.
+description: Poškození na dálku pomocí spiritů a návaznosti elementů. Schopnosti, Stigmata, milníky Specialty a kontrola před bojem.
 sidebar:
   order: 5
 edition: global-launch
@@ -20,16 +20,19 @@ sources:
 - title: Aion 2 Maps — spiritmaster
   url: https://aion2maps.com/guides/spiritmaster/
   scope: global
+- title: Metabot — Spiritmaster (globální klient)
+  url: https://metabot.gg/en/aion-2/classes/spiritmaster
+  scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní podklady, nikoli naše měření v klientu.
 
 ## Role a základní návaznost
 
 **Zbraň:** Orb. **Role:** Poškození na dálku pomocí spiritů a návaznosti elementů.
 
 :::note[Základ buildu: elementy a Fusion okna]
-Schopnosti spiritů vytvářejí elementy; Four Elements otevírá Elemental Fusion. Ancient Spirit přidává další elementální okna. Jeden běžný elementální spirit zůstává aktivní podle posledního přivolání; vlastní spirit buff není automaticky party buff.
+Schopnosti spiritů vytvářejí elementy; Four Elements otevírá Elemental Fusion. Ancient Spirit přidává další elementální okna. Jeden běžný elementální spirit zůstává aktivní podle posledního přivolání (komunitní doporučení); vlastní spirit buff není automaticky party buff.
 :::
 
 ## Důležité schopnosti
@@ -46,16 +49,18 @@ Schopnosti spiritů vytvářejí elementy; Four Elements otevírá Elemental Fus
 
 **Příklad PvE sestavy ze zdroje:** Summon: Ancient Spirit, Enhance: Spirit's Benediction, Jointstrike: Corrode; Flame Blessing podle sestavy.
 
-**Pasivy k porovnání:** Spirit Strike, Mental Focus, Element Unification, Spirit Revitalization.
+**Pasivy podle priority zdroje:** Spirit Strike, Mental Focus, Element Unification, Spirit Revitalization.
 
-Sestava vychází z komunitního průvodce pro Global launch, zkontrolovaného k datu rešerše. Konkrétní číslo patche u sestavy není doložené; pro stagger, sólo hru nebo PvP můžeš potřebovat jiné schopnosti.
+**Typ podkladu:** zdroje se rozcházejí. Číslo patche sestava neuvádí; pro stagger nebo sólo hru můžeš potřebovat jiné schopnosti.
 
-## Specialty a změna situace
+<span id="specialty-a-změna-situace" class="legacy-anchor"></span>
+
+## Milníky Specialty
 
 | Schopnost / situace | Co zkontrolovat |
 | --- | --- |
 | <span id="ref-elemental-fusion-2">**Elemental Fusion**</span> | Plošný účinek (AoE) pro skupiny monster; odložené poškození pro bossy. |
-| <span id="ref-cold-shock-fire-spirit">**Cold Shock / Fire Spirit**</span> | Obnova zdrojů při zvyšování úrovně; útočné proc/perk volby pro bossy. |
+| <span id="ref-cold-shock-fire-spirit">**Cold Shock / Fire Spirit**</span> | Obnova zdrojů při zvyšování úrovně; útočné perky a procy pro bossy. |
 
 ## Kontrola Tarot Clubu před bojem
 
@@ -63,6 +68,6 @@ Sestava vychází z komunitního průvodce pro Global launch, zkontrolovaného k
 2. Zapisuj počet Fusion oken a stav elementů, nejen poškození jednoho přivolání.
 3. Jointstrike: Destructive Attack je volba pro potřebný stagger.
 
-Pro PvP si připrav samostatnou sestavu: zkontroluj reakce na CC, dosah, obranu a spotřebu zdrojů. Sestava pro bosse nemusí vyhovovat boji s hráči. Cooldowny a hodnoty vždy porovnej s vlastními tooltipy; závisejí na úrovních, percích a patchi.
+Cooldowny a hodnoty porovnej s vlastními tooltipy; pro PvP si připrav samostatnou sestavu (viz [přehled tříd](../prehled/)).
 
 [Milníky schopností](../../pruvodce/schopnosti-stigma/), [Daevanion](../../pruvodce/daevanion/), [Arcana](../../pruvodce/arcana/), [Staty](../../reference/staty/) a [Stagger](../../reference/stagger/) vysvětlují související systémy.
