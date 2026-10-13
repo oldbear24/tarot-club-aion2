@@ -17,7 +17,7 @@ Toto jsou doporučení Tarot Clubu. Nejde o ověřenou rotaci konkrétní tříd
 Celkové poškození z jednoho bosse bez délky boje a podmínek nelze rozumně porovnat. Zapiš si dobu aktivního boje, úmrtí, čas mimo dosah a fáze, ve kterých se na cíl nedá útočit.
 :::
 
-Pro běžný výpočet platí **DPS = poškození / čas v sekundách**. Ilustrační příklad: 2 400 000 poškození za 240 sekund znamená 10 000 DPS, za 120 sekund 20 000 DPS. Je to matematický příklad, nikoli cílový výkon pro AION 2.
+Pro běžný výpočet platí **DPS = poškození / celková délka boje v sekundách**; aktivní čas na cíli zapisuj zvlášť, aby šlo pokusy porovnat. Ilustrační příklad: 2 400 000 poškození za 240 sekund znamená 10 000 DPS, za 120 sekund 20 000 DPS. Je to matematický příklad, nikoli cílový výkon pro AION 2.
 
 ## Hledej překážku postupně
 
@@ -27,17 +27,19 @@ Pro běžný výpočet platí **DPS = poškození / čas v sekundách**. Ilustra
 | Nemám zdroj na důležitou schopnost | Spotřebu, obnovu a pořadí použití. |
 | Po výměně předmětu jsem slabší | Celý panel statů, ztracené bonusy a podmínky nových bonusů. |
 | Na některých bossech výkon výrazně klesá | Dostupnost cíle, pozici, odlišné mechaniky a přesnost zásahů. |
-| Zlepšení se neopakuje | Proveď více srovnatelných pokusů. |
+| Zlepšení se neopakuje | Počet a srovnatelnost pokusů. |
 
 ## Pořadí praktických oprav
 
-1. <mark class="focus">Přežij a zůstaň v boji.</mark> Sleduj důvod každého přerušení vlastní aktivity.
+1. <mark class="focus">Přežij a zůstaň v boji.</mark> Zapiš si, proč jsi přestal útočit: smrt, úhyb, pobyt mimo dosah nebo čekání na schopnost.
 2. **Používej schopnosti záměrně.** Poznej jejich návaznost a podmínky.
 3. **Domluv se na oknech poškození.** Synchronizuj důležité buffy s partou.
 4. **Ověř využití statů.** Přečti [Útok a poškození](../../staty/utok/) a [Proc efekty](../../staty/procy/).
 5. **Teprve pak porovnej upgrade.** Změň jednu věc a měření zopakuj.
 
-## Záznam do komunitních poznámek
+<span id="záznam-do-komunitních-poznámek" class="legacy-anchor"></span>
+
+## Audit buildu a záznam měření
 
 Před nákupem dalšího kusu zkontroluj [Specialty milníky a používaná Stigmata](../schopnosti-stigma/), [uzly schopností Daevanion](../daevanion/) a [řádky Arcana](../arcana/). Toto je doporučený audit buildu: zapisuj celkové úrovně hlavních schopností a dostupné perky před změnou i po ní.
 
