@@ -26,7 +26,7 @@ sources:
   scope: global
 ---
 
-**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Údaje vycházejí z komunitních zdrojů; sami jsme je v globální verzi neověřili. Ceny, dostupnost a sdílení porovnej s aktuálním tooltipem nebo panelem hry.
+**Rozsah:** Global launch / Season 1, rešerše 12. října 2026. Komunitní podklady, nikoli naše měření v klientu. Ceny a limity porovnej s aktuálním tooltipem nebo panelem hry.
 
 ## Co sbírat pro který recept
 
