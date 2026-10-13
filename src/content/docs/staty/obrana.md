@@ -25,9 +25,9 @@ sources:
 | Stat | Co dělá |
 | --- | --- |
 | **Defense** | Omezuje příchozí poškození. |
-| **Evasion** | Umožňuje zásahu uhnout. |
+| **Evasion** | Šance vyhnout se zásahu; tooltip uvádí strop, viz [Limity a sporné hodnoty](../limity/). |
 | **Block** | Podporuje parry nebo blok štítem; výsledek ovlivňuje Accuracy a Block Penetration útočníka. |
-| **Damage Tolerance** | Omezuje odpovídající poškození. |
+| **Damage Tolerance** | Snižuje přijaté poškození a působí proti Damage Boost útočníka. Stejně fungují varianty Weapon, Critical, PvE a Boss. |
 | **Endurance** | Šance na poloviční poškození; proti Endurance Penetration. |
 | **Regeneration** | Šance obnovit část utrpěného poškození jako HP; proti Regeneration Penetration. |
 

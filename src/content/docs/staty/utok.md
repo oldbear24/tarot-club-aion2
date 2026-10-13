@@ -26,8 +26,11 @@ sources:
 | **Attack Bonus** | Další útočný příspěvek; nezaměňuj jej za Attack. |
 | **Attack increase** | Procentní zvýšení útočné hodnoty. |
 | **Penetration** | Překonává Defense cíle; nesnižuje ji pod nulu. |
+| **Critical Attack** | Body dodatečného poškození při kritickém zásahu; snižuje je Critical Damage Defense cíle. |
+| **Front / Back Attack** | Body dodatečného poškození podle směru zásahu; Back Attack podle tooltipu ignoruje Block cíle. |
+| **Power Shard Damage Bonus** | Body bonusu poškození při používání Power Shard. |
 
-Přesnou serverový vzorec poškození Global zde zatím neuvádíme. Význam řádku lze vysvětlit z tooltipu, ale jeho přesnou váhu pro konkrétní build je potřeba změřit.
+Přesný serverový vzorec poškození Global zde zatím neuvádíme. Význam řádku lze vysvětlit z tooltipu, ale jeho přesnou váhu pro konkrétní build je potřeba změřit.
 
 ## Boost: jaké poškození posiluje
 
@@ -38,9 +41,6 @@ Přesnou serverový vzorec poškození Global zde zatím neuvádíme. Význam ř
 | **Critical Damage Boost** | Posiluje kritické zásahy; proti Critical Damage Tolerance. |
 | **Front Attack Damage Boost** | Bonus při zásahu zepředu. |
 | **Back Attack Damage Boost** | Bonus při zásahu zezadu; tooltip také uvádí ignorování Block. |
-| **Critical Attack** | Dodatečné poškození při kritickém zásahu. |
-| **Front / Back Attack** | Dodatečné poškození podle směru zásahu. |
-| **Power Shard Damage Bonus** | Bonus při používání Power Shard. |
 
 :::note[Důležité: šance na kritický zásah a jeho síla se liší]
 **Critical Hit** a **Critical Damage Boost** jsou různé věci: první pomáhá kritický zásah získat, druhý jej posiluje.
@@ -50,21 +50,21 @@ Přesnou serverový vzorec poškození Global zde zatím neuvádíme. Význam ř
 
 | Stat | Podmínka použití |
 | --- | --- |
-| **PvE Attack** | Útok na monstrum. |
+| **PvE Attack** | Útok na monstra. |
 | **PvE Accuracy** | Přesnost proti monstrům. |
 | **PvE Damage Boost** | Bonus poškození proti monstrům. |
 | **Boss Attack** | Útok na bosse. |
 | **Boss Damage Boost** | Bonus poškození proti bossovi. |
 | **PvE / Boss Damage Tolerance** | Snížení příslušného příchozího poškození. |
 
-Názvy **Attack** a **Boost** představují odlišné typy hodnot. <mark class="focus">Neporovnávej jejich čísla přímo jako stejné jednotky.</mark>
+Názvy **Attack** a **Boost** představují odlišné typy hodnot: Attack staty jsou body, Boost staty procenta. <mark class="focus">Neporovnávej jejich čísla přímo jako stejné jednotky.</mark>
 
 ## Jak podle toho vybírat výbavu
 
 Doporučení Tarot Clubu:
 
 1. Urči, proti komu budeš hrát: běžná monstra, boss, nebo hráč.
-2. Zkontroluj, zda bonus skutečně využiješ. Zadní bonus vyžaduje odpovídající pozici.
+2. Zkontroluj, zda bonus skutečně využiješ. Back Attack bonusy fungují jen při zásahu zezadu.
 3. Srovnávej celou výbavu včetně ztracených statů, ne pouze jeden výrazný řádek.
 4. Výsledek ověř několika podobnými souboji. Jeden povedený proc může porovnání zkreslit.
 

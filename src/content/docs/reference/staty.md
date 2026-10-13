@@ -98,7 +98,7 @@ lookupAliases:
 
 Katalog zahrnuje **148 pojmenovaných statů z citované tooltipové sady Wikily**, doplněných o další používané názvy. Wikily u této sady nepotvrzuje konkrétní patch Global, proto hodnoty nejsou naše serverová měření. Body, procenta a procentní zvýšení základní hodnoty jsou různé jednotky.
 
-Převody atributů a limity jsou vysvětlené v [Základních atributech](../../staty/zakladni/), [Pantheonu](../../staty/pantheon/) a [Neověřených limitech](../../staty/limity/). Rodový bonus funguje pouze při odpovídajícím typu protivníka; řádky nelze zaměnit za obecný PvE bonus.
+Převody atributů a limity jsou vysvětlené v [Základních atributech](../../staty/zakladni/), [Pantheonu](../../staty/pantheon/) a [Limitech a sporných hodnotách](../../staty/limity/). Rodový bonus funguje pouze při odpovídajícím typu protivníka; řádky nelze zaměnit za obecný PvE bonus.
 
 ## Hlavní atributy
 
@@ -119,8 +119,8 @@ Převody atributů a limity jsou vysvětlené v [Základních atributech](../../
 | <span id="ref-destruction-zikel">**Destruction [Zikel]**</span> | Atribut | Attack increase, Perfect Resist. |
 | <span id="ref-freedom-vaizel">**Freedom [Vaizel]**</span> | Atribut | Accuracy a Evasion increase. |
 | <span id="ref-death-triniel">**Death [Triniel]**</span> | Atribut | Critical Hit increase, Regeneration Penetration. |
-| <span id="ref-illusion-kaisinel">**Illusion [Kaisinel]**</span> | Atribut | Cooldown, Endurance Penetration. |
-| <span id="ref-wisdom-lumiel">**Wisdom [Lumiel]**</span> | Atribut | MP Cost, Double Chance. |
+| <span id="ref-illusion-kaisinel">**Illusion [Kaisinel]**</span> | Atribut | Zkrácení Cooldown, Endurance Penetration. |
+| <span id="ref-wisdom-lumiel">**Wisdom [Lumiel]**</span> | Atribut | Snížení MP Cost, Double Chance. |
 | <span id="ref-life-yustiel">**Life [Yustiel]**</span> | Atribut | HP increase, Regeneration. |
 | <span id="ref-destiny-marchutan">**Destiny [Marchutan]**</span> | Atribut | MP increase, Endurance. |
 | <span id="ref-time-siel">**Time [Siel]**</span> | Atribut | Combat Speed, Double Resist. |
@@ -134,9 +134,9 @@ Převody atributů a limity jsou vysvětlené v [Základních atributech](../../
 | --- | --- | --- |
 | <span id="ref-attack">**Attack**</span> | Body | Základ útoku. |
 | <span id="ref-accuracy">**Accuracy**</span> | Body | Přesnost proti Evasion/Block. |
-| <span id="ref-critical-hit">**Critical Hit**</span> | Body | Podporuje kritické zásahy. |
+| <span id="ref-critical-hit">**Critical Hit**</span> | Body | Zvyšuje kritickou šanci (Critical Hit Rate); samotné číslo nejsou procenta. |
 | <span id="ref-defense">**Defense**</span> | Body | Omezuje příchozí poškození. |
-| <span id="ref-evasion">**Evasion**</span> | Body | Vyhýbání zásahům. |
+| <span id="ref-evasion">**Evasion**</span> | Body | Vyhýbání zásahům; strop uvádí [Limity](../../staty/limity/). |
 | <span id="ref-critical-hit-resist">**Critical Hit Resist**</span> | Body | Odpor kritickým zásahům. |
 | <span id="ref-combat-speed">**Combat Speed**</span> | % | Ovlivňuje rychlost provedení útoků a kouzel. |
 | <span id="ref-hp">**HP**</span> | Body | Životy. |
@@ -150,7 +150,7 @@ Převody atributů a limity jsou vysvětlené v [Základních atributech](../../
 | --- | --- | --- |
 | <span id="ref-penetration">**Penetration**</span> | Body | Překonává Defense. |
 | <span id="ref-critical-attack">**Critical Attack**</span> | Body | Dodatečné poškození při kritickém zásahu. |
-| <span id="ref-back-attack">**Back Attack**</span> | Body | Dodatečné poškození při zásahu zezadu. |
+| <span id="ref-back-attack">**Back Attack**</span> | Body | Dodatečné poškození při zásahu zezadu; ignoruje Block cíle. |
 | <span id="ref-front-attack">**Front Attack**</span> | Body | Dodatečné poškození při zásahu zepředu. |
 | <span id="ref-critical-damage-defense">**Critical Damage Defense**</span> | Body | Obrana proti kritickému poškození. |
 | <span id="ref-back-defense">**Back Defense**</span> | Body | Obrana proti zásahům zezadu. |
@@ -171,22 +171,22 @@ Převody atributů a limity jsou vysvětlené v [Základních atributech](../../
 
 | Stat ve hře | Jednotka | Stručný význam |
 | --- | --- | --- |
-| <span id="ref-back-attack-critical-hit">**Back Attack Critical Hit**</span> | Body | Crit zezadu. |
-| <span id="ref-front-attack-critical-hit">**Front Attack Critical Hit**</span> | Body | Crit zepředu. |
+| <span id="ref-back-attack-critical-hit">**Back Attack Critical Hit**</span> | Body | Critical Hit při zásahu zezadu; ignoruje Block cíle. |
+| <span id="ref-front-attack-critical-hit">**Front Attack Critical Hit**</span> | Body | Critical Hit při zásahu zepředu. |
 | <span id="ref-multi-hit-chance">**Multi-hit Chance**</span> | % | Šance na dodatečné zásahy. |
 | <span id="ref-multi-hit-resist">**Multi-hit Resist**</span> | % | Odpor Multi-hit. |
-| <span id="ref-back-attack-critical-hit-resist">**Back Attack Critical Hit Resist**</span> | Body | Odpor critům zezadu. |
-| <span id="ref-front-attack-critical-hit-resist">**Front Attack Critical Hit Resist**</span> | Body | Odpor critům zepředu. |
+| <span id="ref-back-attack-critical-hit-resist">**Back Attack Critical Hit Resist**</span> | Body | Odpor vůči kritickým zásahům zezadu. |
+| <span id="ref-front-attack-critical-hit-resist">**Front Attack Critical Hit Resist**</span> | Body | Odpor vůči kritickým zásahům zepředu. |
 | <span id="ref-block">**Block**</span> | Body | Blok/parry. |
 | <span id="ref-block-penetration">**Block Penetration**</span> | Body | Překonání Block. |
 | <span id="ref-perfect-chance">**Perfect Chance**</span> | % | Šance na silnější zásah založený na Max Attack zbraně. |
-| <span id="ref-double-chance">**Double Chance**</span> | % | Silnější finální zásah; Smite. |
+| <span id="ref-double-chance">**Double Chance**</span> | % | Šance na výrazně silnější zásah podle finálního poškození; komunitně Smite. Nejde o dva zásahy. |
 | <span id="ref-regeneration">**Regeneration**</span> | % | Šance obnovit část utrpěného poškození jako HP. |
 | <span id="ref-endurance">**Endurance**</span> | % | Šance snížit přijaté poškození na polovinu. |
 | <span id="ref-perfect-resist">**Perfect Resist**</span> | % | Odpor Perfect. |
 | <span id="ref-double-resist">**Double Resist**</span> | % | Odpor Double/Smite. |
-| <span id="ref-regeneration-penetration">**Regeneration Penetration**</span> | % | Omezení cílového Regeneration. |
-| <span id="ref-endurance-penetration">**Endurance Penetration**</span> | % | Omezení cílového Endurance. |
+| <span id="ref-regeneration-penetration">**Regeneration Penetration**</span> | % | Snižuje šanci Regeneration cíle. |
+| <span id="ref-endurance-penetration">**Endurance Penetration**</span> | % | Snižuje šanci Endurance cíle. |
 
 ## PvE a bossové
 
@@ -220,48 +220,50 @@ Převody atributů a limity jsou vysvětlené v [Základních atributech](../../
 
 ## Rodové bonusy
 
+Každý ze čtyř rodů (Cogni, Fera, Natura, Varian) má stejných deset statů; liší se jen typem protivníka. Damage Boost a Damage Tolerance jsou procenta, ostatní body.
+
 | Stat ve hře | Jednotka | Stručný význam |
 | --- | --- | --- |
-| <span id="ref-cogni-attack">**Cogni Attack**</span> | — | Útok proti protivníkům rodu Cogni. |
-| <span id="ref-cogni-defense">**Cogni Defense**</span> | — | Obrana proti protivníkům rodu Cogni. |
-| <span id="ref-cogni-accuracy">**Cogni Accuracy**</span> | — | Přesnost proti protivníkům rodu Cogni. |
-| <span id="ref-cogni-critical-hit">**Cogni Critical Hit**</span> | — | Hodnota pro kritické zásahy proti protivníkům rodu Cogni. |
-| <span id="ref-cogni-critical-hit-resist">**Cogni Critical Hit Resist**</span> | — | Odpor vůči kritickým zásahům od protivníků rodu Cogni. |
+| <span id="ref-cogni-attack">**Cogni Attack**</span> | Body | Útok proti protivníkům rodu Cogni. |
+| <span id="ref-cogni-defense">**Cogni Defense**</span> | Body | Obrana proti protivníkům rodu Cogni. |
+| <span id="ref-cogni-accuracy">**Cogni Accuracy**</span> | Body | Přesnost proti protivníkům rodu Cogni. |
+| <span id="ref-cogni-critical-hit">**Cogni Critical Hit**</span> | Body | Hodnota pro kritické zásahy proti protivníkům rodu Cogni. |
+| <span id="ref-cogni-critical-hit-resist">**Cogni Critical Hit Resist**</span> | Body | Odpor vůči kritickým zásahům od protivníků rodu Cogni. |
 | <span id="ref-cogni-damage-boost">**Cogni Damage Boost**</span> | % | Bonus poškození proti protivníkům rodu Cogni. |
 | <span id="ref-cogni-damage-tolerance">**Cogni Damage Tolerance**</span> | % | Odolnost vůči poškození od protivníků rodu Cogni. |
-| <span id="ref-cogni-evasion">**Cogni Evasion**</span> | — | Hodnota pro úhyb proti protivníkům rodu Cogni. |
-| <span id="ref-cogni-block">**Cogni Block**</span> | — | Hodnota pro blokování zásahů od protivníků rodu Cogni. |
-| <span id="ref-cogni-block-penetration">**Cogni Block Penetration**</span> | — | Překonání Block u protivníků rodu Cogni. |
-| <span id="ref-fera-attack">**Fera Attack**</span> | — | Útok proti protivníkům rodu Fera. |
-| <span id="ref-fera-defense">**Fera Defense**</span> | — | Obrana proti protivníkům rodu Fera. |
-| <span id="ref-fera-accuracy">**Fera Accuracy**</span> | — | Přesnost proti protivníkům rodu Fera. |
-| <span id="ref-fera-critical-hit">**Fera Critical Hit**</span> | — | Hodnota pro kritické zásahy proti protivníkům rodu Fera. |
-| <span id="ref-fera-critical-hit-resist">**Fera Critical Hit Resist**</span> | — | Odpor vůči kritickým zásahům od protivníků rodu Fera. |
+| <span id="ref-cogni-evasion">**Cogni Evasion**</span> | Body | Hodnota pro úhyb proti protivníkům rodu Cogni. |
+| <span id="ref-cogni-block">**Cogni Block**</span> | Body | Hodnota pro blokování a parry zásahů od protivníků rodu Cogni. |
+| <span id="ref-cogni-block-penetration">**Cogni Block Penetration**</span> | Body | Překonání Block u protivníků rodu Cogni. |
+| <span id="ref-fera-attack">**Fera Attack**</span> | Body | Útok proti protivníkům rodu Fera. |
+| <span id="ref-fera-defense">**Fera Defense**</span> | Body | Obrana proti protivníkům rodu Fera. |
+| <span id="ref-fera-accuracy">**Fera Accuracy**</span> | Body | Přesnost proti protivníkům rodu Fera. |
+| <span id="ref-fera-critical-hit">**Fera Critical Hit**</span> | Body | Hodnota pro kritické zásahy proti protivníkům rodu Fera. |
+| <span id="ref-fera-critical-hit-resist">**Fera Critical Hit Resist**</span> | Body | Odpor vůči kritickým zásahům od protivníků rodu Fera. |
 | <span id="ref-fera-damage-boost">**Fera Damage Boost**</span> | % | Bonus poškození proti protivníkům rodu Fera. |
 | <span id="ref-fera-damage-tolerance">**Fera Damage Tolerance**</span> | % | Odolnost vůči poškození od protivníků rodu Fera. |
-| <span id="ref-fera-evasion">**Fera Evasion**</span> | — | Hodnota pro úhyb proti protivníkům rodu Fera. |
-| <span id="ref-fera-block">**Fera Block**</span> | — | Hodnota pro blokování zásahů od protivníků rodu Fera. |
-| <span id="ref-fera-block-penetration">**Fera Block Penetration**</span> | — | Překonání Block u protivníků rodu Fera. |
-| <span id="ref-natura-attack">**Natura Attack**</span> | — | Útok proti protivníkům rodu Natura. |
-| <span id="ref-natura-defense">**Natura Defense**</span> | — | Obrana proti protivníkům rodu Natura. |
-| <span id="ref-natura-accuracy">**Natura Accuracy**</span> | — | Přesnost proti protivníkům rodu Natura. |
-| <span id="ref-natura-critical-hit">**Natura Critical Hit**</span> | — | Hodnota pro kritické zásahy proti protivníkům rodu Natura. |
-| <span id="ref-natura-critical-hit-resist">**Natura Critical Hit Resist**</span> | — | Odpor vůči kritickým zásahům od protivníků rodu Natura. |
+| <span id="ref-fera-evasion">**Fera Evasion**</span> | Body | Hodnota pro úhyb proti protivníkům rodu Fera. |
+| <span id="ref-fera-block">**Fera Block**</span> | Body | Hodnota pro blokování a parry zásahů od protivníků rodu Fera. |
+| <span id="ref-fera-block-penetration">**Fera Block Penetration**</span> | Body | Překonání Block u protivníků rodu Fera. |
+| <span id="ref-natura-attack">**Natura Attack**</span> | Body | Útok proti protivníkům rodu Natura. |
+| <span id="ref-natura-defense">**Natura Defense**</span> | Body | Obrana proti protivníkům rodu Natura. |
+| <span id="ref-natura-accuracy">**Natura Accuracy**</span> | Body | Přesnost proti protivníkům rodu Natura. |
+| <span id="ref-natura-critical-hit">**Natura Critical Hit**</span> | Body | Hodnota pro kritické zásahy proti protivníkům rodu Natura. |
+| <span id="ref-natura-critical-hit-resist">**Natura Critical Hit Resist**</span> | Body | Odpor vůči kritickým zásahům od protivníků rodu Natura. |
 | <span id="ref-natura-damage-boost">**Natura Damage Boost**</span> | % | Bonus poškození proti protivníkům rodu Natura. |
 | <span id="ref-natura-damage-tolerance">**Natura Damage Tolerance**</span> | % | Odolnost vůči poškození od protivníků rodu Natura. |
-| <span id="ref-natura-evasion">**Natura Evasion**</span> | — | Hodnota pro úhyb proti protivníkům rodu Natura. |
-| <span id="ref-natura-block">**Natura Block**</span> | — | Hodnota pro blokování zásahů od protivníků rodu Natura. |
-| <span id="ref-natura-block-penetration">**Natura Block Penetration**</span> | — | Překonání Block u protivníků rodu Natura. |
-| <span id="ref-varian-attack">**Varian Attack**</span> | — | Útok proti protivníkům rodu Varian. |
-| <span id="ref-varian-defense">**Varian Defense**</span> | — | Obrana proti protivníkům rodu Varian. |
-| <span id="ref-varian-accuracy">**Varian Accuracy**</span> | — | Přesnost proti protivníkům rodu Varian. |
-| <span id="ref-varian-critical-hit">**Varian Critical Hit**</span> | — | Hodnota pro kritické zásahy proti protivníkům rodu Varian. |
-| <span id="ref-varian-critical-hit-resist">**Varian Critical Hit Resist**</span> | — | Odpor vůči kritickým zásahům od protivníků rodu Varian. |
+| <span id="ref-natura-evasion">**Natura Evasion**</span> | Body | Hodnota pro úhyb proti protivníkům rodu Natura. |
+| <span id="ref-natura-block">**Natura Block**</span> | Body | Hodnota pro blokování a parry zásahů od protivníků rodu Natura. |
+| <span id="ref-natura-block-penetration">**Natura Block Penetration**</span> | Body | Překonání Block u protivníků rodu Natura. |
+| <span id="ref-varian-attack">**Varian Attack**</span> | Body | Útok proti protivníkům rodu Varian. |
+| <span id="ref-varian-defense">**Varian Defense**</span> | Body | Obrana proti protivníkům rodu Varian. |
+| <span id="ref-varian-accuracy">**Varian Accuracy**</span> | Body | Přesnost proti protivníkům rodu Varian. |
+| <span id="ref-varian-critical-hit">**Varian Critical Hit**</span> | Body | Hodnota pro kritické zásahy proti protivníkům rodu Varian. |
+| <span id="ref-varian-critical-hit-resist">**Varian Critical Hit Resist**</span> | Body | Odpor vůči kritickým zásahům od protivníků rodu Varian. |
 | <span id="ref-varian-damage-boost">**Varian Damage Boost**</span> | % | Bonus poškození proti protivníkům rodu Varian. |
 | <span id="ref-varian-damage-tolerance">**Varian Damage Tolerance**</span> | % | Odolnost vůči poškození od protivníků rodu Varian. |
-| <span id="ref-varian-evasion">**Varian Evasion**</span> | — | Hodnota pro úhyb proti protivníkům rodu Varian. |
-| <span id="ref-varian-block">**Varian Block**</span> | — | Hodnota pro blokování zásahů od protivníků rodu Varian. |
-| <span id="ref-varian-block-penetration">**Varian Block Penetration**</span> | — | Překonání Block u protivníků rodu Varian. |
+| <span id="ref-varian-evasion">**Varian Evasion**</span> | Body | Hodnota pro úhyb proti protivníkům rodu Varian. |
+| <span id="ref-varian-block">**Varian Block**</span> | Body | Hodnota pro blokování a parry zásahů od protivníků rodu Varian. |
+| <span id="ref-varian-block-penetration">**Varian Block Penetration**</span> | Body | Překonání Block u protivníků rodu Varian. |
 
 ## Obnova zdrojů
 
@@ -271,8 +273,8 @@ Převody atributů a limity jsou vysvětlené v [Základních atributech](../../
 | <span id="ref-out-of-combat-natural-hp-regen">**Out-of-Combat Natural HP Regen**</span> | Body | Pravidelná obnova HP mimo boj. |
 | <span id="ref-combat-natural-mp-regen">**Combat Natural MP Regen**</span> | Body | Pravidelná obnova MP v boji. |
 | <span id="ref-out-of-combat-natural-mp-regen">**Out-of-Combat Natural MP Regen**</span> | Body | Pravidelná obnova MP mimo boj. |
-| <span id="ref-combat-natural-stamina-regen">**Combat Natural Stamina Regen**</span> | Body | Pravidelná obnova Stamina v boji. |
-| <span id="ref-out-of-combat-natural-stamina-regen">**Out-of-Combat Natural Stamina Regen**</span> | Body | Pravidelná obnova Stamina mimo boj. |
+| <span id="ref-combat-natural-stamina-regen">**Combat Natural Stamina Regen**</span> | Body | Pravidelná obnova staminy v boji. |
+| <span id="ref-out-of-combat-natural-stamina-regen">**Out-of-Combat Natural Stamina Regen**</span> | Body | Pravidelná obnova staminy mimo boj. |
 | <span id="ref-combat-natural-flight-power-regen">**Combat Natural Flight Power Regen**</span> | Body | Pravidelná obnova Flight Power v boji. |
 | <span id="ref-out-of-combat-natural-flight-power-regen">**Out-of-Combat Natural Flight Power Regen**</span> | Body | Pravidelná obnova Flight Power mimo boj. |
 | <span id="ref-hp-potion-recovery">**HP Potion Recovery**</span> | Body | Obnova HP lektvarem. |
@@ -293,7 +295,7 @@ Převody atributů a limity jsou vysvětlené v [Základních atributech](../../
 | <span id="ref-mount-sprint-stamina-cost-reduction-rate">**Mount Sprint Stamina Cost Reduction Rate**</span> | % | Snižuje spotřebu staminy při sprintu na mountu. |
 | <span id="ref-heal-boost">**Heal Boost**</span> | % | Posiluje léčení, které poskytuješ. |
 | <span id="ref-incoming-heal">**Incoming Heal**</span> | % | Posiluje léčení, které přijímáš. |
-| <span id="ref-cooldown">**Cooldown**</span> | % | Doba obnovy schopnosti. |
+| <span id="ref-cooldown">**Cooldown**</span> | % | Doba obnovy schopnosti; záporná hodnota cooldown zkracuje. Strop zkrácení uvádí [Limity](../../staty/limity/). |
 | <span id="ref-enmity-increase">**Enmity increase**</span> | % | Získávaná pozornost cíle. |
 | <span id="ref-sprinting-speed">**Sprinting Speed**</span> | % | Rychlost sprintu. |
 | <span id="ref-flight-speed">**Flight Speed**</span> | % | Rychlost letu. |
@@ -311,4 +313,4 @@ Převody atributů a limity jsou vysvětlené v [Základních atributech](../../
 
 ## Jak použít porovnání
 
-**Doporučení Tarot Clubu:** opiš přesný název a jednotku. U bonusu ověř podmínku cíle, pozice a schopnosti. Hledej jeho protějšek Resist/Tolerance a sleduj, co při výměně ztratíš. Tabulka nevydává pořadí statů za univerzální BiS build.
+**Doporučení Tarot Clubu:** opiš přesný název a jednotku. U bonusu ověř podmínku cíle, pozice a schopnosti. Hledej jeho protějšek Resist/Tolerance a sleduj, co při výměně ztratíš. Tabulka není žebříček statů ani univerzální BiS build.
