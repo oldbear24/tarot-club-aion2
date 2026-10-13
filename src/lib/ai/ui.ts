@@ -1,5 +1,5 @@
 import { MAX_QUESTION_LENGTH, retrievalQuery, retrievePassages, validateIndex } from './retrieval.ts';
-import { parseAnswer } from './protocol.ts';
+import { NO_EVIDENCE, parseAnswer } from './protocol.ts';
 import { renderAnswer } from './render.ts';
 import type { WikiIndex } from './types.ts';
 import type { LocalModel } from './runtime.ts';
@@ -43,37 +43,50 @@ export function initTarotChat(): void {
   const deactivate = get<HTMLButtonElement>('[data-ai-deactivate]');
   const send = get<HTMLButtonElement>('[data-ai-send]');
   const reset = get<HTMLButtonElement>('[data-ai-reset]');
-  const progress = get<HTMLProgressElement>('[data-ai-progress]');
-  const think = get<HTMLInputElement>('[data-ai-think]');
   const consent = get<HTMLDialogElement>('[data-ai-consent]');
   const base = import.meta.env.BASE_URL;
   let model: LocalModel | undefined;
   // `busy` covers the whole question, including the model download: only one question runs at a time.
-  let ready = false, busy = false, loading = false;
+  let ready = false, busy = false;
   let generation = 0;
   let index: WikiIndex | undefined;
   let previousQuestion = '';
   let fetchController: AbortController | undefined;
+  // Progress line inside the answer bubble that is currently being worked on.
+  let pending: { text: HTMLElement; bar: HTMLProgressElement } | undefined;
 
   const updateControls = () => {
     send.disabled = busy || !input.value.trim() || !!supportReason();
-    send.textContent = busy ? 'Čekej…' : 'Odeslat';
     reset.disabled = busy;
     deactivate.hidden = !ready && !busy;
     deactivate.textContent = busy ? 'Zastavit' : 'Vypnout AI';
-    progress.hidden = !loading;
     messages.setAttribute('aria-busy', String(busy));
   };
+  // Keep the newest message in view unless the reader has scrolled up.
+  const follow = (force = false) => {
+    if (force || messages.scrollHeight - messages.scrollTop - messages.clientHeight < 80) messages.scrollTop = messages.scrollHeight;
+  };
+  const setPending = (text: string, progress?: number) => {
+    if (!pending) return;
+    pending.text.textContent = text;
+    pending.bar.hidden = progress === undefined;
+    if (progress !== undefined) pending.bar.value = progress;
+  };
+  const endPending = () => { pending?.text.parentElement?.remove(); pending = undefined; };
   const disable = () => {
     generation++;
+    if (pending) {
+      pending.text.textContent = 'Dotaz byl zastaven, odpověď je neúplná.';
+      pending.bar.hidden = true;
+      pending = undefined;
+    }
     model?.dispose(); model = undefined;
     fetchController?.abort();
     if (consent.open) consent.close('cancel');
-    ready = false; busy = false; loading = false;
+    ready = false; busy = false;
     updateControls();
   };
-  const unsupported = supportReason();
-  if (unsupported) status.textContent = unsupported;
+  status.textContent = supportReason() || '';
   updateControls();
 
   const askConsent = () => new Promise<boolean>(resolve => {
@@ -84,38 +97,25 @@ export function initTarotChat(): void {
 
   // Throws on failure; the caller reports it in the answer.
   const loadModel = async (current: number) => {
-    loading = true; progress.value = 0;
-    status.textContent = 'Ověřuji podporu grafické karty…';
-    updateControls();
-    try {
-      const gpu = (navigator as unknown as { gpu: GPUAccess }).gpu;
-      const adapter = await gpu.requestAdapter();
-      if (!adapter) throw new Error('no-adapter');
-      if (current !== generation) return;
-      const { LocalModel } = await import('./runtime.ts');
-      if (current !== generation) return;
-      model = new LocalModel(value => {
-        if (current !== generation) return;
-        progress.value = value;
-        status.textContent = `Načítání modelu: ${Math.round(value * 100)} % (stažení a příprava).`;
-      }, modelFor(!!adapter.features?.has('shader-f16')));
-      await model.initialize();
-      if (current !== generation) return;
-      ready = true;
-    } finally {
-      if (current === generation) { loading = false; updateControls(); }
-    }
+    setPending('Ověřuji podporu grafické karty…');
+    const gpu = (navigator as unknown as { gpu: GPUAccess }).gpu;
+    const adapter = await gpu.requestAdapter();
+    if (!adapter) throw new Error('no-adapter');
+    if (current !== generation) return;
+    const { LocalModel } = await import('./runtime.ts');
+    if (current !== generation) return;
+    setPending('Načítám model: 0 %', 0);
+    model = new LocalModel(value => {
+      if (current === generation) setPending(`Načítám model: ${Math.round(value * 100)} %`, value);
+    }, modelFor(!!adapter.features?.has('shader-f16')));
+    await model.initialize();
+    if (current !== generation) return;
+    ready = true;
   };
 
   deactivate.addEventListener('click', () => {
-    const wasBusy = busy;
     disable();
-    if (wasBusy) {
-      const note = document.createElement('p');
-      note.textContent = 'Dotaz byl zastaven. Případná odpověď výše je neúplná.';
-      messages.append(note);
-    }
-    status.textContent = 'AI je vypnutá, její paměť byla uvolněna. Stažené soubory zůstávají v cache prohlížeče.';
+    status.textContent = 'AI je vypnutá a paměť uvolněná. Model zůstává v cache a načte se s další otázkou.';
   });
   const openSearch = (event?: Event, query = input.value.trim()) => {
     // Starlight closes its dialog on outside clicks, including the original caller's click.
@@ -141,6 +141,10 @@ export function initTarotChat(): void {
     button.type = 'button'; button.textContent = 'Vyhledat téma ve wiki';
     button.addEventListener('click', event => openSearch(event, question)); parent.append(button);
   };
+  const say = (target: HTMLElement, text: string, question: string) => {
+    target.replaceChildren(Object.assign(document.createElement('p'), { textContent: text }));
+    searchButton(target, question);
+  };
   root.querySelectorAll<HTMLButtonElement>('[data-ai-example]').forEach(button => {
     button.addEventListener('click', () => {
       input.value = button.dataset.aiExample || ''; updateControls(); input.focus();
@@ -156,7 +160,7 @@ export function initTarotChat(): void {
   reset.addEventListener('click', () => {
     if (busy) return;
     messages.replaceChildren(); previousQuestion = ''; input.value = '';
-    status.textContent = ready ? 'Nový chat. AI je připravená.' : supportReason() || 'Nový chat. Model se načte s první otázkou.';
+    status.textContent = supportReason() || '';
     updateControls(); input.focus();
   });
 
@@ -168,17 +172,26 @@ export function initTarotChat(): void {
     const current = generation;
     busy = true;
     input.value = '';
-    status.textContent = 'Hledám relevantní pasáže ve wiki…';
+    status.textContent = '';
     const userMessage = document.createElement('div');
     userMessage.className = 'tarot-message tarot-message--question';
-    userMessage.textContent = `Ty: ${question}`;
-    const answer = document.createElement('div'); answer.className = 'tarot-message';
+    userMessage.setAttribute('aria-label', 'Tvoje otázka');
+    userMessage.textContent = question;
+    const answer = document.createElement('div');
+    answer.className = 'tarot-message tarot-message--answer';
     answer.setAttribute('aria-label', 'Odpověď Tarot AI');
-    answer.textContent = 'Hledám podklady…';
+    const body = document.createElement('div');
+    const line = document.createElement('p');
+    line.className = 'tarot-pending'; line.setAttribute('role', 'status');
+    pending = { text: document.createElement('span'), bar: document.createElement('progress') };
+    pending.bar.max = 1; pending.bar.setAttribute('aria-label', 'Průběh načítání modelu');
+    line.append(pending.text, pending.bar);
+    answer.append(body, line);
     messages.append(userMessage, answer);
+    setPending('Hledám ve wiki…');
+    follow(true);
     userMessage.scrollIntoView({ block: 'nearest' });
     updateControls();
-    let stage: 'model' | 'answer' = 'answer';
     try {
       if (!index) {
         fetchController = new AbortController();
@@ -192,73 +205,37 @@ export function initTarotChat(): void {
       if (current !== generation) return;
       const query = retrievalQuery(question, previousQuestion);
       const sources = retrievePassages(index, query);
-      // Without evidence there is nothing for the model to choose, so nothing is downloaded.
-      if (!sources.length) {
-        renderAnswer(answer, [], base, true); searchButton(answer, question);
-        status.textContent = 'Pro tuto otázku jsem nenašel dostatečné podklady.';
-        return;
-      }
+      // Without evidence there is nothing for the model to work with, so nothing is downloaded.
+      if (!sources.length) { say(body, NO_EVIDENCE, question); return; }
       if (!ready || !model) {
         if (!hasConsent()) {
-          answer.textContent = 'Čekám na souhlas se stažením modelu…';
-          status.textContent = 'Před první odpovědí je potřeba stáhnout model (cca 1 GB).';
+          setPending('Čekám na souhlas se stažením modelu (cca 1 GB)…');
           const accepted = await askConsent();
           if (current !== generation) return;
-          if (!accepted) {
-            answer.textContent = 'Model se nestáhl, proto AI neodpověděla. Můžeš téma vyhledat ve wiki.';
-            searchButton(answer, question);
-            status.textContent = 'Stažení AI bylo zrušeno. Při další otázce se zeptám znovu.';
-            return;
-          }
+          if (!accepted) { say(body, 'Model se nestáhl, proto AI neodpověděla. Při další otázce se zeptám znovu.', question); return; }
           storeConsent();
         }
-        stage = 'model';
-        answer.textContent = 'Připravuji lokální AI…';
         await loadModel(current);
         if (current !== generation || !model) return;
-        stage = 'answer';
       }
-      const thinking = think.checked;
-      status.textContent = thinking ? 'AI přemýšlí nad nalezenými pasážemi… Může to trvat i minutu.' : 'AI vybírá vysvětlení z nalezených pasáží…';
-      let rendered = '';
-      let reasoning: HTMLParagraphElement | undefined;
+      setPending('Píšu odpověď…');
       const response = await model.generate(question, sources, previousQuestion, text => {
-        if (current !== generation) return;
-        const blocks = parseAnswer(text, sources, false);
-        const signature = blocks.map(block => block.source.id).join(',');
-        if (signature !== rendered) { rendered = signature; renderAnswer(answer, blocks, base, false); }
-      }, { think: thinking, onThinking: text => {
-        if (current !== generation || !text) return;
-        if (!reasoning) {
-          // Model-written prose is shown only as plain text and is never treated as a source.
-          const details = document.createElement('details');
-          details.className = 'tarot-reasoning';
-          const summary = document.createElement('summary');
-          summary.textContent = 'Jak AI přemýšlela (neověřená pracovní úvaha, není zdrojem)';
-          reasoning = document.createElement('p');
-          details.append(summary, reasoning);
-          answer.before(details);
-        }
-        reasoning.textContent = text;
-      } });
+        if (current === generation) { renderAnswer(body, parseAnswer(text, sources, false), base, false); follow(); }
+      });
       if (current !== generation) return;
-      const blocks = parseAnswer(response, sources, true);
-      renderAnswer(answer, blocks, base, true);
-      if (!blocks.length) searchButton(answer, question);
-      status.textContent = blocks.length ? 'Odpověď je hotová. Citace otevřou konkrétní pasáže wiki.' : 'Nalezené podklady odpověď nepotvrdily.';
+      const result = parseAnswer(response, sources, true);
+      renderAnswer(body, result, base, true, sources);
+      if (!result.parts.length) searchButton(body, question);
     } catch (error) {
       if (current !== generation) return;
-      answer.textContent = stage === 'model' ? 'Lokální AI se nepodařilo připravit. Zkus otázku odeslat znovu nebo vyhledat téma ve wiki.'
-        : 'Odpověď se nepodařilo dokončit. Zkus vyhledat téma ve wiki.';
-      searchButton(answer, question);
+      say(body, error instanceof Error && error.message === 'no-adapter'
+        ? 'WebGPU je dostupné, ale prohlížeč nemá přístup k podporované grafické kartě. Použij vyhledávání wiki.' : failureMessage(error), question);
       model?.dispose(); model = undefined; ready = false;
-      status.textContent = error instanceof Error && error.message === 'no-adapter'
-        ? 'WebGPU je dostupné, ale prohlížeč nemá přístup k podporované grafické kartě. Použij vyhledávání wiki.' : failureMessage(error);
     } finally {
-      if (current === generation) { busy = false; previousQuestion = question; updateControls(); }
+      if (current === generation) { endPending(); follow(); busy = false; previousQuestion = question; updateControls(); }
     }
   });
-  const leavePage = () => { disable(); status.textContent = supportReason() || 'AI je vypnutá. Načte se znovu s další otázkou.'; };
+  const leavePage = () => { disable(); status.textContent = supportReason() || ''; };
   window.addEventListener('pagehide', leavePage);
   document.addEventListener('astro:before-swap', leavePage, { once: true });
 }

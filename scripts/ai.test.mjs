@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { prebuiltAppConfig } from '@mlc-ai/web-llm';
 import { extractPassages } from './ai-index.mjs';
 import { retrievePassages, retrievalQuery, validateIndex, CONTEXT_CHAR_LIMIT } from '../src/lib/ai/retrieval.ts';
-import { parseAnswer, buildPrompt, splitThinking } from '../src/lib/ai/protocol.ts';
+import { parseAnswer, buildPrompt, stripThinking } from '../src/lib/ai/protocol.ts';
 import { safeExternalUrl, safeWikiUrl } from '../src/lib/ai/urls.ts';
 import { MODEL_IDS, modelFor } from '../src/lib/ai/config.ts';
 
@@ -49,25 +49,23 @@ test('dangerous schemes, credentials, traversal and foreign URLs are never citat
   assert.equal(safeExternalUrl('https://example.com/stats#precision'), 'https://example.com/stats#precision');
 });
 
-test('citations map only selected IDs and stream keeps identical application-owned numbering', () => {
-  const text = JSON.stringify({ sourceIds: [passages[0].id, passages[1].id] });
-  const blocks = parseAnswer(text, passages, true);
-  assert.deepEqual(blocks.map(block => [block.number, block.source.url]), [[1, passages[0].url], [2, passages[1].url]]);
-  assert.deepEqual(parseAnswer(text.slice(0, -1), passages, false), blocks);
-  assert.equal(parseAnswer('{"sourceIds":["invented:1"]}', passages, true).length, 0);
-  assert.equal(parseAnswer(JSON.stringify({ sourceIds: [passages[0].id, 'invented:1'] }), passages, true).length, 0);
-  assert.equal(parseAnswer('{"sourceIds":[],"url":"https://evil.test"}', passages, true).length, 0);
-  assert.equal(parseAnswer('{"sourceIds":["incomplete', passages, false).length, 0);
-  assert.equal(parseAnswer('{"sourceIds":[]}', passages, true).length, 0);
-  assert.equal(parseAnswer('not JSON', passages, true).length, 0);
-  assert.equal(parseAnswer(JSON.stringify({ sourceIds: [passages[0].id, passages[0].id] }), passages, true).length, 1);
-  const thinking = '<think>\n\n</think>\n\n' + text;
-  assert.deepEqual(parseAnswer(thinking, passages, true), blocks, 'WebLLM empty thinking prefix is not part of the answer');
-  assert.deepEqual(parseAnswer(thinking.slice(0, -1), passages, false), blocks);
-  assert.equal(parseAnswer('<think>\n\n</', passages, false).length, 0);
-  assert.deepEqual(splitThinking('<think>\nZvažuji [1]. Precision'), { thinking: 'Zvažuji [1]. Precision', answer: '' });
-  assert.deepEqual(splitThinking(`<think>\nPasáž 1 sedí.\n</think>\n\n${text}`), { thinking: 'Pasáž 1 sedí.', answer: `\n\n${text}` });
-  assert.equal(parseAnswer('<think>{"sourceIds":["' + passages[0].id + '"]}', passages, false).length, 0, 'IDs inside unfinished reasoning are not citations');
+test('citations map only offered numbers, renumber by first use and never come from partial streams', () => {
+  const sources = passages.slice(0, 3);
+  const text = 'Precision navyšuje Accuracy [2] a Critical Hit [2, 1]. Není to procentní šance [1][9].';
+  const answer = parseAnswer(text, sources, true);
+  assert.deepEqual(answer.sources, [sources[1], sources[0]]);
+  assert.deepEqual(answer.parts, ['Precision navyšuje Accuracy', 1, ' a Critical Hit', 1, 2, '. Není to procentní šance', 2, '.']);
+  assert.deepEqual(parseAnswer('Precision [1', sources, false), { parts: ['Precision'], sources: [] }, 'an unfinished citation is held back');
+  assert.deepEqual(parseAnswer('Precision [4] a [0].', sources, true).sources, [], 'unknown numbers are not citations');
+  assert.deepEqual(parseAnswer('NEVÍM', sources, true), { parts: [], sources: [] });
+  assert.deepEqual(parseAnswer('Nevim.', sources, true).parts, []);
+  assert.deepEqual(parseAnswer('', sources, true).parts, []);
+  assert.deepEqual(parseAnswer('**Precision** je stat [1].', sources, true).parts, ['Precision je stat', 1, '.'], 'Markdown stays out of plain text');
+  const thinking = '<think>\n\n</think>\n\nPrecision je stat [1].';
+  assert.deepEqual(parseAnswer(thinking, sources, true).parts, ['Precision je stat', 1, '.'], 'WebLLM empty thinking prefix is not part of the answer');
+  assert.equal(stripThinking('<think>\nZvažuji [1]. Precision'), '', 'unfinished reasoning is never shown');
+  assert.equal(parseAnswer('<think>Precision [1]', sources, false).parts.length, 0);
+  assert.equal(stripThinking('Bez úvahy'), 'Bez úvahy');
 });
 
 test('retrieval handles Czech, aliases, unknown subjects and context limits without remote calls', () => {
@@ -102,10 +100,11 @@ test('model is present in the pinned runtime and prompt contains data, never mod
   }
   assert.equal(modelFor(true), MODEL_IDS.f16);
   assert.equal(modelFor(false), MODEL_IDS.f32);
-  assert.match(buildPrompt('Co?', passages, '', 'x'.repeat(2000)), /"analysis":"x{1500}"/);
-  assert.ok(!buildPrompt('Co?', passages).includes('analysis'));
-  const prompt = buildPrompt('Co dělá Precision?', passages);
+  const prompt = buildPrompt('Co dělá Precision?', passages, 'y'.repeat(600));
   assert.ok(!prompt.includes('https://example.com'));
   assert.ok(!prompt.includes('/club/staty/zakladni/'));
-  assert.ok(prompt.includes(passages[0].id));
+  assert.match(prompt, /^Podklady:\n\n\[1\] Základní atributy — Body nejsou procentní šance\n/);
+  assert.ok(prompt.includes(`[${passages.length}] `));
+  assert.match(prompt, /Předchozí otázka: y{400}\n\nOtázka: Co dělá Precision\?$/);
+  assert.ok(!buildPrompt('Co?', passages).includes('Předchozí otázka'));
 });

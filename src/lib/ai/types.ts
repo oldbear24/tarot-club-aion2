@@ -21,4 +21,5 @@ export interface Passage {
 
 export interface WikiIndex { version: 1; passages: Passage[] }
 
-export interface AnswerBlock { source: Passage; number: number }
+// Model text interleaved with citation numbers; number n points at sources[n - 1].
+export interface Answer { parts: (string | number)[]; sources: Passage[] }

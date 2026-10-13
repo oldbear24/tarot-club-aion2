@@ -44,16 +44,16 @@ async function pageWithMock(options = {}) {
     export class LocalModel {
       constructor(progress) { this.progress=progress; window.__aiLifecycle={disposed:0,calls:0}; }
       async initialize() { this.progress(.5); await new Promise(r=>setTimeout(r,window.__initDelay||80)); if(window.__testMode==='init-error') throw new Error('out of memory'); }
-      async generate(question,sources,previous,onText,options={}) {
+      async generate(question,sources,previous,onText) {
         window.__aiLifecycle.calls++;
-        window.__aiLifecycle.think=options.think;
+        window.__aiLifecycle.previous=previous;
         if(window.__testMode==='error') throw new Error('device lost');
-        if(options.think) options.onThinking?.('Pasáž o Precision odpovídá <b>přímo</b>.');
-        const source=sources.find(s=>s.title==='Základní atributy'&&s.heading==='Body nejsou procentní šance')||sources[0];
-        const id=window.__testMode==='unknown'?'invented:999':source.id;
+        const n=sources.findIndex(s=>s.title==='Základní atributy'&&s.heading==='Body nejsou procentní šance')+1||1;
+        const answer={unknown:'Precision je stat [99].',nevim:'NEVÍM',uncited:'Precision je stat.'}[window.__testMode]
+          ||'Precision navyšuje <b>Accuracy</b> a Critical Hit, nejde o procentní šanci ['+n+'].';
         // WebLLM keeps its prefilled empty thinking block in the streamed content.
-        const text='<think>\\n\\n</think>\\n\\n'+JSON.stringify({sourceIds:[id]});
-        onText(text.slice(0,-1)); await new Promise(r=>setTimeout(r,window.__generateDelay||30)); onText(text); return text;
+        const text='<think>\\n\\n</think>\\n\\n'+answer;
+        onText(text.slice(0,-3)); await new Promise(r=>setTimeout(r,window.__generateDelay||30)); onText(text); return text;
       }
       dispose() { window.__aiLifecycle.disposed++; }
     }` }));
@@ -130,7 +130,7 @@ test('only one question runs at a time, including the model download', async () 
   await page.evaluate(() => { window.__initDelay = 400; });
   await page.locator('[data-ai-input]').fill('Co dělá Precision?');
   await page.locator('[data-ai-send]').click();
-  await page.waitForFunction(() => document.querySelector('[data-ai-status]').textContent.includes('Načítání modelu'));
+  await page.waitForFunction(() => document.querySelector('.tarot-pending')?.textContent.includes('Načítám model'));
   await page.locator('[data-ai-input]').fill('Co znamená CP?');
   assert.ok(await page.locator('[data-ai-send]').isDisabled());
   await page.locator('[data-ai-input]').press('Enter');
@@ -146,44 +146,39 @@ test('only one question runs at a time, including the model download', async () 
 test('missing GPU adapter and memory failure leave usable controls', async () => {
   const noAdapter = await pageWithMock({ adapter: false });
   await ask(noAdapter.page, 'Co dělá Precision?');
-  assert.match(await noAdapter.page.locator('[data-ai-status]').textContent(), /nemá přístup/);
-  assert.match(await messageText(noAdapter.page), /nepodařilo připravit/);
+  assert.match(await messageText(noAdapter.page), /nemá přístup/);
   await noAdapter.context.close();
   const { page, context, errors } = await pageWithMock({ mode: 'init-error' });
   await ask(page, 'Co dělá Precision?');
-  assert.match(await page.locator('[data-ai-status]').textContent(), /dostatek/);
+  assert.match(await messageText(page), /dostatek/);
   await page.locator('[data-ai-input]').fill('Co dělá Precision?');
   assert.ok(await page.locator('[data-ai-send]').isEnabled());
   assert.deepEqual(errors, []);
   await context.close();
 });
 
-test('streamed citations link to the real section and separate article background', async () => {
+test('the answer is plain text with citations and compact links to the real section', async () => {
   const { page, context, errors } = await pageWithMock();
   await ask(page, 'Co dělá Precision?');
   const citation = page.locator('.tarot-citation').first();
+  assert.equal(await citation.textContent(), '[1]');
   assert.match(await citation.getAttribute('href'), /staty\/zakladni\/#body-nejsou-/);
-  assert.match(await messageText(page), /nikoli přímo procentní šanci/);
-  assert.match(await messageText(page), /Původní podklady/);
-  assert.match(await messageText(page), /přiřazení ke konkrétní větě nebylo ověřeno/);
-  for (const link of await page.locator('[data-ai-messages] a[target="_blank"]').all()) assert.equal(await link.getAttribute('rel'), 'noopener noreferrer');
-  assert.equal(await page.evaluate(() => window.__aiLifecycle.think), true, 'thinking is on by default');
-  const reasoning = page.locator('[data-ai-messages] details.tarot-reasoning');
-  assert.match(await reasoning.locator('summary').textContent(), /není zdrojem/);
-  assert.equal(await reasoning.locator('p').textContent(), 'Pasáž o Precision odpovídá <b>přímo</b>.');
-  assert.equal(await reasoning.locator('b, a').count(), 0, 'model reasoning is plain text');
-  await page.locator('[data-ai-think]').uncheck();
-  await ask(page, 'Co dělá Precision?');
-  assert.equal(await page.evaluate(() => window.__aiLifecycle.think), false);
-  assert.equal(await reasoning.count(), 1, 'no reasoning panel without thinking');
+  const answer = page.locator('.tarot-message--answer').last();
+  assert.match(await answer.textContent(), /Precision navyšuje <b>Accuracy<\/b> a Critical Hit/);
+  assert.equal(await answer.locator('b').count(), 0, 'model text is plain text');
+  assert.equal(await page.locator('.tarot-sources a').count(), 1);
+  assert.match(await page.locator('.tarot-sources a').textContent(), /^\[1\] Základní atributy → Body nejsou procentní šance$/);
+  assert.equal(await page.locator('.tarot-pending').count(), 0, 'progress line disappears with the answer');
   assert.ok(await page.locator('[data-ai-deactivate]').isVisible(), 'a loaded model can be turned off');
+  await ask(page, 'A jak?');
+  assert.equal(await page.evaluate(() => window.__aiLifecycle.previous), 'Co dělá Precision?');
   await citation.click();
   assert.ok(await page.locator('[id="body-nejsou-procentní-šance"]').count());
   assert.deepEqual(errors, []);
   await context.close();
 });
 
-test('unknown subjects skip download and inference; unknown citation IDs do not produce links', async () => {
+test('unknown subjects skip download; unknown, missing or refused citations never become citation links', async () => {
   const { page, context, requests } = await pageWithMock({ consent: false });
   await ask(page, 'Co je sandwich?');
   assert.equal(await page.locator('[data-ai-consent]').evaluate(node => node.open), false);
@@ -193,7 +188,12 @@ test('unknown subjects skip download and inference; unknown citation IDs do not 
   await page.evaluate(() => { localStorage.setItem('tarot-ai-download-consent', 'qwen3-1.7b'); window.__testMode = 'unknown'; });
   await ask(page, 'Co dělá Precision?');
   assert.equal(await page.locator('.tarot-citation').count(), 0);
-  assert.equal(await page.locator('[data-ai-messages] a').count(), 0);
+  assert.match(await page.locator('.tarot-message--answer').last().textContent(), /AI neuvedla zdroj/, 'retrieved articles are offered for checking');
+  await page.evaluate(() => { window.__testMode = 'nevim'; });
+  await ask(page, 'Co dělá Precision?');
+  const last = page.locator('.tarot-message--answer').last();
+  assert.match(await last.textContent(), /nemám ve wiki ověřitelný zdroj/);
+  assert.equal(await last.locator('a').count(), 0);
   await context.close();
 });
 
@@ -224,7 +224,7 @@ test('a stopped download cannot finish later, and inference failure permits retr
   await page.evaluate(() => { window.__initDelay = 400; });
   await page.locator('[data-ai-input]').fill('Co dělá Precision?');
   await page.locator('[data-ai-send]').click();
-  await page.waitForFunction(() => document.querySelector('[data-ai-status]').textContent.includes('Načítání modelu'));
+  await page.waitForFunction(() => document.querySelector('.tarot-pending')?.textContent.includes('Načítám model'));
   await page.locator('[data-ai-deactivate]').click();
   await page.waitForFunction(() => document.querySelector('[data-ai-status]').textContent.includes('vypnutá'));
   await page.waitForTimeout(500);
@@ -235,7 +235,7 @@ test('a stopped download cannot finish later, and inference failure permits retr
   assert.ok(await page.locator('.tarot-citation').count());
   await page.evaluate(() => { window.__testMode = 'error'; });
   await ask(page, 'Co dělá Precision?');
-  assert.match(await page.locator('[data-ai-status]').textContent(), /paměti/);
+  assert.match(await messageText(page), /paměti/);
   await page.locator('[data-ai-input]').fill('Co dělá Precision?');
   assert.ok(await page.locator('[data-ai-send]').isEnabled());
   assert.deepEqual(errors, []);

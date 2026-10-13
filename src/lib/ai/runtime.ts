@@ -1,10 +1,8 @@
 import { WebWorkerMLCEngine, prebuiltAppConfig } from '@mlc-ai/web-llm';
 import type { ChatCompletionRequestStreaming } from '@mlc-ai/web-llm';
-import { THINKING_TOKENS } from './config.ts';
-import { answerSchema, buildPrompt, parseAnswer, splitThinking, SYSTEM_PROMPT } from './protocol.ts';
+import { ANSWER_TOKENS } from './config.ts';
+import { buildPrompt, SYSTEM_PROMPT } from './protocol.ts';
 import type { Passage } from './types.ts';
-
-export interface GenerateOptions { think?: boolean; onThinking?: (text: string) => void }
 
 export class LocalModel {
   private worker: Worker;
@@ -52,27 +50,12 @@ export class LocalModel {
     return text;
   }
 
-  async generate(question: string, sources: Passage[], previousQuestion: string, onText: (text: string) => void,
-    options: GenerateOptions = {}): Promise<string> {
-    const messages = (analysis = '') => [{ role: 'system' as const, content: SYSTEM_PROMPT },
-      { role: 'user' as const, content: buildPrompt(question, sources, previousQuestion, analysis) }];
-    let analysis = '';
-    if (options.think) {
-      // Qwen3 recommends sampling in thinking mode; greedy decoding tends to loop.
-      const draft = await this.guarded(() => this.stream({ messages: messages(), temperature: 0.6, top_p: 0.95,
-        max_tokens: THINKING_TOKENS, extra_body: { enable_thinking: true } }, text => {
-        const parts = splitThinking(text);
-        options.onThinking?.(parts.thinking);
-        onText(parts.answer);
-      }), 240_000);
-      const parts = splitThinking(draft);
-      // Unconstrained output is used only when it already is a valid selection; otherwise the grammar pass decides.
-      if (parseAnswer(parts.answer, sources, true).length) return parts.answer;
-      analysis = parts.thinking;
-    }
-    return this.guarded(() => this.stream({ messages: messages(analysis), temperature: 0, max_tokens: 160,
-      extra_body: { enable_thinking: false },
-      response_format: { type: 'json_object', schema: answerSchema(sources) } }, onText), 120_000);
+  generate(question: string, sources: Passage[], previousQuestion: string, onText: (text: string) => void): Promise<string> {
+    const messages = [{ role: 'system' as const, content: SYSTEM_PROMPT },
+      { role: 'user' as const, content: buildPrompt(question, sources, previousQuestion) }];
+    // Qwen3 non-thinking settings, slightly cooler so the answer stays close to the passages.
+    return this.guarded(() => this.stream({ messages, temperature: 0.5, top_p: 0.8, presence_penalty: 0.5,
+      max_tokens: ANSWER_TOKENS, extra_body: { enable_thinking: false } }, onText), 180_000);
   }
 
   dispose(message = 'AI byla vypnuta.'): void {
